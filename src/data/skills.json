@@ -1,0 +1,38 @@
+[
+  {
+    "icon": "../images/skills/ether.png",
+    "name": "Blockchain Engineering & Development",
+    "tech": "Hyperledger Fabric/Solidity"
+  },
+
+  {
+    "icon": "../images/skills/web.png",
+    "name": "Web Design & Development",
+    "tech": "HTML/CSS/Javascript/React"
+  },
+  {
+    "icon": "../images/skills/nodejs.png",
+    "name": "Backend Javascript Frameworks",
+    "tech": "Node.js/Express.js/Mongoose"
+  },
+  {
+    "icon": "../images/skills/python.png",
+    "name": "Python Scripting",
+    "tech": "Python 3/BeautifulSoup/PyMongo"
+  },
+  {
+    "icon": "../images/skills/database.png",
+    "name": "Database Management System",
+    "tech": "MySQL/Postgres/MongoDB/Redis/ElastichSearch"
+  },
+  {
+    "icon": "../images/skills/android.png",
+    "name": "Android App Development",
+    "tech": "Android Studio/Java/Kotlin/XML"
+  },
+  {
+    "icon": "../images/skills/avr.png",
+    "name": "C-AVR development",
+    "tech": "C-AVR"
+  }
+]
