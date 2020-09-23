@@ -10,7 +10,6 @@ on:
     branches: [ master ]
 
 env: 
-  EMAILJS_USER_ID: ${{ secrets.EMAILJS_USER_ID }}
   GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
 
 jobs:
