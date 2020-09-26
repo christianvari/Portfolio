@@ -42,11 +42,11 @@ self.__precacheManifest = [
   },
   {
     "url": "404.html",
-    "revision": "4980641f8bc48bd4e03fb09728d09442"
+    "revision": "bb4d411a0382686342c75ffbd156cb3a"
   },
   {
     "url": "404/index.html",
-    "revision": "31ae64516c5e10af780cef0974eae251"
+    "revision": "321e5490efa5a5420097188c3cec0c28"
   },
   {
     "url": "95b64a6e-bb41279d15d402a5f8f8.js"
@@ -56,15 +56,15 @@ self.__precacheManifest = [
     "revision": "b2825fdc59b199e2f04a9d5f79a889c5"
   },
   {
-    "url": "app-8e050270b400f15960d3.js"
+    "url": "app-a48c9d39485678bb0aae.js"
   },
   {
-    "url": "app-8e050270b400f15960d3.js.map",
-    "revision": "fc4556636d36196e97d3d1c38b62fd0a"
+    "url": "app-a48c9d39485678bb0aae.js.map",
+    "revision": "07a6a5911ca1da5d8163c1203873ff0e"
   },
   {
     "url": "chunk-map.json",
-    "revision": "38c7a8b4f0cb37ca512098ac72b0b7db"
+    "revision": "a642b23cc85ef30bc6f0fb7ae398a027"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-5a1ee105f05b3144b807.js"
@@ -142,15 +142,15 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "2892649053171606e69512bd114e9a85"
+    "revision": "a92ea8d2cf2b1843102dc6422024a3e7"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "bfb5b7f24efdf8dabc158c2903591187"
+    "revision": "15b8553597972d223b46a756963a8bac"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "410b97343b7ee6e1d9d14db19db3ccd4"
+    "revision": "270e0b75373ddc228f8862374381bdfc"
   },
   {
     "url": "page-data/404.html/page-data.json",
@@ -162,7 +162,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "d16575682a6df04f89aab116070b5b92"
+    "revision": "a064b8fff9e567f0087562244a21b5b4"
   },
   {
     "url": "page-data/index/page-data.json",
@@ -290,40 +290,40 @@ self.__precacheManifest = [
     "url": "static/557611a13ab6dfc07b7c78e198db3f42/cde37/selfie-boy.webp"
   },
   {
-    "url": "static/6930451eeae675efb0d796b40cf6e708/1f5c5/reactive-resume.webp"
+    "url": "static/724abca6101a794a0575f3f24b939616/19d53/portfolio.webp"
   },
   {
-    "url": "static/6930451eeae675efb0d796b40cf6e708/2a4de/reactive-resume.png"
+    "url": "static/724abca6101a794a0575f3f24b939616/1f5c5/portfolio.webp"
   },
   {
-    "url": "static/6930451eeae675efb0d796b40cf6e708/497c6/reactive-resume.png"
+    "url": "static/724abca6101a794a0575f3f24b939616/2a4de/portfolio.png"
   },
   {
-    "url": "static/6930451eeae675efb0d796b40cf6e708/58556/reactive-resume.webp"
+    "url": "static/724abca6101a794a0575f3f24b939616/497c6/portfolio.png"
   },
   {
-    "url": "static/6930451eeae675efb0d796b40cf6e708/61e93/reactive-resume.webp"
+    "url": "static/724abca6101a794a0575f3f24b939616/58556/portfolio.webp"
   },
   {
-    "url": "static/6930451eeae675efb0d796b40cf6e708/65e33/reactive-resume.png"
+    "url": "static/724abca6101a794a0575f3f24b939616/61e93/portfolio.webp"
   },
   {
-    "url": "static/6930451eeae675efb0d796b40cf6e708/69585/reactive-resume.png"
+    "url": "static/724abca6101a794a0575f3f24b939616/65e33/portfolio.png"
   },
   {
-    "url": "static/6930451eeae675efb0d796b40cf6e708/9cf1d/reactive-resume.png"
+    "url": "static/724abca6101a794a0575f3f24b939616/69585/portfolio.png"
   },
   {
-    "url": "static/6930451eeae675efb0d796b40cf6e708/ad85c/reactive-resume.webp"
+    "url": "static/724abca6101a794a0575f3f24b939616/ad85c/portfolio.webp"
   },
   {
-    "url": "static/6930451eeae675efb0d796b40cf6e708/d1f52/reactive-resume.webp"
+    "url": "static/724abca6101a794a0575f3f24b939616/b7304/portfolio.png"
   },
   {
-    "url": "static/6930451eeae675efb0d796b40cf6e708/d8298/reactive-resume.webp"
+    "url": "static/724abca6101a794a0575f3f24b939616/d1f52/portfolio.webp"
   },
   {
-    "url": "static/6930451eeae675efb0d796b40cf6e708/ee604/reactive-resume.png"
+    "url": "static/724abca6101a794a0575f3f24b939616/ee604/portfolio.png"
   },
   {
     "url": "static/7268e8ad3f7ebbc25b2736ba14e2a666/0aa94/database.webp"
@@ -554,7 +554,7 @@ self.__precacheManifest = [
   },
   {
     "url": "webpack.stats.json",
-    "revision": "609c4101a8595c7746eeee3f22d09789"
+    "revision": "b808372ef68ab4a8a66eb349df775a03"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -647,7 +647,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/Portfolio/app-8e050270b400f15960d3.js`))) {
+  if (!resources || !(await caches.match(`/Portfolio/app-a48c9d39485678bb0aae.js`))) {
     return await fetch(event.request)
   }
 
