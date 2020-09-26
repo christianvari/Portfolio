@@ -5,13 +5,13 @@ const fullConfig = resolveConfig(tailwindConfig);
 require(`dotenv`).config({ path: `.env` });
 
 module.exports = {
+  pathPrefix: "/Portfolio",
   siteMetadata: {
     title: `Christian Vari`,
-    description: `Christian Vari's resume`,
+    description: `Christian Vari's Portfolio`,
     author: `Christian Vari`,
     siteUrl: `https://christianvari.github.io/Portfolio/`,
   },
-  pathPrefix: "/Portfolio",
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -40,8 +40,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Christian Vari's Resume on the Web`,
-        short_name: `Resume on the Web`,
+        name: `Christian Vari's Portfolio`,
+        short_name: `Christian Vari's Portfolio`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.white,

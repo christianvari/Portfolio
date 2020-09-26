@@ -1,8 +1,8 @@
 {
-  "name": "resumeontheweb-gatsby",
+  "name": "christian-vari-portfolio",
   "description": "",
   "version": "1.0.0",
-  "author": "AChristian Vari",
+  "author": "Christian Vari",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "dotenv": "^8.2.0",
