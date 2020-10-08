@@ -10,7 +10,7 @@ module.exports = {
     title: `Christian Vari`,
     description: `Christian Vari's Portfolio`,
     author: `Christian Vari`,
-    siteUrl: `https://christianvari.github.io/Portfolio/`,
+    siteUrl: `https://christianvari.github.io/`,
   },
   plugins: [
     {
@@ -48,14 +48,6 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/logo.jpg`,
         cache_busting_mode: `none`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        workboxConfig: {
-          globPatterns: [`**/*`],
-        },
       },
     },
     {
