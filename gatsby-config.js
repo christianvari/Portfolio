@@ -8,7 +8,7 @@ module.exports = {
   pathPrefix: "/Portfolio",
   siteMetadata: {
     title: `Christian Vari`,
-    description: `Christian Vari's Portfolio`,
+    description: `Christian Vari Portfolio`,
     author: `Christian Vari`,
     siteUrl: `https://christianvari.github.io/`,
   },
