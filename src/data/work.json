@@ -2,8 +2,16 @@
   {
     "icon": "../images/work/hcl.png",
     "title": "HCL Technologies",
+    "subtitle": "Software Engineer II",
+    "period": "November '21 - current",
+    "location": "Rome, Italy",
+    "specialization": "React, Virtual Reality, Node.js, ChatBots, Real time applications"
+  },
+  {
+    "icon": "../images/work/hcl.png",
+    "title": "HCL Technologies",
     "subtitle": "Junior Developer",
-    "period": "April '20 - current",
+    "period": "April '20 - November '21",
     "location": "Rome, Italy",
     "specialization": "React, Virtual Reality, Node.js, ChatBots, Real time applications"
   },

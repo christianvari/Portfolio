@@ -21,7 +21,7 @@ const Resume = () => {
             title="Download Resume"
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/10-fYBTrGjSgt9HpDxDZydVY1XkBrdDAV/view?usp=sharing",
+                "https://drive.google.com/file/d/1b7NJlAT-3hMMY0cYI6piUITZTL-QS3Kv/view?usp=sharing",
                 "_blank",
               )
             }
