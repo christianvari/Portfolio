@@ -42,7 +42,7 @@ const Hero = () => {
     return () => {
       parallax && parallax.destroy();
     };
-  }, [parallaxRef]);
+  }, [parallaxRef, parallax, isMobile]);
 
   return (
     <section id="hero" className="min-h-screen flex items-center container">

@@ -41,12 +41,6 @@
   ],
   "license": "MIT",
   "scripts": {
-    "analyze:lint": "eslint --ext .jsx --ext .js .",
-    "analyze:prettier": "prettier --list-different \"**/*.{css,js,jsx,json,md}\"",
-    "analyze": "npm run analyze:lint && npm run analyze:prettier",
-    "fix:lint": "eslint --ext .jsx --ext .js . --fix",
-    "fix:prettier": "prettier --write \"**/*.{css,js,jsx,json,md}\"",
-    "fix": "npm run fix:lint && npm run fix:prettier",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "dev": "npm run develop",
@@ -61,9 +55,6 @@
     "autoprefixer": "9.8.6",
     "babel-eslint": "10.1.0",
     "cssnano": "4.1.10",
-    "eslint": "8.8.0",
-    "eslint-plugin-import": "2.25.4",
-    "eslint-plugin-react": "7.28.0",
     "gh-pages": "^3.1.0",
     "prettier": "2.0.5",
     "tailwindcss": "1.6.0"

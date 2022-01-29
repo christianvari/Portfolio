@@ -1,14 +1,13 @@
 import { graphql, useStaticQuery } from "gatsby";
 import GatsbyImage from "gatsby-image";
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import Heading from "../components/Heading";
-import { MdLocationOn, MdMoreHoriz, MdWork } from "../components/Icons";
+import { MdLocationOn, MdWork } from "../components/Icons";
 import ThemeContext from "../context/ThemeContext";
 import Tooltip from "@material-ui/core/Tooltip";
 
 const Work = () => {
   const { dark } = useContext(ThemeContext);
-  const [max, setMax] = useState(4);
   const data = useStaticQuery(graphql`
     {
       allWorkJson {
@@ -41,8 +40,6 @@ const Work = () => {
         <div className="w-1 bg-gray-500 rounded-full md:ml-6 opacity-25" />
         <div className="-ml-2">
           {data.allWorkJson.edges.map(({ node }, index) => {
-            if (index >= max) return null;
-
             return (
               <div
                 key={node.id}
@@ -83,15 +80,6 @@ const Work = () => {
           })}
         </div>
       </div>
-      {max <= 4 && (
-        <div className="ml-12 mt-4 rounded-lg py-2 flex">
-          <Tooltip title="Show More" placement="right">
-            <div className="px-4" onClick={() => setMax(10)}>
-              <MdMoreHoriz size="1.5rem" />
-            </div>
-          </Tooltip>
-        </div>
-      )}
     </section>
   );
 };
