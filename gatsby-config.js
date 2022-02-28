@@ -5,12 +5,11 @@ const fullConfig = resolveConfig(tailwindConfig);
 require(`dotenv`).config({ path: `.env` });
 
 module.exports = {
-  pathPrefix: "/Portfolio",
   siteMetadata: {
     title: `Christian Vari`,
     description: `Christian Vari Portfolio`,
     author: `Christian Vari`,
-    siteUrl: `https://christianvari.github.io/`,
+    siteUrl: `https://christianvari.dev`,
   },
   plugins: [
     {
@@ -23,15 +22,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://christianvari.github.io/`,
+        siteUrl: `https://christianvari.dev`,
       },
     },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        host: `https://christianvari.github.io/`,
-        sitemap: `https://christianvari.github.io/Portfolio/sitemap.xml`,
+        host: `https://christianvari.dev`,
+        sitemap: `https://christianvari.dev/sitemap.xml`,
         policy: [{ userAgent: `*`, allow: `/` }],
       },
     },
