@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://christianvari.github.io/Portfolio/sitemap.xml
-Host: https://christianvari.github.io
+Sitemap: https://christianvari.dev/sitemap.xml
+Host: https://christianvari.dev
