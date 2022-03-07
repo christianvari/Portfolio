@@ -55,7 +55,8 @@ const Hero = () => {
         <div className="col-span-3">
           <h1 className="sr-only">
             Christian Vari&apos;s Resume on the Web <br />
-            Engineer, Developer, Blockchain Consultant, Singer from Segni, Italy
+            Software Engineer, Blockchain Auditor, Blockchain Consultant,
+            Developer from Segni, Italy
           </h1>
 
           <div className="text-center lg:text-left flex flex-col items-center lg:ml-4 lg:items-start">
