@@ -4,8 +4,11 @@ id: "about-me"
 
 Hey there!
 
-My name is Christian Vari and I'm a 24 years old italian Software Engineer. I graduated in Computer Science and I attended a Master in Blockchain and Cybersecurity.
+My name is Christian Vari and I'm a 25 years old italian **Software Engineer**.
 
-Currently I'm working at HCL Technologies as a Software Engineer, and, in my free time, I'm dedicating myself to deepen some aspects of Blockchain and I am improving my skills in building on Ethereum.
+Currently I'm working at HCL Technologies as a **Software Engineer II** and I'm contributing in the Cosmos/Ethereum cryptoverse as a **Blockchain Smart Contract Auditor**.
+
+My main focus is on innovative technologies, blockchain and microservice architectures.
+I have good skills in web development and Agile team management.
 
 I created this website so I could showcase all this and through this process, make it easier for you to connect with me. If you like what you see, head over to the [contact section](#contact) below and send me a text. I would love to hear from you!

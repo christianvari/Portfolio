@@ -1,6 +1,5 @@
 import {
   GoTools,
-  IoIosDocument,
   IoIosPaperPlane,
   MdPerson,
   MdSchool,
@@ -14,7 +13,6 @@ const sections = [
   { id: "education", title: "Education", icon: MdSchool },
   { id: "skills", title: "Skills", icon: GoTools },
   { id: "projects", title: "Projects", icon: FaDev },
-  { id: "resume", title: "Resume", icon: IoIosDocument },
   { id: "contact", title: "Contact", icon: IoIosPaperPlane },
 ];
 

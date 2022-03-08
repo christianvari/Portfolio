@@ -5,8 +5,17 @@
     "subtitle": "Software Engineer II",
     "period": "November '21 - current",
     "location": "Rome, Italy",
-    "specialization": "React, Virtual Reality, Node.js, ChatBots, Real time applications"
+    "specialization": "React, Virtual Reality, Node.js, AI, ChatBots, Real time applications"
   },
+  {
+    "icon": "../images/logo.jpg",
+    "title": "Blockchain Auditor",
+    "subtitle": "CosmWasm and Solidity code reviews",
+    "period": "Jan '22 - current",
+    "location": "Somewhere, Cryptoverse",
+    "specialization": "Solidity, Rust, CosmWasm, Typescript"
+  },
+
   {
     "icon": "../images/work/hcl.png",
     "title": "HCL Technologies",

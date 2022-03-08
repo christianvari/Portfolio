@@ -3,7 +3,6 @@ import { graphql, useStaticQuery } from "gatsby";
 import GatsbyImage from "gatsby-image";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import React from "react";
-import Button from "../components/Button";
 import Heading from "../components/Heading";
 import { FaDev, FaGithub, FaLink } from "../components/Icons";
 import styles from "./Projects.module.css";

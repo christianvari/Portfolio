@@ -54,7 +54,7 @@ const Hero = () => {
         </div>
         <div className="col-span-3">
           <h1 className="sr-only">
-            Christian Vari&apos;s Resume on the Web <br />
+            Christian Vari&apos;s Portfolio Resume on the Web <br />
             Software Engineer, Blockchain Auditor, Blockchain Consultant,
             Developer from Segni, Italy
           </h1>
