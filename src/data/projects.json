@@ -1,0 +1,31 @@
+[
+  {
+    "image": "../images/projects/aida.jpg",
+    "title": "AIDA for Workload Automation ",
+    "description": "AI Data Analysis",
+    "tags": [
+      "AI",
+      "Observability",
+      "Python",
+      "React",
+      "Nodejs",
+      "Microservices"
+    ],
+    "website": "  https://blog.hcltechsw.com/workload-automation/accelerate-it-and-business-automation-with-streamlined-modelling-advanced-ai-and-open-integration-for-observability-hcl-workload-automation-version-10/"
+  },
+  {
+    "image": "../images/projects/tvrex.png",
+    "title": "T-VREX for Workload Automation",
+    "description": "A VR experience for Workload Automation",
+    "tags": ["VR", "React", "Workload Automation", "Oculus", "Real-time"],
+    "website": "https://www.youtube.com/watch?v=5M50sG27QYg"
+  },
+  {
+    "image": "../images/projects/cryptostarter.png",
+    "title": "Cryptostarter",
+    "description": "An Ethereum-based Decentralized Crowdfunding Platform.",
+    "tags": ["opensource", "react", "blockchain", "ethereum", "crowdfunding"],
+    "website": "https://cryptostarter.herokuapp.com",
+    "github": "https://github.com/christianvari/EthStart-client"
+  }
+]

@@ -1,34 +1,43 @@
 [
   {
     "icon": "../images/skills/ether.png",
-    "name": "Blockchain Engineering & Development",
-    "tech": "Hyperledger Fabric/Solidity"
+    "name": "Blockchain Auditing",
+    "tech": "Solidity, CosmWASM"
   },
-
+  {
+    "icon": "../images/skills/ether.png",
+    "name": "Blockchain Engineering",
+    "tech": "Solidity, CosmWASM"
+  },
   {
     "icon": "../images/skills/web.png",
-    "name": "Web Design & Development",
-    "tech": "HTML/CSS/Javascript/React"
+    "name": "Web Development",
+    "tech": "React, Redux, Typescript, Javascript"
   },
   {
     "icon": "../images/skills/nodejs.png",
     "name": "Backend Javascript Frameworks",
-    "tech": "Node.js/Express.js/Mongoose"
+    "tech": "Node.js, Typescript, Javascript"
   },
   {
     "icon": "../images/skills/python.png",
-    "name": "Python Scripting",
-    "tech": "Python 3/BeautifulSoup/PyMongo"
+    "name": "Python",
+    "tech": "Python"
   },
   {
     "icon": "../images/skills/database.png",
     "name": "Database Management System",
-    "tech": "MySQL/Postgres/MongoDB/Redis/ElastichSearch"
+    "tech": "MongoDB, Redis, ElastichSearch"
   },
   {
-    "icon": "../images/skills/android.png",
-    "name": "Android App Development",
-    "tech": "Android Studio/Java/Kotlin/XML"
+    "icon": "../images/skills/docker.png",
+    "name": "Microservices Architectures",
+    "tech": "Kubernetes, Docker"
+  },
+  {
+    "icon": "../images/skills/rust.png",
+    "name": "Rust Development",
+    "tech": "Rust"
   },
   {
     "icon": "../images/skills/avr.png",
