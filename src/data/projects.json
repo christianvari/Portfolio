@@ -1,8 +1,8 @@
 [
   {
     "image": "../images/projects/aida.jpg",
-    "title": "AIDA for Workload Automation ",
-    "description": "AI Data Analysis",
+    "title": "AIDA for Workload Automation",
+    "description": "AI Data Advisor",
     "tags": [
       "AI",
       "Observability",
@@ -11,7 +11,14 @@
       "Nodejs",
       "Microservices"
     ],
-    "website": "  https://blog.hcltechsw.com/workload-automation/accelerate-it-and-business-automation-with-streamlined-modelling-advanced-ai-and-open-integration-for-observability-hcl-workload-automation-version-10/"
+    "website": "https://blog.hcltechsw.com/workload-automation/accelerate-it-and-business-automation-with-streamlined-modelling-advanced-ai-and-open-integration-for-observability-hcl-workload-automation-version-10/"
+  },
+  {
+    "image": "../images/projects/clara.jpg",
+    "title": "Clara",
+    "description": "Automation Chatbot for Workload Automation",
+    "tags": ["AI", "Chatbot", "NLP", "Rasa", "React", "Java", "Microservices"],
+    "website": "https://www.hcltechsw.com/clara"
   },
   {
     "image": "../images/projects/tvrex.png",
