@@ -3,12 +3,12 @@
     "icon": "../images/education/tor_vergata.png",
     "title": "Università degli studi di Roma 'Tor Vergata'",
     "subtitle": "Blockchain & Cybersecurity course",
-    "period": "2019 - 2019"
+    "period": ""
   },
   {
     "icon": "../images/education/sapienza.png",
-    "title": "Università degli studi di Roma 'La Sapienza'",
-    "subtitle": "Computer engineering",
-    "period": "2017 - 2021"
+    "title": "Università degli studi di Roma \"La Sapienza\"",
+    "subtitle": "Software and Automation engineering",
+    "period": ""
   }
 ]

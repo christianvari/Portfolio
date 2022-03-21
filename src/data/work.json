@@ -8,12 +8,12 @@
     "specialization": "React, Virtual Reality, Node.js, AI, ChatBots, Real time applications"
   },
   {
-    "icon": "../images/logo.jpg",
-    "title": "Blockchain Auditor",
-    "subtitle": "CosmWasm and Solidity code reviews",
+    "icon": "../images/work/oak.jpg",
+    "title": "Oak Security",
+    "subtitle": "Smart Contracts Auditor",
     "period": "Jan '22 - current",
-    "location": "Somewhere, Cryptoverse",
-    "specialization": "Solidity, Rust, CosmWasm, Typescript"
+    "location": "Cryptoverse",
+    "specialization": "Rust, CosmWasm, Solidity, Typescript"
   },
 
   {
