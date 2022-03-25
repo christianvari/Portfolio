@@ -9,6 +9,7 @@ import Hero from "../sections/Hero";
 import Skills from "../sections/Skills";
 import Work from "../sections/Work";
 import Projects from "../sections/Projects";
+import Achievements from "../sections/Achievements";
 
 const IndexPage = () => {
   return (
@@ -20,6 +21,7 @@ const IndexPage = () => {
           <Work />
           <Education />
         </div>
+        <Achievements />
         <Skills />
         <Projects />
         <Contact />
