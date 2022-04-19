@@ -1,5 +1,12 @@
 [
   {
+    "image": "../images/projects/kinetic.jpg",
+    "title": "Kinetic Money Audit",
+    "description": "Smart Contracts Audit",
+    "tags": ["Blockchain", "Smart Contract", "Rust", "Terra", "Audit"],
+    "website": "https://github.com/oak-security/audit-reports/blob/master/Kinetic/2022-04-07%20Audit%20Report%20-%20Kinetic%20v1.0.pdf"
+  },
+  {
     "image": "../images/projects/aida.jpg",
     "title": "AIDA for Workload Automation",
     "description": "AI Data Advisor",
