@@ -1,5 +1,11 @@
 [
   {
+    "icon": "../images/education/atom.jpeg",
+    "title": "Interchain Foundation Developer Academy",
+    "subtitle": "Cosmos Developer Academy",
+    "period": ""
+  },
+  {
     "icon": "../images/education/tor_vergata.png",
     "title": "Università degli studi di Roma 'Tor Vergata'",
     "subtitle": "Blockchain & Cybersecurity course",

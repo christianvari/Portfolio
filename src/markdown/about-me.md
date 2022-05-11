@@ -6,7 +6,7 @@ Hey there!
 
 My name is Christian Vari and I'm a 25 years old italian **Software Engineer**.
 
-Currently I'm working at HCL Technologies as a **Software Engineer II** and I'm contributing in the Cosmos/Ethereum cryptoverse as a **Blockchain Smart Contract Auditor** with Oak Security.
+Currently I'm working at HCL Technologies as a **Software Engineer II** and I'm contributing in the Blockchain cryptoverse as a **Blockchain Smart Contract Auditor** with my own company, Codezen, associated with Oak Security.
 
 My main focus is on innovative technologies, blockchain and microservice architectures.
 I have good skills in web development and Agile team management.
