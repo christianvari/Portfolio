@@ -16,9 +16,9 @@ const Navigation = () => {
   const { dark, toggleDark } = useContext(ThemeContext);
   const data = useStaticQuery(graphql`
     query {
-      icon: file(relativePath: { eq: "logo.jpg" }) {
+      icon: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
-          fixed(width: 32, height: 32) {
+          fixed(width: 56, height: 32) {
             ...GatsbyImageSharpFixed_withWebp
           }
         }
