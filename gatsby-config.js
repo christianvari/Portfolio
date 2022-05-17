@@ -38,8 +38,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Christian Vari's Portfolio`,
-        short_name: `Christian Vari's Portfolio`,
+        name: `Christian Vari`,
+        short_name: `Christian Vari Portfolio`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.white,
