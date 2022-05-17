@@ -44,7 +44,7 @@ module.exports = {
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.white,
         display: `standalone`,
-        icon: `src/images/logo.jpg`,
+        icon: `src/images/logo.png`,
         cache_busting_mode: `none`,
       },
     },
