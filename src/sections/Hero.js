@@ -1,14 +1,10 @@
 import { graphql, useStaticQuery } from "gatsby";
 import GatsbyImage from "gatsby-image";
-import Parallax from "parallax-js";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState } from "react";
 import Social from "../components/Social";
 import Subtitle from "../components/Subtitle";
 
 const Hero = () => {
-  const parallaxRef = useRef(null);
-  const [parallax, setParallax] = useState(null);
-  const [isMobile, setIsMobile] = useState(false);
   const [showSocial, setShowSocial] = useState(false);
   const data = useStaticQuery(graphql`
     {
@@ -22,32 +18,10 @@ const Hero = () => {
     }
   `);
 
-  useEffect(() => {
-    if (typeof window !== `undefined`) {
-      const { isMobile } = require("../utils");
-      setIsMobile(isMobile);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (!isMobile) {
-      setParallax(
-        new Parallax(parallaxRef.current, {
-          invertX: false,
-          invertY: false,
-        }),
-      );
-    }
-
-    return () => {
-      parallax && parallax.destroy();
-    };
-  }, [parallaxRef, parallax, isMobile]);
-
   return (
     <section id="hero" className="min-h-screen flex items-center container">
       <div className="w-full grid grid-cols-1 lg:grid-cols-5 row-gap-8 lg:gap-16 justify-center lg:justify-start items-center mt-8 md:mt-12 lg:mt-0">
-        <div ref={parallaxRef} className="col-span-2">
+        <div className="col-span-2">
           <div className="max-w-lg mx-auto" data-depth="0.4">
             <GatsbyImage {...data.photo.childImageSharp} />
           </div>
