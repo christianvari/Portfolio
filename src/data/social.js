@@ -7,6 +7,12 @@ import {
 
 const social = [
   {
+    title: "Twitter",
+    icon: FaTwitter,
+    link: "https://twitter.com/decentra_chris",
+    class: "bg-twitter",
+  },
+  {
     title: "LinkedIn",
     icon: FaLinkedinIn,
     link: "https://www.linkedin.com/in/christianvari/",
@@ -18,16 +24,11 @@ const social = [
     link: "https://github.com/christianvari",
     class: "bg-github",
   },
-  {
-    title: "Twitter",
-    icon: FaTwitter,
-    link: "https://twitter.com/decentra_chris",
-    class: "bg-twitter",
-  },
+
   {
     title: "Instagram",
     icon: FaInstagram,
-    link: "https://www.instagram.com/christian_vari/",
+    link: "https://www.instagram.com/decentralized_christian/",
     class: "bg-instagram",
   },
 ];

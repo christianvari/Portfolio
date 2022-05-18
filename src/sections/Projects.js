@@ -71,31 +71,27 @@ const Projects = () => {
 
             <div className="flex mt-2">
               {node.website && (
-                <Tooltip title="Go to Website" placement="bottom">
-                  <OutboundLink
-                    href={node.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-2 mr-2 "
-                  >
-                    <FaLink />
-                    <span className="sr-only">Go to Website</span>
-                  </OutboundLink>
-                </Tooltip>
+                <OutboundLink
+                  href={node.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-2 mr-2 "
+                >
+                  <FaLink />
+                  <span className="sr-only">Go to Website</span>
+                </OutboundLink>
               )}
 
               {node.github && (
-                <Tooltip title="Go to GitHub Repo" placement="bottom">
-                  <OutboundLink
-                    href={node.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-2 mr-2"
-                  >
-                    <FaGithub />
-                    <span className="sr-only">Go to GitHub Repo</span>
-                  </OutboundLink>
-                </Tooltip>
+                <OutboundLink
+                  href={node.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-2 mr-2"
+                >
+                  <FaGithub />
+                  <span className="sr-only">Go to GitHub Repo</span>
+                </OutboundLink>
               )}
             </div>
           </div>
