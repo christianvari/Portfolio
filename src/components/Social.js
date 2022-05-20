@@ -1,11 +1,11 @@
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import React from "react";
 import social from "../data/social";
-import styles from "./Social.module.css";
+import { container } from "./Social.module.css";
 
 const Social = () => {
   return (
-    <div className={styles.container}>
+    <div className={container}>
       {social.map((x, i) => {
         const Icon = x.icon;
 

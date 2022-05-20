@@ -11,6 +11,7 @@ on:
 
 env: 
   GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
+  CLARITY_ID: ${{ secrets.CLARITY_ID }}
 
 jobs:
   deploy:

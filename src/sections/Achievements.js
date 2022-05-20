@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import Heading from "../components/Heading";
 import { FaAngleRight, FaAward } from "../components/Icons";
-import styles from "./Meta.module.css";
+import { container } from "./Meta.module.css";
 
 const Achievements = () => {
   const data = useStaticQuery(graphql`
@@ -27,7 +27,7 @@ const Achievements = () => {
       {data.allAchievementsJson.edges.map(({ node }, index) => (
         <div
           key={node.id}
-          className={`${styles.container} wow fadeInDown`}
+          className={`${container} wow fadeInDown`}
           style={{
             animationDuration: `${index * 200 + 500}ms`,
             cursor: node.url ? "pointer" : undefined,

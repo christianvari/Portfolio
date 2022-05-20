@@ -21,6 +21,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-clarity`,
+      options: {
+        clarity_project_id: process.env.CLARITY_ID,
+      },
+    },
+    {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
         siteUrl: `https://christianvari.dev`,

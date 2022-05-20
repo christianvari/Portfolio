@@ -4,7 +4,7 @@ import { OutboundLink } from "gatsby-plugin-google-analytics";
 import React from "react";
 import Heading from "../components/Heading";
 import { FaDev, FaGithub, FaLink } from "../components/Icons";
-import styles from "./Projects.module.css";
+import * as styles from "./Projects.module.css";
 
 const Projects = () => {
   const data = useStaticQuery(graphql`

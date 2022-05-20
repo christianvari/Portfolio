@@ -3,7 +3,7 @@ import GatsbyImage from "gatsby-image";
 import React from "react";
 import Heading from "../components/Heading";
 import { GoTools } from "../components/Icons";
-import styles from "./Skills.module.css";
+import * as styles from "./Skills.module.css";
 
 const Skills = () => {
   const data = useStaticQuery(graphql`

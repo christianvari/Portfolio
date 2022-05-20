@@ -9,7 +9,7 @@ import { animateScroll as scroll, scroller } from "react-scroll";
 import ThemeContext from "../context/ThemeContext";
 import sections from "../data/sections";
 import { IoIosMoon, IoIosSunny, MdMenu } from "./Icons";
-import styles from "./Navigation.module.css";
+import { container, menu, sectionLinks } from "./Navigation.module.css";
 
 const Navigation = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -62,7 +62,7 @@ const Navigation = () => {
 
   return (
     <div
-      className={`${styles.container} animated ${
+      className={`${container} animated ${
         isMobile ? "fadeInDown" : "fadeInLeft"
       }`}
     >
@@ -73,10 +73,10 @@ const Navigation = () => {
       </Tooltip>
 
       <div className="hidden md:flex flex-col justify-center items-center">
-        <div className={styles.menu}>
+        <div className={menu}>
           <MdMenu />
         </div>
-        <div className={styles.sectionLinks}>{sections.map(SectionLink)}</div>
+        <div className={sectionLinks}>{sections.map(SectionLink)}</div>
       </div>
 
       <Tooltip title="Toggle Dark Mode" placement="right" arrow>

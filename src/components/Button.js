@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
-import styles from "./Button.module.css";
+import { container, light } from "./Button.module.css";
 import ThemeContext from "../context/ThemeContext";
 
 const Button = ({ type, className, icon, title, onClick, disabled }) => {
@@ -12,7 +12,7 @@ const Button = ({ type, className, icon, title, onClick, disabled }) => {
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`${styles.container} ${className} ${!dark && styles.light}`}
+      className={`${container} ${className} ${!dark && light}`}
     >
       <div>
         <Icon />
