@@ -13,7 +13,7 @@ const Contact = () => {
           type="submit"
           className="mt-6"
           icon={IoIosPaperPlane}
-          title="Send an email"
+          title="Send me an email"
           onClick={() => (window.location = "mailto:info@christianvari.dev")}
         />
       </form>

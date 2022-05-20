@@ -1,21 +1,34 @@
 [
   {
+    "image": "../images/projects/ozone.jpg",
+    "title": "Risk Harbor Ozone v2",
+    "description": "Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"]
+  },
+  {
+    "image": "../images/projects/aperture.jpg",
+    "title": "Aperture Finance Delta-Neautral Strategy",
+    "description": "Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"]
+  },
+  {
     "image": "../images/projects/levana.png",
     "title": "Levana Perpetual Swap",
     "description": "Smart Contracts Audit",
-    "tags": ["Blockchain", "Smart Contract", "Rust", "Terra", "Audit"]
+    "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"]
   },
   {
     "image": "../images/projects/c2x.png",
     "title": "C2X Com2Us",
     "description": "Smart Contracts Audit",
-    "tags": ["Blockchain", "Smart Contract", "Rust", "Terra", "Audit"]
+    "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"],
+    "website": "https://github.com/oak-security/audit-reports/blob/master/C2X/2022-05-09%20Audit%20Report%20-%20C2X%20v1.0.pdf"
   },
   {
     "image": "../images/projects/kinetic.jpg",
     "title": "Kinetic Money",
     "description": "Smart Contracts Audit",
-    "tags": ["Blockchain", "Smart Contract", "Rust", "Terra", "Audit"],
+    "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"],
     "website": "https://github.com/oak-security/audit-reports/blob/master/Kinetic/2022-04-07%20Audit%20Report%20-%20Kinetic%20v1.0.pdf"
   },
   {

@@ -7,7 +7,7 @@ import { MdPerson } from "../components/Icons";
 const AboutMe = () => {
   const data = useStaticQuery(graphql`
     {
-      photo: file(relativePath: { eq: "about-me/selfie_boy.jpg" }) {
+      photo: file(relativePath: { eq: "about-me/network.png" }) {
         childImageSharp {
           fluid(maxWidth: 512) {
             ...GatsbyImageSharpFluid_withWebp

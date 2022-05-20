@@ -1,4 +1,3 @@
-import Tooltip from "@material-ui/core/Tooltip";
 import { graphql, useStaticQuery } from "gatsby";
 import GatsbyImage from "gatsby-image";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
@@ -21,7 +20,7 @@ const Projects = () => {
             github
             image {
               childImageSharp {
-                fluid(maxWidth: 400) {
+                fluid(maxWidth: 512) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }
@@ -40,7 +39,7 @@ const Projects = () => {
         {data.allProjectsJson.edges.map(({ node }, index) => (
           <div
             key={node.id}
-            className={`${styles.project} wow fadeIn`}
+            className="wow fadeIn"
             style={{
               animationDelay: `${index * 300 + 300}ms`,
             }}
@@ -49,11 +48,19 @@ const Projects = () => {
               href={node.website || node.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full h-48 bg-black relative flex-center cursor-pointer rounded-lg shadow-lg"
+              className={[
+                "w-full h-48 bg-black relative flex-center rounded-lg shadow-lg",
+                node.website ? "cursor-pointer" : "",
+              ].join(" ")}
             >
-              <FaLink className="absolute" color="#FFF" size="5rem" />
+              {!!node.website && (
+                <FaLink className="absolute" color="#FFF" size="5rem" />
+              )}
               <GatsbyImage
-                className="absolute w-full h-full object-cover rounded-lg hover:opacity-50 duration-200"
+                className={[
+                  "absolute w-full h-full object-cover rounded-lg duration-200",
+                  node.website ? "hover:opacity-50" : "",
+                ].join(" ")}
                 {...node.image.childImageSharp}
               />
               <span className="sr-only">{node.title}</span>
