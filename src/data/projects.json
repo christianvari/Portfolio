@@ -33,8 +33,8 @@
   },
   {
     "image": "../images/projects/aida.jpg",
-    "title": "AIDA for Workload Automation",
-    "description": "AI Data Advisor",
+    "title": "AIDA",
+    "description": "AI Data Advisor for Workload Automation",
     "tags": [
       "AI",
       "Observability",
@@ -49,15 +49,23 @@
     "image": "../images/projects/clara.jpg",
     "title": "Clara",
     "description": "Automation Chatbot for Workload Automation",
-    "tags": ["AI", "Chatbot", "NLP", "Rasa", "React", "Java", "Microservices"],
+    "tags": [
+      "AI",
+      "Chatbot",
+      "NLP",
+      "Rasa",
+      "React",
+      "Python",
+      "Microservices"
+    ],
     "website": "https://www.hcltechsw.com/clara"
   },
   {
     "image": "../images/projects/tvrex.png",
-    "title": "T-VREX for Workload Automation",
+    "title": "T-VREX",
     "description": "A VR experience for Workload Automation",
-    "tags": ["VR", "React", "Workload Automation", "Oculus", "Real-time"],
-    "website": "https://www.youtube.com/watch?v=5M50sG27QYg"
+    "tags": ["VR", "React", "Oculus", "Real-time"],
+    "website": "https://www.workloadautomation-community.com/blogs/are-you-ready-for-an-exciting-immersive-experience-in-workload-automation"
   },
   {
     "image": "../images/projects/cryptostarter.png",

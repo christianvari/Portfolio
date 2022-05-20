@@ -10,6 +10,7 @@ const SEO = () => {
           title
           description
           author
+          keywords
         }
       }
     }
@@ -18,6 +19,7 @@ const SEO = () => {
   const title = site.siteMetadata.title;
   const description = site.siteMetadata.description;
   const author = site.siteMetadata.author;
+  const keywords = site.siteMetadata.keywords;
 
   return (
     <Helmet
@@ -28,6 +30,10 @@ const SEO = () => {
         {
           name: `description`,
           content: description,
+        },
+        {
+          name: `keywords`,
+          content: keywords,
         },
         {
           property: `og:title`,

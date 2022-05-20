@@ -7,9 +7,10 @@ require(`dotenv`).config({ path: `.env` });
 module.exports = {
   siteMetadata: {
     title: `Christian Vari`,
-    description: `Christian Vari Portfolio`,
-    author: `Christian Vari`,
+    description: `Software Engineer - Blockchain Auditor`,
+    author: `@christianvari`,
     siteUrl: `https://christianvari.dev`,
+    keywords: `christian vari, software, engineer, blockchain, audit, cosmwasm, developer`,
   },
   plugins: [
     {
@@ -39,7 +40,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Christian Vari`,
-        short_name: `Christian Vari Portfolio`,
+        description: `Software Engineer - Blockchain Auditor`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.white,
