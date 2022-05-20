@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkchristian_vari_portfolio=self.webpackChunkchristian_vari_portfolio||[]).push([[883],{9616:function(i,n,t){t.r(n);var r=t(5444),u=t(7294);n.default=function(){return(0,u.useEffect)((function(){(0,r.navigate)("/")}),[]),null}}}]);
+//# sourceMappingURL=component---src-pages-404-js-fddf01b1c3a41a4e763f.js.map
