@@ -20,7 +20,7 @@ const Projects = () => {
             github
             image {
               childImageSharp {
-                fluid(maxWidth: 512) {
+                fluid(maxWidth: 400) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }

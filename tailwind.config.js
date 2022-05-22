@@ -10,7 +10,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: colors.sky,
+        primary: colors.blue,
         instagram: "#E1306C",
         linkedin: "#2867B2",
         github: "#211F1F",
