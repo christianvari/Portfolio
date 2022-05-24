@@ -18,7 +18,12 @@ const Navigation = () => {
     {
       icon: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
-          gatsbyImageData(width: 48, height: 28, layout: FIXED)
+          gatsbyImageData(
+            width: 48
+            height: 28
+            placeholder: NONE
+            layout: FIXED
+          )
         }
       }
     }

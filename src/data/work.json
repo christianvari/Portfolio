@@ -13,12 +13,12 @@
     "subtitle": "Software Engineer II",
     "period": "November '21 - current",
     "location": "Rome, Italy",
-    "specialization": "React, Virtual Reality, Node.js, AI, ChatBots, Real time applications"
+    "specialization": "React, Virtual Reality, Node.js, AI, ChatBots, Scrum Master"
   },
   {
     "icon": "../images/work/hcl.png",
     "title": "HCL Technologies",
-    "subtitle": "Junior Developer",
+    "subtitle": "Junior Software Engineer",
     "period": "April '20 - November '21",
     "location": "Rome, Italy",
     "specialization": "React, Virtual Reality, Node.js, ChatBots, Real time applications"
@@ -26,7 +26,7 @@
   {
     "icon": "../images/work/freelance.jpg",
     "title": "Freelance developer",
-    "subtitle": "Full Stack Developer and Blockchain consultant",
+    "subtitle": "Full Stack Developer",
     "period": "Jan '18 - Apr '20",
     "location": "Segni, Italy",
     "specialization": "Blockchain, Node.js, React, Python, C++, C-AVR"
