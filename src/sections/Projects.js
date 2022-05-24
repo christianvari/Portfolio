@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby";
-import GatsbyImage from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import React from "react";
 import Heading from "../components/Heading";
@@ -20,9 +20,7 @@ const Projects = () => {
             github
             image {
               childImageSharp {
-                fluid(maxWidth: 400) {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
+                gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
               }
             }
           }
@@ -41,7 +39,7 @@ const Projects = () => {
             key={node.id}
             className="wow fadeIn"
             style={{
-              animationDelay: `${index * 300 + 300}ms`,
+              animationDelay: `300ms`,
             }}
           >
             <OutboundLink
@@ -61,7 +59,7 @@ const Projects = () => {
                   "absolute w-full h-full object-cover rounded-lg duration-200",
                   node.website ? "hover:opacity-50" : "",
                 ].join(" ")}
-                {...node.image.childImageSharp}
+                image={node.image.childImageSharp.gatsbyImageData}
               />
               <span className="sr-only">{node.title}</span>
             </OutboundLink>

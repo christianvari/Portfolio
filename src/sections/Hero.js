@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby";
-import GatsbyImage from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import React, { useState } from "react";
 import Social from "../components/Social";
 import Subtitle from "../components/Subtitle";
@@ -10,9 +10,7 @@ const Hero = () => {
     {
       photo: file(relativePath: { eq: "photo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 512) {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
-          }
+          gatsbyImageData(placeholder: NONE, layout: CONSTRAINED)
         }
       }
     }
@@ -23,7 +21,7 @@ const Hero = () => {
       <div className="w-full grid grid-cols-1 lg:grid-cols-5 row-gap-8 lg:gap-16 justify-center lg:justify-start items-center mt-8 md:mt-12 lg:mt-0">
         <div className="col-span-2">
           <div className="max-w-lg mx-auto" data-depth="0.4">
-            <GatsbyImage {...data.photo.childImageSharp} />
+            <GatsbyImage image={data.photo.childImageSharp.gatsbyImageData} />
           </div>
         </div>
         <div className="col-span-3">
