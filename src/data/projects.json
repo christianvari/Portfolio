@@ -1,5 +1,11 @@
 [
   {
+    "image": "../images/projects/stargaze.png",
+    "title": "Stargaze Marketplace",
+    "description": "Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Stargaze", "Audit", "CosmWasm", "NFT"]
+  },
+  {
     "image": "../images/projects/ozone.jpg",
     "title": "Risk Harbor Ozone v2",
     "description": "Smart Contracts Audit",
