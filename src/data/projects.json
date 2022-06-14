@@ -1,5 +1,11 @@
 [
   {
+    "image": "../images/projects/wasmd.png",
+    "title": "Wasmd v0.27",
+    "description": "Cosmos SDK Module Audit",
+    "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "CosmWasm", "Wasm"]
+  },
+  {
     "image": "../images/projects/stargaze.png",
     "title": "Stargaze Marketplace",
     "description": "Smart Contracts Audit",
