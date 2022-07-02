@@ -2,12 +2,12 @@
   {
     "icon": "../images/skills/ether.png",
     "name": "Blockchain Auditing",
-    "tech": "Solidity, CosmWASM"
+    "tech": "Cosmos SDK, CosmWASM, Solidity"
   },
   {
     "icon": "../images/skills/ether.png",
     "name": "Blockchain Engineering",
-    "tech": "Solidity, CosmWASM"
+    "tech": "Cosmos SDK, CosmWASM, Solidity"
   },
   {
     "icon": "../images/skills/web.png",

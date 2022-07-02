@@ -1,9 +1,17 @@
 [
   {
+    "icon": "../images/work/codezen.png",
+    "title": "Codezen",
+    "subtitle": "Founder, Owner and Lead Blockchain Engineer",
+    "period": "April '22 - current",
+    "location": "Cryptoverse",
+    "specialization": "Rust, Cosmos SDK, Solidity, Typescript"
+  },
+  {
     "icon": "../images/work/oak.jpg",
     "title": "Oak Security",
     "subtitle": "Smart Contracts Auditor",
-    "period": "Feb '22 - current",
+    "period": "February '22 - current",
     "location": "Cryptoverse",
     "specialization": "Rust, CosmWasm, Solidity, Typescript"
   },
@@ -11,7 +19,7 @@
     "icon": "../images/work/hcl.png",
     "title": "HCL Technologies",
     "subtitle": "Software Engineer II",
-    "period": "November '21 - current",
+    "period": "November '21 - August '22",
     "location": "Rome, Italy",
     "specialization": "React, Virtual Reality, Node.js, AI, ChatBots, Scrum Master"
   },
@@ -27,7 +35,7 @@
     "icon": "../images/work/freelance.jpg",
     "title": "Freelance developer",
     "subtitle": "Full Stack Developer",
-    "period": "Jan '18 - Apr '20",
+    "period": "January '18 - April '20",
     "location": "Segni, Italy",
     "specialization": "Blockchain, Node.js, React, Python, C++, C-AVR"
   }
