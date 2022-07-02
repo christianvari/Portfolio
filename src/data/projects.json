@@ -18,10 +18,11 @@
     "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"]
   },
   {
-    "image": "../images/projects/aperture.jpg",
-    "title": "Aperture Finance Delta-Neautral Strategy",
+    "image": "../images/projects/aperture.png",
+    "title": "Aperture Finance 2",
     "description": "Smart Contracts Audit",
-    "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"]
+    "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"],
+    "website": "https://github.com/oak-security/audit-reports/blob/master/Aperture/2022-06-27%20Audit%20Report%20-%20Aperture%202%20v1.0.pdf"
   },
   {
     "image": "../images/projects/levana.png",
