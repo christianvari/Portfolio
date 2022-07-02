@@ -28,7 +28,7 @@ const Hero = () => {
           <h1 className="sr-only">
             Christian Vari&apos;s Portfolio Resume on the Web <br />
             Software Engineer, Blockchain Auditor, Blockchain Consultant,
-            Developer from Segni, Italy
+            Codezen Founder, Owner and Lead Engineer
           </h1>
 
           <div className="text-center lg:text-left flex flex-col items-center lg:ml-4 lg:items-start">
