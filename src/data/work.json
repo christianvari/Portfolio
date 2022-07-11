@@ -5,7 +5,7 @@
     "subtitle": "Founder, Owner and Lead Blockchain Engineer",
     "period": "April '22 - current",
     "location": "Cryptoverse",
-    "specialization": "Rust, Cosmos SDK, Solidity, Typescript"
+    "specialization": "Rust, Golang, Solidity, Typescript, ComsWasm, Cosmos SDK"
   },
   {
     "icon": "../images/work/oak.jpg",
@@ -13,7 +13,7 @@
     "subtitle": "Smart Contracts Auditor",
     "period": "February '22 - current",
     "location": "Cryptoverse",
-    "specialization": "Rust, CosmWasm, Solidity, Typescript"
+    "specialization": "Rust, Golang, Solidity, Typescript, ComsWasm, Cosmos SDK"
   },
   {
     "icon": "../images/work/hcl.png",
@@ -21,7 +21,7 @@
     "subtitle": "Software Engineer II",
     "period": "November '21 - August '22",
     "location": "Rome, Italy",
-    "specialization": "React, Virtual Reality, Node.js, AI, ChatBots, Scrum Master"
+    "specialization": "React, Virtual Reality, Node.js, AI, ChatBots, Microservices, Scrum Master"
   },
   {
     "icon": "../images/work/hcl.png",

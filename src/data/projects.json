@@ -1,5 +1,11 @@
 [
   {
+    "image": "../images/projects/comdex.jpg",
+    "title": "Comdex",
+    "description": "Cosmos SDK Chain and CosmWasm Contracts Audit",
+    "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "CosmWasm", "Wasm"]
+  },
+  {
     "image": "../images/projects/wasmd.png",
     "title": "Wasmd v0.27",
     "description": "Cosmos SDK Module Audit",

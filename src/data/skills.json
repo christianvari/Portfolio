@@ -1,11 +1,11 @@
 [
   {
-    "icon": "../images/skills/ether.png",
+    "icon": "../images/skills/blockchain.png",
     "name": "Blockchain Auditing",
     "tech": "Cosmos SDK, CosmWASM, Solidity"
   },
   {
-    "icon": "../images/skills/ether.png",
+    "icon": "../images/skills/blockchain.png",
     "name": "Blockchain Engineering",
     "tech": "Cosmos SDK, CosmWASM, Solidity"
   },
@@ -20,16 +20,6 @@
     "tech": "Node.js, Typescript, Javascript"
   },
   {
-    "icon": "../images/skills/python.png",
-    "name": "Python",
-    "tech": "Python"
-  },
-  {
-    "icon": "../images/skills/database.png",
-    "name": "Database Management System",
-    "tech": "MongoDB, Redis, ElastichSearch"
-  },
-  {
     "icon": "../images/skills/docker.png",
     "name": "Microservices Architectures",
     "tech": "Kubernetes, Docker"
@@ -40,8 +30,23 @@
     "tech": "Rust"
   },
   {
+    "icon": "../images/skills/golang.png",
+    "name": "Golang Development",
+    "tech": "Golang"
+  },
+  {
     "icon": "../images/skills/avr.png",
     "name": "C-AVR development",
     "tech": "C-AVR"
+  },
+  {
+    "icon": "../images/skills/python.png",
+    "name": "Python",
+    "tech": "Python"
+  },
+  {
+    "icon": "../images/skills/database.png",
+    "name": "Databases",
+    "tech": "MongoDB, Redis, ElastichSearch, Informix, Solr"
   }
 ]
