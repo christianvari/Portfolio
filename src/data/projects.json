@@ -34,7 +34,8 @@
     "image": "../images/projects/levana.png",
     "title": "Levana Perpetual Swap",
     "description": "Smart Contracts Audit",
-    "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"]
+    "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"],
+    "website": "https://github.com/oak-security/audit-reports/blob/master/Levana/2022-05-03%20Audit%20Report%20-%20Levana%20Perpetual%20Swaps%20v1.0.pdf"
   },
   {
     "image": "../images/projects/c2x.png",
@@ -52,8 +53,8 @@
   },
   {
     "image": "../images/projects/aida.jpg",
-    "title": "AIDA",
-    "description": "AI Data Advisor for Workload Automation",
+    "title": "IBM / HCL AI Data Advisor for Workload Automation",
+    "description": "AI module for IBM / HCL Workload Automation",
     "tags": [
       "AI",
       "Observability",
@@ -62,12 +63,12 @@
       "Nodejs",
       "Microservices"
     ],
-    "website": "https://blog.hcltechsw.com/workload-automation/accelerate-it-and-business-automation-with-streamlined-modelling-advanced-ai-and-open-integration-for-observability-hcl-workload-automation-version-10/"
+    "website": "https://www.ibm.com/products/workload-automation"
   },
   {
     "image": "../images/projects/clara.jpg",
-    "title": "Clara",
-    "description": "Automation Chatbot for Workload Automation",
+    "title": "HCL Clara",
+    "description": "Automation Chatbot for IBM / HCL Workload Automation",
     "tags": [
       "AI",
       "Chatbot",
@@ -81,17 +82,9 @@
   },
   {
     "image": "../images/projects/tvrex.png",
-    "title": "T-VREX",
-    "description": "A VR experience for Workload Automation",
+    "title": "HCL T-VREX",
+    "description": "A VR experience for HCL Workload Automation",
     "tags": ["VR", "React", "Oculus", "Real-time"],
     "website": "https://www.workloadautomation-community.com/blogs/are-you-ready-for-an-exciting-immersive-experience-in-workload-automation"
-  },
-  {
-    "image": "../images/projects/cryptostarter.png",
-    "title": "Cryptostarter",
-    "description": "An Ethereum-based Decentralized Crowdfunding Platform.",
-    "tags": ["opensource", "react", "blockchain", "ethereum", "crowdfunding"],
-    "website": "https://cryptostarter.herokuapp.com",
-    "github": "https://github.com/christianvari/EthStart-client"
   }
 ]

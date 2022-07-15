@@ -17,7 +17,6 @@ const Projects = () => {
             description
             tags
             website
-            github
             image {
               childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
