@@ -1,5 +1,20 @@
 [
   {
+    "image": "../images/projects/clarav2.png",
+    "title": "HCL Clara 2",
+    "description": "Automation Chatbot for IBM / HCL Workload Automation",
+    "tags": [
+      "AI",
+      "Chatbot",
+      "NLP",
+      "Rasa",
+      "React",
+      "Python",
+      "Microservices"
+    ],
+    "website": "https://www.hcltechsw.com/clara"
+  },
+  {
     "image": "../images/projects/comdex.jpg",
     "title": "Comdex",
     "description": "Cosmos SDK Chain and CosmWasm Contracts Audit",
