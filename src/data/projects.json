@@ -30,7 +30,8 @@
     "image": "../images/projects/stargaze.png",
     "title": "Stargaze Marketplace",
     "description": "Smart Contracts Audit",
-    "tags": ["Blockchain", "Rust", "Stargaze", "Audit", "CosmWasm", "NFT"]
+    "tags": ["Blockchain", "Rust", "Stargaze", "Audit", "CosmWasm", "NFT"],
+    "website": "https://github.com/oak-security/audit-reports/blob/master/Stargaze/2022-08-01%20Audit%20Report%20-%20Stargaze%20Marketplace%20v1.0.pdf"
   },
   {
     "image": "../images/projects/ozone.jpg",
