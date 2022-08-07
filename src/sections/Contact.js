@@ -10,7 +10,6 @@ const Contact = () => {
     .subject("Enter your request subject here")
     .body("Enter your detailed request here")
     .build();
-  console.log(mailto);
 
   return (
     <section id="contact">

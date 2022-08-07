@@ -1,8 +1,10 @@
+import { mail } from "fluent-mailto";
 import {
   FaGithubAlt,
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
+  FaMailBulk,
 } from "../components/Icons";
 
 const social = [
@@ -24,12 +26,21 @@ const social = [
     link: "https://github.com/christianvari",
     class: "bg-github",
   },
-
   {
     title: "Instagram",
     icon: FaInstagram,
     link: "https://www.instagram.com/decentralized_christian/",
     class: "bg-instagram",
+  },
+  {
+    title: "Mail",
+    icon: FaMailBulk,
+    link: mail
+      .to("info@christianvari.dev")
+      .subject("Enter your request subject here")
+      .body("Enter your detailed request here")
+      .build(),
+    class: "bg-google",
   },
 ];
 

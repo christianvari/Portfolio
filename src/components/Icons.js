@@ -17,6 +17,7 @@ import {
   FaSignLanguage,
   FaStar,
   FaTwitter,
+  FaMailBulk,
 } from "react-icons/fa";
 import { GoTools } from "react-icons/go";
 import {
@@ -69,4 +70,5 @@ export {
   MdPerson,
   MdSchool,
   MdWork,
+  FaMailBulk,
 };
