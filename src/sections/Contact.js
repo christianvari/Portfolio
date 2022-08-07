@@ -2,8 +2,16 @@ import React from "react";
 import Heading from "../components/Heading";
 import { IoIosPaperPlane } from "../components/Icons";
 import Button from "../components/Button";
+import { mail } from "fluent-mailto";
 
 const Contact = () => {
+  const mailto = mail
+    .to("info@christianvari.dev")
+    .subject("Enter your request subject here")
+    .body("Enter your detailed request here")
+    .build();
+  console.log(mailto);
+
   return (
     <section id="contact">
       <Heading icon={IoIosPaperPlane} title="Contact" />
@@ -14,7 +22,9 @@ const Contact = () => {
           className="mt-6"
           icon={IoIosPaperPlane}
           title="Send me an email"
-          onClick={() => (window.location = "mailto:info@christianvari.dev")}
+          onClick={() => {
+            window.open(mailto, "mail");
+          }}
         />
       </form>
     </section>
