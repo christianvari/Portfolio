@@ -1,5 +1,11 @@
 [
   {
+    "image": "../images/projects/margined.png",
+    "title": "Margined Protocol Perpetuals",
+    "description": "Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Cross-Chain", "Audit", "CosmWasm", "Juno"]
+  },
+  {
     "image": "../images/projects/clarav2.png",
     "title": "HCL Clara 2",
     "description": "Automation Chatbot for IBM / HCL Workload Automation",
@@ -22,7 +28,7 @@
   },
   {
     "image": "../images/projects/wasmd.png",
-    "title": "Wasmd v0.27",
+    "title": "Wasmd",
     "description": "Cosmos SDK Module Audit",
     "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "CosmWasm", "Wasm"]
   },
