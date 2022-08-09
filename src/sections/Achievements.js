@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 import React from "react";
 import Heading from "../components/Heading";
 import { FaAngleRight, FaAward } from "../components/Icons";
