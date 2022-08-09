@@ -86,6 +86,7 @@ const Navigation = () => {
         <div
           className="flex-center cursor-pointer hover:text-primary-500"
           onClick={toggleDark}
+          style={{ fontSize: "1.5rem" }}
         >
           {dark ? <IoIosMoon /> : <IoIosSunny />}
         </div>

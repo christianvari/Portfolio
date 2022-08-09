@@ -13,7 +13,7 @@ const Subtitle = ({ onDone }) => (
     <code className="w-full text-sm leading-loose">
       <div>
         <span className="text-blue-600">
-          <h1>ChristianVari.js</h1>
+          <h1>ChristianVari.ts</h1>
         </span>
       </div>
       <br />

@@ -33,7 +33,7 @@ const Projects = () => {
       <Heading icon={FaDev} title="Projects" />
 
       <div className={styles.container}>
-        {data.allProjectsJson.edges.map(({ node }, index) => (
+        {data.allProjectsJson.edges.map(({ node }) => (
           <div
             key={node.id}
             className="wow fadeIn"
@@ -66,11 +66,7 @@ const Projects = () => {
             <p className="mt-2 pb-5 text-sm text-justify">{node.description}</p>
 
             <p className="pb-2 flex text-xs font-semibold">
-              {node.tags.map(x => (
-                <span key={x} className="mr-2">
-                  #{x}
-                </span>
-              ))}
+              {node.tags.reduce((p, c) => (p ? `${p}\t#${c}` : `#${c}`), "")}
             </p>
 
             <div className="flex mt-2">
