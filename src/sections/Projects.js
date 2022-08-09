@@ -1,12 +1,14 @@
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
-import React from "react";
+import React, { useContext } from "react";
 import Heading from "../components/Heading";
 import { FaDev, FaGithub, FaLink } from "../components/Icons";
 import * as styles from "./Projects.module.css";
+import ThemeContext from "../context/ThemeContext";
 
 const Projects = () => {
+  const { dark } = useContext(ThemeContext);
   const data = useStaticQuery(graphql`
     {
       allProjectsJson {
@@ -17,6 +19,7 @@ const Projects = () => {
             description
             tags
             website
+            github
             image {
               childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
@@ -36,13 +39,13 @@ const Projects = () => {
         {data.allProjectsJson.edges.map(({ node }) => (
           <div
             key={node.id}
-            className="wow fadeIn"
+            className="wow fadeIn grid"
             style={{
               animationDelay: `300ms`,
             }}
           >
             <OutboundLink
-              href={node.website || node.github}
+              href={node.github || node.website}
               target="_blank"
               rel="noopener noreferrer"
               className={[
@@ -50,9 +53,12 @@ const Projects = () => {
                 node.website ? "cursor-pointer" : "",
               ].join(" ")}
             >
-              {!!node.website && (
+              {!!node.github ? (
+                <FaGithub className="absolute" color="#FFF" size="5rem" />
+              ) : !!node.website ? (
                 <FaLink className="absolute" color="#FFF" size="5rem" />
-              )}
+              ) : null}
+
               <GatsbyImage
                 className={[
                   "absolute w-full h-full object-cover rounded-lg duration-200",
@@ -69,16 +75,25 @@ const Projects = () => {
               {node.tags.reduce((p, c) => (p ? `${p}\t#${c}` : `#${c}`), "")}
             </p>
 
-            <div className="flex mt-2">
+            <div className="flex gap-2 mt-2" style={{ alignSelf: "center" }}>
               {node.website && (
                 <OutboundLink
                   href={node.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-2 mr-2 "
+                  className="w-full"
                 >
-                  <FaLink />
-                  <span className="sr-only">Go to Website</span>
+                  <button
+                    className={`${
+                      dark
+                        ? "bg-white text-black hover:bg-gray-300"
+                        : "bg-black text-white hover:bg-gray-700"
+                    } font-bold py-2 px-2 rounded-full inline-flex items-center w-full`}
+                    style={{ justifyContent: "center" }}
+                  >
+                    <FaLink className="fill-current w-4 h-4 mr-2" />
+                    <span>Go to Website</span>
+                  </button>
                 </OutboundLink>
               )}
 
@@ -87,10 +102,19 @@ const Projects = () => {
                   href={node.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-2 mr-2"
+                  className="w-full"
                 >
-                  <FaGithub />
-                  <span className="sr-only">Go to GitHub Repo</span>
+                  <button
+                    className={`${
+                      dark
+                        ? "bg-white text-black hover:bg-gray-300"
+                        : "bg-black text-white hover:bg-gray-700"
+                    } font-bold py-2 px-2 rounded-full inline-flex items-center w-full`}
+                    style={{ justifyContent: "center" }}
+                  >
+                    <FaGithub className="fill-current w-4 h-4 mr-2" />
+                    <span>Go to Github</span>
+                  </button>
                 </OutboundLink>
               )}
             </div>

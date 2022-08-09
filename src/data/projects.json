@@ -3,7 +3,8 @@
     "image": "../images/projects/margined.png",
     "title": "Margined Protocol Perpetuals",
     "description": "Smart Contracts Audit",
-    "tags": ["Blockchain", "Rust", "Cross-Chain", "Audit", "CosmWasm", "Juno"]
+    "tags": ["Blockchain", "Rust", "Cross-Chain", "Audit", "CosmWasm", "Juno"],
+    "website": "https://www.margined.io/"
   },
   {
     "image": "../images/projects/clarav2.png",
@@ -24,54 +25,62 @@
     "image": "../images/projects/comdex.jpg",
     "title": "Comdex",
     "description": "Cosmos SDK Chain and CosmWasm Contracts Audit",
-    "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "CosmWasm", "Wasm"]
+    "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "CosmWasm", "Wasm"],
+    "website": "https://comdex.one/"
   },
   {
     "image": "../images/projects/wasmd.png",
-    "title": "Wasmd",
+    "title": "CosmWasm Wasmd module",
     "description": "Cosmos SDK Module Audit",
-    "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "CosmWasm", "Wasm"]
+    "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "CosmWasm", "Wasm"],
+    "website": "https://cosmwasm.com/"
   },
   {
     "image": "../images/projects/stargaze.png",
     "title": "Stargaze Marketplace",
     "description": "Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Stargaze", "Audit", "CosmWasm", "NFT"],
-    "website": "https://github.com/oak-security/audit-reports/blob/master/Stargaze/2022-08-01%20Audit%20Report%20-%20Stargaze%20Marketplace%20v1.0.pdf"
+    "github": "https://github.com/oak-security/audit-reports/blob/master/Stargaze/2022-08-01%20Audit%20Report%20-%20Stargaze%20Marketplace%20v1.0.pdf",
+    "website": "https://app.stargaze.zone/marketplace"
   },
   {
     "image": "../images/projects/ozone.jpg",
     "title": "Risk Harbor Ozone v2",
     "description": "Smart Contracts Audit",
-    "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"]
+    "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"],
+    "website": "https://ozone.riskharbor.com/"
   },
   {
     "image": "../images/projects/aperture.png",
     "title": "Aperture Finance 2",
     "description": "Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"],
-    "website": "https://github.com/oak-security/audit-reports/blob/master/Aperture/2022-06-27%20Audit%20Report%20-%20Aperture%202%20v1.0.pdf"
+    "github": "https://github.com/oak-security/audit-reports/blob/master/Aperture/2022-06-27%20Audit%20Report%20-%20Aperture%202%20v1.0.pdf",
+    "website": "https://aperture.finance/"
   },
   {
     "image": "../images/projects/levana.png",
     "title": "Levana Perpetual Swap",
     "description": "Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"],
-    "website": "https://github.com/oak-security/audit-reports/blob/master/Levana/2022-05-03%20Audit%20Report%20-%20Levana%20Perpetual%20Swaps%20v1.0.pdf"
+    "github": "https://github.com/oak-security/audit-reports/blob/master/Levana/2022-05-03%20Audit%20Report%20-%20Levana%20Perpetual%20Swaps%20v1.0.pdf",
+    "website": "https://www.levana.finance/"
   },
   {
     "image": "../images/projects/c2x.png",
     "title": "C2X Com2Us",
     "description": "Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"],
-    "website": "https://github.com/oak-security/audit-reports/blob/master/C2X/2022-05-09%20Audit%20Report%20-%20C2X%20v1.0.pdf"
+    "github": "https://github.com/oak-security/audit-reports/blob/master/C2X/2022-05-09%20Audit%20Report%20-%20C2X%20v1.0.pdf",
+    "website": "https://c2x.world/"
   },
   {
     "image": "../images/projects/kinetic.jpg",
     "title": "Kinetic Money",
     "description": "Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"],
-    "website": "https://github.com/oak-security/audit-reports/blob/master/Kinetic/2022-04-07%20Audit%20Report%20-%20Kinetic%20v1.0.pdf"
+    "github": "https://github.com/oak-security/audit-reports/blob/master/Kinetic/2022-04-07%20Audit%20Report%20-%20Kinetic%20v1.0.pdf",
+    "website": "https://kinetic.money/"
   },
   {
     "image": "../images/projects/aida.jpg",

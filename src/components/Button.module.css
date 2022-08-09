@@ -13,7 +13,7 @@
 .container > div:first-child {
   color: #121212;
   background-color: #ffffff;
-  @apply relative flex items-center font-semibold px-8 py-2 z-20;
+  @apply w-full relative flex items-center font-semibold px-8 py-2 z-20;
   @apply transition-default;
   top: 0;
   left: 0;
