@@ -10,6 +10,7 @@ import Skills from "../sections/Skills";
 import Work from "../sections/Work";
 import Projects from "../sections/Projects";
 import Achievements from "../sections/Achievements";
+import "./global.css";
 
 const IndexPage = () => {
   return (
