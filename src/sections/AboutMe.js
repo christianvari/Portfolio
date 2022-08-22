@@ -28,7 +28,12 @@ const AboutMe = () => {
         </div>
         <div
           className="text-justify lg:col-span-4 wow fadeIn"
-          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+          dangerouslySetInnerHTML={{
+            __html: data.markdownRemark.html.replace(
+              "{AGE}",
+              new Date().getUTCFullYear() - 1997,
+            ),
+          }}
         />
       </div>
     </section>

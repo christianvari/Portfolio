@@ -4,7 +4,7 @@ id: "about-me"
 
 Hey there!
 
-My name is Christian Vari and I'm a 25 years old italian **Software Engineer**.
+My name is Christian Vari and I'm a {AGE} years old italian **Software Engineer**.
 
 I'm **Founder, Owner and Lead Blockchain Engineer** at **Codezen**, my own company.
 
