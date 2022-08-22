@@ -46,7 +46,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Christian Vari`,
-        description: `Software Engineer - Blockchain Auditor`,
+        description: `Software Engineer, Blockchain Auditor, Blockchain Consultant, Codezen Founder, Owner and Lead Engineer`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.white,
