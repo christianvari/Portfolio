@@ -1,5 +1,11 @@
 [
   {
+    "image": "../images/projects/cosmos_placeholder.png",
+    "title": "Elesto Mint Module",
+    "description": "Cosmos SDK Module Audit",
+    "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit"]
+  },
+  {
     "image": "../images/projects/margined.png",
     "title": "Margined Protocol Perpetuals",
     "description": "Smart Contracts Audit",
@@ -30,7 +36,7 @@
   },
   {
     "image": "../images/projects/wasmd.png",
-    "title": "CosmWasm Wasmd module",
+    "title": "CosmWasm Wasmd Module",
     "description": "Cosmos SDK Module Audit",
     "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "CosmWasm", "Wasm"],
     "website": "https://cosmwasm.com/"
