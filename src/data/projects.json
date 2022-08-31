@@ -1,5 +1,12 @@
 [
   {
+    "image": "../images/projects/prism.png",
+    "title": "Prism Auto Compunding Staking",
+    "description": "Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"],
+    "website": "https://home.prismprotocol.app/"
+  },
+  {
     "image": "../images/projects/cosmos_placeholder.png",
     "title": "Elesto Mint Module",
     "description": "Cosmos SDK Module Audit",
