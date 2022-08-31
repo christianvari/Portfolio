@@ -15,6 +15,13 @@ const Contact = () => {
     .body("Enter your detailed request here")
     .build();
 
+  const popupAnchor =
+    typeof document !== "undefined" ? (
+      document.getElementById("___gatsby")
+    ) : (
+      <div></div>
+    );
+
   return (
     <section id="contact">
       <Heading icon={IoIosPaperPlane} title="Contact" />
@@ -53,13 +60,10 @@ const Contact = () => {
       </div>
       <PopupModal
         url="https://calendly.com/vari-christian/one-to-one"
-        // pageSettings={object("pageSettings", pageSettings)}
-        // utm={object("utm", utm)}
-        // prefill={object("prefill", prefill)}
         iframeTitle="Calendly Scheduling Page"
         onModalClose={() => setIsOpen(false)}
         open={isOpen}
-        rootElement={document.getElementById("___gatsby")}
+        rootElement={popupAnchor}
       />
     </section>
   );
