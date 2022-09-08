@@ -2,12 +2,12 @@
   {
     "icon": "../images/skills/blockchain.png",
     "name": "Blockchain Auditing",
-    "tech": "Cosmos SDK, CosmWASM, Solidity"
+    "tech": "Cosmos SDK, CosmWASM, Solidity, Go , Rust"
   },
   {
     "icon": "../images/skills/blockchain.png",
     "name": "Blockchain Engineering",
-    "tech": "Cosmos SDK, CosmWASM, Solidity"
+    "tech": "Cosmos SDK, CosmWASM, Solidity, Go, Rust"
   },
   {
     "icon": "../images/skills/web.png",
@@ -47,6 +47,6 @@
   {
     "icon": "../images/skills/database.png",
     "name": "Databases",
-    "tech": "MongoDB, Redis, ElastichSearch, Informix, Solr"
+    "tech": "MongoDB, Redis, ElasticSearch, Informix, Solr"
   }
 ]

@@ -43,7 +43,7 @@
   },
   {
     "image": "../images/projects/comdex.jpg",
-    "title": "Comdex & Comdex Governance Contract",
+    "title": "Comdex Chain & Comdex Governance Contract",
     "description": "Cosmos SDK and CosmWasm Contracts Audit",
     "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "CosmWasm", "Wasm"],
     "website": "https://comdex.one/"
