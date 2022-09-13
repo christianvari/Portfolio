@@ -21,7 +21,7 @@
     "subtitle": "Software Engineer II",
     "period": "November '21 - August '22",
     "location": "Rome, Italy",
-    "specialization": "React, Virtual Reality, Node.js, AI, ChatBots, Microservices, Scrum Master"
+    "specialization": "Virtual Reality, Microservices Architecture, Natural Language Processing, Node.js, React, Python, AI, Scrum Master"
   },
   {
     "icon": "../images/work/hcl.png",
@@ -37,6 +37,6 @@
     "subtitle": "Full Stack Developer",
     "period": "January '18 - April '20",
     "location": "Segni, Italy",
-    "specialization": "Blockchain, Node.js, React, Python, C++, C-AVR"
+    "specialization": "Solidity, Node.js, React, Python, C++, C-AVR"
   }
 ]
