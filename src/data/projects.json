@@ -1,5 +1,19 @@
 [
   {
+    "image": "../images/projects/mars.png",
+    "title": "Mars Protocol Outposts",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Osmosis", "Mars", "Audit", "CosmWasm"],
+    "website": "https://marsprotocol.io/"
+  },
+  {
+    "image": "../images/projects/mars.png",
+    "title": "Mars Protocol Periphery",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Osmosis", "Mars", "Audit", "CosmWasm"],
+    "website": "https://marsprotocol.io/"
+  },
+  {
     "image": "../images/projects/comdex.jpg",
     "title": "Comdex Vesting & Locking Contracts",
     "description": "CosmWasm Smart Contracts Audit",
