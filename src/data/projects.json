@@ -1,5 +1,21 @@
 [
   {
+    "image": "../images/projects/neutron.jpg",
+    "title": "Neutron",
+    "description": "Cosmos SDK Audit",
+    "tags": [
+      "Blockchain",
+      "Go",
+      "Cosmos SDK",
+      "Audit",
+      "Cosmos Hub",
+      "Interchain Security",
+      "IBC",
+      "Interchain"
+    ],
+    "website": "https://neutron.org/"
+  },
+  {
     "image": "../images/projects/mars.png",
     "title": "Mars Protocol Outposts",
     "description": "CosmWasm Smart Contracts Audit",
