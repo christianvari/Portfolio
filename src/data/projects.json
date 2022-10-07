@@ -1,5 +1,12 @@
 [
   {
+    "image": "../images/projects/injective.jpg",
+    "title": "Injective wasmx module and CosmWasm bindings",
+    "description": "Cosmos SDK Audit",
+    "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "Injective"],
+    "website": "https://injective.com/"
+  },
+  {
     "image": "../images/projects/neutron.jpg",
     "title": "Neutron",
     "description": "Cosmos SDK Audit",
@@ -38,7 +45,7 @@
   },
   {
     "image": "../images/projects/prism.png",
-    "title": "Prism Auto Compunding Staking",
+    "title": "Prism Auto Compounding Staking",
     "description": "CosmWasm Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Terra", "Audit", "CosmWasm"],
     "website": "https://home.prismprotocol.app/"
