@@ -32,31 +32,31 @@ const Skills = () => {
     <section id="skills">
       <Heading icon={GoTools} title="Skills" />
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className={styles.container}>
         {data.allSkillsJson.edges.map(({ node }) => (
           <div
             key={node.id}
-            className={`${styles.skill} md:mr-5 wow fadeIn`}
+            className={`${styles.skill} wow fadeIn`}
             style={{
               animationDelay: `300ms`,
             }}
           >
-            <div className="flex items-center">
-              <GatsbyImage
-                className="w-5 h-5 mr-5"
-                image={node.icon.childImageSharp.gatsbyImageData}
-              />
-              <div>
-                <h6 className="text-xs font-semibold leading-none">
-                  {node.name}
-                </h6>
+            <GatsbyImage
+              className={styles.image}
+              image={node.icon.childImageSharp.gatsbyImageData}
+            />
+            <div>
+              <h6 className="text-xs font-semibold leading-none">
+                {node.name}
+              </h6>
+              {node.tech && (
                 <h6
                   className="mt-2 leading-none"
                   style={{ fontSize: "0.65rem" }}
                 >
-                  ({node.tech})
+                  {node.tech}
                 </h6>
-              </div>
+              )}
             </div>
           </div>
         ))}
