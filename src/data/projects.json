@@ -1,5 +1,26 @@
 [
   {
+    "image": "../images/projects/nolus.jpg",
+    "title": "Nolus Core",
+    "description": "Cosmos SDK Audit",
+    "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "Nolus"],
+    "website": "https://nolus.io/"
+  },
+  {
+    "image": "../images/projects/comdex.jpg",
+    "title": "Comdex Liquidity and Lend modules",
+    "description": "Cosmos SDK Audit",
+    "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "Comdex"],
+    "website": "https://comdex.one/"
+  },
+  {
+    "image": "../images/projects/injective.jpg",
+    "title": "Ninja Finance",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Injective", "Mars", "Audit", "CosmWasm"],
+    "website": "https://injective.com/"
+  },
+  {
     "image": "../images/projects/injective.jpg",
     "title": "Injective wasmx module and CosmWasm bindings",
     "description": "Cosmos SDK Audit",
