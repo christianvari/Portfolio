@@ -5,15 +5,23 @@
     "subtitle": "Founder, Owner and Lead Blockchain Engineer",
     "period": "April '22 - current",
     "location": "Cryptoverse",
-    "specialization": "Rust, Golang, Solidity, Typescript, ComsWasm, Cosmos SDK"
+    "specialization": "Manager, Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK"
   },
   {
     "icon": "../images/work/oak.jpg",
     "title": "Oak Security",
-    "subtitle": "Smart Contracts Auditor",
-    "period": "February '22 - current",
+    "subtitle": "Lead Blockchain and Smart Contract Auditor",
+    "period": "September '22 - current",
     "location": "Cryptoverse",
-    "specialization": "Rust, Golang, Solidity, Typescript, ComsWasm, Cosmos SDK"
+    "specialization": "Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK"
+  },
+  {
+    "icon": "../images/work/oak.jpg",
+    "title": "Oak Security",
+    "subtitle": "Blockchain and Smart Contract Auditor",
+    "period": "February '22 - September '22",
+    "location": "Cryptoverse",
+    "specialization": "Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK"
   },
   {
     "icon": "../images/work/hcl.png",
