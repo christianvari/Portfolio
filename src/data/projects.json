@@ -1,5 +1,33 @@
 [
   {
+    "image": "../images/projects/mars.png",
+    "title": "Mars Protocol Rover",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Osmosis", "Mars", "Audit", "CosmWasm"],
+    "website": "https://marsprotocol.io/"
+  },
+  {
+    "image": "../images/projects/persistence.jpeg",
+    "title": "Persistence Cosmos Liquid Staking",
+    "description": "Cosmos SDK Audit",
+    "tags": [
+      "Blockchain",
+      "Go",
+      "Cosmos SDK",
+      "Audit",
+      "Persistence",
+      "Cosmos Hub"
+    ],
+    "website": "https://persistence.one/"
+  },
+  {
+    "image": "../images/projects/nolus.jpg",
+    "title": "Nolus Money Market",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "CosmWasm", "Audit", "Nolus"],
+    "website": "https://nolus.io/"
+  },
+  {
     "image": "../images/projects/nolus.jpg",
     "title": "Nolus Core",
     "description": "Cosmos SDK Audit",
@@ -17,7 +45,7 @@
     "image": "../images/projects/injective.jpg",
     "title": "Ninja Finance",
     "description": "CosmWasm Smart Contracts Audit",
-    "tags": ["Blockchain", "Rust", "Injective", "Mars", "Audit", "CosmWasm"],
+    "tags": ["Blockchain", "Rust", "Injective", "Audit", "CosmWasm"],
     "website": "https://injective.com/"
   },
   {
