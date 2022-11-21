@@ -7,7 +7,7 @@ import { MdPerson } from "../components/Icons";
 const AboutMe = () => {
   const data = useStaticQuery(graphql`
     {
-      photo: file(relativePath: { eq: "about-me/networks.png" }) {
+      photo: file(relativePath: { eq: "logo_2.png" }) {
         childImageSharp {
           gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
         }
