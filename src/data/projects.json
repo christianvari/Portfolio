@@ -1,5 +1,12 @@
 [
   {
+    "image": "../images/projects/autonomy.png",
+    "title": "Autonomy Network Osmosis",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Osmosis", "Audit", "CosmWasm"],
+    "website": "https://www.autonomynetwork.io/"
+  },
+  {
     "image": "../images/projects/mars.png",
     "title": "Mars Protocol Rover",
     "description": "CosmWasm Smart Contracts Audit",
