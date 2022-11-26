@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React, { useState } from "react";
+import ScrollDown from "../components/ScrollDown";
 import Social from "../components/Social";
 import Subtitle from "../components/Subtitle";
 
@@ -34,8 +35,9 @@ const Hero = () => {
           <div className="text-center lg:text-left flex flex-col items-center lg:ml-4 lg:items-start">
             <Subtitle onDone={() => setShowSocial(true)} />
 
-            <div className="w-full md:w-auto h-20 my-20">
+            <div className="w-full md:w-auto my-5">
               {showSocial && <Social />}
+              {showSocial && <ScrollDown />}
             </div>
           </div>
         </div>
