@@ -3,61 +3,14 @@
   align-content: center;
   justify-content: center;
   margin-top: 2rem;
-  align-items: center;
-  gap: 1rem;
-}
-@screen lg {
-  .container {
-    justify-content: start;
-  }
-}
-
-.container code {
-  padding-bottom: 0;
-  color: black;
 }
 
 .darkTheme .icon {
-  border-color: white !important;
-}
-.darkTheme .icon::before {
-  background-color: white !important;
-}
-.darkTheme code {
-  color: white;
+  color: white !important;
 }
 
 .icon {
-  width: 1.5rem;
-  height: 3rem;
-  border: 0.15rem solid black;
-  border-radius: 2rem;
-  position: relative;
-}
-.icon::before {
-  content: "";
-  width: 0.5rem;
-  height: 0.5rem;
-  position: absolute;
-  top: 0.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: black;
-  border-radius: 50%;
-  opacity: 1;
-  animation: wheel 2s infinite;
-  -webkit-animation: wheel 1.5s infinite;
-}
-
-@keyframes wheel {
-  to {
-    opacity: 0;
-    top: 2rem;
-  }
-}
-@-webkit-keyframes wheel {
-  to {
-    opacity: 0;
-    top: 2rem;
-  }
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
 }
