@@ -48,13 +48,21 @@ const Education = () => {
                   animationDuration: `${index * 200 + 500}ms`,
                 }}
               >
-                <Tooltip title={`(${node.period})`} placement="left">
+                {!!node.period ? (
+                  <Tooltip title={`(${node.period})`} placement="left">
+                    <div
+                      className={`relative mt-3 w-3 h-3 rounded-full shadow-lg opacity-75 z-2 ${
+                        dark ? "bg-white" : "bg-primary-500"
+                      } duration-200 cursor-pointer`}
+                    />
+                  </Tooltip>
+                ) : (
                   <div
                     className={`relative mt-3 w-3 h-3 rounded-full shadow-lg opacity-75 z-2 ${
                       dark ? "bg-white" : "bg-primary-500"
                     } duration-200`}
                   />
-                </Tooltip>
+                )}
                 <div className="ml-8">
                   <GatsbyImage
                     className="w-8 h-8"
