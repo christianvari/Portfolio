@@ -39,14 +39,16 @@
     "title": "Nolus Core",
     "description": "Cosmos SDK Audit",
     "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "Nolus"],
-    "website": "https://nolus.io/"
+    "website": "https://nolus.io/",
+    "github": "https://github.com/oak-security/audit-reports/blob/master/Nolus/2022-12-12%20Audit%20Report%20-%20Nolus%20Core%20v1.1.pdf"
   },
   {
     "image": "../images/projects/comdex.jpg",
-    "title": "Comdex Liquidity and Lend modules",
+    "title": "Comdex Lend and Liquidation modules",
     "description": "Cosmos SDK Audit",
     "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "Comdex"],
-    "website": "https://comdex.one/"
+    "website": "https://comdex.one/",
+    "github": "https://github.com/oak-security/audit-reports/blob/master/Comdex/2022-11-23%20Audit%20Report%20-%20Comdex%20Lend%20and%20Liquidation%20Modules%20v1.0.pdf"
   },
   {
     "image": "../images/projects/injective.jpg",
@@ -76,7 +78,8 @@
       "IBC",
       "Interchain"
     ],
-    "website": "https://neutron.org/"
+    "website": "https://neutron.org/",
+    "github": "https://github.com/oak-security/audit-reports/blob/master/Neutron/2022-12-07%20Audit%20Report%20-%20Neutron%20v1.0.pdf"
   },
   {
     "image": "../images/projects/mars.png",
@@ -97,7 +100,8 @@
     "title": "Comdex Vesting & Locking Contracts",
     "description": "CosmWasm Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Comdex", "Audit", "CosmWasm"],
-    "website": "https://comdex.one/"
+    "website": "https://comdex.one/",
+    "github": "https://github.com/oak-security/audit-reports/blob/master/Comdex/2022-10-28%20Audit%20Report%20-%20Comdex%20Locking%20and%20Vesting%20Contracts%20v1.0.pdf"
   },
   {
     "image": "../images/projects/prism.png",
@@ -139,7 +143,8 @@
     "title": "Comdex Chain & Comdex Governance Contract",
     "description": "Cosmos SDK and CosmWasm Contracts Audit",
     "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "CosmWasm", "Wasm"],
-    "website": "https://comdex.one/"
+    "website": "https://comdex.one/",
+    "github": "https://github.com/oak-security/audit-reports/blob/master/Comdex/2022-12-07%20Audit%20Report%20-%20Comdex%20v1.0.pdf"
   },
   {
     "image": "../images/projects/wasmd.png",
