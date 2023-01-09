@@ -1,5 +1,27 @@
 [
   {
+    "image": "../images/projects/filecoin.jpg",
+    "title": "Filecoin FEVM",
+    "description": "EVM Implementation Audit",
+    "tags": ["Filecoin", "Rust", "Go", "Audit", "EVM", "Solidity", "Ethereum"],
+    "website": "https://filecoin.io/"
+  },
+  {
+    "image": "../images/projects/nym.jpeg",
+    "title": "Nym Mixnet and Vesting Contracts",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": [
+      "Blockchain",
+      "Rust",
+      "Nym",
+      "Audit",
+      "CosmWasm",
+      "Mixnet",
+      "Privacy"
+    ],
+    "website": "https://nymtech.net/"
+  },
+  {
     "image": "../images/projects/autonomy.png",
     "title": "Autonomy Network Osmosis",
     "description": "CosmWasm Smart Contracts Audit",
