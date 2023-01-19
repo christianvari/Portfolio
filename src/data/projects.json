@@ -26,7 +26,8 @@
     "title": "Autonomy Network Osmosis",
     "description": "CosmWasm Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Osmosis", "Audit", "CosmWasm"],
-    "website": "https://www.autonomynetwork.io/"
+    "website": "https://www.autonomynetwork.io/",
+    "github": "https://github.com/oak-security/audit-reports/blob/master/Autonomy/2023-01-18%20Audit%20Report%20-%20Autonomy%20Osmosis%20v1.0.pdf"
   },
   {
     "image": "../images/projects/mars.png",
