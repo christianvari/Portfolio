@@ -55,7 +55,8 @@
     "title": "Nolus Money Market",
     "description": "CosmWasm Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "CosmWasm", "Audit", "Nolus"],
-    "website": "https://nolus.io/"
+    "website": "https://nolus.io/",
+    "github": "https://github.com/oak-security/audit-reports/blob/57eab9d85f36a2b6b78295db936f4c4cff4e0d9c/Nolus/2023-01-20%20Audit%20Report%20-%20Nolus%20Money%20Market%20v1.0.pdf"
   },
   {
     "image": "../images/projects/nolus.jpg",
