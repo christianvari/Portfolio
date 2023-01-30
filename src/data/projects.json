@@ -86,7 +86,8 @@
     "title": "Injective wasmx module and CosmWasm bindings",
     "description": "Cosmos SDK Audit",
     "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "Injective"],
-    "website": "https://injective.com/"
+    "website": "https://injective.com/",
+    "github": "https://github.com/oak-security/audit-reports/blob/17583d3002966bda085376e7250b917ff7b3355c/Injective/2023-01-20%20Audit%20Report%20-%20Injective%20v1.0.pdf"
   },
   {
     "image": "../images/projects/neutron.jpg",
