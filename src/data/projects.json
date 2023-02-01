@@ -79,7 +79,8 @@
     "title": "Ninja Finance",
     "description": "CosmWasm Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Injective", "Audit", "CosmWasm"],
-    "website": "https://injective.com/"
+    "website": "https://injective.com/",
+    "github": "https://github.com/oak-security/audit-reports/blob/0381baabcbdbd81d74a969684ef28b8b9863bff5/Injective/2023-01-20%20Audit%20Report%20-%20Ninja%20v1.0.pdf"
   },
   {
     "image": "../images/projects/injective.jpg",
