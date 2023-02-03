@@ -148,7 +148,8 @@
     "title": "Margined Protocol Perpetuals",
     "description": "CosmWasm Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Cross-Chain", "Audit", "CosmWasm", "Juno"],
-    "website": "https://www.margined.io/"
+    "website": "https://www.margined.io/",
+    "github": "https://github.com/oak-security/audit-reports/blob/fbcf47f5398a0d7bf53e38fd9076a0ee6cfa4250/Margined%20Protocol/2022-10-28%20Audit%20Report%20-%20Margined%20Protocol%20Perpetuals%20v1.0.pdf"
   },
   {
     "image": "../images/projects/clarav2.png",
