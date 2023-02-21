@@ -57,7 +57,8 @@
       "Persistence",
       "Cosmos Hub"
     ],
-    "website": "https://persistence.one/"
+    "website": "https://persistence.one/",
+    "github": "https://github.com/oak-security/audit-reports/blob/1828e98d6cebcfc02b2c7c172893b8cc1a3b1c2e/Persistence/2023-02-17%20Audit%20Report%20-%20pSTAKE%20Native%20v1.0.pdf"
   },
   {
     "image": "../images/projects/nolus.jpg",
