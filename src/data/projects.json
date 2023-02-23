@@ -1,5 +1,27 @@
 [
   {
+    "image": "../images/projects/fuzion.jpg",
+    "title": "Fuzion Plasma OTC",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Kujira", "Audit", "CosmWasm"],
+    "website": "https://fuzion.app",
+    "github": "https://github.com/oak-security/audit-reports/blob/c92cbd12b5724c53cd625a1a98e30ec853ff188e/Fuzion/2023-02-20%20Audit%20Report%20-%20Fuzion%20Plasma%20OTC%20v1.0.pdf"
+  },
+  {
+    "image": "../images/projects/noble.png",
+    "title": "Noble - Circle USDC zone",
+    "description": "Cosmos SDK Audit",
+    "tags": [
+      "Blockchain",
+      "Go",
+      "USDC",
+      "Cosmos SDK",
+      "Audit",
+      "Interchain Security"
+    ],
+    "website": "https://github.com/strangelove-ventures/noble"
+  },
+  {
     "image": "../images/projects/mars.png",
     "title": "Mars Protocol Rover Updates",
     "description": "CosmWasm Smart Contracts Audit",
