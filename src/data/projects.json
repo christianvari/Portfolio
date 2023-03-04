@@ -1,5 +1,19 @@
 [
   {
+    "image": "../images/projects/astroport.jpg",
+    "title": "Astoport Concentrated Liquidity Pair",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Audit", "CosmWasm"],
+    "website": "https://astroport.fi"
+  },
+  {
+    "image": "../images/projects/neptune.png",
+    "title": "Neptune Protocol",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Audit", "CosmWasm"],
+    "website": "https://nept.finance/"
+  },
+  {
     "image": "../images/projects/fuzion.jpg",
     "title": "Fuzion Plasma OTC",
     "description": "CosmWasm Smart Contracts Audit",
