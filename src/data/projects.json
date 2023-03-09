@@ -45,10 +45,19 @@
   },
   {
     "image": "../images/projects/filecoin.jpg",
+    "title": "Filecoin FEVM Solidity Library",
+    "description": "Solidity Library Audit",
+    "tags": ["Filecoin", "Audit", "EVM", "Solidity", "Ethereum"],
+    "website": "https://github.com/Zondax/filecoin-solidity",
+    "github": "https://github.com/oak-security/audit-reports/blob/429d51de1f390c56951db08c51e10e5adf75e8a8/Filecoin%20Foundation/2023-03-09%20Audit%20Report%20-%20Filecoin%20FEVM%20Solidity%20Library%20v1.1.pdf"
+  },
+  {
+    "image": "../images/projects/filecoin.jpg",
     "title": "Filecoin FEVM",
     "description": "EVM Implementation Audit",
     "tags": ["Filecoin", "Rust", "Go", "Audit", "EVM", "Solidity", "Ethereum"],
-    "website": "https://filecoin.io/"
+    "website": "https://filecoin.io/",
+    "github": "https://github.com/oak-security/audit-reports/blob/429d51de1f390c56951db08c51e10e5adf75e8a8/Filecoin%20Foundation/2023-03-09%20Audit%20Report%20-%20Filecoin%20EVM%20(FEVM)%20v1.1.pdf"
   },
   {
     "image": "../images/projects/nym.jpeg",
