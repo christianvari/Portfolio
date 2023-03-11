@@ -1,5 +1,12 @@
 [
   {
+    "image": "../images/projects/ibcx.jpg",
+    "title": "IBCX Interchain Index Token",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Audit", "CosmWasm", "Osmosis"],
+    "website": "https://index.ion.wtf/"
+  },
+  {
     "image": "../images/projects/astroport.jpg",
     "title": "Astoport Concentrated Liquidity Pair",
     "description": "CosmWasm Smart Contracts Audit",
