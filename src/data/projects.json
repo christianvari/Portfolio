@@ -1,5 +1,12 @@
 [
   {
+    "image": "../images/projects/astroport.jpg",
+    "title": "Astoport Maker and Vesting Contracts",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Audit", "CosmWasm"],
+    "website": "https://astroport.fi"
+  },
+  {
     "image": "../images/projects/ibcx.jpg",
     "title": "IBCX Interchain Index Token",
     "description": "CosmWasm Smart Contracts Audit",
@@ -11,7 +18,8 @@
     "title": "Astoport Concentrated Liquidity Pair",
     "description": "CosmWasm Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Audit", "CosmWasm"],
-    "website": "https://astroport.fi"
+    "website": "https://astroport.fi",
+    "github": "https://github.com/oak-security/audit-reports/blob/0d7516d512b97e0a708de3c85eb41832c90da584/Astroport/2023-03-16%20Audit%20Report%20-%20Astroport%20Concentrated%20Liquidity%20Pool%20v1.0.pdf"
   },
   {
     "image": "../images/projects/neptune.png",
