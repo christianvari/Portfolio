@@ -48,7 +48,8 @@
       "Audit",
       "Interchain Security"
     ],
-    "website": "https://github.com/strangelove-ventures/noble"
+    "website": "https://github.com/strangelove-ventures/noble",
+    "github": "https://github.com/oak-security/audit-reports/blob/2a4614dce4c7a4041e289a6eb960467dd77f0647/Noble/2023-03-13%20Audit%20Report%20-%20Noble%20v1.0.pdf"
   },
   {
     "image": "../images/projects/mars.png",
