@@ -31,8 +31,7 @@ const Navigation = () => {
 
   useEffect(() => {
     if (typeof window !== `undefined`) {
-      const { isMobile } = require("../utils");
-      setIsMobile(isMobile);
+      setIsMobile(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent));
     }
   }, []);
 
