@@ -1,36 +1,51 @@
 [
   {
     "icon": "../images/skills/blockchain.png",
-    "name": "Blockchain Auditing",
-    "tech": "Cosmos SDK, CosmWASM, Solidity, Go, Rust"
+    "name": "Blockchain Auditing"
   },
-  {
-    "icon": "../images/skills/blockchain.png",
-    "name": "Blockchain Engineering",
-    "tech": "Cosmos SDK, CosmWASM, Solidity, Go, Rust"
-  },
-  {
-    "icon": "../images/skills/web.png",
-    "name": "Web Development",
-    "tech": "React, Redux, Typescript, Javascript"
-  },
-  {
-    "icon": "../images/skills/nodejs.png",
-    "name": "Backend Javascript Frameworks",
-    "tech": "Node.js, Typescript, Javascript"
-  },
-
   {
     "icon": "../images/skills/rust.png",
-    "name": "Rust Development"
+    "name": "Rust"
   },
   {
     "icon": "../images/skills/golang.png",
-    "name": "Golang Development"
+    "name": "Golang"
   },
   {
-    "icon": "../images/skills/avr.png",
-    "name": "C-AVR development"
+    "icon": "../images/skills/ethereum.png",
+    "name": "Solidity"
+  },
+  {
+    "icon": "../images/skills/cosmwasm.png",
+    "name": "CosmWasm"
+  },
+  {
+    "icon": "../images/skills/cosmos.png",
+    "name": "Cosmos SDK"
+  },
+  {
+    "icon": "../images/skills/polkadot.png",
+    "name": "Substrate"
+  },
+  {
+    "icon": "../images/skills/ink.png",
+    "name": "Ink!"
+  },
+  {
+    "icon": "../images/skills/react.png",
+    "name": "React"
+  },
+  {
+    "icon": "../images/skills/javascript.png",
+    "name": "Javascript"
+  },
+  {
+    "icon": "../images/skills/nodejs.png",
+    "name": "NodeJS"
+  },
+  {
+    "icon": "../images/skills/typescript.png",
+    "name": "TypeScript"
   },
   {
     "icon": "../images/skills/python.png",
@@ -38,12 +53,10 @@
   },
   {
     "icon": "../images/skills/docker.png",
-    "name": "Microservices Architectures",
-    "tech": "Kubernetes, Docker"
+    "name": "Docker"
   },
   {
-    "icon": "../images/skills/database.png",
-    "name": "Databases",
-    "tech": "MongoDB, Redis, ElasticSearch, Informix, Solr"
+    "icon": "../images/skills/kubernetes.png",
+    "name": "Kubernetes"
   }
 ]

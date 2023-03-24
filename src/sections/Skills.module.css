@@ -1,35 +1,19 @@
 .skill {
-  border-color: rgba(128, 128, 128, 0.1);
+  border: 0.1rem solid rgba(128, 128, 128, 0.1);
   display: grid;
   grid-template-columns: 1fr 4fr;
   gap: 0.5rem;
-  @apply border rounded-lg;
+  @apply rounded-lg;
   padding: 0.5rem;
   align-items: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .image {
   justify-self: center;
 }
 
-.container {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-@media (min-width: 0px) {
-  .container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@screen md {
-  .container {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-@screen xl {
-  .container {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
+.slider {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
