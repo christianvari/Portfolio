@@ -5,7 +5,7 @@ import Heading from "../components/Heading";
 import { GoTools } from "../components/Icons";
 import * as styles from "./Skills.module.css";
 import Slider from "infinite-react-carousel";
-import useMediaQuery from "../utils";
+import { useMediaQuery } from "../utils";
 
 const Skills = () => {
   const data = useStaticQuery(graphql`
