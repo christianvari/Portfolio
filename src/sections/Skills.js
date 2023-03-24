@@ -41,6 +41,8 @@ const Skills = () => {
         autoplay={true}
         arrows={false}
         adaptiveHeight={true}
+        pauseOnHover={false}
+        autoplaySpeed={2000}
       >
         {data.allSkillsJson.edges
           .slice(0, data.allSkillsJson.edges.length / 2)
@@ -67,6 +69,8 @@ const Skills = () => {
         arrows={false}
         autoplayScroll={-1}
         adaptiveHeight={true}
+        pauseOnHover={false}
+        autoplaySpeed={2000}
       >
         {data.allSkillsJson.edges
           .slice(data.allSkillsJson.edges.length / 2)
