@@ -18,6 +18,7 @@ import {
   FaStar,
   FaTwitter,
   FaMailBulk,
+  FaCertificate,
 } from "react-icons/fa";
 import { GoTools } from "react-icons/go";
 import {
@@ -71,4 +72,5 @@ export {
   MdSchool,
   MdWork,
   FaMailBulk,
+  FaCertificate,
 };

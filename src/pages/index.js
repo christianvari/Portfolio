@@ -11,6 +11,7 @@ import Work from "../sections/Work";
 import Projects from "../sections/Projects";
 import Achievements from "../sections/Achievements";
 import "./global.css";
+import Certifications from "../sections/Certifications";
 
 const IndexPage = () => {
   return (
@@ -22,7 +23,10 @@ const IndexPage = () => {
           <Work />
           <Education />
         </div>
-        <Achievements />
+        <div className={styles.workEducation}>
+          <Achievements />
+          <Certifications />
+        </div>
         <Skills />
         <Projects />
         <Contact />

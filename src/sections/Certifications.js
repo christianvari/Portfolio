@@ -1,20 +1,30 @@
 import { graphql, useStaticQuery } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
+import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import Heading from "../components/Heading";
 import { FaAngleRight, FaAward } from "../components/Icons";
 import { container } from "./Meta.module.css";
 
-const Achievements = () => {
+const Certifications = () => {
   const data = useStaticQuery(graphql`
     {
-      allAchievementsJson {
+      allCertificationsJson {
         edges {
           node {
             id
             title
             subtitle
             url
+            icon {
+              childImageSharp {
+                gatsbyImageData(
+                  width: 64
+                  placeholder: BLURRED
+                  layout: CONSTRAINED
+                )
+              }
+            }
           }
         }
       }
@@ -22,10 +32,10 @@ const Achievements = () => {
   `);
 
   return (
-    <section id="achievements">
-      <Heading icon={FaAward} title="Achievements" />
+    <section id="certifications">
+      <Heading icon={FaAward} title="Certifications" />
 
-      {data.allAchievementsJson.edges.map(({ node }, index) => (
+      {data.allCertificationsJson.edges.map(({ node }, index) => (
         <OutboundLink
           key={node.id}
           href={node.url}
@@ -42,6 +52,10 @@ const Achievements = () => {
             <div className="mt-1 pr-4">
               <FaAngleRight />
             </div>
+            <GatsbyImage
+              className="w-8 h-8 mr-4"
+              image={node.icon.childImageSharp.gatsbyImageData}
+            />
             <div>
               <h6 className="font-semibold">{node.title}</h6>
               <p className="text-sm">{node.subtitle}</p>
@@ -53,4 +67,4 @@ const Achievements = () => {
   );
 };
 
-export default Achievements;
+export default Certifications;
