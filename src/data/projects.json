@@ -1,5 +1,26 @@
 [
   {
+    "image": "../images/projects/cosmoshub.jpg",
+    "title": "Interchain Security",
+    "description": "Cosmos SDK Audit",
+    "tags": [
+      "Blockchain",
+      "Go",
+      "Cosmos Hub",
+      "Cosmos SDK",
+      "Audit",
+      "Interchain Security"
+    ],
+    "website": "https://interchainsecurity.dev/"
+  },
+  {
+    "image": "../images/projects/membrane.png",
+    "title": "Membrane Finance",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Audit", "CosmWasm", "Osmosis"],
+    "website": "https://membrane-finance.gitbook.io/membrane-docs-1/"
+  },
+  {
     "image": "../images/projects/astroport.jpg",
     "title": "Astoport Maker and Vesting Contracts",
     "description": "CosmWasm Smart Contracts Audit",
