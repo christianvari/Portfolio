@@ -25,7 +25,8 @@
     "title": "Astoport Maker and Vesting Contracts",
     "description": "CosmWasm Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Audit", "CosmWasm"],
-    "website": "https://astroport.fi"
+    "website": "https://astroport.fi",
+    "github": "https://github.com/oak-security/audit-reports/blob/38174f733ed2ba6530f206056c7ca441d1fd7cf0/Astroport/2023-04-04%20Audit%20Report%20-%20Astroport%20Maker%20and%20Vesting%20Contract%20Updates%20v1.0.pdf"
   },
   {
     "image": "../images/projects/ibcx.jpg",
