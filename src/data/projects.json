@@ -48,7 +48,8 @@
     "title": "Neptune Protocol",
     "description": "CosmWasm Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Audit", "CosmWasm"],
-    "website": "https://nept.finance/"
+    "website": "https://nept.finance/",
+    "github": "https://github.com/oak-security/audit-reports/blob/32aefa7b4c05dca3a8f15a5a66f859920cfcbb12/Neptune/2023-04-09%20Audit%20Report%20-%20Neptune%20Protocol%20v1.0.pdf"
   },
   {
     "image": "../images/projects/fuzion.jpg",
