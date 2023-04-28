@@ -1,15 +1,30 @@
 [
   {
+    "image": "../images/projects/evmos.jpg",
+    "title": "Evmos",
+    "description": "EVM Precompiles Audit",
+    "tags": ["Evmos", "Rust", "Golang", "Audit", "EVM", "Solidity", "Ethereum"],
+    "website": "https://evmos.org"
+  },
+  {
+    "image": "../images/projects/daodao.jpg",
+    "title": "Polytone",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Audit", "CosmWasm", "IBC", "DA0 DA0"],
+    "website": "https://daodao.zone"
+  },
+  {
     "image": "../images/projects/cosmoshub.jpg",
     "title": "Interchain Security",
     "description": "Cosmos SDK Audit",
     "tags": [
       "Blockchain",
-      "Go",
+      "Golang",
       "Cosmos Hub",
       "Cosmos SDK",
       "Audit",
-      "Interchain Security"
+      "Interchain Security",
+      "IBC"
     ],
     "website": "https://interchainsecurity.dev/"
   },
@@ -65,7 +80,7 @@
     "description": "Cosmos SDK Audit",
     "tags": [
       "Blockchain",
-      "Go",
+      "Golang",
       "USDC",
       "Cosmos SDK",
       "Audit",
@@ -94,7 +109,15 @@
     "image": "../images/projects/filecoin.jpg",
     "title": "Filecoin FEVM",
     "description": "EVM Implementation Audit",
-    "tags": ["Filecoin", "Rust", "Go", "Audit", "EVM", "Solidity", "Ethereum"],
+    "tags": [
+      "Filecoin",
+      "Rust",
+      "Golang",
+      "Audit",
+      "EVM",
+      "Solidity",
+      "Ethereum"
+    ],
     "website": "https://filecoin.io/",
     "github": "https://github.com/oak-security/audit-reports/blob/429d51de1f390c56951db08c51e10e5adf75e8a8/Filecoin%20Foundation/2023-03-09%20Audit%20Report%20-%20Filecoin%20EVM%20(FEVM)%20v1.1.pdf"
   },
@@ -135,7 +158,7 @@
     "description": "Cosmos SDK Audit",
     "tags": [
       "Blockchain",
-      "Go",
+      "Golang",
       "Cosmos SDK",
       "Audit",
       "Persistence",
@@ -156,7 +179,7 @@
     "image": "../images/projects/nolus.jpg",
     "title": "Nolus Core",
     "description": "Cosmos SDK Audit",
-    "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "Nolus"],
+    "tags": ["Blockchain", "Golang", "Cosmos SDK", "Audit", "Nolus"],
     "website": "https://nolus.io/",
     "github": "https://github.com/oak-security/audit-reports/blob/master/Nolus/2022-12-12%20Audit%20Report%20-%20Nolus%20Core%20v1.1.pdf"
   },
@@ -164,7 +187,7 @@
     "image": "../images/projects/comdex.jpg",
     "title": "Comdex Lend and Liquidation modules",
     "description": "Cosmos SDK Audit",
-    "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "Comdex"],
+    "tags": ["Blockchain", "Golang", "Cosmos SDK", "Audit", "Comdex"],
     "website": "https://comdex.one/",
     "github": "https://github.com/oak-security/audit-reports/blob/master/Comdex/2022-11-23%20Audit%20Report%20-%20Comdex%20Lend%20and%20Liquidation%20Modules%20v1.0.pdf"
   },
@@ -180,7 +203,7 @@
     "image": "../images/projects/injective.jpg",
     "title": "Injective wasmx module and CosmWasm bindings",
     "description": "Cosmos SDK Audit",
-    "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "Injective"],
+    "tags": ["Blockchain", "Golang", "Cosmos SDK", "Audit", "Injective"],
     "website": "https://injective.com/",
     "github": "https://github.com/oak-security/audit-reports/blob/17583d3002966bda085376e7250b917ff7b3355c/Injective/2023-01-20%20Audit%20Report%20-%20Injective%20v1.0.pdf"
   },
@@ -190,7 +213,7 @@
     "description": "Cosmos SDK Audit",
     "tags": [
       "Blockchain",
-      "Go",
+      "Golang",
       "Cosmos SDK",
       "Audit",
       "Cosmos Hub",
@@ -237,7 +260,7 @@
     "image": "../images/projects/cosmos_placeholder.png",
     "title": "Elesto Mint Module",
     "description": "Cosmos SDK Module Audit",
-    "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit"]
+    "tags": ["Blockchain", "Golang", "Cosmos SDK", "Audit"]
   },
   {
     "image": "../images/projects/margined.png",
@@ -266,7 +289,7 @@
     "image": "../images/projects/comdex.jpg",
     "title": "Comdex Chain & Comdex Governance Contract",
     "description": "Cosmos SDK and CosmWasm Contracts Audit",
-    "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "CosmWasm", "Wasm"],
+    "tags": ["Blockchain", "Golang", "Cosmos SDK", "Audit", "CosmWasm", "Wasm"],
     "website": "https://comdex.one/",
     "github": "https://github.com/oak-security/audit-reports/blob/master/Comdex/2022-12-07%20Audit%20Report%20-%20Comdex%20v1.0.pdf"
   },
@@ -274,7 +297,7 @@
     "image": "../images/projects/wasmd.png",
     "title": "CosmWasm Wasmd Module",
     "description": "Cosmos SDK Module Audit",
-    "tags": ["Blockchain", "Go", "Cosmos SDK", "Audit", "CosmWasm", "Wasm"],
+    "tags": ["Blockchain", "Golang", "Cosmos SDK", "Audit", "CosmWasm", "Wasm"],
     "website": "https://cosmwasm.com/"
   },
   {
