@@ -68,7 +68,11 @@ const Navigation = ({ location }) => {
         isMobile ? "fadeInDown" : "fadeInLeft"
       }`}
     >
-      <Tooltip title="Go to Top" placement="right" arrow>
+      <Tooltip
+        title={!location || location.pathname === "/" ? "Go to Top" : "Go back"}
+        placement="right"
+        arrow
+      >
         <div
           className="flex-center cursor-pointer"
           onClick={() => {
