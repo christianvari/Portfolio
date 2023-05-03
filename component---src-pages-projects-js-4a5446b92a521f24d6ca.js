@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkchristian_vari_portfolio=self.webpackChunkchristian_vari_portfolio||[]).push([[853],{5863:function(e,t,n){n.r(t),n.d(t,{default:function(){return c}});var r=n(7294),a=n(7506),o=n(1941),c=function(e){var t=e.location;return r.createElement(a.Z,{location:t},r.createElement("div",{className:"container projects-module--layout--JUOQ7"},r.createElement(o.Z,null)))}}}]);
-//# sourceMappingURL=component---src-pages-projects-js-4a5446b92a521f24d6ca.js.map
