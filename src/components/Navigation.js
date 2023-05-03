@@ -2,7 +2,7 @@
 /* eslint jsx-a11y/click-events-have-key-events : 0 */
 
 import Tooltip from "@material-ui/core/Tooltip";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, navigate, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React, { useContext, useEffect, useState } from "react";
 import { animateScroll as scroll, scroller } from "react-scroll";
@@ -11,7 +11,7 @@ import sections from "../data/sections";
 import { IoIosMoon, IoIosSunny, MdMenu } from "./Icons";
 import { container, menu, sectionLinks } from "./Navigation.module.css";
 
-const Navigation = () => {
+const Navigation = ({ location }) => {
   const [isMobile, setIsMobile] = useState(false);
   const { dark, toggleDark } = useContext(ThemeContext);
   const data = useStaticQuery(graphql`
@@ -69,17 +69,27 @@ const Navigation = () => {
       }`}
     >
       <Tooltip title="Go to Top" placement="right" arrow>
-        <div className="flex-center cursor-pointer" onClick={scrollToTop}>
+        <div
+          className="flex-center cursor-pointer"
+          onClick={() => {
+            if (!location || location.pathname === "/") {
+              scrollToTop();
+            } else {
+              navigate("/");
+            }
+          }}
+        >
           <GatsbyImage image={data.icon.childImageSharp.gatsbyImageData} />
         </div>
       </Tooltip>
-
-      <div className="hidden md:flex flex-col justify-center items-center">
-        <div className={menu}>
-          <MdMenu />
+      {!!(!location || location.pathname === "/") && (
+        <div className="hidden md:flex flex-col justify-center items-center">
+          <div className={menu}>
+            <MdMenu />
+          </div>
+          <div className={sectionLinks}>{sections.map(SectionLink)}</div>
         </div>
-        <div className={sectionLinks}>{sections.map(SectionLink)}</div>
-      </div>
+      )}
 
       <Tooltip title="Toggle Dark Mode" placement="right" arrow>
         <div

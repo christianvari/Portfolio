@@ -1,0 +1,14 @@
+.layout {
+  padding-top: 4rem;
+  @apply grid grid-cols-1 row-gap-16;
+}
+
+.layout .work-education {
+  @apply grid grid-cols-1 row-gap-16;
+}
+
+@screen md {
+  .layout {
+    @apply row-gap-24;
+  }
+}

@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 import SEO from "./SEO";
 import * as styles from "./Wrapper.module.css";
 
-const Wrapper = ({ children }) => {
+const Wrapper = ({ children, location }) => {
   const { dark } = useContext(ThemeContext);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const Wrapper = ({ children }) => {
   return (
     <div className={dark ? styles.dark : styles.light}>
       <SEO />
-      <Navigation />
+      <Navigation location={location} />
 
       <div className="mx-8 lg:mx-16 xl:mx-0">{children}</div>
     </div>
