@@ -1,0 +1,74 @@
+.container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (min-width: 0px) {
+  .container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@screen md {
+  .container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@screen lg {
+  .container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@screen xl {
+  .container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.seeMoreContainer {
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  padding: 1rem;
+}
+
+.seeMoreContainer .icon {
+  height: 3rem;
+  width: 3rem;
+}
+.seeMoreContainer p {
+  padding-bottom: 0;
+}
+
+@screen md {
+  .seeMoreContainer {
+    flex-direction: column;
+  }
+
+  .seeMoreContainer .icon {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+.seeMoreContainer:hover {
+  background-color: #121212;
+}
+
+.seeMoreContainer:hover .icon,
+.seeMoreContainer:hover p {
+  color: white;
+}
+
+.darkTheme.seeMoreContainer:hover {
+  background-color: white !important;
+}
+
+.darkTheme.seeMoreContainer:hover .icon,
+.darkTheme.seeMoreContainer:hover p {
+  color: #121212 !important;
+}

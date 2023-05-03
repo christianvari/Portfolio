@@ -8,10 +8,10 @@ import Education from "../sections/Education";
 import Hero from "../sections/Hero";
 import Skills from "../sections/Skills";
 import Work from "../sections/Work";
-import Projects from "../sections/Projects";
 import Achievements from "../sections/Achievements";
 import "./global.css";
 import Certifications from "../sections/Certifications";
+import FeaturedProjects from "../sections/FeaturedProjects";
 
 const IndexPage = () => {
   return (
@@ -28,7 +28,7 @@ const IndexPage = () => {
           <Certifications />
         </div>
         <Skills />
-        <Projects />
+        <FeaturedProjects />
         <Contact />
         <Footer />
       </div>
