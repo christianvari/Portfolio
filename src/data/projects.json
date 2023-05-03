@@ -1,5 +1,19 @@
 [
   {
+    "image": "../images/projects/noble.png",
+    "title": "Noble Tariff module",
+    "description": "Cosmos SDK Audit",
+    "tags": [
+      "Blockchain",
+      "Golang",
+      "Noble",
+      "Cosmos SDK",
+      "Audit",
+      "Interchain Security"
+    ],
+    "website": "https://nobleassets.xyz/"
+  },
+  {
     "image": "../images/projects/evmos.jpg",
     "title": "Evmos",
     "description": "EVM Precompiles Audit",
@@ -48,7 +62,8 @@
     "title": "IBCX Interchain Index Token",
     "description": "CosmWasm Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Audit", "CosmWasm", "Osmosis"],
-    "website": "https://index.ion.wtf/"
+    "website": "https://index.ion.wtf/",
+    "github": "https://github.com/oak-security/audit-reports/blob/8d44b527d56648a1dcaed694daad6078b85e75a2/IBCX/2023-04-29%20Audit%20Report%20-%20IBCX%20v1.0.pdf"
   },
   {
     "image": "../images/projects/astroport.jpg",
@@ -75,7 +90,7 @@
     "github": "https://github.com/oak-security/audit-reports/blob/c92cbd12b5724c53cd625a1a98e30ec853ff188e/Fuzion/2023-02-20%20Audit%20Report%20-%20Fuzion%20Plasma%20OTC%20v1.0.pdf"
   },
   {
-    "image": "../images/projects/noble.png",
+    "image": "../images/projects/usdc.png",
     "title": "Noble - Circle USDC zone",
     "description": "Cosmos SDK Audit",
     "tags": [
