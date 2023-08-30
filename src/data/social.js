@@ -36,7 +36,7 @@ const social = [
     title: "Mail",
     icon: FaMailBulk,
     link: mail
-      .to("info@christianvari.dev")
+      .to("info@codezen.tech")
       .subject("Enter your request subject here")
       .body("Enter your detailed request here")
       .build(),
