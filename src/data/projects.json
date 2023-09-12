@@ -1,12 +1,26 @@
 [
   {
     "image": "../images/projects/composable.png",
+    "title": "Composable Centauri",
+    "description": "Cosmos SDK Peer Review",
+    "tags": ["Blockchain", "Golang", "Cosmos SDK", "Peer Review", "Polkadot"],
+    "website": "https://www.composable.finance/"
+  },
+  {
+    "image": "../images/projects/fairblock.png",
+    "title": "Fairblock FairyRing",
+    "description": "Cosmos SDK Audit",
+    "tags": ["Blockchain", "Golang", "Cosmos SDK", "Audit", "Cryptography"],
+    "website": "https://fairblock.network/"
+  },
+  {
+    "image": "../images/projects/composable.png",
     "title": "Composable GrandPa Light Client",
     "description": "Light Client Audit",
     "tags": [
       "Blockchain",
       "Rust",
-      "Go",
+      "Golang",
       "Audit",
       "Tendermint",
       "IBC",
