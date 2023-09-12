@@ -1,5 +1,28 @@
 [
   {
+    "image": "../images/projects/composable.png",
+    "title": "Composable GrandPa Light Client",
+    "description": "Light Client Audit",
+    "tags": [
+      "Blockchain",
+      "Rust",
+      "Go",
+      "Audit",
+      "Tendermint",
+      "IBC",
+      "Cosmos",
+      "Polkadot"
+    ],
+    "website": "https://www.composable.finance/"
+  },
+  {
+    "image": "../images/projects/zodiac.jpg",
+    "title": "Zodiac Protocol",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Audit", "CosmWasm", "Osmosis"],
+    "website": "https://www.zodiacprotocol.xyz/"
+  },
+  {
     "image": "../images/projects/noble.png",
     "title": "Noble Tariff module",
     "description": "Cosmos SDK Audit",
