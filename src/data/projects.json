@@ -1,5 +1,21 @@
 [
   {
+    "image": "../images/projects/snowbridge.png",
+    "title": "Snowfork Snowbridge",
+    "description": "Bridge Audit",
+    "tags": [
+      "Blockchain",
+      "Rust",
+      "Solidity",
+      "Substrate",
+      "Polkadot",
+      "Audit",
+      "Ethereum",
+      "Bridge"
+    ],
+    "website": "https://marsprotocol.io/"
+  },
+  {
     "image": "../images/projects/mars.png",
     "title": "Mars Red Bank Updates",
     "description": "CosmWasm Smart Contracts Audit",
