@@ -1,5 +1,20 @@
 [
   {
+    "image": "../images/projects/prism.png",
+    "title": "Prism Osmosis LP Staking",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Osmosis", "Prism", "Audit", "CosmWasm"],
+    "website": "https://prismprotocol.app/"
+  },
+  {
+    "image": "../images/projects/lido.jpg",
+    "title": "Lido Neutron Satellite",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Neutron", "Solidity", "Audit", "CosmWasm"],
+    "website": "https://marsprotocol.io/",
+    "github": "https://github.com/oak-security/audit-reports/blob/d2fe412c9e1ff3b80c7701f0388e33465f23d5de/Hadron%20Labs/2023-07-29%20Audit%20Report%20-%20Hadron%20Labs%20Lido%20Satellite%20v1.0.pdf"
+  },
+  {
     "image": "../images/projects/snowbridge.png",
     "title": "Snowfork Snowbridge",
     "description": "Bridge Audit",
