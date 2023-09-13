@@ -1,5 +1,19 @@
 [
   {
+    "image": "../images/projects/noble.png",
+    "title": "Noble Circle's CCTP",
+    "description": "Cosmos SDK Audit",
+    "tags": [
+      "Blockchain",
+      "Golang",
+      "Cosmos SDK",
+      "Audit",
+      "Solidity",
+      "Circle"
+    ],
+    "website": "https://nobleassets.xyz/"
+  },
+  {
     "image": "../images/projects/prism.png",
     "title": "Prism Osmosis LP Staking",
     "description": "CosmWasm Smart Contracts Audit",
@@ -28,7 +42,7 @@
       "Ethereum",
       "Bridge"
     ],
-    "website": "https://marsprotocol.io/"
+    "website": "https://docs.snowbridge.network/"
   },
   {
     "image": "../images/projects/mars.png",
