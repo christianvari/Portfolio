@@ -20,7 +20,8 @@
     "title": "Mars Red Bank Updates",
     "description": "CosmWasm Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Neutron", "Mars", "Audit", "CosmWasm"],
-    "website": "https://marsprotocol.io/"
+    "website": "https://marsprotocol.io/",
+    "github": "https://github.com/oak-security/audit-reports/blob/026296d99287705c883fd5fa91368913a8643347/Mars/2023-08-01%20Audit%20Report%20-%20Mars%20Red%20Bank%20Updates%20v1.0.pdf"
   },
   {
     "image": "../images/projects/rust.png",
@@ -78,25 +79,28 @@
       "Audit",
       "Interchain Security"
     ],
-    "website": "https://nobleassets.xyz/"
+    "website": "https://nobleassets.xyz/",
+    "github": "https://github.com/oak-security/audit-reports/blob/55e5895d4fd1295e087c59da35269fd59f95c657/Noble/2023-07-08%20Audit%20Report%20-%20Noble%20Tariff%20Module%20v1.0.pdf"
   },
   {
     "image": "../images/projects/evmos.jpg",
     "title": "Evmos",
     "description": "EVM Precompiles Audit",
     "tags": ["Evmos", "Rust", "Golang", "Audit", "EVM", "Solidity", "Ethereum"],
-    "website": "https://evmos.org"
+    "website": "https://evmos.org",
+    "github": "https://github.com/oak-security/audit-reports/blob/b929b839728f4f0e324bd92e8241ac1bda88cd02/Evmos/2023-07-08%20Audit%20Report%20-%20Evmos%20EVM%20Extensions%20v1.0.pdf"
   },
   {
     "image": "../images/projects/daodao.jpg",
     "title": "Polytone",
     "description": "CosmWasm Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Audit", "CosmWasm", "IBC", "DA0 DA0"],
-    "website": "https://daodao.zone"
+    "website": "https://daodao.zone",
+    "github": "https://github.com/oak-security/audit-reports/blob/ad3e35844fa223853f9b3aa67e1088906ccb9372/Polytone/2023-06-05%20Audit%20Report%20-%20Polytone%20v1.0.pdf"
   },
   {
     "image": "../images/projects/cosmoshub.jpg",
-    "title": "Interchain Security",
+    "title": "Cosmos Interchain Security",
     "description": "Cosmos SDK Audit",
     "tags": [
       "Blockchain",
@@ -108,6 +112,7 @@
       "IBC"
     ],
     "website": "https://interchainsecurity.dev/",
+    "github": "https://github.com/oak-security/audit-reports/blob/0cea9f4e6b9a1eaf55b413765aae1e413e44de5f/Cosmos/2023-06-23%20Audit%20Report%20-%20Cosmos%20Interchain%20Security%20v1.0.pdf",
     "featured": true
   },
   {
@@ -115,7 +120,8 @@
     "title": "Membrane Finance",
     "description": "CosmWasm Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Audit", "CosmWasm", "Osmosis"],
-    "website": "https://membrane-finance.gitbook.io/membrane-docs-1/"
+    "website": "https://membrane-finance.gitbook.io/membrane-docs-1/",
+    "github": "https://github.com/oak-security/audit-reports/blob/dec29099a4e58b8adebe2dc3fe55714b21178a4c/Membrane/2023-06-15%20Audit%20Report%20-%20Membrane%20v1.0.pdf"
   },
   {
     "image": "../images/projects/astroport.jpg",
