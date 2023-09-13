@@ -1,5 +1,12 @@
 [
   {
+    "image": "../images/projects/rust.png",
+    "title": "SSZ RS Library",
+    "description": "Rust Library Audit",
+    "tags": ["Blockchain", "Rust", "Ethereum", "Audit"],
+    "website": "https://github.com/ralexstokes/ssz-rs"
+  },
+  {
     "image": "../images/projects/composable.png",
     "title": "Composable Centauri",
     "description": "Cosmos SDK Peer Review",
