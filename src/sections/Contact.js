@@ -12,7 +12,7 @@ const Contact = () => {
   const [isOpen, setIsOpen] = useState();
   const { dark } = useContext(ThemeContext);
   const mailto = mail
-    .to("info@christianvari.dev")
+    .to("info@codezen.tech")
     .subject("Enter your request subject here")
     .body("Enter your detailed request here")
     .build();
@@ -30,7 +30,7 @@ const Contact = () => {
 
       <div className={styles.container}>
         <div
-          className="wow fadeIn grid"
+          className="wow fadeIn grid cursor-pointer"
           style={{
             animationDelay: `300ms`,
           }}
@@ -41,7 +41,7 @@ const Contact = () => {
           <h6 className="mb-4 font-semibold text-center">Send me an email</h6>
           <img
             className={[
-              "absolute w-full rounded-lg duration-200 h-64 relative flex-center shadow-lg cursor-pointer hover:opacity-50",
+              "absolute w-full rounded-lg duration-200 h-64 relative flex-center shadow-lg hover:opacity-50",
               dark ? "bg-white" : "bg-black",
             ].join(" ")}
             src={messanger}
@@ -49,7 +49,7 @@ const Contact = () => {
           />
         </div>
         <div
-          className="wow fadeIn grid"
+          className="wow fadeIn grid cursor-pointer"
           style={{
             animationDelay: `300ms`,
           }}
@@ -58,7 +58,7 @@ const Contact = () => {
           <h6 className="mb-4 font-semibold text-center">Schedule a call</h6>
           <img
             className={[
-              "absolute w-full rounded-lg duration-200 h-64 relative flex-center shadow-lg cursor-pointer hover:opacity-50",
+              "absolute w-full rounded-lg duration-200 h-64 relative flex-center shadow-lg hover:opacity-50",
               dark ? "bg-white" : "bg-black",
             ].join(" ")}
             src={call}
