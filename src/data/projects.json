@@ -1,6 +1,21 @@
 [
   {
-    "image": "../images/projects/noble.png",
+    "image": "../images/projects/cosmoshub.jpg",
+    "title": "Cosmos SDK v0.47",
+    "description": "Cosmos SDK Audit",
+    "tags": ["Blockchain", "Golang", "Cosmos SDK", "Audit"],
+    "website": "https://cosmos.network/",
+    "featured": true
+  },
+  {
+    "image": "../images/projects/composable.png",
+    "title": "XCVM Cosmwasm Contracts",
+    "description": "CosmWasm Smart Contracts Peer Review",
+    "tags": ["Blockchain", "Rust", "Peer Review", "Osmosis", "CosmWasm"],
+    "website": "https://www.composable.finance/"
+  },
+  {
+    "image": "../images/projects/usdc.png",
     "title": "Noble Circle's CCTP",
     "description": "Cosmos SDK Audit",
     "tags": [
@@ -9,9 +24,11 @@
       "Cosmos SDK",
       "Audit",
       "Solidity",
-      "Circle"
+      "Circle",
+      "USDC"
     ],
-    "website": "https://nobleassets.xyz/"
+    "website": "https://nobleassets.xyz/",
+    "featured": true
   },
   {
     "image": "../images/projects/prism.png",
@@ -42,7 +59,8 @@
       "Ethereum",
       "Bridge"
     ],
-    "website": "https://docs.snowbridge.network/"
+    "website": "https://docs.snowbridge.network/",
+    "featured": true
   },
   {
     "image": "../images/projects/mars.png",
@@ -75,7 +93,7 @@
   },
   {
     "image": "../images/projects/composable.png",
-    "title": "Composable GrandPa Light Client",
+    "title": "Polkadot GrandPa IBC Light Client",
     "description": "Light Client Audit",
     "tags": [
       "Blockchain",
@@ -87,7 +105,8 @@
       "Cosmos",
       "Polkadot"
     ],
-    "website": "https://www.composable.finance/"
+    "website": "https://www.composable.finance/",
+    "featured": true
   },
   {
     "image": "../images/projects/zodiac.jpg",
@@ -113,8 +132,8 @@
   },
   {
     "image": "../images/projects/evmos.jpg",
-    "title": "Evmos",
-    "description": "EVM Precompiles Audit",
+    "title": "Evmos Solidity Precompiles",
+    "description": "EVM Solidity Precompiles Audit",
     "tags": ["Evmos", "Rust", "Golang", "Audit", "EVM", "Solidity", "Ethereum"],
     "website": "https://evmos.org",
     "github": "https://github.com/oak-security/audit-reports/blob/b929b839728f4f0e324bd92e8241ac1bda88cd02/Evmos/2023-07-08%20Audit%20Report%20-%20Evmos%20EVM%20Extensions%20v1.0.pdf"
@@ -193,20 +212,19 @@
     "github": "https://github.com/oak-security/audit-reports/blob/c92cbd12b5724c53cd625a1a98e30ec853ff188e/Fuzion/2023-02-20%20Audit%20Report%20-%20Fuzion%20Plasma%20OTC%20v1.0.pdf"
   },
   {
-    "image": "../images/projects/usdc.png",
-    "title": "Noble - Circle USDC zone",
+    "image": "../images/projects/noble.png",
+    "title": "Noble",
     "description": "Cosmos SDK Audit",
     "tags": [
       "Blockchain",
       "Golang",
-      "USDC",
       "Cosmos SDK",
       "Audit",
-      "Interchain Security"
+      "Interchain Security",
+      "Circle"
     ],
     "website": "https://github.com/strangelove-ventures/noble",
-    "github": "https://github.com/oak-security/audit-reports/blob/2a4614dce4c7a4041e289a6eb960467dd77f0647/Noble/2023-03-13%20Audit%20Report%20-%20Noble%20v1.0.pdf",
-    "featured": true
+    "github": "https://github.com/oak-security/audit-reports/blob/2a4614dce4c7a4041e289a6eb960467dd77f0647/Noble/2023-03-13%20Audit%20Report%20-%20Noble%20v1.0.pdf"
   },
   {
     "image": "../images/projects/mars.png",
