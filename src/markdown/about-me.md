@@ -6,7 +6,7 @@ Hey there!
 
 My name is Christian Vari and I'm a {AGE} years old italian **Software Engineer**.
 
-I'm the **Founder, CEO and Lead Blockchain Engineer** at **Codezen s.r.l.s.**
+I'm the **Founder, CEO and Lead Blockchain Engineer** at **Codezen SRLS**
 
 Currently me and Codezen are contributing securing the blockchain ecosystem performing **Blockchain Smart Contract Audits**, **Blockchain Chain Code Audits** and **Blockchain Dapp Development**.
 
