@@ -1,5 +1,12 @@
 [
   {
+    "image": "../images/projects/mars.png",
+    "title": "Mars Red Bank Updates",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Neutron", "Mars", "Audit", "CosmWasm"],
+    "website": "https://marsprotocol.io/"
+  },
+  {
     "image": "../images/projects/rust.png",
     "title": "SSZ RS Library",
     "description": "Rust Library Audit",
