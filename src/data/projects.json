@@ -75,7 +75,8 @@
     "title": "SSZ RS Library",
     "description": "Rust Library Audit",
     "tags": ["Blockchain", "Rust", "Ethereum", "Audit"],
-    "website": "https://github.com/ralexstokes/ssz-rs"
+    "website": "https://github.com/ralexstokes/ssz-rs",
+    "github": "https://github.com/oak-security/audit-reports/blob/8eddeeeb7a766e10a8e4303a3a0a8e86a7a5f08c/ssz-rs/2023-09-28%20Audit%20Report%20-%20ssz-rs%20v1.0.pdf"
   },
   {
     "image": "../images/projects/composable.png",
