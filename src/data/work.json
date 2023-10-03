@@ -5,7 +5,7 @@
     "subtitle": "Founder, CEO and Lead Blockchain Engineer",
     "period": "April '22 - current",
     "location": "Segni, Italy (Remote)",
-    "specialization": "Manager, Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK"
+    "specialization": "Management, Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK"
   },
   {
     "icon": "../images/work/oak.jpg",
@@ -22,6 +22,14 @@
     "period": "February '22 - September '22",
     "location": "Munich, Germany (Remote)",
     "specialization": "Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK"
+  },
+  {
+    "icon": "../images/work/defitalents.jpeg",
+    "title": "DeFi Talents @ Frankfurt School of Finance & Management",
+    "subtitle": "Mentor",
+    "period": "September '23 - current",
+    "location": "Frankfurt Rhine-Main, Germany (Remote)",
+    "specialization": "Blockchain, Finance, Management, Economy, Teaching"
   },
   {
     "icon": "../images/work/hcl.png",
