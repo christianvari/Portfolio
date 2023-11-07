@@ -90,7 +90,8 @@
     "title": "Fairblock FairyRing",
     "description": "Cosmos SDK Audit",
     "tags": ["Blockchain", "Golang", "Cosmos SDK", "Audit", "Cryptography"],
-    "website": "https://fairblock.network/"
+    "website": "https://fairblock.network/",
+    "github": "https://github.com/oak-security/audit-reports/blob/70571c511e961cf6194b5c39757735a6549a9f4f/Fairblock/2023-10-02%20Audit%20Report%20-%20FairBlock%20fairyring%20v1.0.pdf"
   },
   {
     "image": "../images/projects/composable.png",
@@ -439,6 +440,7 @@
     "description": "Cosmos SDK Module Audit",
     "tags": ["Blockchain", "Golang", "Cosmos SDK", "Audit", "CosmWasm", "Wasm"],
     "website": "https://cosmwasm.com/",
+    "github": "https://github.com/oak-security/audit-reports/blob/9c225a9d179968a877565d7c9fa46c626e201a17/CosmWasm/2023-10-17%20Audit%20Report%20-%20wasmd%20v1.0.pdf",
     "featured": true
   },
   {
