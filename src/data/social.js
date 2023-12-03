@@ -29,7 +29,7 @@ const social = [
   {
     title: "Instagram",
     icon: FaInstagram,
-    link: "https://www.instagram.com/decentralized_christian/",
+    link: "https://www.instagram.com/christian_vari/",
     class: "bg-instagram",
   },
   {
