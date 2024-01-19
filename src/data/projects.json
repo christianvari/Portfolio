@@ -1,5 +1,114 @@
 [
   {
+    "image": "../images/projects/persistence.jpeg",
+    "title": "Persistence IBC Liquid Staking module",
+    "description": "Cosmos SDK Audit",
+    "tags": [
+      "Blockchain",
+      "Golang",
+      "Cosmos SDK",
+      "Audit",
+      "Persistence",
+      "Cosmos Hub"
+    ],
+    "website": "https://persistence.one/"
+  },
+  {
+    "image": "../images/projects/zodiac.jpg",
+    "title": "Zodiac Protocol Extension",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Audit", "CosmWasm", "Osmosis"],
+    "website": "https://www.zodiacprotocol.xyz/"
+  },
+  {
+    "image": "../images/projects/persistence.jpeg",
+    "title": "Persistence Cosmos LSM Functionality",
+    "description": "Cosmos SDK Audit",
+    "tags": [
+      "Blockchain",
+      "Golang",
+      "Cosmos SDK",
+      "Audit",
+      "Persistence",
+      "Cosmos Hub"
+    ],
+    "website": "https://persistence.one/"
+  },
+  {
+    "image": "../images/projects/neptune.png",
+    "title": "Neptune Protocol Update",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Audit", "CosmWasm"],
+    "website": "https://nept.finance/",
+    "github": "https://github.com/oak-security/audit-reports/blob/401097d6971a9a4328c306f8a3e0d5107e677ebc/Neptune/2024-01-09%20Audit%20Report%20-%20Neptune%20Updates%20v1.0.pdf"
+  },
+  {
+    "image": "../images/projects/snowbridge.png",
+    "title": "Snowfork Snowbridge Extension",
+    "description": "Bridge Audit",
+    "tags": [
+      "Blockchain",
+      "Rust",
+      "Solidity",
+      "Substrate",
+      "Polkadot",
+      "Audit",
+      "Ethereum",
+      "Bridge"
+    ],
+    "website": "https://docs.snowbridge.network/"
+  },
+  {
+    "image": "../images/projects/vectis.png",
+    "title": "Vectis",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Audit", "CosmWasm"],
+    "website": "https://vectis.space/"
+  },
+  {
+    "image": "../images/projects/timewave.png",
+    "title": "Timewave Computer Valence Services",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Audit", "CosmWasm"],
+    "website": "https://timewave.computer/"
+  },
+  {
+    "image": "../images/projects/noble.png",
+    "title": "Noble TokenFactory and FiatTokenFactory modules",
+    "description": "Cosmos SDK Audit",
+    "tags": ["Blockchain", "Golang", "Noble", "Cosmos SDK", "Audit"],
+    "website": "https://nobleassets.xyz/",
+    "github": "https://github.com/oak-security/audit-reports/blob/1d926696b4c128c8205e6b0d4f5cf5b6b20dfa35/Noble/2024-01-17%20Audit%20Report%20-%20Noble%20tokenfactory%20Changes%20and%20fiattokenfactory%20v1.0.pdf"
+  },
+  {
+    "image": "../images/projects/composable.png",
+    "title": "Composable Finance Ethereum Light Client",
+    "description": "Light Client Audit",
+    "tags": ["Blockchain", "Golang", "Audit", "IBC", "Cosmos SDK", "Ethereum"],
+    "website": "https://www.composable.finance/"
+  },
+  {
+    "image": "../images/projects/router.jpg",
+    "title": "Router Voyager DexSpan",
+    "description": "Solidity Smart Contracts Audit",
+    "tags": ["Blockchain", "Solidity", "Ethereum", "Audit"],
+    "website": "https://www.routerprotocol.com/"
+  },
+  {
+    "image": "../images/projects/router.jpg",
+    "title": "Router Voyager Forwarder",
+    "description": "Off Chain Relayer And Orchestrator Audit",
+    "tags": [
+      "Blockchain",
+      "Golang",
+      "Cosmos SDK",
+      "Ethereum",
+      "Off chain",
+      "Audit"
+    ],
+    "website": "https://www.routerprotocol.com/"
+  },
+  {
     "image": "../images/projects/cosmoshub.jpg",
     "title": "Cosmos SDK v0.47",
     "description": "Cosmos SDK Audit",
