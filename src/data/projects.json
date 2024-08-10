@@ -1,5 +1,12 @@
 [
   {
+    "image": "../images/projects/timewave.png",
+    "title": "Timewave Covenants",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Audit", "CosmWasm"],
+    "website": "https://timewave.computer/"
+  },
+  {
     "image": "../images/projects/yieldmos.png",
     "title": "Yieldmos Outposts Osmosis",
     "description": "CosmWasm Smart Contracts Audit",
