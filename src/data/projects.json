@@ -1,5 +1,34 @@
 [
   {
+    "image": "../images/projects/composable.png",
+    "title": "Composable Finance Solana Light Client",
+    "description": "Light Client Audit",
+    "tags": [
+      "Blockchain",
+      "Rust",
+      "Audit",
+      "IBC",
+      "Solana",
+      "CosmWasm",
+      "Anchor"
+    ],
+    "website": "https://www.composable.finance/"
+  },
+  {
+    "image": "../images/projects/persistence.jpeg",
+    "title": "Persistence Cosmos Liquid Staking Updates",
+    "description": "Cosmos SDK Audit",
+    "tags": [
+      "Blockchain",
+      "Golang",
+      "Cosmos SDK",
+      "Audit",
+      "Persistence",
+      "Cosmos Hub"
+    ],
+    "website": "https://persistence.one/"
+  },
+  {
     "image": "../images/projects/persistence.jpeg",
     "title": "Persistence Dexter Updates",
     "description": "CosmWasm Smart Contracts Audit",
