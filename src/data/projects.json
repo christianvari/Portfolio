@@ -1,5 +1,12 @@
 [
   {
+    "image": "../images/projects/yieldmos.png",
+    "title": "Yieldmos Outposts Osmosis",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Audit", "CosmWasm", "Osmosis"],
+    "website": "http://www.yieldmos.com/"
+  },
+  {
     "image": "../images/projects/bifrost.png",
     "title": "Bifrost Finance",
     "description": "Substrate Pallet",
