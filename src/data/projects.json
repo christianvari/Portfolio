@@ -1,5 +1,26 @@
 [
   {
+    "image": "../images/projects/dymension.png",
+    "title": "Dymension Dymint",
+    "description": "Consensus algorithm",
+    "tags": [
+      "Blockchain",
+      "Golang",
+      "Cosmos SDK",
+      "Audit",
+      "Rollup",
+      "Consensus"
+    ],
+    "website": "https://dymension.xyz/"
+  },
+  {
+    "image": "../images/projects/composable.png",
+    "title": "Composable Finance Solidity IBC Implementation",
+    "description": "Library Audit",
+    "tags": ["Blockchain", "Solidity", "Audit", "IBC"],
+    "website": "https://www.composable.finance/"
+  },
+  {
     "image": "../images/projects/composable.png",
     "title": "Composable Finance Solana Light Client",
     "description": "Light Client Audit",
