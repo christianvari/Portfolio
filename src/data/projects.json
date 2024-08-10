@@ -1,5 +1,26 @@
 [
   {
+    "image": "../images/projects/bifrost.png",
+    "title": "Bifrost Finance",
+    "description": "Substrate Pallet",
+    "tags": ["Blockchain", "Rust", "Audit", "Substrate", "Polkadot"],
+    "website": "https://bifrost.io/"
+  },
+  {
+    "image": "../images/projects/persistence.jpeg",
+    "title": "Persistence Dexter",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Audit", "CosmWasm"],
+    "website": "https://persistence.one/"
+  },
+  {
+    "image": "../images/projects/astroport.jpg",
+    "title": "Astoport Transmuter Pool",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Audit", "CosmWasm"],
+    "website": "https://astroport.fi"
+  },
+  {
     "image": "../images/projects/persistence.jpeg",
     "title": "Persistence IBC Liquid Staking module",
     "description": "Cosmos SDK Audit",
