@@ -1,5 +1,26 @@
 [
   {
+    "image": "../images/projects/persistence.jpeg",
+    "title": "Persistence Dexter Updates",
+    "description": "CosmWasm Smart Contracts Audit",
+    "tags": ["Blockchain", "Rust", "Audit", "CosmWasm"],
+    "website": "https://persistence.one/"
+  },
+  {
+    "image": "../images/projects/router.jpg",
+    "title": "Router Voyager Forwarder Extension",
+    "description": "Off Chain Relayer And Orchestrator Audit",
+    "tags": [
+      "Blockchain",
+      "Golang",
+      "Cosmos SDK",
+      "Ethereum",
+      "Off chain",
+      "Audit"
+    ],
+    "website": "https://www.routerprotocol.com/"
+  },
+  {
     "image": "../images/projects/timewave.png",
     "title": "Timewave Covenants",
     "description": "CosmWasm Smart Contracts Audit",
