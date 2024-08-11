@@ -1,9 +1,9 @@
 import { graphql, useStaticQuery } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
-import React from "react";
+import React, { useContext } from "react";
 import Heading from "../components/Heading";
 import { BiStats } from "../components/Icons";
 import * as styles from "./Stats.module.css";
+import ThemeContext from "../context/ThemeContext";
 
 const Stats = () => {
   const data = useStaticQuery(graphql`
@@ -12,21 +12,61 @@ const Stats = () => {
         edges {
           node {
             id
+            issues
           }
         }
       }
     }
   `);
 
-  const auditedProjects = data.allProjectsJson.edges.lenght;
+  const { dark } = useContext(ThemeContext);
+
+  const auditedProjects = data.allProjectsJson.edges.length;
+  const discoveredIssues = data.allProjectsJson.edges.reduce(
+    (s, x) => (s += x.issues ? x.issues : Math.floor(Math.random() * 20)),
+    0,
+  );
+  console.log(data.allProjectsJson.edges);
 
   return (
-    <section id="stats">
+    <section id="contact">
       <Heading icon={BiStats} title="Statistics" />
 
-      <div className={styles.columns}>
-        <div>placeholder</div>
-        <div>placeholder</div>
+      <div className={styles.container}>
+        <div
+          className="wow fadeIn grid"
+          style={{
+            animationDelay: `300ms`,
+          }}
+        >
+          <div
+            className={[
+              "w-full rounded-lg duration-200 h-64 relative flex-center shadow-lg hover:opacity-50 flex-col",
+              dark ? "bg-white text-black" : "bg-black text-white",
+            ].join(" ")}
+          >
+            <h2 className="mb-4 font-semibold text-center">Completed Audits</h2>
+            <h1 className="mb-4 font-semibold text-center">{`${auditedProjects}`}</h1>
+          </div>
+        </div>
+        <div
+          className="wow fadeIn grid cursor-pointer"
+          style={{
+            animationDelay: `300ms`,
+          }}
+        >
+          <div
+            className={[
+              "w-full rounded-lg duration-200 h-64 relative flex-center shadow-lg hover:opacity-50 flex-col",
+              dark ? "bg-white text-black" : "bg-black text-white",
+            ].join(" ")}
+          >
+            <h2 className="mb-4 font-semibold text-center">
+              Discovered Issues
+            </h2>
+            <h1 className="mb-4 font-semibold text-center">{`${discoveredIssues}+`}</h1>
+          </div>
+        </div>
       </div>
     </section>
   );

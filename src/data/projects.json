@@ -345,7 +345,8 @@
       "Interchain Security"
     ],
     "website": "https://nobleassets.xyz/",
-    "github": "https://github.com/oak-security/audit-reports/blob/55e5895d4fd1295e087c59da35269fd59f95c657/Noble/2023-07-08%20Audit%20Report%20-%20Noble%20Tariff%20Module%20v1.0.pdf"
+    "github": "https://github.com/oak-security/audit-reports/blob/55e5895d4fd1295e087c59da35269fd59f95c657/Noble/2023-07-08%20Audit%20Report%20-%20Noble%20Tariff%20Module%20v1.0.pdf",
+    "issues": 10
   },
   {
     "image": "../images/projects/evmos.jpg",
