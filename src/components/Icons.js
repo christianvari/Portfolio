@@ -38,6 +38,8 @@ import {
   MdWork,
 } from "react-icons/md";
 
+import { BiStats } from "react-icons/bi";
+
 export {
   AiFillInstagram,
   AiFillSafetyCertificate,
@@ -73,4 +75,5 @@ export {
   MdWork,
   FaMailBulk,
   FaCertificate,
+  BiStats,
 };
