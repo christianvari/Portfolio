@@ -6,6 +6,7 @@ import * as styles from "./FeaturedProjects.module.css";
 import ProjectCard from "../components/ProjectCard";
 import { BsArrowRightCircle } from "react-icons/bs";
 import ThemeContext from "../context/ThemeContext";
+import Stats from "./Stats";
 
 const FeaturedProjects = () => {
   const { dark } = useContext(ThemeContext);
@@ -35,6 +36,8 @@ const FeaturedProjects = () => {
   return (
     <section id="projects">
       <Heading icon={FaDev} title="Featured Projects" />
+
+      <Stats />
 
       <div className={styles.container}>
         {data.allProjectsJson.edges.map(({ node }) => (

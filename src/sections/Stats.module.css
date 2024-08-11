@@ -1,13 +1,11 @@
 .container {
   display: grid;
-  gap: 3rem;
+  gap: 1rem;
   grid-template-columns: repeat(1, minmax(0, 1fr));
+  padding-bottom: 3rem;
 }
 @media (min-width: 0px) {
-  .container {
-    gap: 3rem;
-  }
-  .container img {
+  .container div {
     height: 8rem;
   }
 }
@@ -15,9 +13,8 @@
   .container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
-@screen xl {
-  .container img {
-    height: 20rem;
+
+  .container div {
+    height: 12rem;
   }
 }

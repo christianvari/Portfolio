@@ -12,7 +12,6 @@ import Achievements from "../sections/Achievements";
 import "./global.css";
 import Certifications from "../sections/Certifications";
 import FeaturedProjects from "../sections/FeaturedProjects";
-import Stats from "../sections/Stats";
 
 const IndexPage = () => {
   return (
@@ -20,18 +19,16 @@ const IndexPage = () => {
       <div className={`container ${styles.layout}`}>
         <Hero />
         <AboutMe />
-        <Stats />
-        <Skills />
-        <FeaturedProjects />
         <div className={styles.workEducation}>
           <Work />
           <Education />
         </div>
+        <Skills />
+        <FeaturedProjects />
         <div className={styles.workEducation}>
           <Achievements />
           <Certifications />
         </div>
-
         <Contact />
         <Footer />
       </div>
