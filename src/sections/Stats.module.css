@@ -1,0 +1,28 @@
+.columns {
+  @apply grid grid-cols-1 row-gap-16;
+}
+
+@screen md {
+  .columns {
+    @apply row-gap-24;
+    @apply grid-cols-2 row-gap-0;
+  }
+
+  .layout .achievements-certification-philanthropy {
+    @apply grid-cols-2;
+  }
+
+  .layout .achievements-certification-philanthropy > div:nth-child(3) {
+    @apply col-span-2;
+  }
+}
+
+@screen xl {
+  .layout .achievements-certification-philanthropy {
+    @apply grid-cols-3 gap-0;
+  }
+
+  .layout .achievements-certification-philanthropy > div:nth-child(n) {
+    @apply col-span-1;
+  }
+}
