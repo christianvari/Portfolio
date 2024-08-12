@@ -1,9 +1,8 @@
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, navigate, useStaticQuery } from "gatsby";
 import React, { useContext } from "react";
-import Heading from "../components/Heading";
-import { BiStats } from "../components/Icons";
 import * as styles from "./Stats.module.css";
 import ThemeContext from "../context/ThemeContext";
+import { BsArrowRightCircle } from "react-icons/bs";
 
 const Stats = () => {
   const data = useStaticQuery(graphql`
@@ -59,6 +58,26 @@ const Stats = () => {
         >
           <h2 className="font-semibold text-center">Discovered Issues</h2>
           <h1 className="font-semibold text-center">{`${discoveredIssues}+`}</h1>
+        </div>
+      </div>
+      <div
+        className="wow fadeIn grid"
+        style={{
+          animationDelay: `300ms`,
+        }}
+      >
+        <div
+          className={[
+            "w-full rounded-lg duration-200 h-64 relative flex-center shadow-lg flex-col cursor-pointer",
+            dark ? "bg-white text-black" : "bg-black text-white",
+            styles.seeMoreContainer,
+          ].join(" ")}
+          onClick={() => {
+            navigate("/projects");
+          }}
+        >
+          <BsArrowRightCircle className={styles.icon} />
+          <p className="font-semibold text-center">See all projects</p>
         </div>
       </div>
     </div>

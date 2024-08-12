@@ -1,16 +1,14 @@
-import { graphql, navigate, useStaticQuery } from "gatsby";
-import React, { useContext } from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import React from "react";
 import Heading from "../components/Heading";
 import { FaDev } from "../components/Icons";
 import * as styles from "./FeaturedProjects.module.css";
 import ProjectCard from "../components/ProjectCard";
-import { BsArrowRightCircle } from "react-icons/bs";
-import ThemeContext from "../context/ThemeContext";
 import Stats from "./Stats";
+import { Slider } from "infinite-react-carousel";
+import { useMediaQuery } from "../utils";
 
 const FeaturedProjects = () => {
-  const { dark } = useContext(ThemeContext);
-
   const data = useStaticQuery(graphql`
     {
       allProjectsJson(filter: { featured: { eq: true } }) {
@@ -33,13 +31,25 @@ const FeaturedProjects = () => {
     }
   `);
 
+  const is768 = useMediaQuery("(min-width: 768px)");
+  const is1024 = useMediaQuery("(min-width: 1440px)");
+
   return (
     <section id="projects">
       <Heading icon={FaDev} title="Featured Projects" />
 
       <Stats />
 
-      <div className={styles.container}>
+      <Slider
+        className={styles.slider}
+        slidesToShow={is1024 ? 3 : is768 ? 2 : 1}
+        autoplay={true}
+        arrows={false}
+        adaptiveHeight={true}
+        pauseOnHover={true}
+        autoplaySpeed={3000}
+        rows={2}
+      >
         {data.allProjectsJson.edges.map(({ node }) => (
           <ProjectCard
             key={node.id}
@@ -51,23 +61,7 @@ const FeaturedProjects = () => {
             tags={node.tags}
           />
         ))}
-        <div
-          className={[
-            styles.seeMoreContainer,
-            dark ? styles.darkTheme : "",
-            "wow fadeIn",
-          ].join(" ")}
-          style={{
-            animationDelay: `300ms`,
-          }}
-          onClick={() => {
-            navigate("/projects");
-          }}
-        >
-          <BsArrowRightCircle className={styles.icon} />
-          <p>See all projects</p>
-        </div>
-      </div>
+      </Slider>
     </section>
   );
 };

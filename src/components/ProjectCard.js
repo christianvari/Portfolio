@@ -9,9 +9,11 @@ const ProjectCard = ({ github, website, image, title, description, tags }) => {
 
   return (
     <div
-      className="wow fadeIn grid"
+      className="wow fadeIn grid ProjectCard"
       style={{
         animationDelay: `300ms`,
+        minHeight: "25rem",
+        padding: "0.5rem",
       }}
     >
       <OutboundLink
