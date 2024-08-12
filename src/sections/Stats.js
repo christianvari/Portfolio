@@ -37,7 +37,7 @@ const Stats = () => {
       >
         <div
           className={[
-            "w-full rounded-lg duration-200 h-64 relative flex-center shadow-lg hover:opacity-50 flex-col",
+            "w-full rounded-lg duration-200 h-64 relative flex-center shadow-lg flex-col",
             dark ? "bg-white text-black" : "bg-black text-white",
           ].join(" ")}
         >
@@ -46,14 +46,14 @@ const Stats = () => {
         </div>
       </div>
       <div
-        className="wow fadeIn grid cursor-pointer"
+        className="wow fadeIn grid"
         style={{
           animationDelay: `300ms`,
         }}
       >
         <div
           className={[
-            "w-full rounded-lg duration-200 h-64 relative flex-center shadow-lg hover:opacity-50 flex-col",
+            "w-full rounded-lg duration-200 h-64 relative flex-center shadow-lg flex-col",
             dark ? "bg-white text-black" : "bg-black text-white",
           ].join(" ")}
         >
