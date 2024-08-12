@@ -11,7 +11,8 @@
       "Rollup",
       "Consensus"
     ],
-    "website": "https://dymension.xyz/"
+    "website": "https://dymension.xyz/",
+    "featured": true
   },
   {
     "image": "../images/projects/composable.png",
@@ -89,7 +90,8 @@
     "title": "Bifrost Finance",
     "description": "Substrate Pallet",
     "tags": ["Blockchain", "Rust", "Audit", "Substrate", "Polkadot"],
-    "website": "https://bifrost.io/"
+    "website": "https://bifrost.io/",
+    "featured": true
   },
   {
     "image": "../images/projects/persistence.jpeg",
@@ -191,7 +193,8 @@
     "title": "Composable Finance Ethereum Light Client",
     "description": "Light Client Audit",
     "tags": ["Blockchain", "Golang", "Audit", "IBC", "Cosmos SDK", "Ethereum"],
-    "website": "https://www.composable.finance/"
+    "website": "https://www.composable.finance/",
+    "featured": true
   },
   {
     "image": "../images/projects/router.jpg",
@@ -258,7 +261,8 @@
     "description": "CosmWasm Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Neutron", "Solidity", "Audit", "CosmWasm"],
     "website": "https://marsprotocol.io/",
-    "github": "https://github.com/oak-security/audit-reports/blob/d2fe412c9e1ff3b80c7701f0388e33465f23d5de/Hadron%20Labs/2023-07-29%20Audit%20Report%20-%20Hadron%20Labs%20Lido%20Satellite%20v1.0.pdf"
+    "github": "https://github.com/oak-security/audit-reports/blob/d2fe412c9e1ff3b80c7701f0388e33465f23d5de/Hadron%20Labs/2023-07-29%20Audit%20Report%20-%20Hadron%20Labs%20Lido%20Satellite%20v1.0.pdf",
+    "featured": true
   },
   {
     "image": "../images/projects/snowbridge.png",
@@ -362,7 +366,9 @@
     "description": "CosmWasm Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Audit", "CosmWasm", "IBC", "DA0 DA0"],
     "website": "https://daodao.zone",
-    "github": "https://github.com/oak-security/audit-reports/blob/ad3e35844fa223853f9b3aa67e1088906ccb9372/Polytone/2023-06-05%20Audit%20Report%20-%20Polytone%20v1.0.pdf"
+    "github": "https://github.com/oak-security/audit-reports/blob/ad3e35844fa223853f9b3aa67e1088906ccb9372/Polytone/2023-06-05%20Audit%20Report%20-%20Polytone%20v1.0.pdf",
+    "featured": true,
+    "issues": 14
   },
   {
     "image": "../images/projects/cosmoshub.jpg",
@@ -442,7 +448,8 @@
       "Circle"
     ],
     "website": "https://github.com/strangelove-ventures/noble",
-    "github": "https://github.com/oak-security/audit-reports/blob/2a4614dce4c7a4041e289a6eb960467dd77f0647/Noble/2023-03-13%20Audit%20Report%20-%20Noble%20v1.0.pdf"
+    "github": "https://github.com/oak-security/audit-reports/blob/2a4614dce4c7a4041e289a6eb960467dd77f0647/Noble/2023-03-13%20Audit%20Report%20-%20Noble%20v1.0.pdf",
+    "featured": true
   },
   {
     "image": "../images/projects/mars.png",
@@ -490,7 +497,8 @@
       "Mixnet",
       "Privacy"
     ],
-    "website": "https://nymtech.net/"
+    "website": "https://nymtech.net/",
+    "featured": true
   },
   {
     "image": "../images/projects/autonomy.png",
@@ -506,7 +514,8 @@
     "description": "CosmWasm Smart Contracts Audit",
     "tags": ["Blockchain", "Rust", "Osmosis", "Mars", "Audit", "CosmWasm"],
     "website": "https://marsprotocol.io/",
-    "github": "https://github.com/oak-security/audit-reports/blob/99a0399ad6449e7e0968da38ba197d47d09632af/Mars/2022-12-09%20Audit%20Report%20-%20Mars%20Rover%20v1.0.pdf"
+    "github": "https://github.com/oak-security/audit-reports/blob/99a0399ad6449e7e0968da38ba197d47d09632af/Mars/2022-12-09%20Audit%20Report%20-%20Mars%20Rover%20v1.0.pdf",
+    "featured": true
   },
   {
     "image": "../images/projects/persistence.jpeg",

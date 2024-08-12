@@ -34,6 +34,9 @@ const FeaturedProjects = () => {
   const is768 = useMediaQuery("(min-width: 768px)");
   const is1024 = useMediaQuery("(min-width: 1440px)");
 
+  const columns = is1024 ? 3 : is768 ? 2 : 1;
+  const rows = 2;
+
   return (
     <section id="projects">
       <Heading icon={FaDev} title="Featured Projects" />
@@ -42,13 +45,13 @@ const FeaturedProjects = () => {
 
       <Slider
         className={styles.slider}
-        slidesToShow={is1024 ? 3 : is768 ? 2 : 1}
+        slidesToShow={columns}
         autoplay={true}
         arrows={false}
-        adaptiveHeight={true}
         pauseOnHover={true}
         autoplaySpeed={3000}
-        rows={2}
+        rows={rows}
+        overScan={columns * rows}
       >
         {data.allProjectsJson.edges.map(({ node }) => (
           <ProjectCard
