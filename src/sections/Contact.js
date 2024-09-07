@@ -1,28 +1,20 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import Heading from "../components/Heading";
 import { IoIosPaperPlane } from "../components/Icons";
 import { mail } from "fluent-mailto";
 import * as styles from "./Contact.module.css";
 import messanger from "../images/contacts/messanger.svg";
 import call from "../images/contacts/call.svg";
-import { PopupModal } from "react-calendly";
 import ThemeContext from "../context/ThemeContext";
+import { AppointletButton } from "gatsby-plugin-appointlet";
 
 const Contact = () => {
-  const [isOpen, setIsOpen] = useState();
   const { dark } = useContext(ThemeContext);
   const mailto = mail
     .to("info@codezen.tech")
     .subject("Enter your request subject here")
     .body("Enter your detailed request here")
     .build();
-
-  const popupAnchor =
-    typeof document !== "undefined" ? (
-      document.getElementById("___gatsby")
-    ) : (
-      <div></div>
-    );
 
   return (
     <section id="contact">
@@ -48,12 +40,12 @@ const Contact = () => {
             alt="Send me an email"
           />
         </div>
-        <div
+        <AppointletButton
+          tag="div"
           className="wow fadeIn grid cursor-pointer"
           style={{
             animationDelay: `300ms`,
           }}
-          onClick={() => setIsOpen(true)}
         >
           <h6 className="mb-4 font-semibold text-center">Schedule a call</h6>
           <img
@@ -64,15 +56,8 @@ const Contact = () => {
             src={call}
             alt="Schedule a call"
           />
-        </div>
+        </AppointletButton>
       </div>
-      <PopupModal
-        url="https://calendly.com/vari-christian/one-to-one"
-        iframeTitle="Calendly Scheduling Page"
-        onModalClose={() => setIsOpen(false)}
-        open={isOpen}
-        rootElement={popupAnchor}
-      />
     </section>
   );
 };

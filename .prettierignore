@@ -2,6 +2,5 @@
 .cache
 public
 .vercel
-package.json
 node_modules
 package-lock.json

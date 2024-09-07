@@ -33,6 +33,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-appointlet`,
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
