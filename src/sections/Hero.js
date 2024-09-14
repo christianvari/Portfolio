@@ -18,11 +18,14 @@ const Hero = () => {
   `);
 
   return (
-    <section id="hero" className="min-h-screen flex items-center container">
-      <div className="w-full grid grid-cols-1 lg:grid-cols-5 row-gap-8 lg:gap-16 justify-center lg:justify-start items-center mt-8 md:mt-12 lg:mt-0">
+    <section id="hero" className="h-screen flex items-center container">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-5 lg:gap-16 justify-center lg:justify-start items-center">
         <div className="col-span-2">
-          <div className="max-w-lg mx-auto" data-depth="0.4">
-            <GatsbyImage image={data.photo.childImageSharp.gatsbyImageData} />
+          <div className="max-w-lg mx-auto max-h-[70vh]" data-depth="0.4">
+            <GatsbyImage
+              image={data.photo.childImageSharp.gatsbyImageData}
+              className="max-h-[70vh]"
+            />
           </div>
         </div>
         <div className="col-span-3">
@@ -35,7 +38,7 @@ const Hero = () => {
           <div className="text-center lg:text-left flex flex-col items-center lg:ml-4 lg:items-start">
             <Subtitle onDone={() => setShowSocial(true)} />
 
-            <div className="w-full md:w-auto my-5">
+            <div className="w-full md:w-auto my-2">
               {showSocial && <Social />}
               {showSocial && <ScrollDown />}
             </div>
