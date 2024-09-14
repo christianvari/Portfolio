@@ -1,30 +1,31 @@
 import React, { useContext } from "react";
-import { BsArrowDownCircle } from "react-icons/bs";
 import ThemeContext from "../context/ThemeContext";
-import { icon, container, darkTheme } from "./ScrollDown.module.css";
+import { container, icon, dot, text, darkTheme } from "./ScrollDown.module.css";
 import { scroller } from "react-scroll";
 
 const ScrollDown = () => {
   const { dark } = useContext(ThemeContext);
 
+  const handleClick = () => {
+    scroller.scrollTo("about-me", {
+      delay: 50,
+      offset: -50,
+      duration: 600,
+      smooth: "easeInOutCubic",
+    });
+  };
+
   return (
     <div
-      className={[container, "animated", "fadeIn", dark ? darkTheme : ""].join(
-        " ",
-      )}
+      className={`${container} animated fadeIn ${dark ? darkTheme : ""}`}
       style={{ animationDelay: "0.5s" }}
+      onClick={handleClick}
+      role="button"
     >
-      <BsArrowDownCircle
-        className={icon}
-        onClick={() =>
-          scroller.scrollTo("about-me", {
-            delay: 50,
-            offset: -50,
-            duration: 600,
-            smooth: "easeInOutCubic",
-          })
-        }
-      />
+      <div className={icon}>
+        <div className={dot}></div>
+      </div>
+      <div className={text}>Scroll Down</div>
     </div>
   );
 };
