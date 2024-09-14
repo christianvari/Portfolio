@@ -12,7 +12,7 @@ const ScrollDown = () => {
       className={[container, "animated", "fadeIn", dark ? darkTheme : ""].join(
         " ",
       )}
-      style={{ animationDelay: "2s" }}
+      style={{ animationDelay: "0.5s" }}
     >
       <BsArrowDownCircle
         className={icon}
