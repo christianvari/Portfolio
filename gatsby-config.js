@@ -97,6 +97,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sharedImages`,
+        path: path.join(__dirname, `src`, `sharedData`, `images`),
+      },
+    },
+    {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [
