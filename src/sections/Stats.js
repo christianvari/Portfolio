@@ -7,7 +7,7 @@ import { BsArrowRightCircle } from "react-icons/bs";
 const Stats = () => {
   const data = useStaticQuery(graphql`
     {
-      allProjectsJson {
+      allAuditHistoryJson {
         edges {
           node {
             id
@@ -20,8 +20,8 @@ const Stats = () => {
 
   const { dark } = useContext(ThemeContext);
 
-  const auditedProjects = data.allProjectsJson.edges.length;
-  const discoveredIssues = data.allProjectsJson.edges.reduce(
+  const auditedProjects = data.allAuditHistoryJson.edges.length;
+  const discoveredIssues = data.allAuditHistoryJson.edges.reduce(
     (s, x) => (s += x.issues ? x.issues : Math.floor(Math.random() * 20)),
     0,
   );

@@ -8,7 +8,7 @@ import ProjectCard from "../components/ProjectCard";
 const Projects = () => {
   const data = useStaticQuery(graphql`
     {
-      allProjectsJson {
+      allAuditHistoryJson {
         edges {
           node {
             id
@@ -33,7 +33,7 @@ const Projects = () => {
       <Heading icon={FaDev} title="Projects" />
 
       <div className={styles.container}>
-        {data.allProjectsJson.edges.map(({ node }) => (
+        {data.allAuditHistoryJson.edges.map(({ node }) => (
           <ProjectCard
             key={node.id}
             title={node.title}

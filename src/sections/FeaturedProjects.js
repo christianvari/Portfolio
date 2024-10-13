@@ -11,7 +11,7 @@ import { useMediaQuery } from "../utils";
 const FeaturedProjects = () => {
   const data = useStaticQuery(graphql`
     {
-      allProjectsJson(filter: { featured: { eq: true } }) {
+      allAuditHistoryJson(filter: { featured: { eq: true } }) {
         edges {
           node {
             id
@@ -53,7 +53,7 @@ const FeaturedProjects = () => {
         rows={rows}
         overScan={columns * rows}
       >
-        {data.allProjectsJson.edges.map(({ node }) => (
+        {data.allAuditHistoryJson.edges.map(({ node }) => (
           <ProjectCard
             key={node.id}
             title={node.title}
