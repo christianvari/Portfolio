@@ -11,7 +11,12 @@ const Stats = () => {
         edges {
           node {
             id
-            issues
+            issues {
+              critical
+              major
+              minor
+              informational
+            }
           }
         }
       }
@@ -21,10 +26,16 @@ const Stats = () => {
   const { dark } = useContext(ThemeContext);
 
   const auditedProjects = data.allAuditHistoryJson.edges.length;
-  const discoveredIssues = data.allAuditHistoryJson.edges.reduce(
-    (s, x) => (s += x.issues ? x.issues : Math.floor(Math.random() * 20)),
-    0,
-  );
+  const discoveredIssues = data.allAuditHistoryJson.edges.reduce((p, n) => {
+    if (!n.node.issues) return p;
+    return (
+      p +
+      n.node.issues.critical +
+      n.node.issues.major +
+      n.node.issues.minor +
+      n.node.issues.informational
+    );
+  }, 0);
 
   return (
     <div className={styles.container}>
@@ -57,7 +68,7 @@ const Stats = () => {
           ].join(" ")}
         >
           <h2 className="font-semibold text-center">Discovered Issues</h2>
-          <h1 className="font-semibold text-center">{`${discoveredIssues}+`}</h1>
+          <h1 className="font-semibold text-center">{`${discoveredIssues}`}</h1>
         </div>
       </div>
       <div

@@ -93,7 +93,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `sharedData`,
-        path: path.join(__dirname, `src`, `sharedData`),
+        path: path.join(__dirname, `src`, `sharedData`, "data"),
       },
     },
     {
