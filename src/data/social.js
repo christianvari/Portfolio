@@ -1,7 +1,6 @@
 import { mail } from "fluent-mailto";
 import {
   FaGithubAlt,
-  FaInstagram,
   FaLinkedinIn,
   FaTwitter,
   FaMailBulk,
@@ -11,7 +10,7 @@ const social = [
   {
     title: "Twitter",
     icon: FaTwitter,
-    link: "https://twitter.com/decentra_chris",
+    link: "https://twitter.com/christianvari_",
     class: "bg-twitter",
   },
   {
@@ -25,12 +24,6 @@ const social = [
     icon: FaGithubAlt,
     link: "https://github.com/christianvari",
     class: "bg-github",
-  },
-  {
-    title: "Instagram",
-    icon: FaInstagram,
-    link: "https://www.instagram.com/christian_vari/",
-    class: "bg-instagram",
   },
   {
     title: "Mail",
