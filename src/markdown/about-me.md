@@ -13,4 +13,4 @@ Currently me and Codezen are contributing securing the blockchain ecosystem perf
 My main focus is on blockchain, microservice architectures and innovative technologies.
 I also have good skills in web development and Agile team management.
 
-To get in contact with me or **Codezen**, head over to the <u>[contact section](#contact)</u> below to send me a mail or book a call.
+To get in contact with me or **Codezen**, head over to the <u>[contact section](#contact)</u> below to send me a mail.

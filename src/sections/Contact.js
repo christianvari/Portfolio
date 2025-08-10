@@ -4,9 +4,7 @@ import { IoIosPaperPlane } from "../components/Icons";
 import { mail } from "fluent-mailto";
 import * as styles from "./Contact.module.css";
 import messanger from "../images/contacts/messanger.svg";
-import call from "../images/contacts/call.svg";
 import ThemeContext from "../context/ThemeContext";
-import { AppointletButton } from "gatsby-plugin-appointlet";
 
 const Contact = () => {
   const { dark } = useContext(ThemeContext);
@@ -40,23 +38,6 @@ const Contact = () => {
             alt="Send me an email"
           />
         </div>
-        <AppointletButton
-          tag="div"
-          className="wow fadeIn grid cursor-pointer"
-          style={{
-            animationDelay: `300ms`,
-          }}
-        >
-          <h6 className="mb-4 font-semibold text-center">Schedule a call</h6>
-          <img
-            className={[
-              "absolute w-full rounded-lg duration-200 h-64 relative flex-center shadow-lg hover:opacity-50",
-              dark ? "bg-white" : "bg-black",
-            ].join(" ")}
-            src={call}
-            alt="Schedule a call"
-          />
-        </AppointletButton>
       </div>
     </section>
   );
