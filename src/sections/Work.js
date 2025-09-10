@@ -19,6 +19,7 @@ const Work = () => {
             period
             location
             specialization
+            url
             icon {
               childImageSharp {
                 gatsbyImageData(
@@ -66,10 +67,27 @@ const Work = () => {
                   />
                 )}
                 <div className="ml-8">
-                  <GatsbyImage
-                    className="w-8 h-8"
-                    image={node.icon.childImageSharp.gatsbyImageData}
-                  />
+                  {node.url ? (
+                    <a
+                      href={node.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${node.title} website`}
+                      title={`${node.title} website`}
+                    >
+                      <GatsbyImage
+                        className="w-8 h-8 transition-opacity duration-200 hover:opacity-80 cursor-pointer"
+                        image={node.icon.childImageSharp.gatsbyImageData}
+                        alt={node.title}
+                      />
+                    </a>
+                  ) : (
+                    <GatsbyImage
+                      className="w-8 h-8"
+                      image={node.icon.childImageSharp.gatsbyImageData}
+                      alt={node.title}
+                    />
+                  )}
                   <div className="mt-3 flex items-baseline">
                     <h6 className="font-semibold">{node.title}</h6>
                     <h6 className="text-xs ml-2">({node.period})</h6>

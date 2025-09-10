@@ -1,19 +1,30 @@
 [
   {
+    "icon": "../images/work/altairith.png",
+    "title": "Altairith Capital Holding SRL",
+    "subtitle": "Chairman",
+    "period": "September '25 - current",
+    "location": "Italy (Remote)",
+    "specialization": "Management, Investing, Risk Management",
+    "url": "https://www.altairith.capital"
+  },
+  {
     "icon": "../images/work/codezen.png",
-    "title": "Codezen SRLS",
-    "subtitle": "Founder, CEO and Lead Blockchain Engineer",
+    "title": "Codezen SRL",
+    "subtitle": "Founder, CEO and Lead Security Researcher",
     "period": "April '22 - current",
-    "location": "Segni, Italy (Remote)",
-    "specialization": "Management, Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK"
+    "location": "Italy (Remote)",
+    "specialization": "Management, Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK",
+    "url": "https://www.codezen.tech"
   },
   {
     "icon": "../images/work/oak.jpg",
     "title": "Oak Security",
-    "subtitle": "Lead Blockchain and Smart Contract Auditor",
+    "subtitle": "Lead Security Researcher",
     "period": "September '22 - current",
     "location": "Munich, Germany (Remote)",
-    "specialization": "Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK"
+    "specialization": "Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK, Solana, Anchor, Polkadot SDK",
+    "url": "https://www.oaksecurity.io"
   },
   {
     "icon": "../images/work/oak.jpg",
@@ -21,15 +32,26 @@
     "subtitle": "Blockchain and Smart Contract Auditor",
     "period": "February '22 - September '22",
     "location": "Munich, Germany (Remote)",
-    "specialization": "Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK"
+    "specialization": "Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK, Solana, Anchor, Polkadot SDK",
+    "url": "https://www.oaksecurity.io"
+  },
+  {
+    "icon": "../images/work/zenith.jpeg",
+    "title": "Zenith Security",
+    "subtitle": "Security Researcher",
+    "period": "January '25 - current",
+    "location": "New York, New York (Remote)",
+    "specialization": "Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK, Solana, Anchor, Polkadot SDK",
+    "url": "https://www.zenith.security"
   },
   {
     "icon": "../images/work/defitalents.jpeg",
     "title": "DeFi Talents @ Frankfurt School of Finance & Management",
     "subtitle": "Mentor",
-    "period": "September '23 - current",
+    "period": "September '23 - August '25",
     "location": "Frankfurt Rhine-Main, Germany (Remote)",
-    "specialization": "Blockchain, Finance, Management, Economy, Teaching"
+    "specialization": "Blockchain, Finance, Management, Economy, Teaching",
+    "url": "https://web3-talents.io/defi-talents/"
   },
   {
     "icon": "../images/work/hcl.png",
@@ -37,7 +59,8 @@
     "subtitle": "Software Engineer II",
     "period": "November '21 - August '22",
     "location": "Rome, Italy",
-    "specialization": "Virtual Reality, Microservices Architecture, Natural Language Processing, Node.js, React, Python, AI, Scrum Master"
+    "specialization": "Virtual Reality, Microservices Architecture, Natural Language Processing, Node.js, React, Python, AI, Scrum Master",
+    "url": "https://www.hcltech.com"
   },
   {
     "icon": "../images/work/hcl.png",
@@ -45,7 +68,8 @@
     "subtitle": "Junior Software Engineer",
     "period": "April '20 - November '21",
     "location": "Rome, Italy",
-    "specialization": "React, Virtual Reality, Node.js, ChatBots, Real time applications"
+    "specialization": "React, Virtual Reality, Node.js, ChatBots, Real time applications",
+    "url": "https://www.hcltech.com"
   },
   {
     "icon": "../images/work/freelance.jpg",
