@@ -1,9 +1,5 @@
 [
   {
-    "icon": "../images/skills/blockchain.png",
-    "name": "Blockchain Auditing"
-  },
-  {
     "icon": "../images/skills/rust.png",
     "name": "Rust"
   },
@@ -14,6 +10,10 @@
   {
     "icon": "../images/skills/ethereum.png",
     "name": "Solidity"
+  },
+  {
+    "icon": "../images/skills/typescript.png",
+    "name": "TypeScript"
   },
   {
     "icon": "../images/skills/cosmwasm.png",
@@ -32,6 +32,34 @@
     "name": "Ink!"
   },
   {
+    "icon": "../images/skills/solana.png",
+    "name": "Solana"
+  },
+  {
+    "icon": "../images/skills/anchor.png",
+    "name": "Anchor"
+  },
+  {
+    "icon": "../images/skills/move.png",
+    "name": "Move"
+  },
+  {
+    "icon": "../images/skills/soroban.png",
+    "name": "Soroban"
+  },
+  {
+    "icon": "../images/skills/docker.png",
+    "name": "Docker"
+  },
+  {
+    "icon": "../images/skills/kubernetes.png",
+    "name": "Kubernetes"
+  },
+  {
+    "icon": "../images/skills/blockchain.png",
+    "name": "Blockchain Auditing"
+  },
+  {
     "icon": "../images/skills/react.png",
     "name": "React"
   },
@@ -44,19 +72,7 @@
     "name": "NodeJS"
   },
   {
-    "icon": "../images/skills/typescript.png",
-    "name": "TypeScript"
-  },
-  {
     "icon": "../images/skills/python.png",
     "name": "Python"
-  },
-  {
-    "icon": "../images/skills/docker.png",
-    "name": "Docker"
-  },
-  {
-    "icon": "../images/skills/kubernetes.png",
-    "name": "Kubernetes"
   }
 ]
