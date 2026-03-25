@@ -3,18 +3,14 @@ id: "about-me"
 ---
 
 
-Hey there
+I’m Christian Vari, Founder & CEO of Codezen, a blockchain security firm focused on auditing financial and Web3 systems.
 
-I’m **Christian Vari**, a {AGE}-year-old Italian **software engineer and security researcher** passionate about blockchain technology and distributed systems.
+I’ve worked on 250+ audits, identifying over 900 vulnerabilities and helping securing assets across Solana, Cosmos SDK, Polkadot SDK, Ethereum and EVM ecosystems.
 
-I’m the **Founder & CEO of Codezen SRL**, where I lead audits and research focused on **blockchain security**. I also serve as **Lead Security Researcher at Oak Security**, **Security Researcher at Zenith Security**, and **Chairman of Altairith Capital Holding SRL**.  
-As a **mentor at DeFi Talents (Frankfurt School of Finance & Management)**, I enjoy helping the next generation of professionals grow in the Web3 space.
+I currently serve as Head of Audit Operations at Oak Security and collaborate with leading security teams in the industry, including Zenith Security and Trust Security.
 
-My work centers on securing **smart contracts, chain code, and protocols** across **Solana**, **Cosmos SDK**, **Polkadot/Substrate**, and **EVM** ecosystems. I spend most of my time analyzing complex systems, uncovering hidden vulnerabilities, and improving security processes through deep code understanding and research.  
-My technical toolkit includes **Rust**, **Golang**, **Solidity**, **TypeScript**, **CosmWasm**, **Cosmos SDK**, **Substrate/Ink!**, **Solana/Anchor**, **Move**, **Soroban**, **Docker**, and **Kubernetes**.
+I’m also Chairman of Altairith Capital, a holding company focused on technology and security-driven ventures.
 
-Beyond security, I’m deeply interested in **microservice architectures**, **developer experience**, and how **AI-driven tooling** can assist security audits without compromising code quality or confidentiality.
+My work focuses on reviewing smart contracts, protocol logic, and distributed systems, with particular attention to assumptions, invariants, and real-world failure modes.
 
-When I’m not working on audits or research, I like exploring new places, building side projects, and helping teams design systems that are both scalable and secure.
-
-If you’d like to get in touch, head to the [contact section](#contact) below, I’d love to hear from you.
+I’m particularly interested in how AI can assist security research and auditing workflows without reducing depth of reasoning or introducing new risks.

@@ -1,16 +1,7 @@
 [
   {
-    "icon": "../images/work/altairith.png",
-    "title": "Altairith Capital Holding SRL",
-    "subtitle": "Chairman",
-    "period": "September '25 - current",
-    "location": "Italy (Remote)",
-    "specialization": "Management, Investing, Risk Management",
-    "url": "https://www.altairith.capital"
-  },
-  {
     "icon": "../images/work/codezen.png",
-    "title": "Codezen SRL",
+    "title": "Codezen",
     "subtitle": "Founder, CEO and Lead Security Researcher",
     "period": "April '22 - current",
     "location": "Italy (Remote)",
@@ -18,10 +9,28 @@
     "url": "https://www.codezen.tech"
   },
   {
+    "icon": "../images/work/altairith.png",
+    "title": "Altairith Capital Holding",
+    "subtitle": "Chairman",
+    "period": "September '25 - current",
+    "location": "Italy (Remote)",
+    "specialization": "Management, Investing, Risk Management",
+    "url": "https://www.altairith.capital"
+  },
+  {
+    "icon": "../images/work/oak.jpg",
+    "title": "Oak Security",
+    "subtitle": "Head of Audit Operations",
+    "period": "March '26 - current",
+    "location": "Munich, Germany (Remote)",
+    "specialization": "Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK, Solana, Anchor, Polkadot SDK",
+    "url": "https://www.oaksecurity.io"
+  },
+  {
     "icon": "../images/work/oak.jpg",
     "title": "Oak Security",
     "subtitle": "Lead Security Researcher",
-    "period": "September '22 - current",
+    "period": "September '22 - March '26",
     "location": "Munich, Germany (Remote)",
     "specialization": "Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK, Solana, Anchor, Polkadot SDK",
     "url": "https://www.oaksecurity.io"
