@@ -1,0 +1,64 @@
+---
+import {
+  auditUrl,
+  byline,
+  displayTags,
+  featuredAudits,
+  totalAudits,
+  totalIssues,
+} from "../lib/audits";
+import SectionHeader from "./SectionHeader.astro";
+import Stat from "./Stat.astro";
+---
+
+<section
+  id="projects"
+  class="container-page section-y"
+  aria-labelledby="projects-title"
+>
+  <div data-reveal class="mb-12 flex flex-wrap items-end justify-between gap-6">
+    <SectionHeader
+      id="projects-title"
+      label="05 — Security reviews"
+      title="Selected work"
+    />
+    <div class="flex flex-wrap items-end gap-10">
+      <Stat label="Completed audits" value={totalAudits} />
+      <Stat label="Issues found" value={totalIssues} accent />
+      <a
+        href="/audits"
+        class="mb-2 border-b border-current pb-0.5 text-[15px] font-medium"
+      >
+        See all →
+      </a>
+    </div>
+  </div>
+  <ul class="m-0 grid list-none gap-px border border-line bg-line p-0 [grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr))]">
+    {featuredAudits.map(a => (
+      <li
+        data-reveal
+        class="flex bg-bg transition-colors duration-250 hover:bg-raised"
+      >
+        <a
+          href={auditUrl(a)}
+          target="_blank"
+          rel="noopener"
+          class="flex min-h-[200px] w-full flex-col justify-between gap-12 p-7 text-ink hover:text-ink"
+        >
+          <div class="flex justify-between font-mono text-xs text-muted">
+            <span>{displayTags(a).join(" · ")}</span>
+            <span class="text-accent" aria-hidden="true">
+              ↗
+            </span>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h3 class="m-0 text-[26px] font-medium tracking-[-0.02em]">
+              {a.title}
+            </h3>
+            <p class="m-0 text-[15px] text-muted">{byline(a)}</p>
+          </div>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>

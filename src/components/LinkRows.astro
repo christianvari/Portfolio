@@ -1,0 +1,42 @@
+---
+interface Props {
+  id: string;
+  label: string;
+  title: string;
+  items: { title: string; meta: string; url: string }[];
+  border?: boolean;
+}
+const { id, label, title, items, border = true } = Astro.props;
+---
+
+<section
+  id={id}
+  class:list={[border && "border-t border-line"]}
+  aria-labelledby={`${id}-title`}
+>
+  <div class="container-page py-[clamp(80px,10vw,120px)]">
+    <p data-reveal class="label-mono m-0 mb-10">
+      {label}
+    </p>
+    <h2 id={`${id}-title`} class="sr-only">
+      {title}
+    </h2>
+    <ul class="m-0 flex list-none flex-col border-b border-line p-0">
+      {items.map(item => (
+        <li data-reveal>
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noopener"
+            class="flex flex-wrap items-baseline justify-between gap-6 border-t border-line py-7 text-[clamp(24px,3vw,40px)] font-medium tracking-[-0.03em]"
+          >
+            <span>{item.title}</span>
+            <span class="font-mono text-sm tracking-normal text-muted">
+              {item.meta} ↗
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

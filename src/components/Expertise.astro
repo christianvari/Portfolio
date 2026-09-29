@@ -1,0 +1,52 @@
+---
+import { expertise, reviewTechnologies } from "../data/site";
+import { techCounts } from "../lib/audits";
+import SectionHeader from "./SectionHeader.astro";
+
+const bars = techCounts(reviewTechnologies);
+---
+
+<section id="skills" class="bg-ink text-bg" aria-labelledby="skills-title">
+  <div class="container-page section-y grid gap-16 [grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))]">
+    <div data-reveal class="flex flex-col gap-5">
+      <SectionHeader
+        id="skills-title"
+        label="04 — Expertise"
+        title="Expertise"
+        dark
+      />
+      <ul class="m-0 mt-4 flex list-none flex-wrap gap-2 p-0">
+        {expertise.map(skill => (
+          <li class="rounded-full border border-line-dark-2 px-3.5 py-2 text-sm">
+            {skill}
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div class="flex flex-col justify-center gap-[22px]">
+      <h3 data-reveal class="label-mono m-0 font-normal text-muted-dark!">
+        Security reviews by technology
+      </h3>
+      <ul class="m-0 flex list-none flex-col gap-[22px] p-0">
+        {bars.map((bar, i) => (
+          <li data-reveal class="flex flex-col gap-2.5">
+            <div class="flex justify-between text-lg">
+              <span>{bar.name}</span>
+              <span class="font-mono text-muted-dark">{bar.count}</span>
+            </div>
+            <div class="h-1 overflow-hidden rounded-xs bg-line-dark">
+              <div
+                data-bar
+                class:list={[
+                  "h-full rounded-xs",
+                  i === 0 ? "bg-accent" : "bg-bg",
+                ]}
+                style={`width:${bar.percent}%;--w:${bar.percent}%`}
+              />
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>

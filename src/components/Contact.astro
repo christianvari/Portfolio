@@ -1,0 +1,65 @@
+---
+import { site } from "../data/site";
+import PillButton from "./PillButton.astro";
+
+interface Props {
+  number: string;
+}
+const { number } = Astro.props;
+const handle = site.twitter;
+---
+
+<section
+  id="contact"
+  class="bg-accent text-white"
+  aria-labelledby="contact-title"
+>
+  <div class="container-page flex flex-col gap-[72px] pt-[clamp(96px,12vw,160px)] pb-12">
+    <div data-reveal class="flex flex-col gap-8">
+      <p class="m-0 font-mono text-[13px]">{number} — Contact</p>
+      <h2
+        id="contact-title"
+        class="m-0 max-w-[1000px] text-[clamp(52px,9vw,140px)] leading-[0.92] font-medium tracking-[-0.055em]"
+      >
+        Let’s talk security.
+      </h2>
+      <div class="flex flex-wrap gap-3">
+        <PillButton href={`mailto:${site.email}`} variant="light" size="lg">
+          Send me an email →
+        </PillButton>
+        <PillButton href={site.social.x} variant="outline-light" size="lg">
+          {handle} on X
+        </PillButton>
+        <PillButton
+          href={site.social.codezen}
+          variant="outline-light"
+          size="lg"
+        >
+          codezen.tech ↗
+        </PillButton>
+      </div>
+    </div>
+    <footer class="flex flex-wrap justify-between gap-4 border-t border-white/40 pt-6 text-sm">
+      <span>{site.name}</span>
+      <nav aria-label="Social" class="flex flex-wrap gap-6">
+        <a
+          href={site.social.linkedin}
+          target="_blank"
+          rel="noopener"
+          class="text-white hover:text-white hover:opacity-70"
+        >
+          LinkedIn
+        </a>
+        <a
+          href={site.social.github}
+          target="_blank"
+          rel="noopener"
+          class="text-white hover:text-white hover:opacity-70"
+        >
+          GitHub
+        </a>
+      </nav>
+      <span>Made in Italy</span>
+    </footer>
+  </div>
+</section>

@@ -1,0 +1,59 @@
+---
+import { getImage } from "astro:assets";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import Marquee from "../components/Marquee.astro";
+import About from "../components/About.astro";
+import Work from "../components/Work.astro";
+import Patents from "../components/Patents.astro";
+import Expertise from "../components/Expertise.astro";
+import SelectedWork from "../components/SelectedWork.astro";
+import LinkRows from "../components/LinkRows.astro";
+import Contact from "../components/Contact.astro";
+import achievements from "../data/achievements.json";
+import certifications from "../data/certifications.json";
+import portrait from "../assets/christianvari.jpg";
+import { site } from "../data/site";
+import { homeJsonLd } from "../lib/jsonld";
+
+const portraitImg = await getImage({
+  src: portrait,
+  width: 720,
+  format: "jpg",
+});
+---
+
+<BaseLayout
+  title={site.title}
+  description={site.description}
+  jsonLd={homeJsonLd(Astro.site!, portraitImg.src)}
+>
+  <Hero />
+  <Marquee />
+  <About />
+  <Work />
+  <Patents />
+  <Expertise />
+  <SelectedWork />
+  <LinkRows
+    id="achievements"
+    label="06 — Achievements"
+    title="Achievements"
+    items={achievements.map(a => ({
+      title: a.title,
+      meta: a.year,
+      url: a.url,
+    }))}
+  />
+  <LinkRows
+    id="certifications"
+    label="07 — Certifications"
+    title="Certifications"
+    items={certifications.map(c => ({
+      title: c.title,
+      meta: c.issuer,
+      url: c.url,
+    }))}
+  />
+  <Contact number="08" />
+</BaseLayout>

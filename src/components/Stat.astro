@@ -1,0 +1,30 @@
+---
+interface Props {
+  label: string;
+  value: number;
+  accent?: boolean;
+  size?: "md" | "lg";
+  animate?: boolean;
+}
+const {
+  label,
+  value,
+  accent = false,
+  size = "md",
+  animate = true,
+} = Astro.props;
+---
+
+<div class:list={["flex flex-col", size === "lg" ? "gap-1.5" : "gap-1"]}>
+  <span class="font-mono text-xs text-muted">{label}</span>
+  <span
+    class:list={[
+      "font-medium tracking-[-0.04em] tabular-nums",
+      size === "lg" ? "text-[44px]" : "text-[40px]",
+      accent && "text-accent",
+    ]}
+    data-count={animate ? value : undefined}
+  >
+    {value}
+  </span>
+</div>

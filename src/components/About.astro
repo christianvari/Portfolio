@@ -1,0 +1,70 @@
+---
+import { Image } from "astro:assets";
+import portrait from "../assets/christianvari.jpg";
+---
+
+<section
+  id="about"
+  class="container-page pt-[clamp(40px,6vw,80px)] pb-[clamp(80px,10vw,140px)]"
+  aria-labelledby="about-title"
+>
+  <p data-reveal class="label-mono m-0 mb-10">
+    01 — About
+  </p>
+  <h2 id="about-title" class="sr-only">
+    About Christian Vari
+  </h2>
+  <div class="grid items-start gap-14 [grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr))]">
+    <div
+      data-reveal
+      class="aspect-[4/5] max-w-[440px] overflow-hidden rounded-md bg-well shadow-[0_40px_80px_-40px_rgba(27,26,23,0.45)]"
+    >
+      <Image
+        src={portrait}
+        alt="Portrait of Christian Vari"
+        widths={[440, 880]}
+        sizes="(min-width: 480px) 440px, 100vw"
+        class="block size-full object-cover contrast-[1.05] grayscale transition-[filter] duration-600 ease-out hover:grayscale-0"
+        loading="lazy"
+      />
+    </div>
+    <div class="flex flex-col gap-[22px]">
+      <p
+        data-reveal
+        class="m-0 text-[clamp(26px,2.8vw,38px)] leading-[1.2] font-medium tracking-[-0.025em] text-pretty"
+      >
+        I’m Christian Vari, Founder &amp; CEO of Codezen, a blockchain security
+        firm focused on auditing financial and Web3 systems.
+      </p>
+      <div
+        data-reveal
+        class="flex max-w-[620px] flex-col gap-[18px] text-lg leading-[1.6] text-pretty text-ink-2 [&>p]:m-0"
+      >
+        <p>
+          I’ve worked on 250+ audits, identifying over 900 vulnerabilities and
+          helping securing assets across Solana, Cosmos SDK, Polkadot SDK,
+          Ethereum and EVM ecosystems.
+        </p>
+        <p>
+          I currently serve as Head of Audit Operations at Oak Security and
+          collaborate with leading security teams in the industry, including
+          Zenith Security and Trust Security.
+        </p>
+        <p>
+          I’m also Chairman of Altairith Capital, a holding company focused on
+          technology and security-driven ventures.
+        </p>
+        <p>
+          My work focuses on reviewing smart contracts, protocol logic, and
+          distributed systems, with particular attention to assumptions,
+          invariants, and real-world failure modes.
+        </p>
+        <p>
+          I’m particularly interested in how AI can assist security research and
+          auditing workflows without reducing depth of reasoning or introducing
+          new risks.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

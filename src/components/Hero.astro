@@ -1,0 +1,98 @@
+---
+import { heroCode, typedWords } from "../data/heroCode";
+import { site } from "../data/site";
+import PillButton from "./PillButton.astro";
+
+const pre =
+  "absolute -inset-5 m-0 overflow-hidden p-10 font-mono text-[15px] leading-[1.75] whitespace-pre select-none";
+---
+
+<section
+  id="top"
+  class="hero relative min-h-[calc(100svh-60px)] cursor-none overflow-hidden border-b border-line"
+  data-lens-host
+  aria-labelledby="hero-title"
+>
+  <pre
+    class:list={[pre, "text-[rgba(27,26,23,0.07)]"]}
+    aria-hidden="true"
+  >{heroCode}</pre>
+  <pre
+    class:list={[pre, "lens text-ink"]}
+    data-lens
+    aria-hidden="true"
+  >{heroCode}</pre>
+  <div
+    class="pointer-events-none absolute top-0 left-0 -mt-[190px] -ml-[190px] size-[380px] rounded-full border border-[rgba(47,91,211,0.35)] will-change-transform"
+    data-lens-ring
+    aria-hidden="true"
+  ></div>
+
+  <div class="container-page pointer-events-none relative z-[1] box-border flex min-h-[calc(100svh-60px)] flex-col justify-between gap-12 pt-[clamp(72px,14vh,160px)] pb-16">
+    <div class="flex flex-col gap-8">
+      <div class="flex flex-col gap-[18px]">
+        <p class="label-mono m-0">
+          Security Researcher — Founder &amp; CEO, Codezen
+        </p>
+        <h1
+          id="hero-title"
+          class="m-0 text-[clamp(68px,13vw,200px)] leading-[0.88] font-medium tracking-[-0.06em]"
+        >
+          {site.name}
+          <span class="text-accent">.</span>
+        </h1>
+      </div>
+      <p class="m-0 max-w-[900px] text-[clamp(28px,3.6vw,54px)] leading-[1.05] font-medium tracking-[-0.035em] text-ink-2">
+        Reviewing smart contracts with attention to
+        <span class="block min-h-[1em] text-accent">
+          <span data-typer data-words={JSON.stringify(typedWords)}>
+            {typedWords[0]}
+          </span>
+          <span
+            class="ml-[0.06em] inline-block h-[0.8em] w-[0.06em] animate-blink bg-accent align-[-0.05em]"
+            aria-hidden="true"
+          ></span>
+        </span>
+      </p>
+    </div>
+
+    <div class="flex flex-wrap items-end justify-between gap-8">
+      <p class="m-0 max-w-[520px] text-[clamp(17px,1.4vw,20px)] leading-normal text-pretty text-ink-2">
+        Solana, Cosmos SDK, Polkadot SDK, Ethereum and EVM. Head of Audit
+        Operations at Oak Security.
+      </p>
+      <div class="pointer-events-auto flex flex-wrap gap-3">
+        <PillButton href="/audits">See all audits →</PillButton>
+        <PillButton href="#contact" variant="secondary">
+          Get in touch
+        </PillButton>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .lens {
+    --mx: 70%;
+    --my: 40%;
+    -webkit-mask-image: radial-gradient(
+      circle 190px at var(--mx) var(--my),
+      #000 30%,
+      transparent 100%
+    );
+    mask-image: radial-gradient(
+      circle 190px at var(--mx) var(--my),
+      #000 30%,
+      transparent 100%
+    );
+  }
+  @media (hover: none) {
+    .hero {
+      cursor: auto;
+    }
+  }
+</style>
+
+<script>
+  import "../scripts/hero";
+</script>

@@ -1,0 +1,102 @@
+---
+import work from "../data/work.json";
+import education from "../data/education.json";
+import SectionHeader from "./SectionHeader.astro";
+
+const rowBase =
+  "-mx-4 flex flex-wrap gap-x-8 gap-y-2.5 border-t border-line px-4 py-[30px] text-ink transition-colors duration-250";
+---
+
+<section id="work" class="border-t border-line" aria-labelledby="work-title">
+  <div class="container-page section-y">
+    <div
+      data-reveal
+      class="mb-12 flex flex-wrap items-end justify-between gap-6"
+    >
+      <SectionHeader id="work-title" label="02 — Work" title="Experience" />
+      <p class="label-mono m-0">2018 — Now</p>
+    </div>
+
+    <ol class="m-0 flex list-none flex-col border-b border-line p-0">
+      {work.map(job => {
+        const Tag = job.url ? "a" : "div";
+        const multi = job.roles.length > 1;
+        return (
+          <li data-reveal>
+            <Tag
+              class:list={[
+                rowBase,
+                job.url && "hover:bg-surface hover:text-ink",
+              ]}
+              {...(job.url
+                ? { href: job.url, target: "_blank", rel: "noopener" }
+                : {})}
+            >
+              <p
+                class:list={[
+                  "m-0 flex flex-[0_0_180px] items-center gap-2 font-mono text-[13px] text-muted",
+                  !job.current && "pl-[15px]",
+                ]}
+              >
+                {job.current && (
+                  <span
+                    class="size-[7px] rounded-full bg-accent"
+                    title="Current"
+                  />
+                )}
+                {job.dates}
+              </p>
+              <div
+                class:list={[
+                  "flex flex-[1_1_360px] flex-col",
+                  multi ? "gap-3.5" : "gap-1.5",
+                ]}
+              >
+                <h3 class="m-0 text-[26px] font-medium tracking-[-0.02em]">
+                  {job.company}
+                  {job.url && " ↗"}
+                </h3>
+                {multi ? (
+                  <ul class="m-0 flex list-none flex-col gap-2.5 border-l border-line-2 p-0 pl-4">
+                    {job.roles.map((role, i) => (
+                      <li
+                        class:list={[
+                          "flex flex-wrap justify-between gap-4 text-base",
+                          i > 0 && "text-ink-2",
+                        ]}
+                      >
+                        <span>{role.title}</span>
+                        <span class="font-mono text-xs text-muted">
+                          {"dates" in role && role.dates}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p class="m-0 text-base text-ink-2">{job.roles[0].title}</p>
+                )}
+                <p class="m-0 font-mono text-xs leading-[1.6] text-muted">
+                  {job.tags.join(" · ")}
+                </p>
+              </div>
+            </Tag>
+          </li>
+        );
+      })}
+    </ol>
+
+    <div class="mt-[88px] grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr))]">
+      <h3 data-reveal class="label-mono col-span-full m-0 font-normal">
+        Education
+      </h3>
+      {education.map(school => (
+        <div data-reveal class="flex flex-col gap-2 rounded-md bg-surface p-7">
+          <p class="m-0 text-[22px] font-medium tracking-[-0.02em]">
+            {school.title}
+          </p>
+          <p class="m-0 text-base text-ink-2">{school.subtitle}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

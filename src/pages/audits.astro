@@ -1,0 +1,191 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Stat from "../components/Stat.astro";
+import { auditFilters, site } from "../data/site";
+import {
+  auditUrl,
+  audits,
+  displayTags,
+  filterKeys,
+  totalAudits,
+  totalIssues,
+} from "../lib/audits";
+import { auditsJsonLd } from "../lib/jsonld";
+---
+
+<BaseLayout
+  title={`Smart Contract & Blockchain Audits · ${site.name}`}
+  description={`${totalAudits} security audits by Christian Vari across Rust, Golang, Cosmos SDK, CosmWasm, Polkadot SDK, Solana and Solidity, with ${totalIssues} issues found.`}
+  jsonLd={auditsJsonLd(Astro.site!)}
+  active="Audits"
+>
+  <section
+    class="container-page pt-[clamp(64px,10vw,120px)] pb-[120px]"
+    aria-labelledby="audits-title"
+  >
+    <div class="mb-14 flex flex-wrap items-end justify-between gap-8">
+      <div class="flex flex-col gap-5">
+        <a href="/" class="font-mono text-[13px] text-muted">
+          ← Back
+        </a>
+        <h1
+          id="audits-title"
+          class="m-0 text-[clamp(64px,11vw,160px)] leading-[0.9] font-medium tracking-[-0.055em]"
+        >
+          Audits<span class="text-accent">.</span>
+        </h1>
+      </div>
+      <div class="flex flex-wrap gap-10">
+        <Stat label="Completed" value={totalAudits} size="lg" animate={false} />
+        <Stat
+          label="Issues found"
+          value={totalIssues}
+          accent
+          size="lg"
+          animate={false}
+        />
+      </div>
+    </div>
+
+    <div class="flex flex-wrap items-center justify-between gap-4 border-b border-ink pb-5">
+      <div
+        class="flex flex-wrap gap-2"
+        role="group"
+        aria-label="Filter by technology"
+      >
+        {auditFilters.map((f, i) => (
+          <button
+            type="button"
+            data-filter={f}
+            aria-pressed={i === 0 ? "true" : "false"}
+            class="cursor-pointer rounded-full border border-line-2 bg-transparent px-3.5 py-2 text-sm text-ink transition-all duration-200 hover:border-ink aria-pressed:border-ink aria-pressed:bg-ink aria-pressed:text-bg"
+          >
+            {f}
+          </button>
+        ))}
+      </div>
+      <label class="flex min-w-[180px] flex-[0_1_260px] max-sm:flex-auto">
+        <span class="sr-only">Search audits</span>
+        <input
+          type="search"
+          data-search
+          placeholder="Search audits"
+          class="w-full rounded-full border border-line-2 bg-raised px-3.5 py-2.5 text-sm text-ink outline-none focus:border-ink"
+        />
+      </label>
+    </div>
+
+    <ol class="m-0 flex list-none flex-col p-0" data-audit-list>
+      {audits.map((a, i) => (
+        <li
+          data-audit
+          data-keys={JSON.stringify(filterKeys(a))}
+          data-text={`${a.title} ${a.description} ${a.partner ?? ""}`.toLowerCase()}
+          class="animate-row"
+          style={`animation-delay:${Math.min(i, 12) * 40}ms`}
+        >
+          <a
+            href={auditUrl(a)}
+            target="_blank"
+            rel="noopener"
+            class="-mx-3 flex flex-wrap items-baseline gap-x-7 gap-y-2 border-b border-line px-3 py-6 text-ink transition-colors duration-200 hover:bg-surface hover:text-ink"
+          >
+            <span
+              class="flex-[0_0_40px] font-mono text-xs text-muted"
+              data-index
+            >
+              {String(i + 1).padStart(2, "0")}
+            </span>
+            <span class="flex flex-[1_1_320px] flex-col gap-1">
+              <h2 class="m-0 text-[22px] font-medium tracking-[-0.02em]">
+                {a.title}
+              </h2>
+              <span class="text-sm text-muted">
+                {a.description}
+                {a.partner && ` · with ${a.partner}`}
+              </span>
+            </span>
+            <span class="flex flex-[0_1_auto] flex-wrap gap-1.5">
+              {displayTags(a).map(t => (
+                <span class="rounded-full border border-line-2 px-2.5 py-1 font-mono text-[11px] text-ink-2">
+                  {t}
+                </span>
+              ))}
+            </span>
+            <span
+              class="flex-[0_0_20px] text-right text-accent"
+              aria-hidden="true"
+            >
+              ↗
+            </span>
+          </a>
+        </li>
+      ))}
+    </ol>
+    <p data-empty hidden class="m-0 py-12 text-base text-muted">
+      No audits match.
+    </p>
+
+    <div class="mt-10 flex flex-wrap justify-between gap-4 text-sm text-muted">
+      <p class="m-0" aria-live="polite">
+        Showing <span data-shown>{totalAudits}</span> of {totalAudits}.
+      </p>
+      <a
+        href="https://www.codezen.tech/portfolio/"
+        target="_blank"
+        rel="noopener"
+        class="border-b border-current font-medium text-ink"
+      >
+        Full portfolio ↗
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const rows = [...document.querySelectorAll<HTMLElement>("[data-audit]")];
+  const buttons = [
+    ...document.querySelectorAll<HTMLButtonElement>("[data-filter]"),
+  ];
+  const search = document.querySelector<HTMLInputElement>("[data-search]")!;
+  const shown = document.querySelector<HTMLElement>("[data-shown]")!;
+  const empty = document.querySelector<HTMLElement>("[data-empty]")!;
+  const keys = new Map(
+    rows.map(r => [r, JSON.parse(r.dataset.keys ?? "[]") as string[]]),
+  );
+
+  let filter = "All";
+
+  const apply = () => {
+    const q = search.value.trim().toLowerCase();
+    let n = 0;
+    for (const row of rows) {
+      const match =
+        (filter === "All" || keys.get(row)!.includes(filter)) &&
+        (!q || row.dataset.text!.includes(q));
+      row.hidden = !match;
+      if (!match) continue;
+      row.querySelector("[data-index]")!.textContent = String(n + 1).padStart(
+        2,
+        "0",
+      );
+      // Restart the staggered entry animation.
+      row.style.animation = "none";
+      void row.offsetWidth;
+      row.style.animation = "";
+      row.style.animationDelay = `${Math.min(n, 12) * 40}ms`;
+      n++;
+    }
+    shown.textContent = String(n);
+    empty.hidden = n > 0;
+  };
+
+  for (const btn of buttons) {
+    btn.addEventListener("click", () => {
+      filter = btn.dataset.filter!;
+      buttons.forEach(b => b.setAttribute("aria-pressed", String(b === btn)));
+      apply();
+    });
+  }
+  search.addEventListener("input", apply);
+</script>
