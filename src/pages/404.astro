@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PillButton from "../components/PillButton.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout
+  title={`Not found · ${site.name}`}
+  description="This page does not exist."
+  noindex
+  compactNav
+>
+  <section class="container-page flex min-h-[70vh] flex-col justify-center gap-10 py-24">
+    <p class="label-mono m-0">404</p>
+    <h1 class="m-0 text-[clamp(64px,11vw,160px)] leading-[0.9] font-medium tracking-[-0.055em]">
+      Not found<span class="text-accent">.</span>
+    </h1>
+    <div class="flex flex-wrap gap-3">
+      <PillButton href="/">← Back home</PillButton>
+      <PillButton href="/audits" variant="secondary">
+        See all audits
+      </PillButton>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,19 @@
+---
+// Nothing here loads until the visitor accepts the cookie banner (src/scripts/consent.ts).
+import CookieBanner from "./CookieBanner.astro";
+import { analyticsEnabled, clarityId, gaId } from "../lib/analytics";
+---
+
+{analyticsEnabled && (
+  <>
+    <script
+      type="application/json"
+      id="analytics-config"
+      set:html={JSON.stringify({ gaId, clarityId })}
+    />
+    <CookieBanner ga={Boolean(gaId)} clarity={Boolean(clarityId)} />
+    <script>
+      import "../scripts/consent";
+    </script>
+  </>
+)}

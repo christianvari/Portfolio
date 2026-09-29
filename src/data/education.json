@@ -1,14 +1,12 @@
 [
   {
-    "icon": "../images/education/tor_vergata.png",
     "title": "Tor Vergata University of Rome",
     "subtitle": "Blockchain & Cybersecurity",
-    "period": ""
+    "url": "https://web.uniroma2.it"
   },
   {
-    "icon": "../images/education/sapienza.png",
     "title": "Sapienza University of Rome",
-    "subtitle": "Software and Automation engineering",
-    "period": ""
+    "subtitle": "Software and Automation Engineering",
+    "url": "https://www.uniroma1.it"
   }
 ]

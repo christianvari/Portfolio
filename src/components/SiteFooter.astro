@@ -1,0 +1,22 @@
+---
+// Footer for inner pages (the home page footer lives inside Contact).
+import { site } from "../data/site";
+import { analyticsEnabled } from "../lib/analytics";
+---
+
+<footer class="border-t border-line">
+  <div class="container-page flex flex-wrap justify-between gap-4 py-8 text-sm text-muted">
+    <span>{site.name}</span>
+    <nav aria-label="Legal" class="flex flex-wrap gap-6">
+      <a href="/privacy/" class="text-muted">
+        Privacy &amp; cookies
+      </a>
+      {analyticsEnabled && (
+        <a href="#cookies" class="text-muted" data-cookie-settings>
+          Cookie settings
+        </a>
+      )}
+    </nav>
+    <span>Made in Italy</span>
+  </div>
+</footer>

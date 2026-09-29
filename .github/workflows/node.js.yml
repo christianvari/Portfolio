@@ -1,42 +1,42 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+# Builds the Astro site and deploys it to GitHub Pages (gh-pages branch).
 
-name: Node.js CI
+name: Deploy
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
+  workflow_dispatch:
 
-env: 
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+env:
   GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
   CLARITY_ID: ${{ secrets.CLARITY_ID }}
-  GATSBY_APPOINTLET_URL: ${{ secrets.GATSBY_APPOINTLET_URL }}
 
 jobs:
   deploy:
-
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [16.x]
+    permissions:
+      contents: write
 
     steps:
-    - uses: actions/checkout@v2
-      with:
-        submodules: true
-        token: ${{ secrets.PAT }}
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm run build
-      
-    - uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
-        cname: www.christianvari.dev
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          token: ${{ secrets.PAT }}
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
 
+      - run: npm ci
+      - run: npm run build
+
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          cname: www.christianvari.dev

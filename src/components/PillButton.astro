@@ -1,0 +1,33 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+type Variant = "primary" | "secondary" | "light" | "outline-light";
+interface Props extends HTMLAttributes<"a"> {
+  variant?: Variant;
+  size?: "md" | "lg";
+}
+
+const { variant = "primary", size = "md", class: cls, ...rest } = Astro.props;
+const external = typeof rest.href === "string" && /^https?:/.test(rest.href);
+
+const variants: Record<Variant, string> = {
+  primary: "bg-ink text-bg hover:bg-accent hover:text-white",
+  secondary: "border border-ink bg-bg hover:border-accent hover:text-accent",
+  light: "bg-white text-ink hover:bg-ink hover:text-white",
+  "outline-light":
+    "border border-white text-white hover:bg-white hover:text-ink",
+};
+---
+
+<a
+  class:list={[
+    "inline-block rounded-full font-medium transition-colors duration-200",
+    size === "lg" ? "px-[26px] py-4 text-base" : "px-[22px] py-3.5 text-[15px]",
+    variants[variant],
+    cls,
+  ]}
+  {...(external ? { target: "_blank", rel: "noopener" } : {})}
+  {...rest}
+>
+  <slot />
+</a>

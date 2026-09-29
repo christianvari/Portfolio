@@ -1,91 +1,108 @@
 [
   {
-    "icon": "../images/work/codezen.png",
-    "title": "Codezen",
-    "subtitle": "Founder, CEO and Lead Security Researcher",
-    "period": "April '22 - current",
-    "location": "Italy (Remote)",
-    "specialization": "Management, Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK",
-    "url": "https://www.codezen.tech"
+    "company": "Codezen",
+    "url": "https://www.codezen.tech",
+    "dates": "Apr 2022 — Now",
+    "current": true,
+    "roles": [{ "title": "Founder, CEO and Lead Security Researcher" }],
+    "tags": [
+      "Management",
+      "Blockchain",
+      "Rust",
+      "Golang",
+      "Solidity",
+      "TypeScript",
+      "CosmWasm",
+      "Cosmos SDK"
+    ]
   },
   {
-    "icon": "../images/work/altairith.png",
-    "title": "Altairith Capital Holding",
-    "subtitle": "Chairman",
-    "period": "September '25 - current",
-    "location": "Italy (Remote)",
-    "specialization": "Management, Investing, Risk Management",
-    "url": "https://www.altairith.capital"
+    "company": "Altairith Capital Holding",
+    "url": "https://www.altairith.capital",
+    "dates": "Sep 2025 — Now",
+    "current": true,
+    "roles": [{ "title": "Chairman" }],
+    "tags": ["Management", "Investing", "Risk Management"]
   },
   {
-    "icon": "../images/work/oak.jpg",
-    "title": "Oak Security",
-    "subtitle": "Head of Audit Operations",
-    "period": "March '26 - current",
-    "location": "Munich, Germany (Remote)",
-    "specialization": "Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK, Solana, Anchor, Polkadot SDK",
-    "url": "https://www.oaksecurity.io"
+    "company": "Oak Security",
+    "url": "https://www.oaksecurity.io",
+    "dates": "Feb 2022 — Now",
+    "current": true,
+    "roles": [
+      { "title": "Head of Audit Operations", "dates": "Mar 2026 — Now" },
+      { "title": "Lead Security Researcher", "dates": "Sep 2022 — Mar 2026" },
+      {
+        "title": "Blockchain and Smart Contract Auditor",
+        "dates": "Feb 2022 — Sep 2022"
+      }
+    ],
+    "tags": [
+      "Blockchain",
+      "Rust",
+      "Golang",
+      "Solidity",
+      "TypeScript",
+      "CosmWasm",
+      "Cosmos SDK",
+      "Solana",
+      "Anchor",
+      "Polkadot SDK"
+    ]
   },
   {
-    "icon": "../images/work/oak.jpg",
-    "title": "Oak Security",
-    "subtitle": "Lead Security Researcher",
-    "period": "September '22 - March '26",
-    "location": "Munich, Germany (Remote)",
-    "specialization": "Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK, Solana, Anchor, Polkadot SDK",
-    "url": "https://www.oaksecurity.io"
+    "company": "Zenith Security",
+    "url": "https://www.zenith.security",
+    "dates": "Jan 2025 — Now",
+    "current": true,
+    "roles": [{ "title": "Security Researcher" }],
+    "tags": [
+      "Blockchain",
+      "Rust",
+      "Golang",
+      "Solidity",
+      "TypeScript",
+      "CosmWasm",
+      "Cosmos SDK",
+      "Solana",
+      "Anchor",
+      "Polkadot SDK"
+    ]
   },
   {
-    "icon": "../images/work/oak.jpg",
-    "title": "Oak Security",
-    "subtitle": "Blockchain and Smart Contract Auditor",
-    "period": "February '22 - September '22",
-    "location": "Munich, Germany (Remote)",
-    "specialization": "Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK, Solana, Anchor, Polkadot SDK",
-    "url": "https://www.oaksecurity.io"
+    "company": "DeFi Talents @ Frankfurt School of Finance & Management",
+    "url": "https://web3-talents.io/defi-talents/",
+    "dates": "Sep 2023 — Aug 2025",
+    "current": false,
+    "roles": [{ "title": "Mentor" }],
+    "tags": ["Blockchain", "Finance", "Management", "Economy", "Teaching"]
   },
   {
-    "icon": "../images/work/zenith.jpeg",
-    "title": "Zenith Security",
-    "subtitle": "Security Researcher",
-    "period": "January '25 - current",
-    "location": "New York, New York (Remote)",
-    "specialization": "Blockchain, Rust, Golang, Solidity, Typescript, CosmWasm, Cosmos SDK, Solana, Anchor, Polkadot SDK",
-    "url": "https://www.zenith.security"
+    "company": "HCL Technologies",
+    "url": "https://www.hcltech.com",
+    "dates": "Apr 2020 — Aug 2022",
+    "current": false,
+    "roles": [
+      { "title": "Software Engineer II", "dates": "Nov 2021 — Aug 2022" },
+      { "title": "Junior Software Engineer", "dates": "Apr 2020 — Nov 2021" }
+    ],
+    "tags": [
+      "Virtual Reality",
+      "Microservices Architecture",
+      "NLP",
+      "Node.js",
+      "React",
+      "Python",
+      "AI",
+      "ChatBots",
+      "Scrum Master"
+    ]
   },
   {
-    "icon": "../images/work/defitalents.jpeg",
-    "title": "DeFi Talents @ Frankfurt School of Finance & Management",
-    "subtitle": "Mentor",
-    "period": "September '23 - August '25",
-    "location": "Frankfurt Rhine-Main, Germany (Remote)",
-    "specialization": "Blockchain, Finance, Management, Economy, Teaching",
-    "url": "https://web3-talents.io/defi-talents/"
-  },
-  {
-    "icon": "../images/work/hcl.png",
-    "title": "HCL Technologies",
-    "subtitle": "Software Engineer II",
-    "period": "November '21 - August '22",
-    "location": "Rome, Italy",
-    "specialization": "Virtual Reality, Microservices Architecture, Natural Language Processing, Node.js, React, Python, AI, Scrum Master",
-    "url": "https://www.hcltech.com"
-  },
-  {
-    "icon": "../images/work/hcl.png",
-    "title": "HCL Technologies",
-    "subtitle": "Junior Software Engineer",
-    "period": "April '20 - November '21",
-    "location": "Rome, Italy",
-    "specialization": "React, Virtual Reality, Node.js, ChatBots, Real time applications",
-    "url": "https://www.hcltech.com"
-  },
-  {
-    "icon": "../images/work/freelance.jpg",
-    "title": "Freelance developer",
-    "subtitle": "Full Stack Developer",
-    "period": "January '18 - April '20",
-    "location": "Segni, Italy",
-    "specialization": "Solidity, Node.js, React, Python, C++, C-AVR"
+    "company": "Freelance developer",
+    "dates": "Jan 2018 — Apr 2020",
+    "current": false,
+    "roles": [{ "title": "Full Stack Developer" }],
+    "tags": ["Solidity", "Node.js", "React", "Python", "C++", "C-AVR"]
   }
 ]

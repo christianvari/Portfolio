@@ -1,0 +1,17 @@
+---
+import { ecosystems } from "../data/site";
+---
+
+<div
+  class="overflow-hidden border-b border-line py-[22px] font-mono text-sm text-muted"
+  aria-label="Ecosystems"
+>
+  <ul class="m-0 flex w-max animate-marquee list-none gap-14 p-0 whitespace-nowrap">
+    {ecosystems.map(e => (
+      <li>{e}</li>
+    ))}
+    {ecosystems.map(e => (
+      <li aria-hidden="true">{e}</li>
+    ))}
+  </ul>
+</div>
