@@ -7,6 +7,8 @@ interface Props {
   image?: string;
   noindex?: boolean;
   jsonLd?: Record<string, unknown>;
+  /** Path of this page's markdown version, for AI agents. */
+  markdown?: string;
 }
 
 const {
@@ -15,6 +17,7 @@ const {
   image = "/og/home.png",
   noindex = false,
   jsonLd,
+  markdown,
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const imageUrl = new URL(image, Astro.site).href;
@@ -23,6 +26,10 @@ const imageUrl = new URL(image, Astro.site).href;
 <title>{title}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonical} />
+{markdown && (
+  <link rel="alternate" type="text/markdown" href={markdown} title="Markdown" />
+)}
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />
 {noindex && <meta name="robots" content="noindex, follow" />}
 <meta name="author" content={site.name} />
 

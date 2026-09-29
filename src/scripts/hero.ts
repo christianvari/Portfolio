@@ -85,6 +85,16 @@ function setupTyper() {
   tick();
 }
 
+// Background code: copy the <template> into both lens layers.
+function setupCode() {
+  const tpl = document.querySelector<HTMLTemplateElement>("[data-hero-code]");
+  if (!tpl) return;
+  document
+    .querySelectorAll("[data-code-layer]")
+    .forEach(layer => layer.replaceChildren(tpl.content.cloneNode(true)));
+}
+
+setupCode();
 setupLens();
 setupTyper();
 export {};

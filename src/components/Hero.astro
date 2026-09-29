@@ -16,20 +16,24 @@ const blocks = [...heroSnippets, ...heroSnippets];
   data-lens-host
   aria-labelledby="hero-title"
 >
-  <div class:list={[layer, "text-[rgba(27,26,23,0.07)]"]} aria-hidden="true">
+  <!-- Decorative code lives in a <template> so scrapers and agents don't read it as page text;
+       src/scripts/hero.ts copies it into both layers. -->
+  <template data-hero-code>
     {blocks.map(
       code => <pre class="m-0 overflow-hidden whitespace-pre">{code}</pre>,
     )}
-  </div>
+  </template>
+  <div
+    class:list={[layer, "text-[rgba(27,26,23,0.07)]"]}
+    data-code-layer
+    aria-hidden="true"
+  ></div>
   <div
     class:list={[layer, "lens text-[rgba(27,26,23,0.4)]"]}
+    data-code-layer
     data-lens
     aria-hidden="true"
-  >
-    {blocks.map(
-      code => <pre class="m-0 overflow-hidden whitespace-pre">{code}</pre>,
-    )}
-  </div>
+  ></div>
   <div
     class="pointer-events-none absolute top-0 left-0 -mt-[190px] -ml-[190px] size-[380px] rounded-full border border-[rgba(47,91,211,0.35)] will-change-transform"
     data-lens-ring

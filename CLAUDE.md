@@ -33,7 +33,7 @@ Analytics are strictly opt-in: `src/components/CookieBanner.astro` + `src/script
 
 - `src/sharedData/` — **git submodule** (`git@github.com:Codezen-SRLS/audit-history.git`). `data/audit-history.json` is the single source for all audit content and numbers. When updating audit data, push to the submodule repo, then update the reference here.
 - `src/lib/audits.ts` — typed access + derived values: `totalAudits`, `totalIssues`, `techCounts()` (Expertise bars), `featuredAudits` (home cards), `slug()`/`auditUrl()` (links to `codezen.tech/audits/<slug>/`), `displayTags()`, `filterKeys()`.
-- `src/data/site.ts` — site metadata, nav, social links, marquee ecosystems, expertise chips, curated `homeFeatured` titles, audit filter pills and filter aliases.
+- `src/data/site.ts` — site metadata, bio copy, nav, social links, marquee ecosystems, expertise chips, curated `homeFeatured` titles, audit filter pills and filter aliases.
 - `src/data/*.json` — work (grouped by company with `roles[]`), education, achievements, certifications, patents.
 - `src/lib/jsonld.ts` — schema.org JSON-LD (ProfilePage/Person on home, CollectionPage/ItemList on /audits).
 
@@ -43,6 +43,7 @@ Analytics are strictly opt-in: `src/components/CookieBanner.astro` + `src/script
 - `src/pages/audits.astro` — all audits, server-rendered; filter pills + search hide rows client-side.
 - `src/pages/og/[card].png.ts` — build-time social cards (`/og/home.png`, `/og/audits.png`; satori + resvg, static Geist woff). Pages pick one via the `image` prop.
 - `src/pages/privacy.astro` — privacy & cookie policy.
+- Agent/scraper endpoints, generated from the same data by `src/lib/markdown.ts`: `/llms.txt` (llmstxt.org index), `/llms-full.txt`, `/index.md`, `/audits.md`, `/audits.json`. Pages advertise their markdown version via `<link rel="alternate" type="text/markdown">` (the `markdown` prop). When adding a section to the HTML, add it to the markdown too.
 - `src/pages/404.astro` — noindex.
 - `/projects` redirects to `/audits/` (`redirects` in `astro.config.mjs`).
 
@@ -58,7 +59,7 @@ Design tokens (colors, fonts, keyframes) are in `@theme` in `src/styles/global.c
 
 - `[data-reveal]` → fade/slide in on scroll (`src/scripts/reveal.ts`, IntersectionObserver). Hidden state only applies when `<html>` has the `js` class and motion isn't reduced.
 - `[data-count]` → count-up on reveal; `[data-bar]` with `--w` → bar width animation.
-- `src/scripts/hero.ts` → cursor "lens" (pauses off-screen) and typer.
+- `src/scripts/hero.ts` → cursor "lens" (pauses off-screen) and typer. The decorative hero code is rendered inside a `<template>` (so scrapers don't read it as page text) and copied into both lens layers at runtime.
 - Everything respects `prefers-reduced-motion`.
 
 ### Images

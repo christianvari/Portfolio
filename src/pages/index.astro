@@ -26,6 +26,7 @@ const portraitImg = await getImage({
 <BaseLayout
   title={site.title}
   description={site.description}
+  markdown="/index.md"
   jsonLd={homeJsonLd(Astro.site!, portraitImg.src)}
 >
   <Hero />

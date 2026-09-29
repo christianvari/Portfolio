@@ -1,3 +1,5 @@
+# All crawlers and AI agents are welcome.
+# Machine-readable versions: /llms.txt, /llms-full.txt, /index.md, /audits.md, /audits.json
 User-agent: *
 Allow: /
 
