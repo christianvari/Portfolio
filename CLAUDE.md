@@ -41,7 +41,7 @@ Analytics are strictly opt-in: `src/components/CookieBanner.astro` + `src/script
 
 - `src/pages/index.astro` — Hero → Marquee → About → Work (+Education) → Patents → Expertise → Selected work → Achievements → Certifications → Contact.
 - `src/pages/audits.astro` — all audits, server-rendered; filter pills + search hide rows client-side.
-- `src/pages/og.png.ts` — build-time OG image (satori + resvg, static Geist woff).
+- `src/pages/og/[card].png.ts` — build-time social cards (`/og/home.png`, `/og/audits.png`; satori + resvg, static Geist woff). Pages pick one via the `image` prop.
 - `src/pages/privacy.astro` — privacy & cookie policy.
 - `src/pages/404.astro` — noindex.
 - `/projects` redirects to `/audits/` (`redirects` in `astro.config.mjs`).
