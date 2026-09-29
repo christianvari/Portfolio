@@ -1,6 +1,5 @@
-.now
-.cache
-public
-.vercel
+dist
+.astro
 node_modules
 package-lock.json
+src/sharedData

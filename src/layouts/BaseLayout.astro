@@ -1,0 +1,60 @@
+---
+import "../styles/global.css";
+import geistWoff2 from "@fontsource-variable/geist/files/geist-latin-wght-normal.woff2?url";
+import Seo from "../components/Seo.astro";
+import Analytics from "../components/Analytics.astro";
+import Header from "../components/Header.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  noindex?: boolean;
+  jsonLd?: Record<string, unknown>;
+  active?: string;
+}
+
+const { active, ...seo } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f3ee" />
+    <meta name="generator" content={Astro.generator} />
+    <script is:inline>
+      document.documentElement.classList.add("js");
+    </script>
+    <link
+      rel="preload"
+      href={geistWoff2}
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.png" type="image/png" sizes="48x48" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <Seo {...seo} />
+    <Analytics />
+  </head>
+  <body class="min-h-screen">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-full focus:bg-ink focus:px-4 focus:py-2 focus:text-bg"
+    >
+      Skip to content
+    </a>
+    <Header active={active} />
+    <main id="main">
+      <slot />
+    </main>
+    <slot name="footer" />
+    <script>
+      import "../scripts/reveal";
+    </script>
+  </body>
+</html>

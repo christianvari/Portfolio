@@ -1,0 +1,48 @@
+---
+// Build-time env: static output, so these are read during `astro build`.
+const gaId = import.meta.env.GA_TRACKING_ID;
+const clarityId = import.meta.env.CLARITY_ID;
+---
+
+{gaId && (
+  <>
+    <script
+      is:inline
+      async
+      src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+    />
+    <script is:inline define:vars={{ gaId }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      window.gtag = gtag;
+      gtag("js", new Date());
+      gtag("config", gaId, { anonymize_ip: true });
+      // Outbound link tracking (replaces gatsby-plugin-google-gtag's OutboundLink).
+      document.addEventListener("click", e => {
+        const a = e.target.closest && e.target.closest("a[href]");
+        if (!a || a.host === location.host || !/^https?:/.test(a.href)) return;
+        gtag("event", "click", {
+          event_category: "outbound",
+          event_label: a.href,
+          transport_type: "beacon",
+        });
+      });
+    </script>
+  </>
+)}
+{clarityId && <script is:inline define:vars={{ clarityId }}>
+  (function (c, l, a, r, i, t, y) {
+    c[a] =
+      c[a] ||
+      function () {
+        (c[a].q = c[a].q || []).push(arguments);
+      };
+    t = l.createElement(r);
+    t.async = 1;
+    t.src = "https://www.clarity.ms/tag/" + i;
+    y = l.getElementsByTagName(r)[0];
+    y.parentNode.insertBefore(t, y);
+  })(window, document, "clarity", "script", clarityId);
+</script>}

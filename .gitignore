@@ -1,15 +1,13 @@
-# Project Dependencies
-.cache
+# Dependencies
 node_modules
-yarn-error.log
 
-# Build Directory
-/public
-/.cache
+# Build output
+dist
+.astro
 
-# macOS Artificats
+# macOS
 .DS_Store
 
-# Deployment-specific Configs
-.firebase
+# Env
 .env
+.env.*
