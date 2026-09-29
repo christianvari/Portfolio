@@ -18,7 +18,7 @@ const pre =
     aria-hidden="true"
   >{heroCode}</pre>
   <pre
-    class:list={[pre, "lens text-ink"]}
+    class:list={[pre, "lens text-[rgba(27,26,23,0.4)]"]}
     data-lens
     aria-hidden="true"
   >{heroCode}</pre>
@@ -85,6 +85,12 @@ const pre =
       #000 30%,
       transparent 100%
     );
+  }
+  /* Soft background halo so the revealed code recedes behind the hero text. */
+  .hero :is(h1, p) {
+    text-shadow:
+      0 0 12px var(--color-bg),
+      0 0 24px var(--color-bg);
   }
   @media (hover: none) {
     .hero {
