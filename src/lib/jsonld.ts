@@ -48,10 +48,12 @@ const person = (origin: URL, image: string) => ({
     "@type": "CreativeWork",
     additionalType: "https://schema.org/Patent",
     name: p.title,
+    alternateName: p.originalTitle,
+    inLanguage: p.originalLang,
     identifier: p.number,
-    description: p.description,
+    description: `${p.status} (${p.granted}, filed ${p.filed}). ${p.description}`,
     url: p.url,
-    dateCreated: p.year,
+    dateCreated: p.filed,
   })),
 });
 

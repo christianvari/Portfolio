@@ -1,11 +1,13 @@
 [
   {
     "number": "IT202400016273A1",
-    "title": "A Method for Performing Report Generation",
+    "title": "A method for generating a cybersecurity report",
+    "originalTitle": "Un metodo per eseguire la generazione di un report di sicurezza informatica",
+    "originalLang": "it",
     "description": "Machine-learning pipeline that merges auditors’ vulnerability notes, rewrites them in report style and assigns a severity, automating security audit reports.",
-    "people": "Security source code audits · Seq2Seq · Transformer · BERT",
-    "status": "Patent application",
-    "year": "2024",
+    "status": "Granted patent",
+    "granted": "2026",
+    "filed": "2024",
     "url": "https://worldwide.espacenet.com/patent/search?q=pn%3DIT202400016273A1"
   }
 ]

@@ -32,15 +32,17 @@ import SectionHeader from "./SectionHeader.astro";
               <h3 class="m-0 text-[26px] font-medium tracking-[-0.02em]">
                 {p.title} ↗
               </h3>
+              {p.originalTitle && (
+                <p class="m-0 text-sm text-muted italic" lang={p.originalLang}>
+                  {p.originalTitle}
+                </p>
+              )}
               {p.description && (
                 <p class="m-0 text-base text-ink-2">{p.description}</p>
               )}
-              {p.people && (
-                <p class="m-0 font-mono text-xs text-muted">{p.people}</p>
-              )}
             </div>
             <p class="m-0 flex-[0_0_auto] text-sm text-muted">
-              {p.status} · {p.year}
+              {p.status} · {p.granted} (filed {p.filed})
             </p>
           </a>
         </li>
