@@ -6,6 +6,13 @@
   --font-sans: "Geist Variable", "Geist", system-ui, sans-serif;
   --font-mono: "Geist Mono Variable", "Geist Mono", ui-monospace, monospace;
 
+  /* The design uses the browser's line-height: normal unless it sets one explicitly. */
+  --text-xs--line-height: normal;
+  --text-sm--line-height: normal;
+  --text-base--line-height: normal;
+  --text-lg--line-height: normal;
+  --text-xl--line-height: normal;
+
   --color-bg: #f5f3ee;
   --color-surface: #ece9e1;
   --color-raised: #fffdf8;
@@ -58,8 +65,9 @@
 
 @layer base {
   html {
+    line-height: normal;
     scroll-behavior: smooth;
-    scroll-padding-top: 64px;
+    scroll-padding-top: 80px;
   }
   body {
     @apply bg-bg text-ink font-sans antialiased;
@@ -79,7 +87,9 @@
   }
 }
 
+/* Content-box like the design: 1240px of content plus the side padding. */
 @utility container-page {
+  box-sizing: content-box;
   max-width: 1240px;
   margin-inline: auto;
   padding-inline: clamp(20px, 4vw, 48px);

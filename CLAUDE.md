@@ -45,7 +45,7 @@ Environment variables go in `.env` (gitignored), read at build time only:
 
 ### Components & layout
 
-`src/layouts/BaseLayout.astro` wraps every page: `Seo.astro` (title, description, canonical, OG/Twitter, JSON-LD), `Analytics.astro`, `Header.astro`, font preload, and the reveal script. Section components live in `src/components/` (one per home section, plus `SectionHeader`, `PillButton`, `Stat`, `LinkRows`).
+`src/layouts/BaseLayout.astro` wraps every page: `Seo.astro` (title, description, canonical, OG/Twitter, JSON-LD), `Analytics.astro`, `Header.astro`, font preload, and the reveal script. The header shows the `christianvari.dev` wordmark; on the home page the nav collapses into a Menu/Close dropdown at ≤760px, while inner pages pass `compactNav` for a shorter, always-inline nav. Section components live in `src/components/` (one per home section, plus `SectionHeader`, `PillButton`, `Stat`, `LinkRows`).
 
 ### Styling
 

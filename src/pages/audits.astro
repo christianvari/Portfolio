@@ -18,6 +18,7 @@ import { auditsJsonLd } from "../lib/jsonld";
   description={`${totalAudits} security audits by Christian Vari across Rust, Golang, Cosmos SDK, CosmWasm, Polkadot SDK, Solana and Solidity, with ${totalIssues} issues found.`}
   jsonLd={auditsJsonLd(Astro.site!)}
   active="Audits"
+  compactNav
 >
   <section
     class="container-page pt-[clamp(64px,10vw,120px)] pb-[120px]"

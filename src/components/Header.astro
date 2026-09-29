@@ -1,26 +1,37 @@
 ---
-import { nav, site } from "../data/site";
+import { compactNav, nav } from "../data/site";
 
 interface Props {
   active?: string;
+  /** Inner pages show a shorter, always-inline nav instead of the mobile menu. */
+  compact?: boolean;
 }
-const { active } = Astro.props;
+const { active, compact = false } = Astro.props;
+const items = compact ? compactNav : nav;
 ---
 
-<header class="sticky top-0 z-20 border-b border-line bg-[rgba(245,243,238,0.82)] backdrop-blur-md">
-  <div class="container-page flex flex-wrap items-center justify-between gap-x-6 gap-y-3 py-4">
+<header
+  class="sticky top-0 z-20 border-b border-line bg-[rgba(245,243,238,0.82)] backdrop-blur-md"
+  data-header
+>
+  <div class="container-page flex flex-wrap items-center justify-between gap-6 py-4">
     <a
       href="/"
-      class="flex items-center gap-2.5 text-base font-medium tracking-[-0.01em]"
+      aria-label="Christian Vari — home"
+      class="flex items-baseline gap-px text-[17px] font-semibold tracking-[-0.04em] text-ink hover:text-ink"
     >
-      <span class="size-2.5 rounded-full bg-accent" aria-hidden="true"></span>
-      {site.name}
+      christianvari<span class="text-accent">.</span>
+      <span class="font-normal text-muted">dev</span>
     </a>
+
     <nav
       aria-label="Primary"
-      class="-mx-5 flex gap-x-7 overflow-x-auto px-5 text-sm whitespace-nowrap [scrollbar-width:none] max-sm:w-[calc(100%+40px)] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0"
+      class:list={[
+        "flex flex-wrap text-sm",
+        compact ? "gap-[clamp(14px,3vw,28px)]" : "gap-7 max-[760px]:hidden",
+      ]}
     >
-      {nav.map(item => (
+      {items.map(item => (
         <a
           href={item.href}
           class:list={[item.label === active && "text-accent"]}
@@ -30,5 +41,70 @@ const { active } = Astro.props;
         </a>
       ))}
     </nav>
+
+    {!compact && (
+      <button
+        type="button"
+        class="min-h-11 cursor-pointer rounded-full border border-ink bg-transparent px-4 py-2.5 text-sm text-ink min-[761px]:hidden"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        data-menu-toggle
+      >
+        Menu
+      </button>
+    )}
   </div>
+
+  {!compact && (
+    <nav
+      id="mobile-menu"
+      aria-label="Primary"
+      class="flex flex-col border-t border-line px-5 pt-2 pb-6 text-[28px] font-medium tracking-[-0.03em] min-[761px]:hidden!"
+      hidden
+      data-menu
+    >
+      {items.map((item, i) => (
+        <a
+          href={item.href}
+          class:list={[
+            "py-3",
+            i < items.length - 1 && "border-b border-line",
+            item.label === active && "text-accent",
+          ]}
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+  )}
 </header>
+
+<script>
+  const toggle =
+    document.querySelector<HTMLButtonElement>("[data-menu-toggle]");
+  const menu = document.querySelector<HTMLElement>("[data-menu]");
+
+  if (toggle && menu) {
+    const setOpen = (open: boolean) => {
+      menu.hidden = !open;
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.textContent = open ? "Close" : "Menu";
+    };
+    toggle.addEventListener("click", () =>
+      setOpen(menu.hasAttribute("hidden")),
+    );
+    // Any link in the menu closes it (in-page anchors don't navigate away).
+    menu.addEventListener("click", e => {
+      if ((e.target as Element).closest("a")) setOpen(false);
+    });
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape" && !menu.hasAttribute("hidden")) {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+    window
+      .matchMedia("(min-width: 761px)")
+      .addEventListener("change", e => e.matches && setOpen(false));
+  }
+</script>

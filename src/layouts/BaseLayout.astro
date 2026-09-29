@@ -12,9 +12,10 @@ interface Props {
   noindex?: boolean;
   jsonLd?: Record<string, unknown>;
   active?: string;
+  compactNav?: boolean;
 }
 
-const { active, ...seo } = Astro.props;
+const { active, compactNav, ...seo } = Astro.props;
 ---
 
 <!doctype html>
@@ -48,7 +49,7 @@ const { active, ...seo } = Astro.props;
     >
       Skip to content
     </a>
-    <Header active={active} />
+    <Header active={active} compact={compactNav} />
     <main id="main">
       <slot />
     </main>

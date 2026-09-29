@@ -24,6 +24,11 @@ export const nav = [
   { label: "Contact", href: "/#contact" },
 ];
 
+/** Shorter nav used on inner pages (audits, 404). */
+export const compactNav = nav.filter(item =>
+  ["About", "Work", "Audits", "Contact"].includes(item.label),
+);
+
 export const ecosystems = [
   "Solana",
   "Cosmos SDK",
