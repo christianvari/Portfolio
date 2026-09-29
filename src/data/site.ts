@@ -20,14 +20,17 @@ export const nav = [
   { label: "Work", href: "/#work" },
   { label: "Patents", href: "/#patents" },
   { label: "Expertise", href: "/#skills" },
-  { label: "Audits", href: "/audits" },
+  { label: "Audits", href: "/#audits" },
   { label: "Contact", href: "/#contact" },
 ];
 
-/** Shorter nav used on inner pages (audits, 404). */
-export const compactNav = nav.filter(item =>
-  ["About", "Work", "Audits", "Contact"].includes(item.label),
-);
+/** Shorter nav used on inner pages (audits, 404, privacy); Audits links to the full list. */
+export const compactNav = [
+  { label: "About", href: "/#about" },
+  { label: "Work", href: "/#work" },
+  { label: "Audits", href: "/audits/" },
+  { label: "Contact", href: "/#contact" },
+];
 
 export const ecosystems = [
   "Solana",
