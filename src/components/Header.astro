@@ -1,5 +1,6 @@
 ---
 import { compactNav, nav } from "../data/site";
+import LogoMark from "./LogoMark.astro";
 
 interface Props {
   active?: string;
@@ -18,10 +19,10 @@ const items = compact ? compactNav : nav;
     <a
       href="/"
       aria-label="Christian Vari — home"
-      class="flex items-baseline gap-px text-[17px] font-semibold tracking-[-0.04em] text-ink hover:text-ink"
+      class="flex items-center gap-2.5 text-base font-medium tracking-[-0.01em] whitespace-nowrap text-ink hover:text-ink"
     >
-      christianvari<span class="text-accent">.</span>
-      <span class="font-normal text-muted">dev</span>
+      <LogoMark class="h-[17px] w-[30px] flex-none" />
+      <span>Christian Vari</span>
     </a>
 
     <nav

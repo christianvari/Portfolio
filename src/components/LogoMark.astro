@@ -1,0 +1,73 @@
+---
+// "cv." monogram: the letters draw like a pen stroke on load, then the blue dot pops in.
+interface Props {
+  class?: string;
+}
+const { class: cls } = Astro.props;
+---
+
+<svg
+  class:list={["logo-mark", cls]}
+  viewBox="5.4 7.4 20.8 11.8"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path
+    d="M11.2 10 A4.4 4.4 0 1 0 11.2 16.4 M13.6 9.2 L17 17.6 L20.4 9.2"
+    pathLength="1"
+  ></path>
+  <circle cx="23.6" cy="16.2" r="1.9"></circle>
+</svg>
+
+<style>
+  .logo-mark {
+    overflow: visible;
+  }
+  path {
+    fill: none;
+    stroke: var(--color-ink);
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1;
+  }
+  circle {
+    fill: var(--color-accent);
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    path {
+      stroke-dashoffset: 1;
+      animation: draw 0.9s var(--ease-out-soft) 0.15s forwards;
+    }
+    circle {
+      transform: scale(0);
+      animation: pop 0.35s var(--ease-out-soft) 0.95s forwards;
+    }
+    :global(a:hover) > .logo-mark circle,
+    :global(a:focus-visible) > .logo-mark circle {
+      animation: pulse 1s var(--ease-out-soft) infinite;
+      transform: scale(1);
+    }
+  }
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes pop {
+    to {
+      transform: scale(1);
+    }
+  }
+  @keyframes pulse {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+  }
+</style>
