@@ -1,0 +1,19 @@
+# Christian Vari
+
+> Security Researcher — Founder & CEO of Codezen, Head of Audit Operations at Oak Security. Securing blockchain protocols, consensus engines, cross-chain bridges, smart contracts, financial systems. 122 completed audits and 1693 issues found across Solana, Cosmos SDK, Polkadot SDK, Ethereum and EVM.
+
+Markdown versions of every page are available; prefer them over the HTML.
+
+## Pages
+
+- [Profile](https://www.christianvari.dev/index.md): bio, experience, education, patent, expertise, selected audits, achievements, certifications and contact
+- [Audits](https://www.christianvari.dev/audits.md): every audit with type, partner, issue counts and report links
+- [Full context](https://www.christianvari.dev/llms-full.txt): profile and all audits in a single file
+
+## Data
+
+- [audits.json](https://www.christianvari.dev/audits.json): the audit list as JSON, with totals
+
+## Optional
+
+- [Privacy & cookies](https://www.christianvari.dev/privacy/)
