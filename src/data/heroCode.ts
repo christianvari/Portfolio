@@ -40,8 +40,9 @@ pub fn transfer(origin: OriginFor<T>, dest: T::AccountId, value: BalanceOf<T>) -
 }`;
 
 export const typedWords = [
-  "assumptions.",
-  "invariants.",
-  "protocol logic.",
-  "real-world failure modes.",
+  "blockchain protocols.",
+  "consensus engines.",
+  "cross-chain bridges.",
+  "smart contracts.",
+  "financial systems.",
 ];
