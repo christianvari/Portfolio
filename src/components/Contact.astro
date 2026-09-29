@@ -32,6 +32,13 @@ const handle = site.twitter;
           {handle} on X
         </PillButton>
         <PillButton
+          href={site.social.linkedin}
+          variant="outline-light"
+          size="lg"
+        >
+          LinkedIn ↗
+        </PillButton>
+        <PillButton
           href={site.social.codezen}
           variant="outline-light"
           size="lg"
@@ -43,14 +50,6 @@ const handle = site.twitter;
     <footer class="flex flex-wrap justify-between gap-4 border-t border-white/40 pt-6 text-sm">
       <span>{site.name}</span>
       <nav aria-label="Social" class="flex flex-wrap gap-6">
-        <a
-          href={site.social.linkedin}
-          target="_blank"
-          rel="noopener"
-          class="text-white hover:text-white hover:opacity-70"
-        >
-          LinkedIn
-        </a>
         <a
           href={site.social.github}
           target="_blank"
