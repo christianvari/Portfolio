@@ -15,9 +15,11 @@ npm run format     # Prettier (with prettier-plugin-astro)
 
 Node is pinned to the current LTS (`24`) via `.nvmrc`.
 
-Environment variables go in `.env` (gitignored), read at build time only:
-- `GA_TRACKING_ID` — Google Analytics / gtag ID (omitted → no GA script)
-- `CLARITY_ID` — Microsoft Clarity project ID (omitted → no Clarity script)
+Environment variables go in `.env` (gitignored), read at build time only (`src/lib/analytics.ts`):
+- `GA_TRACKING_ID` — Google Analytics **GA4** measurement ID (`G-…`). Old Universal Analytics IDs (`UA-…`) are rejected with a build warning, since UA no longer collects data.
+- `CLARITY_ID` — Microsoft Clarity project ID.
+
+Analytics are strictly opt-in: `src/components/CookieBanner.astro` + `src/scripts/consent.ts` inject gtag/Clarity only after "Accept" (choice stored in `localStorage` as `cv-consent`, re-asked after 6 months). Any element with `data-cookie-settings` reopens the banner. `/privacy` is the cookie policy; keep its cookie table in sync if analytics change. With neither ID set, no banner is rendered.
 
 ## Deploy
 
@@ -40,6 +42,7 @@ Environment variables go in `.env` (gitignored), read at build time only:
 - `src/pages/index.astro` — Hero → Marquee → About → Work (+Education) → Patents → Expertise → Selected work → Achievements → Certifications → Contact.
 - `src/pages/audits.astro` — all audits, server-rendered; filter pills + search hide rows client-side.
 - `src/pages/og.png.ts` — build-time OG image (satori + resvg, static Geist woff).
+- `src/pages/privacy.astro` — privacy & cookie policy.
 - `src/pages/404.astro` — noindex.
 - `/projects` redirects to `/audits/` (`redirects` in `astro.config.mjs`).
 

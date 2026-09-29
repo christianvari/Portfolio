@@ -4,6 +4,7 @@ import geistWoff2 from "@fontsource-variable/geist/files/geist-latin-wght-normal
 import Seo from "../components/Seo.astro";
 import Analytics from "../components/Analytics.astro";
 import Header from "../components/Header.astro";
+import SiteFooter from "../components/SiteFooter.astro";
 
 interface Props {
   title: string;
@@ -40,7 +41,6 @@ const { active, compactNav, ...seo } = Astro.props;
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <Seo {...seo} />
-    <Analytics />
   </head>
   <body class="min-h-screen">
     <a
@@ -53,7 +53,8 @@ const { active, compactNav, ...seo } = Astro.props;
     <main id="main">
       <slot />
     </main>
-    <slot name="footer" />
+    {compactNav && <SiteFooter />}
+    <Analytics />
     <script>
       import "../scripts/reveal";
     </script>

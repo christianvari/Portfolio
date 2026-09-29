@@ -1,0 +1,146 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../data/site";
+import { analyticsEnabled, clarityId, gaId } from "../lib/analytics";
+
+const updated = "29 September 2026";
+const cookies = [
+  ...(gaId
+    ? [
+        {
+          name: "_ga",
+          provider: "Google Analytics",
+          purpose: "Distinguishes visitors",
+          duration: "2 years",
+        },
+        {
+          name: `_ga_${gaId.replace(/^G-/, "")}`,
+          provider: "Google Analytics",
+          purpose: "Keeps session state",
+          duration: "2 years",
+        },
+      ]
+    : []),
+  ...(clarityId
+    ? [
+        {
+          name: "_clck",
+          provider: "Microsoft Clarity",
+          purpose: "Keeps the same visitor ID across pages",
+          duration: "1 year",
+        },
+        {
+          name: "_clsk",
+          provider: "Microsoft Clarity",
+          purpose: "Groups page views into one session",
+          duration: "1 day",
+        },
+        {
+          name: "CLID, MUID",
+          provider: "Microsoft Clarity",
+          purpose:
+            "Identifies the first visit / the browser across Microsoft sites",
+          duration: "1 year",
+        },
+      ]
+    : []),
+  {
+    name: "cv-consent (local storage)",
+    provider: "This site",
+    purpose: "Remembers your cookie choice",
+    duration: "6 months",
+  },
+];
+---
+
+<BaseLayout
+  title={`Privacy & cookies · ${site.name}`}
+  description="How christianvari.dev uses cookies and analytics, and how to change your consent."
+  compactNav
+>
+  <article class="container-page pt-[clamp(64px,10vw,120px)] pb-[120px] [&_h2]:mt-14 [&_h2]:mb-4 [&_h2]:text-[26px] [&_h2]:font-medium [&_h2]:tracking-[-0.02em] [&_p]:my-0 [&_p]:max-w-[720px] [&_p]:text-lg [&_p]:leading-[1.6] [&_p]:text-ink-2 [&_p+p]:mt-4">
+    <div class="label-mono mb-5">Last updated {updated}</div>
+    <h1 class="m-0 text-[clamp(52px,9vw,120px)] leading-[0.92] font-medium tracking-[-0.055em]">
+      Privacy &amp; cookies<span class="text-accent">.</span>
+    </h1>
+
+    <h2>Who is responsible</h2>
+    <p>
+      This site is run by {site.name}. For any privacy question or request,
+      write to{" "}
+      <a href={`mailto:${site.email}`} class="underline underline-offset-2">
+        {site.email}
+      </a>
+      .
+    </p>
+
+    <h2>What this site collects</h2>
+    <p>
+      There are no accounts, forms or newsletters. If you write to me, I use
+      your email only to reply. The site is hosted on GitHub Pages, and GitHub
+      may log technical data such as IP addresses to operate and secure the
+      service.
+    </p>
+    {analyticsEnabled ? (
+      <p>
+        With your consent, the site loads
+        {gaId && " Google Analytics (Google Ireland Ltd.)"}
+        {gaId && clarityId && " and"}
+        {clarityId &&
+          " Microsoft Clarity (Microsoft Ireland Operations Ltd.)"}{" "}
+        to measure visits and understand how pages are used. Clarity can record
+        mouse movements, clicks and scrolling; text you type is masked. Ad
+        features are disabled. These providers may transfer data to the United
+        States under the EU–US Data Privacy Framework. Nothing is loaded before
+        you click “Accept”, and declining has no effect on how the site works.
+      </p>
+    ) : (
+      <p>The site does not currently use analytics or tracking cookies.</p>
+    )}
+
+    <h2>Cookies and storage</h2>
+    <div class="max-w-[900px] overflow-x-auto">
+      <table class="w-full border-collapse text-left text-[15px]">
+        <thead>
+          <tr class="border-b border-ink font-mono text-xs text-muted">
+            <th class="py-3 pr-6 font-normal">Name</th>
+            <th class="py-3 pr-6 font-normal">Provider</th>
+            <th class="py-3 pr-6 font-normal">Purpose</th>
+            <th class="py-3 font-normal">Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          {cookies.map(c => (
+            <tr class="border-b border-line align-top">
+              <td class="py-3 pr-6 font-mono text-[13px]">{c.name}</td>
+              <td class="py-3 pr-6">{c.provider}</td>
+              <td class="py-3 pr-6 text-ink-2">{c.purpose}</td>
+              <td class="py-3 whitespace-nowrap">{c.duration}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Your choices and rights</h2>
+    {analyticsEnabled && (
+      <p>
+        You can accept or decline analytics at any time from{" "}
+        <a
+          href="#cookies"
+          data-cookie-settings
+          class="underline underline-offset-2"
+        >
+          cookie settings
+        </a>
+        . Your choice is kept for six months, after which you'll be asked again.
+      </p>
+    )}
+    <p>
+      Under the GDPR you can ask to access, correct or delete your data, object
+      to or restrict its processing, and withdraw consent at any time. You can
+      also lodge a complaint with the Italian data protection authority (Garante
+      per la protezione dei dati personali).
+    </p>
+  </article>
+</BaseLayout>

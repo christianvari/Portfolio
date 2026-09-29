@@ -49,6 +49,7 @@ const person = (origin: URL, image: string) => ({
     additionalType: "https://schema.org/Patent",
     name: p.title,
     identifier: p.number,
+    description: p.description,
     url: p.url,
     dateCreated: p.year,
   })),

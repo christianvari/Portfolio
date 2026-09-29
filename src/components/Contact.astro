@@ -1,6 +1,7 @@
 ---
 import { site } from "../data/site";
 import PillButton from "./PillButton.astro";
+import { analyticsEnabled } from "../lib/analytics";
 
 interface Props {
   number: string;
@@ -58,6 +59,21 @@ const handle = site.twitter;
         >
           GitHub
         </a>
+        <a
+          href="/privacy/"
+          class="text-white hover:text-white hover:opacity-70"
+        >
+          Privacy
+        </a>
+        {analyticsEnabled && (
+          <a
+            href="#cookies"
+            class="text-white hover:text-white hover:opacity-70"
+            data-cookie-settings
+          >
+            Cookie settings
+          </a>
+        )}
       </nav>
       <span>Made in Italy</span>
     </footer>

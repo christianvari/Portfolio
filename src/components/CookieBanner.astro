@@ -1,0 +1,59 @@
+---
+interface Props {
+  ga: boolean;
+  clarity: boolean;
+}
+const { ga, clarity } = Astro.props;
+const tools = [ga && "Google Analytics", clarity && "Microsoft Clarity"]
+  .filter(Boolean)
+  .join(" and ");
+---
+
+<section
+  class="fixed inset-x-0 bottom-0 z-30 p-[clamp(12px,2vw,24px)]"
+  role="dialog"
+  aria-live="polite"
+  aria-labelledby="cookie-title"
+  aria-describedby="cookie-text"
+  hidden
+  data-cookie-banner
+>
+  <div class="mx-auto flex max-w-[1240px] flex-wrap items-center justify-between gap-x-8 gap-y-5 rounded-[14px] bg-ink p-6 text-bg shadow-[0_40px_80px_-40px_rgba(27,26,23,0.6)]">
+    <div class="flex max-w-[680px] flex-col gap-2">
+      <h2
+        id="cookie-title"
+        class="m-0 font-mono text-[13px] font-normal text-muted-dark"
+      >
+        Cookies
+      </h2>
+      <p id="cookie-text" class="m-0 text-[15px] leading-normal text-pretty">
+        With your consent, I use {tools} to understand how this site is used.
+        Nothing is loaded until you accept, and you can change your mind at any
+        time.{" "}
+        <a
+          href="/privacy/"
+          class="text-bg underline underline-offset-2 hover:text-white"
+        >
+          Cookie policy
+        </a>
+        .
+      </p>
+    </div>
+    <div class="flex flex-wrap gap-3">
+      <button
+        type="button"
+        class="cursor-pointer rounded-full border border-line-dark-2 bg-transparent px-[22px] py-3 text-[15px] font-medium text-bg transition-colors hover:border-bg"
+        data-consent="denied"
+      >
+        Decline
+      </button>
+      <button
+        type="button"
+        class="cursor-pointer rounded-full border border-bg bg-bg px-[22px] py-3 text-[15px] font-medium text-ink transition-colors hover:border-accent hover:bg-accent hover:text-white"
+        data-consent="granted"
+      >
+        Accept
+      </button>
+    </div>
+  </div>
+</section>
