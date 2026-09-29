@@ -34,7 +34,7 @@
     "astro": "^7.3.5",
     "satori": "^0.33.5",
     "tailwindcss": "^4.3.3",
-    "typescript": "^6.0.3"
+    "typescript": "^7.0.2"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
