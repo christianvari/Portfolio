@@ -10,6 +10,7 @@ import {
   bio,
   ecosystems,
   expertise,
+  identity,
   reviewTechnologies,
   site,
 } from "../data/site";
@@ -35,6 +36,7 @@ const links = () =>
     `- X: ${site.social.x}`,
     `- LinkedIn: ${site.social.linkedin}`,
     `- GitHub: ${site.social.github}`,
+    `- ORCID: ${identity.orcid}`,
     `- Codezen: ${site.social.codezen}`,
   ].join("\n");
 

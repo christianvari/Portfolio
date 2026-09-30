@@ -1,5 +1,5 @@
 ---
-import { site } from "../data/site";
+import { identity, site } from "../data/site";
 import PillButton from "./PillButton.astro";
 import { analyticsEnabled } from "../lib/analytics";
 
@@ -57,6 +57,14 @@ const handle = site.twitter;
           class="text-white hover:text-white hover:opacity-70"
         >
           GitHub
+        </a>
+        <a
+          href={identity.orcid}
+          target="_blank"
+          rel="noopener me"
+          class="text-white hover:text-white hover:opacity-70"
+        >
+          ORCID
         </a>
         <a
           href="/privacy/"

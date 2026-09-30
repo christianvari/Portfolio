@@ -21,8 +21,8 @@ export const site = {
  * sameAs lets search engines merge those descriptions into one entity.
  */
 export const identity = {
-  // ORCID iD URL, e.g. "https://orcid.org/0000-0002-1825-0097". Left out of sameAs while empty.
-  orcid: "",
+  // ORCID iD URL. Left out of sameAs while empty.
+  orcid: "https://orcid.org/0009-0006-3613-4774",
   personIds: [
     "https://www.codezen.tech/#christian-vari",
     "https://www.altairith.capital/#christian-vari",
