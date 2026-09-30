@@ -15,6 +15,26 @@ export const site = {
   },
 };
 
+/**
+ * Identity links for structured data (src/lib/jsonld.ts).
+ * `personIds` are the JSON-LD @ids other sites use for the same person; listing them in
+ * sameAs lets search engines merge those descriptions into one entity.
+ */
+export const identity = {
+  // ORCID iD URL, e.g. "https://orcid.org/0000-0002-1825-0097". Left out of sameAs while empty.
+  orcid: "",
+  personIds: [
+    "https://www.codezen.tech/#christian-vari",
+    "https://www.altairith.capital/#christian-vari",
+  ],
+  // Company name (as in work.json) → that company's Organization @id.
+  orgIds: {
+    Codezen: "https://www.codezen.tech/#organization",
+    "Altairith Capital Holding": "https://www.altairith.capital/#organization",
+  } as Record<string, string>,
+  founded: ["Codezen", "Altairith Capital Holding"],
+};
+
 /** About section copy (also used by the markdown/llms.txt versions). */
 export const bio = {
   lead: "I’m Christian Vari, Founder & CEO of Codezen, a blockchain security firm focused on auditing financial and Web3 systems.",
