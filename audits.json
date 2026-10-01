@@ -250,7 +250,7 @@
       "issues": null,
       "url": "https://www.codezen.tech/audits/monaco/",
       "report": null,
-      "website": null
+      "website": "https://0xmonaco.com"
     },
     {
       "slug": "injective",
@@ -288,8 +288,8 @@
       "website": "https://zigchain.com"
     },
     {
-      "slug": "divergent-mcp-sdk",
-      "title": "Divergent MCP SDK",
+      "slug": "divigent-mcp-sdk",
+      "title": "Divigent MCP SDK",
       "date": "2026-05-26",
       "type": "SDK audit",
       "partner": "Oak Security",
@@ -299,9 +299,9 @@
         "Audit"
       ],
       "issues": null,
-      "url": "https://www.codezen.tech/audits/divergent-mcp-sdk/",
+      "url": "https://www.codezen.tech/audits/divigent-mcp-sdk/",
       "report": null,
-      "website": null
+      "website": "https://divigent.ai"
     },
     {
       "slug": "ibc",
@@ -320,8 +320,8 @@
       "website": "https://ibcprotocol.dev"
     },
     {
-      "slug": "divergent",
-      "title": "Divergent",
+      "slug": "divigent",
+      "title": "Divigent",
       "date": "2026-04-28",
       "type": "Smart contracts audit",
       "partner": "Oak Security",
@@ -330,9 +330,9 @@
         "Audit"
       ],
       "issues": null,
-      "url": "https://www.codezen.tech/audits/divergent/",
+      "url": "https://www.codezen.tech/audits/divigent/",
       "report": null,
-      "website": null
+      "website": "https://divigent.ai"
     },
     {
       "slug": "totalis",
@@ -347,7 +347,7 @@
       "issues": null,
       "url": "https://www.codezen.tech/audits/totalis/",
       "report": null,
-      "website": null
+      "website": "https://www.totalis.trade"
     },
     {
       "slug": "azura",
@@ -362,7 +362,7 @@
       "issues": null,
       "url": "https://www.codezen.tech/audits/azura/",
       "report": null,
-      "website": null
+      "website": "https://azura.xyz"
     },
     {
       "slug": "mantra-chain",

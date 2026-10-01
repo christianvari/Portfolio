@@ -16,9 +16,9 @@
 - [Monaco](https://www.codezen.tech/audits/monaco/) — Smart contracts audit — with Zenith Security — tags: Blockchain, Audit
 - [Injective](https://www.codezen.tech/audits/injective/) — Cosmos SDK Audit — with Zenith Security — tags: Blockchain, Golang, Cosmos SDK, Audit, Injective
 - [ZIGChain Pull 14](https://www.codezen.tech/audits/zigchain-pull-14/) — Cosmos SDK chain audit — with Oak Security — tags: Blockchain, Golang, Cosmos SDK, Audit
-- [Divergent MCP SDK](https://www.codezen.tech/audits/divergent-mcp-sdk/) — SDK audit — with Oak Security — tags: AI, MCP, Audit
+- [Divigent MCP SDK](https://www.codezen.tech/audits/divigent-mcp-sdk/) — SDK audit — with Oak Security — tags: AI, MCP, Audit
 - [IBC](https://www.codezen.tech/audits/ibc/) — IBC protocol audit — with Zenith Security — tags: Blockchain, IBC, Audit
-- [Divergent](https://www.codezen.tech/audits/divergent/) — Smart contracts audit — with Oak Security — tags: Blockchain, Audit
+- [Divigent](https://www.codezen.tech/audits/divigent/) — Smart contracts audit — with Oak Security — tags: Blockchain, Audit
 - [Totalis](https://www.codezen.tech/audits/totalis/) — Smart contracts audit — with Zenith Security — tags: Blockchain, Audit
 - [Azura](https://www.codezen.tech/audits/azura/) — Smart contracts audit — with Zenith Security — tags: Blockchain, Audit
 - [MANTRA Chain](https://www.codezen.tech/audits/mantra-chain/) — Cosmos SDK chain audit — with Oak Security — tags: Blockchain, Golang, Cosmos SDK, Audit
