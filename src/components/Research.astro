@@ -1,0 +1,68 @@
+---
+import SectionHeader from "./SectionHeader.astro";
+import {
+  researchIntro,
+  researchItems,
+  researchPath,
+  researchStatus,
+} from "../lib/research";
+---
+
+<section
+  id="research"
+  class="border-t border-line"
+  aria-labelledby="research-title"
+>
+  <!-- Old in-page links pointed at #patents. -->
+  <span id="patents" aria-hidden="true"></span>
+  <div class="container-page section-y">
+    <div
+      data-reveal
+      class="mb-12 flex flex-wrap items-end justify-between gap-6"
+    >
+      <div class="flex flex-col gap-6">
+        <SectionHeader
+          id="research-title"
+          label="03 — Research"
+          title="Research"
+        />
+        <p class="m-0 max-w-[620px] text-lg leading-[1.6] text-pretty text-ink-2">
+          {researchIntro}
+        </p>
+      </div>
+      <a
+        href="/research/"
+        class="mb-2 border-b border-current pb-0.5 text-[15px] font-medium"
+      >
+        All research →
+      </a>
+    </div>
+    <ul class="m-0 flex list-none flex-col border-b border-line p-0">
+      {researchItems.map(r => (
+        <li data-reveal>
+          <a
+            href={researchPath(r)}
+            class="-mx-4 flex flex-wrap items-baseline gap-x-8 gap-y-2.5 border-t border-line px-4 py-[30px] text-ink transition-colors duration-250 hover:bg-surface hover:text-ink"
+          >
+            <p class="m-0 flex flex-[0_0_180px] flex-col gap-1 font-mono text-[13px] text-muted">
+              <span>{r.type}</span>
+              <span>{r.number}</span>
+            </p>
+            <div class="flex flex-[1_1_360px] flex-col gap-1.5">
+              <h3 class="m-0 text-[26px] font-medium tracking-[-0.02em]">
+                {r.title} →
+              </h3>
+              <p class="m-0 text-sm text-muted italic" lang={r.originalLang}>
+                {r.originalTitle}
+              </p>
+              <p class="m-0 text-base text-ink-2">{r.description}</p>
+            </div>
+            <p class="m-0 flex-[0_0_auto] text-sm text-muted">
+              {researchStatus(r)}
+            </p>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

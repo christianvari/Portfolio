@@ -1,14 +1,18 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PillButton from "../../components/PillButton.astro";
-import patents from "../../data/patents.json";
 import { site } from "../../data/site";
-import { patentJsonLd } from "../../lib/jsonld";
+import { researchItemJsonLd } from "../../lib/jsonld";
+import {
+  researchItems,
+  researchKicker,
+  type ResearchItem,
+} from "../../lib/research";
 
 export const getStaticPaths = () =>
-  patents.map(patent => ({ params: { slug: patent.slug }, props: { patent } }));
+  researchItems.map(item => ({ params: { slug: item.slug }, props: { item } }));
 
-const { patent: p } = Astro.props;
+const { item: p } = Astro.props as { item: ResearchItem };
 
 const facts = [
   { label: "Status", value: p.status },
@@ -26,21 +30,34 @@ const prose =
 ---
 
 <BaseLayout
-  title={`${p.title} · Patent ${p.number} · ${site.name}`}
-  description={`${p.status} ${p.number} (filed ${p.filed}, granted ${p.granted}) by ${site.name}. ${p.description}`}
-  image={`/og/patent-${p.slug}.png`}
-  markdown={`/patents/${p.slug}.md`}
-  jsonLd={patentJsonLd(Astro.site!, p)}
+  title={`${p.seoTitle} · ${site.name}`}
+  description={p.seoDescription}
+  image={`/og/research-${p.slug}.png`}
+  markdown={`/research/${p.slug}.md`}
+  jsonLd={researchItemJsonLd(Astro.site!, p)}
+  active="Research"
   compactNav
 >
   <article class="container-page pt-[clamp(64px,10vw,120px)] pb-[120px]">
     <header class="flex flex-col gap-6">
       <nav aria-label="Breadcrumb" class="font-mono text-[13px] text-muted">
-        <a href="/#patents" class="text-muted">
-          ← Patents
-        </a>
+        <ol class="m-0 flex list-none flex-wrap gap-2 p-0">
+          <li>
+            <a href="/" class="text-muted">
+              Home
+            </a>{" "}
+            /
+          </li>
+          <li>
+            <a href="/research/" class="text-muted">
+              Research
+            </a>{" "}
+            /
+          </li>
+          <li aria-current="page">{p.type}</li>
+        </ol>
       </nav>
-      <p class="label-mono m-0">Patent — {p.number}</p>
+      <p class="label-mono m-0">{researchKicker(p)}</p>
       <h1 class="m-0 max-w-[1100px] text-[clamp(44px,7vw,104px)] leading-[0.95] font-medium tracking-[-0.05em] text-balance">
         {p.title}
         <span class="text-accent">.</span>
@@ -170,5 +187,17 @@ const prose =
         Official record ↗
       </PillButton>
     </footer>
+
+    <nav
+      aria-label="More"
+      class="mt-16 flex flex-wrap justify-between gap-6 text-[15px] font-medium"
+    >
+      <a href="/research/" class="border-b border-current pb-0.5">
+        ← All research
+      </a>
+      <a href="/audits/" class="border-b border-current pb-0.5">
+        Security audits →
+      </a>
+    </nav>
   </article>
 </BaseLayout>

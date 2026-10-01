@@ -5,7 +5,7 @@ import satori from "satori";
 import { Resvg } from "@resvg/resvg-js";
 import { site } from "../../data/site";
 import { totalAudits, totalIssues } from "../../lib/audits";
-import patents from "../../data/patents.json";
+import { researchIntro, researchItems } from "../../lib/research";
 
 // Social share cards (1200×630), rendered at build time: /og/home.png, /og/audits.png.
 
@@ -143,8 +143,8 @@ const cards = {
     ),
 };
 
-// One card per patent page: /og/patent-<slug>.png
-const patentCard = (p: (typeof patents)[number]) => () =>
+// One card per research item: /og/research-<slug>.png
+const researchCard = (p: (typeof researchItems)[number]) => () =>
   h("div", { display: "flex", flexDirection: "column", gap: 22 }, [
     h(
       "div",
@@ -173,7 +173,36 @@ const patentCard = (p: (typeof patents)[number]) => () =>
 
 const allCards: Record<string, () => Node> = {
   ...cards,
-  ...Object.fromEntries(patents.map(p => [`patent-${p.slug}`, patentCard(p)])),
+  research: () =>
+    h("div", { display: "flex", flexDirection: "column", gap: 26 }, [
+      h(
+        "div",
+        {
+          display: "flex",
+          fontSize: 150,
+          fontWeight: 500,
+          letterSpacing: "-0.055em",
+          lineHeight: 0.9,
+          color: C.ink,
+        },
+        ["Research", h("span", { color: C.accent }, ".")],
+      ),
+      h(
+        "div",
+        {
+          display: "flex",
+          fontSize: 32,
+          color: C.ink2,
+          letterSpacing: "-0.02em",
+          maxWidth: 980,
+          lineHeight: 1.3,
+        },
+        researchIntro,
+      ),
+    ]),
+  ...Object.fromEntries(
+    researchItems.map(p => [`research-${p.slug}`, researchCard(p)]),
+  ),
 };
 
 export const getStaticPaths = (() =>

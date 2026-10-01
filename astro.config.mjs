@@ -7,10 +7,15 @@ export default defineConfig({
   site: "https://www.christianvari.dev",
   trailingSlash: "ignore",
   build: { format: "directory" },
-  redirects: { "/projects": "/audits/" },
+  // Old URLs kept working: the audits list and the patent page (moved under /research/).
+  redirects: {
+    "/projects": "/audits/",
+    "/patents/cybersecurity-report-generation":
+      "/research/cybersecurity-report-generation/",
+  },
   integrations: [
     sitemap({
-      filter: page => !page.includes("/projects"),
+      filter: page => !/\/(projects|patents)\//.test(page),
       lastmod: new Date(),
     }),
   ],

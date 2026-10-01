@@ -3,9 +3,9 @@
 import achievements from "../data/achievements.json";
 import certifications from "../data/certifications.json";
 import education from "../data/education.json";
-import patents from "../data/patents.json";
 import work from "../data/work.json";
 import { typedWords } from "../data/heroCode";
+import { researchIntro, researchItems, type ResearchItem } from "./research";
 import {
   bio,
   ecosystems,
@@ -84,17 +84,15 @@ const experienceMd = () =>
     })
     .join("\n\n");
 
-const patentsMd = () =>
-  patents
+const researchListMd = () =>
+  researchItems
     .map(
       p =>
-        `- **[${p.title}](${abs(`/patents/${p.slug}.md`)})** (${p.originalLang}: "${p.originalTitle}") — ${p.number}. ${p.status}, ${p.granted} (filed ${p.filed}). ${p.description} Official record: ${p.url}`,
+        `- **[${p.title}](${abs(`/research/${p.slug}.md`)})** — ${p.type} (${p.originalLang}: "${p.originalTitle}") — ${p.number}. ${p.status}, ${p.granted} (filed ${p.filed}). ${p.description} Official record: ${p.url}`,
     )
     .join("\n");
 
-type Patent = (typeof patents)[number];
-
-export const patentMd = (p: Patent) => `# ${p.title}
+export const researchItemMd = (p: ResearchItem) => `# ${p.title}
 
 > ${p.status} ${p.number} — filed ${p.filed}, granted ${p.granted}. ${p.description}
 
@@ -107,7 +105,8 @@ export const patentMd = (p: Patent) => `# ${p.title}
 - Field: ${p.field}
 - Holder: ${site.name} (${abs("/")})
 - Official record: ${p.url}
-- Web page: ${abs(`/patents/${p.slug}/`)}
+- Web page: ${abs(`/research/${p.slug}/`)}
+- Keywords: ${p.keywords.join(", ")}
 
 ## Summary
 
@@ -140,9 +139,11 @@ ${experienceMd()}
 
 ${education.map(e => `- ${e.title}: ${e.subtitle}`).join("\n")}
 
-## Patents
+## Research
 
-${patentsMd()}
+${researchIntro} Hub: ${abs("/research/")}
+
+${researchListMd()}
 
 ## Expertise
 
@@ -208,10 +209,11 @@ Markdown versions of every page are available; prefer them over the HTML.
 
 ## Pages
 
-- [Profile](${abs("/index.md")}): bio, experience, education, patent, expertise, selected audits, achievements, certifications and contact
+- [Profile](${abs("/index.md")}): bio, experience, education, research and patent, expertise, selected audits, achievements, certifications and contact
 - [Audits](${abs("/audits.md")}): every audit with type, partner, issue counts and report links
 - [Full context](${abs("/llms-full.txt")}): profile and all audits in a single file
-${patents.map(p => `- [Patent: ${p.title}](${abs(`/patents/${p.slug}.md`)}): ${p.status} ${p.number}, how the invention works`).join("\n")}
+- [Research](${abs("/research.md")}): ${researchIntro}
+${researchItems.map(p => `- [${p.type}: ${p.title}](${abs(`/research/${p.slug}.md`)}): ${p.status} ${p.number}, how the invention works`).join("\n")}
 
 ## Data
 
@@ -222,10 +224,17 @@ ${patents.map(p => `- [Patent: ${p.title}](${abs(`/patents/${p.slug}.md`)}): ${p
 - [Privacy & cookies](${abs("/privacy/")})
 `;
 
+export const researchHubMd = () => `# Research · ${site.name}
+
+> ${researchIntro}
+
+${researchListMd()}
+`;
+
 export const llmsFullTxt = () => `${homeMd()}
 ---
 
-${patents.map(patentMd).join("\n---\n\n")}
+${researchItems.map(researchItemMd).join("\n---\n\n")}
 ---
 
 ${auditsMd()}`;

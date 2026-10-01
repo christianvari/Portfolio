@@ -1,11 +1,14 @@
 [
   {
+    "type": "Patent",
     "slug": "cybersecurity-report-generation",
     "number": "IT202400016273A1",
     "title": "A method for generating a cybersecurity report",
     "originalTitle": "Un metodo per eseguire la generazione di un report di sicurezza informatica",
     "originalLang": "it",
     "description": "Machine-learning pipeline that merges auditors’ vulnerability notes, rewrites them in report style and assigns a severity, automating security audit reports.",
+    "seoTitle": "AI Cybersecurity Report Generation Patent",
+    "seoDescription": "Granted Italian patent IT202400016273A1 by Christian Vari: an ML pipeline that merges auditors’ notes, writes the findings and rates their severity.",
     "status": "Granted patent",
     "granted": "2026",
     "filed": "2024",
@@ -74,6 +77,15 @@
       "Consistent, reproducible severity assessments",
       "Independent, scalable services: each can be replicated, restarted or stopped on its own",
       "Repository access isolated in a single component"
+    ],
+    "keywords": [
+      "cybersecurity report generation",
+      "security audit automation",
+      "AI-assisted security auditing",
+      "vulnerability severity classification",
+      "smart contract audit reports",
+      "machine learning",
+      "NLP"
     ]
   }
 ]

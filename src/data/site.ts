@@ -50,16 +50,17 @@ export const bio = {
 export const nav = [
   { label: "About", href: "/#about" },
   { label: "Work", href: "/#work" },
-  { label: "Patents", href: "/#patents" },
+  { label: "Research", href: "/#research" },
   { label: "Expertise", href: "/#skills" },
   { label: "Audits", href: "/#audits" },
   { label: "Contact", href: "/#contact" },
 ];
 
-/** Shorter nav used on inner pages (audits, 404, privacy); Audits links to the full list. */
+/** Shorter nav used on inner pages (audits, research, 404, privacy); Research and Audits link to their own pages. */
 export const compactNav = [
   { label: "About", href: "/#about" },
   { label: "Work", href: "/#work" },
+  { label: "Research", href: "/research/" },
   { label: "Audits", href: "/audits/" },
   { label: "Contact", href: "/#contact" },
 ];

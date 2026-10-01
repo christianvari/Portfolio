@@ -1,0 +1,90 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { site } from "../../data/site";
+import { researchHubJsonLd } from "../../lib/jsonld";
+import {
+  researchIntro,
+  researchItems,
+  researchPath,
+  researchStatus,
+} from "../../lib/research";
+
+const patentNumbers = researchItems
+  .filter(r => r.type === "Patent")
+  .map(r => r.number)
+  .join(", ");
+---
+
+<BaseLayout
+  title={`Security Research & Patents · ${site.name}`}
+  description={`Research by ${site.name} on AI-assisted security auditing, including granted patent ${patentNumbers} on automated cybersecurity report generation.`}
+  image="/og/research.png"
+  markdown="/research.md"
+  jsonLd={researchHubJsonLd(Astro.site!)}
+  active="Research"
+  compactNav
+>
+  <section
+    class="container-page pt-[clamp(64px,10vw,120px)] pb-[120px]"
+    aria-labelledby="research-title"
+  >
+    <nav aria-label="Breadcrumb" class="mb-5 font-mono text-[13px] text-muted">
+      <ol class="m-0 flex list-none flex-wrap gap-2 p-0">
+        <li>
+          <a href="/" class="text-muted">
+            Home
+          </a>{" "}
+          /
+        </li>
+        <li aria-current="page">Research</li>
+      </ol>
+    </nav>
+    <h1
+      id="research-title"
+      class="m-0 text-[clamp(64px,11vw,160px)] leading-[0.9] font-medium tracking-[-0.055em]"
+    >
+      Research<span class="text-accent">.</span>
+    </h1>
+    <p class="m-0 mt-8 max-w-[720px] text-[clamp(20px,2vw,26px)] leading-[1.4] text-pretty text-ink-2">
+      {researchIntro}
+    </p>
+
+    <ul class="m-0 mt-16 grid list-none gap-px border border-line bg-line p-0 [grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))]">
+      {researchItems.map(r => (
+        <li class="flex bg-bg transition-colors duration-250 hover:bg-raised">
+          <a
+            href={researchPath(r)}
+            class="flex w-full flex-col justify-between gap-12 p-8 text-ink hover:text-ink"
+          >
+            <div class="flex justify-between gap-4 font-mono text-xs text-muted">
+              <span>
+                {r.type} · {r.number}
+              </span>
+              <span class="text-accent" aria-hidden="true">
+                →
+              </span>
+            </div>
+            <div class="flex flex-col gap-3">
+              <h2 class="m-0 text-[clamp(26px,2.6vw,34px)] leading-[1.1] font-medium tracking-[-0.03em]">
+                {r.title}
+              </h2>
+              <p class="m-0 text-sm text-muted italic" lang={r.originalLang}>
+                {r.originalTitle}
+              </p>
+              <p class="m-0 text-base leading-[1.6] text-ink-2">
+                {r.description}
+              </p>
+              <p class="m-0 text-sm text-muted">{researchStatus(r)}</p>
+            </div>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <p class="m-0 mt-16 text-[15px]">
+      <a href="/audits/" class="border-b border-current pb-0.5 font-medium">
+        Security audits →
+      </a>
+    </p>
+  </section>
+</BaseLayout>

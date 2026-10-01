@@ -34,19 +34,19 @@ Analytics are strictly opt-in: `src/components/CookieBanner.astro` + `src/script
 - `src/sharedData/` — **git submodule** (`git@github.com:Codezen-SRLS/audit-history.git`). `data/audit-history.json` is the single source for all audit content and numbers. When updating audit data, push to the submodule repo, then update the reference here.
 - `src/lib/audits.ts` — typed access + derived values: `totalAudits`, `totalIssues`, `techCounts()` (Expertise bars), `featuredAudits` (home cards), `auditUrl()` (links to `codezen.tech/audits/<slug>/`, using each entry's permanent `slug` from the JSON), `displayTags()`, `filterKeys()`.
 - `src/data/site.ts` — site metadata, bio copy, nav, social links, marquee ecosystems, expertise chips, curated `homeFeatured` audit slugs, audit filter pills and filter aliases.
-- `src/data/*.json` — work (grouped by company with `roles[]`), education, achievements, certifications, patents.
+- `src/data/*.json` — work (grouped by company with `roles[]`), education, achievements, certifications, research (`research.json`: items with a `type`, currently one Patent; helpers in `src/lib/research.ts`).
 - `src/lib/jsonld.ts` — schema.org JSON-LD (ProfilePage/Person on home, CollectionPage/ItemList on /audits).
 
 ### Pages
 
-- `src/pages/index.astro` — Hero → Marquee → About → Work (+Education) → Patents → Expertise → Selected work → Achievements → Certifications → Contact.
+- `src/pages/index.astro` — Hero → Marquee → About → Work (+Education) → Research → Expertise → Selected work → Achievements → Certifications → Contact.
 - `src/pages/audits.astro` — all audits, server-rendered; filter pills + search hide rows client-side.
 - `src/pages/og/[card].png.ts` — build-time social cards (`/og/home.png`, `/og/audits.png`; satori + resvg, static Geist woff). Pages pick one via the `image` prop.
-- `src/pages/patents/[slug].astro` — one page per patent in `src/data/patents.json` (summary, problem, pipeline, architecture, benefits), with its own markdown (`/patents/<slug>.md`), social card (`/og/patent-<slug>.png`) and JSON-LD (WebPage + BreadcrumbList + the patent node). The home Patents row links here; Espacenet is linked from the page.
+- `src/pages/research/index.astro` (hub) and `src/pages/research/[slug].astro` (one page per item in `research.json`), each with markdown (`/research.md`, `/research/<slug>.md`), a social card (`/og/research.png`, `/og/research-<slug>.png`) and JSON-LD (CollectionPage/WebPage + BreadcrumbList + item nodes). Items carry `seoTitle`/`seoDescription` for the page `<title>`/description; keep titles ≤60 and descriptions ≤155 characters. The home Research section (`#research`, with a `#patents` alias) links to both.
 - `src/pages/privacy.astro` — privacy & cookie policy.
 - Agent/scraper endpoints, generated from the same data by `src/lib/markdown.ts`: `/llms.txt` (llmstxt.org index), `/llms-full.txt`, `/index.md`, `/audits.md`, `/audits.json`. Pages advertise their markdown version via `<link rel="alternate" type="text/markdown">` (the `markdown` prop). When adding a section to the HTML, add it to the markdown too.
 - `src/pages/404.astro` — noindex.
-- `/projects` redirects to `/audits/` (`redirects` in `astro.config.mjs`).
+- Redirects in `astro.config.mjs`: `/projects` → `/audits/`, `/patents/<slug>` → `/research/<slug>/` (old URLs are excluded from the sitemap).
 
 ### Components & layout
 
