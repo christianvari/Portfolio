@@ -86,11 +86,11 @@ Ecosystems: Solana, Cosmos SDK, Polkadot SDK, Ethereum, EVM, CosmWasm, Anchor, S
 Skills: Solana, Anchor, Polkadot SDK, TypeScript, C++, Risk Management.
 
 Security reviews by technology (number of audits):
-- Rust: 81
-- Golang: 70
-- Cosmos SDK: 64
-- CosmWasm: 53
-- Solidity: 35
+- Rust: 82
+- Golang: 68
+- Cosmos SDK: 62
+- CosmWasm: 54
+- Solidity: 37
 - Substrate: 13
 
 ## Security reviews

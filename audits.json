@@ -402,8 +402,8 @@
       "website": "https://ibcprotocol.dev"
     },
     {
-      "slug": "bezee",
-      "title": "Bezee",
+      "slug": "beezee",
+      "title": "BeeZee",
       "date": "2026-02-20",
       "type": "Smart contracts audit",
       "partner": "Oak Security",
@@ -412,9 +412,9 @@
         "Audit"
       ],
       "issues": null,
-      "url": "https://www.codezen.tech/audits/bezee/",
+      "url": "https://www.codezen.tech/audits/beezee/",
       "report": null,
-      "website": null
+      "website": "https://getbze.com"
     },
     {
       "slug": "injective-updates",
@@ -1038,8 +1038,8 @@
       "website": "https://www.capricorn.tech"
     },
     {
-      "slug": "fuel-sequencer-updates-10",
-      "title": "Fuel Sequencer Updates 10",
+      "slug": "fuel-sequencer-updates-september-2025",
+      "title": "Fuel Sequencer Updates (September 2025)",
       "date": "2025-09-10",
       "type": "Cosmos SDK chain Audit",
       "partner": "Oak Security",
@@ -1052,7 +1052,7 @@
         "Audit"
       ],
       "issues": null,
-      "url": "https://www.codezen.tech/audits/fuel-sequencer-updates-10/",
+      "url": "https://www.codezen.tech/audits/fuel-sequencer-updates-september-2025/",
       "report": null,
       "website": "https://fuel.network"
     },
@@ -1531,7 +1531,7 @@
     },
     {
       "slug": "manta",
-      "title": "Manta",
+      "title": "Manta Network",
       "date": "2024-12-20",
       "type": "Blockchain audit",
       "partner": "Oak Security",
@@ -1542,7 +1542,7 @@
       "issues": null,
       "url": "https://www.codezen.tech/audits/manta/",
       "report": null,
-      "website": null
+      "website": "https://manta.network"
     },
     {
       "slug": "data-network-story-protocol-l1",
@@ -1669,7 +1669,7 @@
         "Blockchain",
         "Move",
         "Audit",
-        "Sui"
+        "Initia"
       ],
       "issues": {
         "critical": 3,
@@ -1950,12 +1950,12 @@
       "slug": "dora-factory-s-vota-migration",
       "title": "Dora Factory's Vota migration",
       "date": "2024-09-23",
-      "type": "Cosmos SDK Audit",
+      "type": "Solidity Contract Audit",
       "partner": "Oak Security",
       "tags": [
         "Blockchain",
-        "Golang",
-        "Cosmos SDK",
+        "Solidity",
+        "Bridge",
         "Audit"
       ],
       "issues": {
@@ -2072,7 +2072,7 @@
       "slug": "persistence-pstake-btc-yield",
       "title": "Persistence pSTAKE BTC Yield",
       "date": "2024-07-25",
-      "type": "Cosmos SDK Audit",
+      "type": "Solidity smart contracts audit",
       "partner": "Oak Security",
       "tags": [
         "Blockchain",
@@ -2527,14 +2527,14 @@
       "slug": "router-voyager-forwarder-extension",
       "title": "Router Voyager Forwarder Extension",
       "date": "2024-04-30",
-      "type": "Relayer And Orchestrator Audit",
+      "type": "Solidity and CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
         "Blockchain",
-        "Golang",
-        "Cosmos SDK",
+        "Solidity",
         "Ethereum",
-        "Off chain",
+        "CosmWasm",
+        "Rust",
         "Audit"
       ],
       "issues": {
