@@ -89,23 +89,23 @@ Skills: Solana, Anchor, Polkadot SDK, TypeScript, C++, Risk Management.
 
 Security reviews by technology (number of audits):
 - Rust: 82
-- Golang: 68
-- Cosmos SDK: 62
+- Golang: 70
+- Cosmos SDK: 64
 - CosmWasm: 54
 - Solidity: 37
 - Substrate: 13
 
 ## Security reviews
 
-189 completed audits, 2361 issues found. Full list: https://www.christianvari.dev/audits.md (JSON: https://www.christianvari.dev/audits.json).
+190 completed audits, 2513 issues found. Full list: https://www.christianvari.dev/audits.md (JSON: https://www.christianvari.dev/audits.json).
 
 Selected work:
-- [Stellar Core Protocol 23](https://www.codezen.tech/audits/stellar-core-protocol-23/) — Blockchain node audit — with Oak Security — 81 issues (2 critical, 1 major, 35 minor, 43 informational) — tags: Blockchain, C++, C, Soroban, Rust, Audit, Stellar — [report](https://github.com/oak-security/audit-reports/blob/8a29e1d31c20fdc68bc732b1db73c4660d3fa507/Stellar/2025-10-17%20Audit%20Report%20-%20Stellar%20Core%20Protocol%2023%20Changes%20v1.0.pdf)
-- [DATA Network (Story Protocol) L1](https://www.codezen.tech/audits/data-network-story-protocol-l1/) — Cosmos SDK Audit — with Trust Security — 23 issues (5 critical, 6 major, 7 minor, 5 informational) — tags: Blockchain, Cosmos SDK, Golang, Audit, Ethereum, Solidity — [report](https://github.com/piplabs/story/blob/b99f39e1cc41a778932aa9d82e8f099dcd987dde/audits/Trust_Story_L1_v03.pdf)
-- [Snowfork Snowbridge](https://www.codezen.tech/audits/snowfork-snowbridge/) — Bridge Audit — with Oak Security — 33 issues (3 critical, 8 major, 9 minor, 13 informational) — tags: Blockchain, Rust, Solidity, Substrate, Polkadot, Audit, Ethereum, Bridge — [report](https://github.com/oak-security/audit-reports/blob/1569d1644cf4b51e0f2bfbdecbff5b39c131bac3/Snowbridge/2024-05-24%20Audit%20Report%20-%20Snowbridge%20v1.1.pdf)
-- [Cosmos SDK v0.47](https://www.codezen.tech/audits/cosmos-sdk-v0-47/) — Cosmos SDK Audit — with Oak Security — 37 issues (3 critical, 8 major, 13 minor, 13 informational) — tags: Blockchain, Golang, Cosmos SDK, Audit — [report](https://github.com/oak-security/audit-reports/blob/1569d1644cf4b51e0f2bfbdecbff5b39c131bac3/Cosmos%20SDK/2024-01-23%20Audit%20Report%20-%20Cosmos%20SDK%20v1.0.pdf)
-- [Filecoin FEVM](https://www.codezen.tech/audits/filecoin-fevm/) — EVM Implementation Audit — with Oak Security — 34 issues (3 critical, 15 major, 8 minor, 8 informational) — tags: Filecoin, Rust, Golang, Audit, EVM, Solidity, Ethereum — [report](https://github.com/oak-security/audit-reports/blob/429d51de1f390c56951db08c51e10e5adf75e8a8/Filecoin%20Foundation/2023-03-09%20Audit%20Report%20-%20Filecoin%20EVM%20(FEVM)%20v1.1.pdf)
-- [Cosmos Interchain Security](https://www.codezen.tech/audits/cosmos-interchain-security/) — Cosmos SDK Chain Audit — with Oak Security — 16 issues (2 critical, 2 major, 7 minor, 5 informational) — tags: Blockchain, Golang, Cosmos Hub, Cosmos SDK, Audit, Interchain Security, IBC — [report](https://github.com/oak-security/audit-reports/blob/0cea9f4e6b9a1eaf55b413765aae1e413e44de5f/Cosmos/2023-06-23%20Audit%20Report%20-%20Cosmos%20Interchain%20Security%20v1.0.pdf)
+- [Stellar Core Protocol 23 Changes](https://www.codezen.tech/audits/stellar-core-protocol-23/) — Blockchain node audit — with Oak Security — 81 issues (2 critical, 1 major, 35 minor, 43 informational) — tags: Blockchain, C++, C, Soroban, Rust, Audit, Stellar — [report](https://github.com/oak-security/audit-reports/blob/8a29e1d31c20fdc68bc732b1db73c4660d3fa507/Stellar/2025-10-17%20Audit%20Report%20-%20Stellar%20Core%20Protocol%2023%20Changes%20v1.0.pdf)
+- [DATA Network (Story Protocol) L1](https://www.codezen.tech/audits/data-network-story-protocol-l1/) — Cosmos SDK chain audit — with Trust Security — 23 issues (5 critical, 6 major, 7 minor, 5 informational) — tags: Blockchain, Cosmos SDK, Golang, Audit, Ethereum, Solidity — [report](https://github.com/piplabs/story/blob/b99f39e1cc41a778932aa9d82e8f099dcd987dde/audits/Trust_Story_L1_v03.pdf)
+- [Snowbridge](https://www.codezen.tech/audits/snowfork-snowbridge/) — Cross-chain bridge audit — with Oak Security — 33 issues (3 critical, 8 major, 9 minor, 13 informational) — tags: Blockchain, Rust, Solidity, Substrate, Polkadot, Audit, Ethereum, Bridge — [report](https://github.com/oak-security/audit-reports/blob/1569d1644cf4b51e0f2bfbdecbff5b39c131bac3/Snowbridge/2024-05-24%20Audit%20Report%20-%20Snowbridge%20v1.1.pdf)
+- [Cosmos SDK](https://www.codezen.tech/audits/cosmos-sdk-v0-47/) — Cosmos SDK framework audit — with Oak Security — 37 issues (3 critical, 8 major, 13 minor, 13 informational) — tags: Blockchain, Golang, Cosmos SDK, Audit — [report](https://github.com/oak-security/audit-reports/blob/1569d1644cf4b51e0f2bfbdecbff5b39c131bac3/Cosmos%20SDK/2024-01-23%20Audit%20Report%20-%20Cosmos%20SDK%20v1.0.pdf)
+- [Filecoin EVM (FEVM)](https://www.codezen.tech/audits/filecoin-fevm/) — EVM implementation audit — with Oak Security — 34 issues (3 critical, 15 major, 8 minor, 8 informational) — tags: Filecoin, Rust, Golang, Audit, EVM, Solidity, Ethereum — [report](https://github.com/oak-security/audit-reports/blob/429d51de1f390c56951db08c51e10e5adf75e8a8/Filecoin%20Foundation/2023-03-09%20Audit%20Report%20-%20Filecoin%20EVM%20(FEVM)%20v1.1.pdf)
+- [Cosmos Interchain Security](https://www.codezen.tech/audits/cosmos-interchain-security/) — Cosmos SDK chain audit — with Oak Security — 16 issues (2 critical, 2 major, 7 minor, 5 informational) — tags: Blockchain, Golang, Cosmos Hub, Cosmos SDK, Audit, Interchain Security, IBC — [report](https://github.com/oak-security/audit-reports/blob/0cea9f4e6b9a1eaf55b413765aae1e413e44de5f/Cosmos/2023-06-23%20Audit%20Report%20-%20Cosmos%20Interchain%20Security%20v1.0.pdf)
 
 ## Achievements
 
