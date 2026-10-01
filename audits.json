@@ -834,7 +834,7 @@
       },
       "url": "https://www.codezen.tech/audits/thema-protocol/",
       "report": "https://github.com/oak-security/audit-reports/blob/main/Thema/2025-12-27%20Audit%20Report%20-%20Thema%20Protocol.pdf",
-      "website": null
+      "website": "https://www.thema.financial"
     },
     {
       "slug": "meteora-damm-v2",
@@ -3912,7 +3912,7 @@
     },
     {
       "slug": "risk-harbor-ozone-v2",
-      "title": "Risk Harbor Ozone v2",
+      "title": "Subsea (Risk Harbor) Ozone v2",
       "date": "2022-03-22",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
@@ -3931,7 +3931,7 @@
       },
       "url": "https://www.codezen.tech/audits/risk-harbor-ozone-v2/",
       "report": "https://github.com/oak-security/audit-reports/blob/main/Risk%20Harbor/2022-03-22%20Audit%20Report%20-%20Risk%20Harbor%20v1.0.pdf",
-      "website": "https://ozone.riskharbor.com/"
+      "website": "https://subseaprotocol.com"
     },
     {
       "slug": "aperture-finance-2",
