@@ -96,14 +96,14 @@ export const reviewTechnologies = [
   "Substrate",
 ];
 
-/** Audits shown on the home page, by title, in display order. */
+/** Audits shown on the home page, by permanent slug (audit-history.json), in display order. */
 export const homeFeatured = [
-  "Stellar Core",
-  "Story Protocol L1",
-  "Snowfork Snowbridge",
-  "Cosmos SDK v0.47",
-  "Filecoin FEVM",
-  "Cosmos Interchain Security",
+  "stellar-core-protocol-23",
+  "data-network-story-protocol-l1",
+  "snowfork-snowbridge",
+  "cosmos-sdk-v0-47",
+  "filecoin-fevm",
+  "cosmos-interchain-security",
 ];
 
 export const auditFilters = [

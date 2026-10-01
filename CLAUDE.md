@@ -32,8 +32,8 @@ Analytics are strictly opt-in: `src/components/CookieBanner.astro` + `src/script
 ### Data
 
 - `src/sharedData/` — **git submodule** (`git@github.com:Codezen-SRLS/audit-history.git`). `data/audit-history.json` is the single source for all audit content and numbers. When updating audit data, push to the submodule repo, then update the reference here.
-- `src/lib/audits.ts` — typed access + derived values: `totalAudits`, `totalIssues`, `techCounts()` (Expertise bars), `featuredAudits` (home cards), `slug()`/`auditUrl()` (links to `codezen.tech/audits/<slug>/`), `displayTags()`, `filterKeys()`.
-- `src/data/site.ts` — site metadata, bio copy, nav, social links, marquee ecosystems, expertise chips, curated `homeFeatured` titles, audit filter pills and filter aliases.
+- `src/lib/audits.ts` — typed access + derived values: `totalAudits`, `totalIssues`, `techCounts()` (Expertise bars), `featuredAudits` (home cards), `auditUrl()` (links to `codezen.tech/audits/<slug>/`, using each entry's permanent `slug` from the JSON), `displayTags()`, `filterKeys()`.
+- `src/data/site.ts` — site metadata, bio copy, nav, social links, marquee ecosystems, expertise chips, curated `homeFeatured` audit slugs, audit filter pills and filter aliases.
 - `src/data/*.json` — work (grouped by company with `roles[]`), education, achievements, certifications, patents.
 - `src/lib/jsonld.ts` — schema.org JSON-LD (ProfilePage/Person on home, CollectionPage/ItemList on /audits).
 

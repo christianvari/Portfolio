@@ -2,8 +2,14 @@ import data from "../sharedData/data/audit-history.json";
 import { filterAliases, homeFeatured } from "../data/site";
 
 export interface Audit {
+  /** Permanent URL slug, also used on codezen.tech/audits/<slug>/. */
+  slug: string;
   title: string;
   description: string;
+  /** Logo path relative to the audit-history repo root, e.g. "images/stellar.png" (not displayed here). */
+  image?: string;
+  /** Report publication date (YYYY-MM-DD), when known. */
+  date?: string;
   tags: string[];
   partner?: string;
   website?: string;
@@ -21,14 +27,8 @@ export const audits = data as Audit[];
 
 const GENERIC_TAGS = new Set(["Audit", "Blockchain", "Smart Contract"]);
 
-export const slug = (title: string) =>
-  title
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-
 export const auditUrl = (a: Audit) =>
-  `https://www.codezen.tech/audits/${slug(a.title)}/`;
+  `https://www.codezen.tech/audits/${a.slug}/`;
 
 /** Tags worth displaying: drops generic ones. */
 export const displayTags = (a: Audit, max = 2) =>
@@ -53,11 +53,14 @@ export const totalIssues = audits.reduce(
   0,
 );
 
+/** Audits per technology, largest first (the first bar is drawn in the accent color). */
 export const techCounts = (techs: string[]) => {
-  const counts = techs.map(name => ({
-    name,
-    count: audits.filter(a => a.tags.includes(name)).length,
-  }));
+  const counts = techs
+    .map(name => ({
+      name,
+      count: audits.filter(a => a.tags.includes(name)).length,
+    }))
+    .sort((a, b) => b.count - a.count);
   const max = Math.max(...counts.map(c => c.count), 1);
   return counts.map(c => ({
     ...c,
@@ -67,7 +70,7 @@ export const techCounts = (techs: string[]) => {
 
 export const featuredAudits = (() => {
   const picked = homeFeatured
-    .map(title => audits.find(a => a.title === title))
+    .map(slug => audits.find(a => a.slug === slug))
     .filter((a): a is Audit => Boolean(a));
   return picked.length === homeFeatured.length
     ? picked

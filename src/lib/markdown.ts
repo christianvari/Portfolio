@@ -149,7 +149,9 @@ export const auditsJson = () => ({
   totalAudits,
   totalIssues,
   audits: audits.map(a => ({
+    slug: a.slug,
     title: a.title,
+    date: a.date ?? null,
     type: a.description,
     partner: a.partner ?? null,
     tags: a.tags,
