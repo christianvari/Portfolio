@@ -16,4 +16,4 @@ export const researchStatus = (r: ResearchItem) =>
 
 /** Intro used on the home section and the /research/ hub. */
 export const researchIntro =
-  "Patented work and applied research on AI-assisted security auditing: how audit findings are consolidated, written and rated, faster and more consistently.";
+  "Patents, papers and applied research on blockchain security, smart contract auditing and AI-assisted security tooling.";
