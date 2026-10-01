@@ -11,7 +11,8 @@
 - Field: Cybersecurity · Security source code audits
 - Holder: Christian Vari (https://www.christianvari.dev/)
 - Official record: https://worldwide.espacenet.com/patent/search?q=pn%3DIT202400016273A1
-- Web page: https://www.christianvari.dev/patents/cybersecurity-report-generation/
+- Web page: https://www.christianvari.dev/research/cybersecurity-report-generation/
+- Keywords: cybersecurity report generation, security audit automation, AI-assisted security auditing, vulnerability severity classification, smart contract audit reports, machine learning, NLP
 
 ## Summary
 

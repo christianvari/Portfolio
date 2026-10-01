@@ -6,10 +6,11 @@ Markdown versions of every page are available; prefer them over the HTML.
 
 ## Pages
 
-- [Profile](https://www.christianvari.dev/index.md): bio, experience, education, patent, expertise, selected audits, achievements, certifications and contact
+- [Profile](https://www.christianvari.dev/index.md): bio, experience, education, research and patent, expertise, selected audits, achievements, certifications and contact
 - [Audits](https://www.christianvari.dev/audits.md): every audit with type, partner, issue counts and report links
 - [Full context](https://www.christianvari.dev/llms-full.txt): profile and all audits in a single file
-- [Patent: A method for generating a cybersecurity report](https://www.christianvari.dev/patents/cybersecurity-report-generation.md): Granted patent IT202400016273A1, how the invention works
+- [Research](https://www.christianvari.dev/research.md): Patented work and applied research on AI-assisted security auditing: how audit findings are consolidated, written and rated, faster and more consistently.
+- [Patent: A method for generating a cybersecurity report](https://www.christianvari.dev/research/cybersecurity-report-generation.md): Granted patent IT202400016273A1, how the invention works
 
 ## Data
 
