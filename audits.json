@@ -1,11 +1,710 @@
 {
   "author": "Christian Vari",
   "url": "https://www.christianvari.dev/audits/",
-  "totalAudits": 122,
-  "totalIssues": 1693,
+  "totalAudits": 193,
+  "totalIssues": 2361,
   "audits": [
     {
-      "title": "Stellar Core",
+      "slug": "coinlist-token-sale-fund-updates",
+      "title": "CoinList Token Sale Fund Updates",
+      "date": "2026-02-27",
+      "type": "Solidity smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "Ethereum",
+        "EVM",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 0,
+        "minor": 1,
+        "informational": 1
+      },
+      "url": "https://www.codezen.tech/audits/coinlist-token-sale-fund-updates/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/CoinList/2026-02-27%20Audit%20Report%20-%20CoinList%20Token%20Sale%20Fund%20Updates%20v1.0.pdf",
+      "website": "https://coinlist.co"
+    },
+    {
+      "slug": "zigchain",
+      "title": "ZIGChain",
+      "date": "2026-05-15",
+      "type": "Cosmos SDK chain audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Audit",
+        "CosmWasm"
+      ],
+      "issues": {
+        "critical": 1,
+        "major": 8,
+        "minor": 21,
+        "informational": 15
+      },
+      "url": "https://www.codezen.tech/audits/zigchain/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/ZIGChain/2026-05-15%20Audit%20Report%20%E2%80%93%20ZIGChain.pdf",
+      "website": "https://zigchain.com"
+    },
+    {
+      "slug": "neutron-auction-and-undelegations-phase-1",
+      "title": "Neutron Auction and Undelegations Phase 1",
+      "date": "2026-04-09",
+      "type": "CosmWasm Contract Audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Rust",
+        "CosmWasm",
+        "Audit",
+        "Neutron"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 0,
+        "minor": 6,
+        "informational": 9
+      },
+      "url": "https://www.codezen.tech/audits/neutron-auction-and-undelegations-phase-1/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Neutron/2026-04-09%20Audit%20Report%20%E2%80%93%20Neutron%20Auction%20and%20Undelegations%20Contract%2C%20Chain%20Upgrade%20(Phase%201).pdf",
+      "website": "https://neutron.org/"
+    },
+    {
+      "slug": "neutron-auction-and-undelegations-phase-2",
+      "title": "Neutron Auction and Undelegations Phase 2",
+      "date": "2026-04-09",
+      "type": "Cosmos SDK chain upgrade audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Rust",
+        "Cosmos SDK",
+        "CosmWasm",
+        "Neutron",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 1,
+        "major": 6,
+        "minor": 6,
+        "informational": 8
+      },
+      "url": "https://www.codezen.tech/audits/neutron-auction-and-undelegations-phase-2/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Neutron/2026-04-09%20Audit%20Report%20%E2%80%93%20Neutron%20Auction%20and%20Undelegations%20Contract%2C%20Chain%20Upgrade%20(Phase%202%20_%20Report%202).pdf",
+      "website": "https://neutron.org/"
+    },
+    {
+      "slug": "warren-tezoro",
+      "title": "Warren (Tezoro)",
+      "date": "2026-05-15",
+      "type": "Solidity smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "Ethereum",
+        "EVM",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 5,
+        "minor": 18,
+        "informational": 9
+      },
+      "url": "https://www.codezen.tech/audits/warren-tezoro/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Tezoro/2026-05-15%20Audit%20Report%20-%20Tezoro%20v1.0.pdf",
+      "website": "https://warren.co"
+    },
+    {
+      "slug": "coinlist-tokenswap",
+      "title": "CoinList TokenSwap",
+      "date": "2026-07-01",
+      "type": "Solidity smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "Ethereum",
+        "EVM",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 1,
+        "major": 2,
+        "minor": 6,
+        "informational": 5
+      },
+      "url": "https://www.codezen.tech/audits/coinlist-tokenswap/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/CoinList/2026-07-01%20Audit%20Report%20-%20CoinList%20TokenSwap%20v1.0.pdf",
+      "website": "https://coinlist.co"
+    },
+    {
+      "slug": "coinlist-pull-12",
+      "title": "CoinList Pull 12",
+      "date": "2026-09-21",
+      "type": "Solidity smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "Ethereum",
+        "EVM",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 0,
+        "minor": 6,
+        "informational": 5
+      },
+      "url": "https://www.codezen.tech/audits/coinlist-pull-12/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/CoinList/2026-09-21%20Audit%20Report%20-%20CoinList%20Pull%2012%20v1.0.pdf",
+      "website": "https://coinlist.co"
+    },
+    {
+      "slug": "zama",
+      "title": "Zama",
+      "date": "2026-09-25",
+      "type": "Cryptography audit",
+      "partner": "Monethic",
+      "tags": [
+        "Blockchain",
+        "Cryptography",
+        "FHE",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/zama/",
+      "report": null,
+      "website": "https://www.zama.ai"
+    },
+    {
+      "slug": "anyflo-move-contracts-and-workers",
+      "title": "AnyFlo Move Contracts and Workers",
+      "date": "2026-09-23",
+      "type": "Move smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Move",
+        "Audit",
+        "Smart Contract"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/anyflo-move-contracts-and-workers/",
+      "report": null,
+      "website": null
+    },
+    {
+      "slug": "injective-audit-updates",
+      "title": "Injective Audit Updates",
+      "date": "2026-09-16",
+      "type": "Cosmos SDK Audit",
+      "partner": "Zenith Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Audit",
+        "Injective"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/injective-audit-updates/",
+      "report": null,
+      "website": "https://injective.com"
+    },
+    {
+      "slug": "anyflo-evm-contracts",
+      "title": "AnyFlo EVM Contracts",
+      "date": "2026-09-10",
+      "type": "Solidity smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "Ethereum",
+        "EVM",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/anyflo-evm-contracts/",
+      "report": null,
+      "website": null
+    },
+    {
+      "slug": "monaco",
+      "title": "Monaco",
+      "date": "2026-09-09",
+      "type": "Smart contracts audit",
+      "partner": "Zenith Security",
+      "tags": [
+        "Blockchain",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/monaco/",
+      "report": null,
+      "website": null
+    },
+    {
+      "slug": "injective",
+      "title": "Injective",
+      "date": "2026-08-25",
+      "type": "Cosmos SDK Audit",
+      "partner": "Zenith Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Audit",
+        "Injective"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/injective/",
+      "report": null,
+      "website": "https://injective.com"
+    },
+    {
+      "slug": "zigchain-pull-14",
+      "title": "ZIGChain Pull 14",
+      "date": "2026-07-24",
+      "type": "Cosmos SDK chain audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/zigchain-pull-14/",
+      "report": null,
+      "website": "https://zigchain.com"
+    },
+    {
+      "slug": "divergent-mcp-sdk",
+      "title": "Divergent MCP SDK",
+      "date": "2026-05-26",
+      "type": "SDK audit",
+      "partner": "Oak Security",
+      "tags": [
+        "AI",
+        "MCP",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/divergent-mcp-sdk/",
+      "report": null,
+      "website": null
+    },
+    {
+      "slug": "ibc",
+      "title": "IBC",
+      "date": "2026-05-06",
+      "type": "IBC protocol audit",
+      "partner": "Zenith Security",
+      "tags": [
+        "Blockchain",
+        "IBC",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/ibc/",
+      "report": null,
+      "website": "https://ibcprotocol.dev"
+    },
+    {
+      "slug": "divergent",
+      "title": "Divergent",
+      "date": "2026-04-28",
+      "type": "Smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/divergent/",
+      "report": null,
+      "website": null
+    },
+    {
+      "slug": "totalis",
+      "title": "Totalis",
+      "date": "2026-04-13",
+      "type": "Smart contracts audit",
+      "partner": "Zenith Security",
+      "tags": [
+        "Blockchain",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/totalis/",
+      "report": null,
+      "website": null
+    },
+    {
+      "slug": "azura",
+      "title": "Azura",
+      "date": "2026-04-06",
+      "type": "Smart contracts audit",
+      "partner": "Zenith Security",
+      "tags": [
+        "Blockchain",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/azura/",
+      "report": null,
+      "website": null
+    },
+    {
+      "slug": "mantra-chain",
+      "title": "MANTRA Chain",
+      "date": "2026-04-03",
+      "type": "Cosmos SDK chain audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/mantra-chain/",
+      "report": null,
+      "website": "https://www.mantrachain.io"
+    },
+    {
+      "slug": "ibc-v2-eureka",
+      "title": "IBC v2 Eureka",
+      "date": "2026-03-12",
+      "type": "IBC protocol audit",
+      "partner": "Zenith Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Solidity",
+        "IBC",
+        "Cosmos SDK",
+        "Ethereum",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/ibc-v2-eureka/",
+      "report": null,
+      "website": "https://ibcprotocol.dev"
+    },
+    {
+      "slug": "bezee",
+      "title": "Bezee",
+      "date": "2026-02-20",
+      "type": "Smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/bezee/",
+      "report": null,
+      "website": null
+    },
+    {
+      "slug": "injective-updates",
+      "title": "Injective Updates",
+      "date": "2026-01-16",
+      "type": "Cosmos SDK Audit",
+      "partner": "Zenith Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Audit",
+        "Injective"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/injective-updates/",
+      "report": null,
+      "website": "https://injective.com"
+    },
+    {
+      "slug": "structured-maxbtc-evm-oracle-contracts",
+      "title": "Structured maxBTC EVM Oracle Contracts",
+      "date": "2026-01-14",
+      "type": "Solidity smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "Ethereum",
+        "EVM",
+        "Audit",
+        "Bitcoin",
+        "Oracle"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/structured-maxbtc-evm-oracle-contracts/",
+      "report": null,
+      "website": "https://github.com/structured-org"
+    },
+    {
+      "slug": "solvbtc-stellar-bridge",
+      "title": "SolvBTC Stellar Bridge",
+      "date": "2026-01-09",
+      "type": "Soroban smart contracts audit",
+      "partner": "Zenith Security",
+      "tags": [
+        "Blockchain",
+        "Stellar",
+        "Soroban",
+        "Rust",
+        "Bitcoin",
+        "Bridge",
+        "Audit",
+        "Smart Contract"
+      ],
+      "issues": {
+        "critical": 1,
+        "major": 0,
+        "minor": 4,
+        "informational": 3
+      },
+      "url": "https://www.codezen.tech/audits/solvbtc-stellar-bridge/",
+      "report": "https://github.com/zenith-security/reports/blob/f7c7ea6b6d974cffb93bdb03b89d8311dea21dc3/reports/Solv%20Stellar%20Bridge%20-%20Zenith%20Audit%20Report.pdf",
+      "website": "https://solv.finance"
+    },
+    {
+      "slug": "structured-maxbtc-cosmwasm-and-solana-updates",
+      "title": "Structured maxBTC CosmWasm and Solana Updates",
+      "date": "2025-12-24",
+      "type": "CosmWasm and Solana audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Rust",
+        "CosmWasm",
+        "Solana",
+        "Bitcoin",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 16,
+        "minor": 27,
+        "informational": 12
+      },
+      "url": "https://www.codezen.tech/audits/structured-maxbtc-cosmwasm-and-solana-updates/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Structured/2025-12-24%20Audit%20Report%20-%20Structured%20CosmWasm%20and%20Solana%20Updates%20v1.0.pdf",
+      "website": "https://github.com/structured-org"
+    },
+    {
+      "slug": "structured-spdbtc-whitelist",
+      "title": "Structured spdBTC Whitelist",
+      "date": "2025-12-04",
+      "type": "Solidity smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "Ethereum",
+        "EVM",
+        "Audit",
+        "Bitcoin"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 0,
+        "minor": 1,
+        "informational": 2
+      },
+      "url": "https://www.codezen.tech/audits/structured-spdbtc-whitelist/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Structured/2025-12-04%20Audit%20Report%20-%20Structured%20Private%20Deposit%20Whitelist%20v1.0.pdf",
+      "website": "https://github.com/structured-org"
+    },
+    {
+      "slug": "coinlist-token-sale-fund",
+      "title": "CoinList Token Sale Fund",
+      "date": "2026-01-16",
+      "type": "Solidity smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "Ethereum",
+        "EVM",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 0,
+        "minor": 6,
+        "informational": 5
+      },
+      "url": "https://www.codezen.tech/audits/coinlist-token-sale-fund/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/CoinList/2026-01-16%20Audit%20Report%20-%20CoinList%20Token%20Sale%20Fund%20v1.0.pdf",
+      "website": "https://coinlist.co"
+    },
+    {
+      "slug": "the-graph",
+      "title": "The Graph",
+      "date": "2025-12-17",
+      "type": "Smart contracts audit",
+      "partner": "Trust Security",
+      "tags": [
+        "Blockchain",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/the-graph/",
+      "report": null,
+      "website": "https://thegraph.com"
+    },
+    {
+      "slug": "snowfork-snowbridge-fiat-shamir-beefy-changes",
+      "title": "Snowfork Snowbridge Fiat-Shamir BEEFY Changes",
+      "date": "2025-12-29",
+      "type": "Bridge Audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "Polkadot",
+        "Audit",
+        "Ethereum",
+        "Bridge",
+        "Cryptography"
+      ],
+      "issues": {
+        "critical": 1,
+        "major": 0,
+        "minor": 1,
+        "informational": 8
+      },
+      "url": "https://www.codezen.tech/audits/snowfork-snowbridge-fiat-shamir-beefy-changes/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Snowbridge/2025-12-29%20Audit%20Report%20-%20Snowbridge%20Fiat%20Shamir%20Beefy%20Changes%20v1.0.pdf",
+      "website": "https://docs.snowbridge.network/"
+    },
+    {
+      "slug": "structured-maxbtc-evm",
+      "title": "Structured maxBTC EVM",
+      "date": "2025-12-16",
+      "type": "Solidity smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "Ethereum",
+        "EVM",
+        "Audit",
+        "Bitcoin"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/structured-maxbtc-evm/",
+      "report": null,
+      "website": "https://github.com/structured-org"
+    },
+    {
+      "slug": "acurast-compute-pallet",
+      "title": "Acurast Compute Pallet",
+      "date": "2025-11-14",
+      "type": "Substrate pallet audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Rust",
+        "Substrate",
+        "Polkadot",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/acurast-compute-pallet/",
+      "report": null,
+      "website": "https://acurast.com"
+    },
+    {
+      "slug": "stellar-core-protocol-24",
+      "title": "Stellar Core Protocol 24",
+      "date": "2025-11-13",
+      "type": "Blockchain node audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "C++",
+        "C",
+        "Soroban",
+        "Rust",
+        "Audit",
+        "Stellar"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 0,
+        "minor": 1,
+        "informational": 1
+      },
+      "url": "https://www.codezen.tech/audits/stellar-core-protocol-24/",
+      "report": "https://github.com/oak-security/audit-reports/blob/cbc736970bebf36cdfacb5792941fa7e295d7592/Stellar/2025-11-13%20Audit%20Report%20-%20Stellar%20Core%20Protocol%2024%20Changes%20v1.0.pdf",
+      "website": "https://stellar.org"
+    },
+    {
+      "slug": "volta-protocol-soroban",
+      "title": "Volta Protocol Soroban",
+      "date": "2025-11-19",
+      "type": "Soroban smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Rust",
+        "Soroban",
+        "Stellar",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 1,
+        "minor": 3,
+        "informational": 6
+      },
+      "url": "https://www.codezen.tech/audits/volta-protocol-soroban/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Volta/2025-11-19%20Audit%20Report%20-%20Volta%20Soroban.pdf",
+      "website": "https://www.voltacircuit.com"
+    },
+    {
+      "slug": "structured-maxbtc-erc20-for-eureka-bridge",
+      "title": "Structured maxBTC ERC20 for Eureka Bridge",
+      "date": "2025-11-25",
+      "type": "Solidity smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "Ethereum",
+        "EVM",
+        "Audit",
+        "Bitcoin",
+        "Bridge"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 0,
+        "minor": 5,
+        "informational": 8
+      },
+      "url": "https://www.codezen.tech/audits/structured-maxbtc-erc20-for-eureka-bridge/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Structured/2025-11-25%20Audit%20Report%20-%20Structured%20ERC20%20Converter%2C%20ETH%20Wrapper%2C%20MaxBTC%20ERC20%20for%20Eureka%20Bridge%20v1.0.pdf",
+      "website": "https://github.com/structured-org"
+    },
+    {
+      "slug": "stellar-core-protocol-23",
+      "title": "Stellar Core Protocol 23",
+      "date": "2025-10-17",
       "type": "Blockchain node audit",
       "partner": "Oak Security",
       "tags": [
@@ -23,12 +722,14 @@
         "minor": 35,
         "informational": 43
       },
-      "url": "https://www.codezen.tech/audits/stellar-core/",
+      "url": "https://www.codezen.tech/audits/stellar-core-protocol-23/",
       "report": "https://github.com/oak-security/audit-reports/blob/8a29e1d31c20fdc68bc732b1db73c4660d3fa507/Stellar/2025-10-17%20Audit%20Report%20-%20Stellar%20Core%20Protocol%2023%20Changes%20v1.0.pdf",
       "website": "https://stellar.org"
     },
     {
+      "slug": "acurast-chain",
       "title": "Acurast Chain",
+      "date": "2025-10-23",
       "type": "Substrate chain audit",
       "partner": "Monethic",
       "tags": [
@@ -49,7 +750,9 @@
       "website": "https://acurast.com"
     },
     {
+      "slug": "vnx-protocol",
       "title": "VNX Protocol",
+      "date": "2025-10-23",
       "type": "Solana program audit",
       "partner": "Zenith Security",
       "tags": [
@@ -65,7 +768,78 @@
       "website": "https://vnx.li"
     },
     {
+      "slug": "dora-factory-s-vota-sponsor-module",
+      "title": "Dora Factory's Vota Sponsor Module",
+      "date": "2025-11-13",
+      "type": "Cosmos SDK Audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 1,
+        "major": 1,
+        "minor": 7,
+        "informational": 6
+      },
+      "url": "https://www.codezen.tech/audits/dora-factory-s-vota-sponsor-module/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/DoraFactory/2025-11-13%20Audit%20Report%20-%20Dora%20Vota%20Sponsor%20Module%20v1.0.pdf",
+      "website": "https://dorafactory.org"
+    },
+    {
+      "slug": "stylusport",
+      "title": "StylusPort",
+      "date": "2025-10-22",
+      "type": "Rust tooling review",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Rust",
+        "Arbitrum",
+        "Stylus",
+        "Solana",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 3,
+        "major": 2,
+        "minor": 8,
+        "informational": 7
+      },
+      "url": "https://www.codezen.tech/audits/stylusport/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/StylusPort/2025-10-22%20Audit%20Report%20-%20StylusPort%20Internal%20Review%20v1.0.pdf",
+      "website": "https://github.com/oak-security/stylusport"
+    },
+    {
+      "slug": "thema-protocol",
+      "title": "Thema Protocol",
+      "date": "2025-12-27",
+      "type": "Solidity smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "Ethereum",
+        "EVM",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 1,
+        "major": 10,
+        "minor": 9,
+        "informational": 6
+      },
+      "url": "https://www.codezen.tech/audits/thema-protocol/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Thema/2025-12-27%20Audit%20Report%20-%20Thema%20Protocol.pdf",
+      "website": null
+    },
+    {
+      "slug": "meteora-damm-v2",
       "title": "Meteora DAMM v2",
+      "date": "2025-10-02",
       "type": "Solana program audit",
       "partner": "Zenith Security",
       "tags": [
@@ -81,7 +855,278 @@
       "website": "https://www.meteora.ag"
     },
     {
+      "slug": "impossible-cloud-network-fairdrop",
+      "title": "Impossible Cloud Network Fairdrop",
+      "date": "2025-05-22",
+      "type": "Solidity smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "Ethereum",
+        "EVM",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 0,
+        "minor": 4,
+        "informational": 5
+      },
+      "url": "https://www.codezen.tech/audits/impossible-cloud-network-fairdrop/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/ICN/2025-05-22%20Audit%20Report%20-%20ICN%20Fairdrop.pdf",
+      "website": "https://www.impossible.cloud"
+    },
+    {
+      "slug": "allunity",
+      "title": "AllUnity",
+      "date": "2025-07-11",
+      "type": "Solidity smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "Ethereum",
+        "EVM",
+        "Audit",
+        "Stablecoin"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 0,
+        "minor": 3,
+        "informational": 1
+      },
+      "url": "https://www.codezen.tech/audits/allunity/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/All%20Unity/2025-07-11%20Audit%20Report%20-%20AllUnity.pdf",
+      "website": "https://allunity.com"
+    },
+    {
+      "slug": "metamask-card-baanx-withdraw-program",
+      "title": "MetaMask Card Baanx Withdraw Program",
+      "date": "2025-06-20",
+      "type": "Solana program audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solana",
+        "Rust",
+        "Anchor",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 1,
+        "minor": 9,
+        "informational": 7
+      },
+      "url": "https://www.codezen.tech/audits/metamask-card-baanx-withdraw-program/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/MetaMask%20Card/2025-06-20%20Audit%20Report%20-%20MetaMask%20Card%20Baanx%20Withdraw%20Program%20v1.0.pdf",
+      "website": null
+    },
+    {
+      "slug": "polkadot-micro-sr25519",
+      "title": "Polkadot micro-sr25519",
+      "date": "2025-06-12",
+      "type": "Cryptography library audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Cryptography",
+        "TypeScript",
+        "Polkadot",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 0,
+        "minor": 7,
+        "informational": 4
+      },
+      "url": "https://www.codezen.tech/audits/polkadot-micro-sr25519/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Polkadot/2025-06-12%20Audit%20Report%20-%20Polkadot%20micro-sr25519%20v1.0.pdf",
+      "website": "https://github.com/paulmillr/micro-sr25519"
+    },
+    {
+      "slug": "babylon",
+      "title": "Babylon",
+      "date": "2025-06-12",
+      "type": "Cosmos SDK chain audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Audit",
+        "Bitcoin"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 3,
+        "minor": 26,
+        "informational": 15
+      },
+      "url": "https://www.codezen.tech/audits/babylon/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Babylon/2025-06-12%20Audit%20Report%20-%20Babylon%20v1.0.pdf",
+      "website": "https://babylonlabs.io"
+    },
+    {
+      "slug": "nodeops-network",
+      "title": "NodeOps Network",
+      "date": "2025-06-25",
+      "type": "Solidity smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "Ethereum",
+        "EVM",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 2,
+        "major": 5,
+        "minor": 12,
+        "informational": 17
+      },
+      "url": "https://www.codezen.tech/audits/nodeops-network/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/NodeOps/2025-06-25%20Audit%20Report%20-%20NodeOps%20Network.pdf",
+      "website": "https://nodeops.network"
+    },
+    {
+      "slug": "gno-land-chain-updates",
+      "title": "Gno.land Chain Updates",
+      "date": "2026-01-09",
+      "type": "Blockchain audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Audit",
+        "Consensus"
+      ],
+      "issues": {
+        "critical": 3,
+        "major": 6,
+        "minor": 8,
+        "informational": 8
+      },
+      "url": "https://www.codezen.tech/audits/gno-land-chain-updates/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Gno/2026-01-09%20Audit%20Report%20-%20Gno%20Updates%20v1.0.pdf",
+      "website": "https://gno.land"
+    },
+    {
+      "slug": "capricorn-apriori-apr-token-and-staked-apr-token",
+      "title": "Capricorn (aPriori) APR Token and Staked APR Token",
+      "date": "2025-10-03",
+      "type": "Solidity smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "Ethereum",
+        "EVM",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 0,
+        "minor": 2,
+        "informational": 1
+      },
+      "url": "https://www.codezen.tech/audits/capricorn-apriori-apr-token-and-staked-apr-token/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Apriori/2025-10-03%20Audit%20Report%20-%20aPriori%20APR%20Token%20and%20Staked%20APR%20Token.pdf",
+      "website": "https://www.capricorn.tech"
+    },
+    {
+      "slug": "fuel-sequencer-updates-10",
+      "title": "Fuel Sequencer Updates 10",
+      "date": "2025-09-10",
+      "type": "Cosmos SDK chain Audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Ethereum",
+        "Consensus",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/fuel-sequencer-updates-10/",
+      "report": null,
+      "website": "https://fuel.network"
+    },
+    {
+      "slug": "holo",
+      "title": "Holo",
+      "date": "2025-07-07",
+      "type": "Smart contracts audit",
+      "partner": "Zenith Security",
+      "tags": [
+        "Blockchain",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/holo/",
+      "report": null,
+      "website": null
+    },
+    {
+      "slug": "structured-jupiter",
+      "title": "Structured Jupiter",
+      "date": "2025-06-18",
+      "type": "Smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/structured-jupiter/",
+      "report": null,
+      "website": "https://github.com/structured-org"
+    },
+    {
+      "slug": "fuel-sequencer-updates-9-and-the-rig",
+      "title": "Fuel Sequencer Updates 9 and The Rig",
+      "date": "2025-06-12",
+      "type": "Cosmos SDK chain Audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Ethereum",
+        "Consensus",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/fuel-sequencer-updates-9-and-the-rig/",
+      "report": null,
+      "website": "https://fuel.network"
+    },
+    {
+      "slug": "data-network-story-protocol-1-2",
+      "title": "DATA Network (Story Protocol) 1.2",
+      "date": "2025-05-06",
+      "type": "Blockchain audit",
+      "partner": "Trust Security",
+      "tags": [
+        "Blockchain",
+        "Cosmos SDK",
+        "Golang",
+        "Audit",
+        "Ethereum"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/data-network-story-protocol-1-2/",
+      "report": null,
+      "website": "https://www.datafdn.org"
+    },
+    {
+      "slug": "talus-network-iao",
       "title": "Talus Network IAO",
+      "date": "2025-04-29",
       "type": "Move contract audit",
       "partner": "Zenith Security",
       "tags": [
@@ -102,7 +1147,34 @@
       "website": "https://talus.network"
     },
     {
+      "slug": "solvbtc-stellar",
+      "title": "SolvBTC Stellar",
+      "date": "2025-10-10",
+      "type": "Soroban smart contracts audit",
+      "partner": "Zenith Security",
+      "tags": [
+        "Blockchain",
+        "Stellar",
+        "Soroban",
+        "Rust",
+        "Bitcoin",
+        "Audit",
+        "Smart Contract"
+      ],
+      "issues": {
+        "critical": 4,
+        "major": 5,
+        "minor": 5,
+        "informational": 2
+      },
+      "url": "https://www.codezen.tech/audits/solvbtc-stellar/",
+      "report": "https://github.com/zenith-security/reports/blob/f7c7ea6b6d974cffb93bdb03b89d8311dea21dc3/reports/Solv%20-%20Zenith%20Audit%20Report.pdf",
+      "website": "https://solv.finance"
+    },
+    {
+      "slug": "plasma-consensus",
       "title": "Plasma Consensus",
+      "date": "2025-10-24",
       "type": "Chain consensus audit",
       "partner": "Zenith Security",
       "tags": [
@@ -112,13 +1184,20 @@
         "Plasma",
         "Consensus"
       ],
-      "issues": null,
+      "issues": {
+        "critical": 0,
+        "major": 2,
+        "minor": 11,
+        "informational": 9
+      },
       "url": "https://www.codezen.tech/audits/plasma-consensus/",
-      "report": null,
+      "report": "https://github.com/zenith-security/reports/blob/3efb44d0cd61cffdf406a76f842200d57cb20242/reports/Plasma%20-%20Zenith%20Audit%20Report.pdf",
       "website": "https://www.plasma.to"
     },
     {
+      "slug": "magicblock-ephemeral-vrf",
       "title": "Magicblock ephemeral VRF",
+      "date": "2025-08-14",
       "type": "Solana program audit",
       "partner": "Zenith Security",
       "tags": [
@@ -139,7 +1218,9 @@
       "website": "https://www.magicblock.xyz"
     },
     {
+      "slug": "silo-mev-for-sei-chain",
       "title": "Silo MEV for SEI chain",
+      "date": "2025-04-29",
       "type": "Cosmos SDK Audit",
       "partner": "Zenith Security",
       "tags": [
@@ -156,7 +1237,9 @@
       "website": "https://silo.finance"
     },
     {
+      "slug": "injective-evm-precompile",
       "title": "Injective EVM precompile",
+      "date": "2025-05-26",
       "type": "Cosmos SDK Audit",
       "partner": "Zenith Security",
       "tags": [
@@ -173,8 +1256,28 @@
       "website": "https://injective.com"
     },
     {
+      "slug": "peaq-evm-precompile",
+      "title": "peaq EVM Precompile",
+      "date": "2025-04-29",
+      "type": "Substrate EVM precompile audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Rust",
+        "Substrate",
+        "EVM",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/peaq-evm-precompile/",
+      "report": null,
+      "website": "https://www.peaq.xyz"
+    },
+    {
+      "slug": "swap-io-clmm",
       "title": "Swap.io CLMM",
-      "type": "Move contract audit",
+      "date": "2025-04-24",
+      "type": "Solana program audit",
       "partner": "Zenith Security",
       "tags": [
         "Blockchain",
@@ -194,7 +1297,9 @@
       "website": "https://swap.io"
     },
     {
+      "slug": "talus-network",
       "title": "Talus Network",
+      "date": "2025-10-08",
       "type": "Move contract audit",
       "partner": "Zenith Security",
       "tags": [
@@ -215,7 +1320,9 @@
       "website": "https://talus.network"
     },
     {
-      "title": "Story Protocol Guardians",
+      "slug": "data-network-story-protocol-guardians",
+      "title": "DATA Network (Story Protocol) Guardians",
+      "date": null,
       "type": "Geth module audit",
       "partner": "Trust Security",
       "tags": [
@@ -225,12 +1332,222 @@
         "Ethereum"
       ],
       "issues": null,
-      "url": "https://www.codezen.tech/audits/story-protocol-guardians/",
+      "url": "https://www.codezen.tech/audits/data-network-story-protocol-guardians/",
       "report": null,
-      "website": "https://persistence.one/"
+      "website": "https://www.datafdn.org"
     },
     {
-      "title": "Story Protocol L1",
+      "slug": "snowfork-snowbridge-updates-4",
+      "title": "Snowfork Snowbridge Updates 4",
+      "date": "2025-05-06",
+      "type": "Bridge Audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Rust",
+        "Solidity",
+        "Substrate",
+        "Polkadot",
+        "Audit",
+        "Ethereum",
+        "Bridge"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 0,
+        "minor": 3,
+        "informational": 4
+      },
+      "url": "https://www.codezen.tech/audits/snowfork-snowbridge-updates-4/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Snowbridge/2025-05-06%20Audit%20Report%20-%20Snowbridge%20Updates%204%20v1.0.pdf",
+      "website": "https://docs.snowbridge.network/"
+    },
+    {
+      "slug": "kilt-bonding-curve-pallet",
+      "title": "KILT Bonding Curve Pallet",
+      "date": "2025-03-27",
+      "type": "Substrate pallet audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Rust",
+        "Substrate",
+        "Polkadot",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 1,
+        "minor": 5,
+        "informational": 12
+      },
+      "url": "https://www.codezen.tech/audits/kilt-bonding-curve-pallet/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/KILT/2025-03-27%20Audit%20Report%20-%20KILT%20Bonding%20Curve%20Pallet%20v1.0.pdf",
+      "website": "https://github.com/KILTprotocol"
+    },
+    {
+      "slug": "hippo-protocol-hippocrat",
+      "title": "Hippo Protocol (Hippocrat)",
+      "date": "2025-03-21",
+      "type": "Cosmos SDK chain audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 1,
+        "major": 4,
+        "minor": 2,
+        "informational": 4
+      },
+      "url": "https://www.codezen.tech/audits/hippo-protocol-hippocrat/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Hippo%20Protocol/2025-03-21%20Audit%20Report%20-%20Hippocrat%20Hippo%20Protocol%20v1.0.pdf",
+      "website": "https://hippoprotocol.ai"
+    },
+    {
+      "slug": "drop-protocol-updates-3",
+      "title": "Drop Protocol Updates 3",
+      "date": "2025-03-20",
+      "type": "CosmWasm smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Rust",
+        "CosmWasm",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 1,
+        "minor": 4,
+        "informational": 7
+      },
+      "url": "https://www.codezen.tech/audits/drop-protocol-updates-3/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Drop/2025-03-20%20Audit%20Report%20-%20Drop%20Updates%203%20v1.0.pdf",
+      "website": "https://www.drop.money"
+    },
+    {
+      "slug": "astroport-pcl-neutron-duality-orderbook-integration",
+      "title": "Astroport PCL Neutron Duality Orderbook Integration",
+      "date": "2025-03-17",
+      "type": "CosmWasm Contract Audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Rust",
+        "CosmWasm",
+        "Audit",
+        "Neutron"
+      ],
+      "issues": {
+        "critical": 3,
+        "major": 2,
+        "minor": 5,
+        "informational": 3
+      },
+      "url": "https://www.codezen.tech/audits/astroport-pcl-neutron-duality-orderbook-integration/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Astroport/2025-03-17%20Audit%20Report%20-%20Astroport%20PCL%20Neutron%20Duality%20Orderbook%20Integration%20v1.0.pdf",
+      "website": "https://astroport.fi"
+    },
+    {
+      "slug": "impossible-cloud-network-protocol",
+      "title": "Impossible Cloud Network Protocol",
+      "date": "2025-05-02",
+      "type": "Solidity smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Solidity",
+        "Ethereum",
+        "EVM",
+        "Audit"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 1,
+        "minor": 13,
+        "informational": 10
+      },
+      "url": "https://www.codezen.tech/audits/impossible-cloud-network-protocol/",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/ICN/2025-05-02%20Audit%20Report%20-%20ICN%20Protocol.pdf",
+      "website": "https://www.impossible.cloud"
+    },
+    {
+      "slug": "structured-maxbtc",
+      "title": "Structured maxBTC",
+      "date": "2025-04-14",
+      "type": "Smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Bitcoin",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/structured-maxbtc/",
+      "report": null,
+      "website": "https://github.com/structured-org"
+    },
+    {
+      "slug": "fuel-sequencer-updates-7",
+      "title": "Fuel Sequencer Updates 7",
+      "date": "2025-02-25",
+      "type": "Cosmos SDK chain Audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Ethereum",
+        "Consensus",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/fuel-sequencer-updates-7/",
+      "report": null,
+      "website": "https://fuel.network"
+    },
+    {
+      "slug": "fuel-sequencer-updates-6",
+      "title": "Fuel Sequencer Updates 6",
+      "date": "2025-02-07",
+      "type": "Cosmos SDK chain Audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Ethereum",
+        "Consensus",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/fuel-sequencer-updates-6/",
+      "report": null,
+      "website": "https://fuel.network"
+    },
+    {
+      "slug": "manta",
+      "title": "Manta",
+      "date": "2024-12-20",
+      "type": "Blockchain audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Audit"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/manta/",
+      "report": null,
+      "website": null
+    },
+    {
+      "slug": "data-network-story-protocol-l1",
+      "title": "DATA Network (Story Protocol) L1",
+      "date": "2024-12-13",
       "type": "Cosmos SDK Audit",
       "partner": "Trust Security",
       "tags": [
@@ -241,13 +1558,20 @@
         "Ethereum",
         "Solidity"
       ],
-      "issues": null,
-      "url": "https://www.codezen.tech/audits/story-protocol-l1/",
-      "report": "https://drive.google.com/drive/folders/1epXs98mkZHgbhr_HBquifjmNB0exXRlM",
-      "website": "https://persistence.one/"
+      "issues": {
+        "critical": 5,
+        "major": 6,
+        "minor": 7,
+        "informational": 5
+      },
+      "url": "https://www.codezen.tech/audits/data-network-story-protocol-l1/",
+      "report": "https://github.com/piplabs/story/blob/b99f39e1cc41a778932aa9d82e8f099dcd987dde/audits/Trust_Story_L1_v03.pdf",
+      "website": "https://www.datafdn.org"
     },
     {
+      "slug": "tellor",
       "title": "Tellor",
+      "date": "2025-02-20",
       "type": "Cosmos SDK Audit",
       "partner": "Torii Security",
       "tags": [
@@ -267,7 +1591,9 @@
       "website": "https://tellor.io/"
     },
     {
-      "title": "Gno.land chain",
+      "slug": "gno-land-chain-sprint-2",
+      "title": "Gno.land Chain Sprint 2",
+      "date": "2025-01-27",
       "type": "Cosmos SDK chain audit",
       "partner": "Oak Security",
       "tags": [
@@ -277,13 +1603,66 @@
         "Audit",
         "Consensus"
       ],
-      "issues": null,
-      "url": "https://www.codezen.tech/audits/gno-land-chain/",
-      "report": null,
+      "issues": {
+        "critical": 3,
+        "major": 4,
+        "minor": 1,
+        "informational": 8
+      },
+      "url": "https://www.codezen.tech/audits/gno-land-chain-sprint-2/",
+      "report": "https://github.com/oak-security/audit-reports/blob/cbc736970bebf36cdfacb5792941fa7e295d7592/Gno/2025-01-27%20Audit%20Report%20-%20Gno%20Sprint%202%20v1.0.pdf",
       "website": "https://gno.land"
     },
     {
+      "slug": "gno-land-chain-sprint-3",
+      "title": "Gno.land Chain Sprint 3",
+      "date": "2025-03-25",
+      "type": "Cosmos SDK chain audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Audit",
+        "Consensus"
+      ],
+      "issues": {
+        "critical": 0,
+        "major": 0,
+        "minor": 9,
+        "informational": 8
+      },
+      "url": "https://www.codezen.tech/audits/gno-land-chain-sprint-3/",
+      "report": "https://github.com/oak-security/audit-reports/blob/cbc736970bebf36cdfacb5792941fa7e295d7592/Gno/2025-03-25%20Audit%20Report%20-%20Gno%20Sprint%203%20v1.0.pdf",
+      "website": "https://gno.land"
+    },
+    {
+      "slug": "gno-land-chain-sprint-1",
+      "title": "Gno.land Chain Sprint 1",
+      "date": "2025-01-17",
+      "type": "Cosmos SDK chain audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Audit",
+        "Consensus"
+      ],
+      "issues": {
+        "critical": 3,
+        "major": 6,
+        "minor": 7,
+        "informational": 17
+      },
+      "url": "https://www.codezen.tech/audits/gno-land-chain-sprint-1/",
+      "report": "https://github.com/oak-security/audit-reports/blob/cbc736970bebf36cdfacb5792941fa7e295d7592/Gno/2025-01-17%20Audit%20Report%20-%20Gno%20Sprint%201%20v1.0.pdf",
+      "website": "https://gno.land"
+    },
+    {
+      "slug": "drop-protocol-liquidity-provider",
       "title": "Drop Protocol Liquidity Provider",
+      "date": "2025-04-17",
       "type": "Move smart contracts audit",
       "partner": "Oak Security",
       "tags": [
@@ -303,7 +1682,9 @@
       "website": "https://www.drop.money"
     },
     {
+      "slug": "impossible-cloud-network-token",
       "title": "Impossible Cloud Network Token",
+      "date": "2025-03-11",
       "type": "Solidity smart contracts audit",
       "partner": "Oak Security",
       "tags": [
@@ -322,7 +1703,9 @@
       "website": "https://www.impossible.cloud"
     },
     {
+      "slug": "drop-protocol-updates-2",
       "title": "Drop Protocol Updates 2",
+      "date": "2024-12-21",
       "type": "CosmWasm smart contracts audit",
       "partner": "Oak Security",
       "tags": [
@@ -342,7 +1725,9 @@
       "website": "https://www.drop.money"
     },
     {
+      "slug": "fuel-sequencer-updates-5",
       "title": "Fuel Sequencer Updates 5",
+      "date": null,
       "type": "Cosmos SDK chain Audit",
       "partner": "Oak Security",
       "tags": [
@@ -359,7 +1744,9 @@
       "website": "https://fuel.network"
     },
     {
+      "slug": "mythical-games-collator",
       "title": "Mythical Games Collator",
+      "date": "2024-12-03",
       "type": "Polkadot SDK Pallet Audit",
       "partner": "Oak Security",
       "tags": [
@@ -375,7 +1762,43 @@
       "website": "https://mythicalgames.com"
     },
     {
+      "slug": "dymension-phase-2-stream-4",
+      "title": "Dymension Phase 2 Stream 4",
+      "date": "2024-11-28",
+      "type": "Cosmos SDK chain Audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Audit",
+        "Rollup"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/dymension-phase-2-stream-4/",
+      "report": null,
+      "website": "https://dymension.xyz/"
+    },
+    {
+      "slug": "composable-staking-and-vesting-contracts",
+      "title": "Composable Staking and Vesting Contracts",
+      "date": "2024-11-21",
+      "type": "Smart contracts audit",
+      "partner": null,
+      "tags": [
+        "Blockchain",
+        "Audit",
+        "Smart Contract"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/composable-staking-and-vesting-contracts/",
+      "report": null,
+      "website": "https://www.composable.finance/"
+    },
+    {
+      "slug": "fuel-sequencer-updates-4",
       "title": "Fuel Sequencer Updates 4",
+      "date": "2024-11-13",
       "type": "Cosmos SDK chain Audit",
       "partner": "Oak Security",
       "tags": [
@@ -392,7 +1815,27 @@
       "website": "https://fuel.network"
     },
     {
+      "slug": "dymension-phase-3",
+      "title": "Dymension Phase 3",
+      "date": "2024-11-13",
+      "type": "Cosmos SDK chain Audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Audit",
+        "Rollup"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/dymension-phase-3/",
+      "report": null,
+      "website": "https://dymension.xyz/"
+    },
+    {
+      "slug": "nibiru-chain",
       "title": "Nibiru Chain",
+      "date": "2024-10-28",
       "type": "Cosmos SDK chain Audit",
       "partner": "Oak Security",
       "tags": [
@@ -408,7 +1851,9 @@
       "website": "https://nibiru.fi/"
     },
     {
+      "slug": "snowfork-snowbridge-updates-3",
       "title": "Snowfork Snowbridge Updates 3",
+      "date": "2025-01-07",
       "type": "Substrate bridge pallet audit",
       "partner": "Oak Security",
       "tags": [
@@ -432,7 +1877,60 @@
       "website": "https://docs.snowbridge.network/"
     },
     {
+      "slug": "persistence-ybtc",
+      "title": "Persistence yBTC",
+      "date": "2024-10-18",
+      "type": "Smart contracts audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Bitcoin",
+        "Audit",
+        "Persistence"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/persistence-ybtc/",
+      "report": null,
+      "website": "https://github.com/persistenceOne"
+    },
+    {
+      "slug": "composable-escrow-contracts",
+      "title": "Composable Escrow Contracts",
+      "date": "2024-10-08",
+      "type": "Smart contracts audit",
+      "partner": null,
+      "tags": [
+        "Blockchain",
+        "Audit",
+        "Smart Contract"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/composable-escrow-contracts/",
+      "report": null,
+      "website": "https://www.composable.finance/"
+    },
+    {
+      "slug": "dymension-stream-2",
+      "title": "Dymension Stream 2",
+      "date": "2024-09-25",
+      "type": "Cosmos SDK chain Audit",
+      "partner": "Oak Security",
+      "tags": [
+        "Blockchain",
+        "Golang",
+        "Cosmos SDK",
+        "Audit",
+        "Rollup"
+      ],
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/dymension-stream-2/",
+      "report": null,
+      "website": "https://dymension.xyz/"
+    },
+    {
+      "slug": "dymension-phase-2",
       "title": "Dymension Phase 2",
+      "date": "2024-09-18",
       "type": "Cosmos SDK chain Audit",
       "partner": "Oak Security",
       "tags": [
@@ -449,7 +1947,9 @@
       "website": "https://dymension.xyz/"
     },
     {
+      "slug": "dora-factory-s-vota-migration",
       "title": "Dora Factory's Vota migration",
+      "date": "2024-09-23",
       "type": "Cosmos SDK Audit",
       "partner": "Oak Security",
       "tags": [
@@ -469,7 +1969,9 @@
       "website": "https://dorafactory.org"
     },
     {
+      "slug": "fuel-sequencer-watchtower",
       "title": "Fuel Sequencer Watchtower",
+      "date": "2024-09-27",
       "type": "Off chain monitor audit",
       "partner": "Oak Security",
       "tags": [
@@ -484,7 +1986,9 @@
       "website": "https://fuel.network"
     },
     {
+      "slug": "fuel-sequencer-updates-2",
       "title": "Fuel Sequencer Updates 2",
+      "date": "2024-09-18",
       "type": "Cosmos SDK chain Audit",
       "partner": "Oak Security",
       "tags": [
@@ -501,7 +2005,9 @@
       "website": "https://fuel.network"
     },
     {
+      "slug": "drop-protocol-updates",
       "title": "Drop Protocol Updates",
+      "date": "2024-08-12",
       "type": "CosmWasm smart contracts audit",
       "partner": "Oak Security",
       "tags": [
@@ -521,7 +2027,9 @@
       "website": "https://www.drop.money"
     },
     {
+      "slug": "fuel-sequencer-updates",
       "title": "Fuel Sequencer Updates",
+      "date": "2024-08-02",
       "type": "Cosmos SDK chain Audit",
       "partner": "Oak Security",
       "tags": [
@@ -538,7 +2046,9 @@
       "website": "https://fuel.network"
     },
     {
+      "slug": "out-protocol",
       "title": "Out Protocol",
+      "date": "2024-09-24",
       "type": "Solana program audit",
       "partner": "Oak Security",
       "tags": [
@@ -559,7 +2069,9 @@
       "website": "https://out.app"
     },
     {
+      "slug": "persistence-pstake-btc-yield",
       "title": "Persistence pSTAKE BTC Yield",
+      "date": "2024-07-25",
       "type": "Cosmos SDK Audit",
       "partner": "Oak Security",
       "tags": [
@@ -573,10 +2085,12 @@
       "issues": null,
       "url": "https://www.codezen.tech/audits/persistence-pstake-btc-yield/",
       "report": null,
-      "website": "https://persistence.one/"
+      "website": "https://github.com/persistenceOne"
     },
     {
+      "slug": "volta-protocol",
       "title": "Volta Protocol",
+      "date": "2024-09-18",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -596,7 +2110,9 @@
       "website": "https://www.voltacircuit.com"
     },
     {
+      "slug": "snowfork-snowbridge-updates-2",
       "title": "Snowfork Snowbridge Updates 2",
+      "date": "2024-08-10",
       "type": "Substrate Bridge Pallet Audit",
       "partner": "Oak Security",
       "tags": [
@@ -620,7 +2136,9 @@
       "website": "https://docs.snowbridge.network/"
     },
     {
+      "slug": "dymension-phase-1",
       "title": "Dymension Phase 1",
+      "date": null,
       "type": "Cosmos SDK chain Audit",
       "partner": "Oak Security",
       "tags": [
@@ -637,7 +2155,9 @@
       "website": "https://dymension.xyz/"
     },
     {
+      "slug": "router-voyager-solana-integration",
       "title": "Router Voyager Solana Integration",
+      "date": null,
       "type": "Off-chain Components Audit",
       "partner": "Oak Security",
       "tags": [
@@ -655,7 +2175,9 @@
       "website": "https://www.routerprotocol.com/"
     },
     {
+      "slug": "fuel-sequencer-and-sidecar",
       "title": "Fuel Sequencer and Sidecar",
+      "date": null,
       "type": "Cosmos SDK chain Audit",
       "partner": "Oak Security",
       "tags": [
@@ -672,7 +2194,9 @@
       "website": "https://fuel.network"
     },
     {
-      "title": "Drop Protocol Architechtural Changes Extension",
+      "slug": "drop-protocol-architectural-changes-extension",
+      "title": "Drop Protocol Architectural Changes Extension",
+      "date": null,
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -681,19 +2205,16 @@
         "Audit",
         "CosmWasm"
       ],
-      "issues": {
-        "critical": 0,
-        "major": 1,
-        "minor": 12,
-        "informational": 9
-      },
-      "url": "https://www.codezen.tech/audits/drop-protocol-architechtural-changes-extension/",
-      "report": "https://github.com/oak-security/audit-reports/blob/6094ad74b33fe30ab52544b50b1e45dc31b20a49/Drop/2024-12-21%20Audit%20Report%20-%20Drop%20Updates%202%20v1.0.pdf",
+      "issues": null,
+      "url": "https://www.codezen.tech/audits/drop-protocol-architectural-changes-extension/",
+      "report": null,
       "website": "https://www.drop.money"
     },
     {
+      "slug": "slide-sdk",
       "title": "Slide SDK",
-      "type": "Cosmos SDK integration in Avalache consensus Audit",
+      "date": "2024-09-20",
+      "type": "Cosmos SDK integration in Avalanche consensus Audit",
       "partner": "Oak Security",
       "tags": [
         "Blockchain",
@@ -704,17 +2225,19 @@
         "Audit"
       ],
       "issues": {
-        "critical": 1,
-        "major": 4,
-        "minor": 1,
-        "informational": 1
+        "critical": 2,
+        "major": 2,
+        "minor": 7,
+        "informational": 4
       },
       "url": "https://www.codezen.tech/audits/slide-sdk/",
-      "report": "https://github.com/oak-security/audit-reports/blob/c91568374a5057d7d622b636c9c25724b6a56e5c/DoraFactory/2024-06-13%20Audit%20Report%20-%20Dora%20Vota%20v1.0.pdf",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Slide%20SDK/2024-09-20%20Audit%20Report%20-%20Slide%20SDK%20v1.1.pdf",
       "website": "https://www.landslide.network"
     },
     {
+      "slug": "dora-factory-s-vota-chain",
       "title": "Dora Factory's Vota chain",
+      "date": "2024-06-13",
       "type": "Cosmos SDK Audit",
       "partner": "Oak Security",
       "tags": [
@@ -734,7 +2257,9 @@
       "website": "https://dorafactory.org"
     },
     {
+      "slug": "astroport-s-asteroid-bridge",
       "title": "Astroport's Asteroid Bridge",
+      "date": "2024-06-17",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -754,7 +2279,9 @@
       "website": "https://www.astroport.fi/"
     },
     {
+      "slug": "persistence-pstake-native-stkxprt",
       "title": "Persistence pSTAKE Native stkXPRT",
+      "date": null,
       "type": "Cosmos SDK Audit",
       "partner": "Oak Security",
       "tags": [
@@ -768,10 +2295,12 @@
       "issues": null,
       "url": "https://www.codezen.tech/audits/persistence-pstake-native-stkxprt/",
       "report": null,
-      "website": "https://persistence.one/"
+      "website": "https://github.com/persistenceOne"
     },
     {
+      "slug": "drop-protocol-extension",
       "title": "Drop Protocol Extension",
+      "date": "2024-08-12",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -791,7 +2320,9 @@
       "website": "https://www.drop.money"
     },
     {
+      "slug": "composable-ibctransfermiddleware",
       "title": "Composable ibctransfermiddleware",
+      "date": null,
       "type": "Cosmos SDK Module Audit",
       "partner": null,
       "tags": [
@@ -806,7 +2337,9 @@
       "website": "https://www.composable.finance/"
     },
     {
+      "slug": "mythical-games",
       "title": "Mythical Games",
+      "date": null,
       "type": "Polkadot SDK Pallet Audit",
       "partner": "Oak Security",
       "tags": [
@@ -822,7 +2355,9 @@
       "website": "https://mythicalgames.com"
     },
     {
+      "slug": "snowfork-snowbridge-updates-1",
       "title": "Snowfork Snowbridge Updates 1",
+      "date": "2024-08-16",
       "type": "Bridge Audit",
       "partner": "Oak Security",
       "tags": [
@@ -846,7 +2381,9 @@
       "website": "https://docs.snowbridge.network/"
     },
     {
+      "slug": "drop-protocol",
       "title": "Drop Protocol",
+      "date": "2024-08-19",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -866,7 +2403,9 @@
       "website": "https://www.drop.money"
     },
     {
+      "slug": "dymension-virtual-frontier",
       "title": "Dymension Virtual Frontier",
+      "date": "2024-04-30",
       "type": "Cosmos SDK Module Audit",
       "partner": "Oak Security",
       "tags": [
@@ -888,7 +2427,9 @@
       "website": "https://dymension.xyz/"
     },
     {
+      "slug": "dymension-dymint",
       "title": "Dymension Dymint",
+      "date": "2024-07-09",
       "type": "Consensus Algorithm Audit",
       "partner": "Oak Security",
       "tags": [
@@ -910,7 +2451,9 @@
       "website": "https://dymension.xyz/"
     },
     {
+      "slug": "composable-finance-solidity-ibc-implementation",
       "title": "Composable Finance Solidity IBC Implementation",
+      "date": null,
       "type": "Solidity Library Audit",
       "partner": null,
       "tags": [
@@ -925,7 +2468,9 @@
       "website": "https://www.composable.finance/"
     },
     {
+      "slug": "composable-finance-solana-light-client",
       "title": "Composable Finance Solana Light Client",
+      "date": null,
       "type": "WASM Light Client Audit",
       "partner": null,
       "tags": [
@@ -943,7 +2488,9 @@
       "website": "https://www.composable.finance/"
     },
     {
+      "slug": "persistence-cosmos-liquid-staking-updates",
       "title": "Persistence Cosmos Liquid Staking Updates",
+      "date": null,
       "type": "Cosmos SDK Audit",
       "partner": "Oak Security",
       "tags": [
@@ -957,10 +2504,12 @@
       "issues": null,
       "url": "https://www.codezen.tech/audits/persistence-cosmos-liquid-staking-updates/",
       "report": null,
-      "website": "https://persistence.one/"
+      "website": "https://github.com/persistenceOne"
     },
     {
+      "slug": "persistence-dexter-updates",
       "title": "Persistence Dexter Updates",
+      "date": null,
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -972,10 +2521,12 @@
       "issues": null,
       "url": "https://www.codezen.tech/audits/persistence-dexter-updates/",
       "report": null,
-      "website": "https://persistence.one/"
+      "website": "https://github.com/persistenceOne"
     },
     {
+      "slug": "router-voyager-forwarder-extension",
       "title": "Router Voyager Forwarder Extension",
+      "date": "2024-04-30",
       "type": "Relayer And Orchestrator Audit",
       "partner": "Oak Security",
       "tags": [
@@ -997,7 +2548,9 @@
       "website": "https://www.routerprotocol.com/"
     },
     {
+      "slug": "timewave-covenants",
       "title": "Timewave Covenants",
+      "date": "2024-05-02",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1017,7 +2570,9 @@
       "website": "https://timewave.computer/"
     },
     {
+      "slug": "yieldmos-outposts-osmosis",
       "title": "Yieldmos Outposts Osmosis",
+      "date": "2024-05-17",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1038,7 +2593,9 @@
       "website": "http://www.yieldmos.com/"
     },
     {
+      "slug": "bifrost-finance",
       "title": "Bifrost Finance",
+      "date": "2024-03-11",
       "type": "Polkadot SDK Pallet Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1059,7 +2616,9 @@
       "website": "https://bifrost.io/"
     },
     {
+      "slug": "persistence-dexter",
       "title": "Persistence Dexter",
+      "date": "2023-03-15",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1076,10 +2635,12 @@
       },
       "url": "https://www.codezen.tech/audits/persistence-dexter/",
       "report": "https://github.com/oak-security/audit-reports/blob/main/Dexter/2023-03-15%20Audit%20Report%20-%20Dexter%20v1.0.pdf",
-      "website": "https://persistence.one/"
+      "website": "https://github.com/persistenceOne"
     },
     {
-      "title": "Astoport Transmuter Pool",
+      "slug": "astroport-transmuter-pool",
+      "title": "Astroport Transmuter Pool",
+      "date": "2024-01-30",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1094,12 +2655,14 @@
         "minor": 1,
         "informational": 5
       },
-      "url": "https://www.codezen.tech/audits/astoport-transmuter-pool/",
+      "url": "https://www.codezen.tech/audits/astroport-transmuter-pool/",
       "report": "https://github.com/oak-security/audit-reports/blob/main/Astroport/2024-01-30%20Audit%20Report%20-%20Astroport%20Transmuter%20Pool%20v1.0.pdf",
       "website": "https://astroport.fi"
     },
     {
+      "slug": "persistence-ibc-liquid-staking-module",
       "title": "Persistence IBC Liquid Staking module",
+      "date": null,
       "type": "Cosmos SDK Module Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1113,10 +2676,12 @@
       "issues": null,
       "url": "https://www.codezen.tech/audits/persistence-ibc-liquid-staking-module/",
       "report": null,
-      "website": "https://persistence.one/"
+      "website": "https://github.com/persistenceOne"
     },
     {
+      "slug": "zodiac-protocol-extension",
       "title": "Zodiac Protocol Extension",
+      "date": "2024-03-22",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1137,7 +2702,9 @@
       "website": "https://www.zodiacprotocol.xyz/"
     },
     {
+      "slug": "persistence-cosmos-lsm",
       "title": "Persistence Cosmos LSM",
+      "date": null,
       "type": "Cosmos SDK Module Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1151,10 +2718,12 @@
       "issues": null,
       "url": "https://www.codezen.tech/audits/persistence-cosmos-lsm/",
       "report": null,
-      "website": "https://persistence.one/"
+      "website": "https://github.com/persistenceOne"
     },
     {
+      "slug": "neptune-protocol-update",
       "title": "Neptune Protocol Update",
+      "date": "2024-01-09",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1174,7 +2743,9 @@
       "website": "https://nept.finance/"
     },
     {
+      "slug": "snowfork-snowbridge-extension",
       "title": "Snowfork Snowbridge Extension",
+      "date": "2024-02-12",
       "type": "Bridge Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1198,7 +2769,9 @@
       "website": "https://docs.snowbridge.network/"
     },
     {
+      "slug": "vectis",
       "title": "Vectis",
+      "date": "2024-03-14",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1215,10 +2788,12 @@
       },
       "url": "https://www.codezen.tech/audits/vectis/",
       "report": "https://github.com/oak-security/audit-reports/blob/main/Vectis/2024-03-14%20Audit%20Report%20-%20Vectis%20v1.0.pdf",
-      "website": "https://vectis.space/"
+      "website": "https://www.nymlab.it"
     },
     {
+      "slug": "timewave-computer-valence-services",
       "title": "Timewave Computer Valence Services",
+      "date": "2024-04-10",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1238,7 +2813,9 @@
       "website": "https://timewave.computer/"
     },
     {
+      "slug": "noble-tokenfactory-and-fiattokenfactory-modules",
       "title": "Noble TokenFactory and FiatTokenFactory modules",
+      "date": "2024-01-17",
       "type": "Cosmos SDK Module Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1259,7 +2836,9 @@
       "website": "https://nobleassets.xyz/"
     },
     {
+      "slug": "composable-finance-ethereum-light-client",
       "title": "Composable Finance Ethereum Light Client",
+      "date": "2023-11-09",
       "type": "WASM Light Client Audit",
       "partner": null,
       "tags": [
@@ -1276,7 +2855,9 @@
       "website": "https://www.composable.finance/"
     },
     {
+      "slug": "router-voyager-dexspan",
       "title": "Router Voyager DexSpan",
+      "date": "2024-05-10",
       "type": "Solidity Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1296,7 +2877,9 @@
       "website": "https://www.routerprotocol.com/"
     },
     {
+      "slug": "router-voyager-forwarder",
       "title": "Router Voyager Forwarder",
+      "date": "2024-04-29",
       "type": "Off-chain Components Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1318,7 +2901,9 @@
       "website": "https://www.routerprotocol.com/"
     },
     {
+      "slug": "cosmos-sdk-v0-47",
       "title": "Cosmos SDK v0.47",
+      "date": "2024-01-23",
       "type": "Cosmos SDK Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1338,7 +2923,9 @@
       "website": "https://cosmos.network/"
     },
     {
+      "slug": "xcvm-cosmwasm-contracts",
       "title": "XCVM Cosmwasm Contracts",
+      "date": null,
       "type": "CosmWasm Contract Audit",
       "partner": null,
       "tags": [
@@ -1354,7 +2941,9 @@
       "website": "https://www.composable.finance/"
     },
     {
+      "slug": "noble-circle-s-cctp",
       "title": "Noble Circle's CCTP",
+      "date": null,
       "type": "Cosmos SDK Module Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1366,18 +2955,15 @@
         "Circle",
         "USDC"
       ],
-      "issues": {
-        "critical": 0,
-        "major": 0,
-        "minor": 0,
-        "informational": 2
-      },
+      "issues": null,
       "url": "https://www.codezen.tech/audits/noble-circle-s-cctp/",
-      "report": "https://github.com/oak-security/audit-reports/blob/1569d1644cf4b51e0f2bfbdecbff5b39c131bac3/Noble/2024-01-17%20Audit%20Report%20-%20Noble%20tokenfactory%20Changes%20and%20fiattokenfactory%20v1.0.pdf",
+      "report": null,
       "website": "https://nobleassets.xyz/"
     },
     {
+      "slug": "prism-osmosis-lp-staking",
       "title": "Prism Osmosis LP Staking",
+      "date": null,
       "type": "CosmWasm Contract Audit",
       "partner": null,
       "tags": [
@@ -1394,7 +2980,9 @@
       "website": "https://prismprotocol.app/"
     },
     {
+      "slug": "lido-neutron-satellite",
       "title": "Lido Neutron Satellite",
+      "date": "2023-07-29",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1413,10 +3001,12 @@
       },
       "url": "https://www.codezen.tech/audits/lido-neutron-satellite/",
       "report": "https://github.com/oak-security/audit-reports/blob/d2fe412c9e1ff3b80c7701f0388e33465f23d5de/Hadron%20Labs/2023-07-29%20Audit%20Report%20-%20Hadron%20Labs%20Lido%20Satellite%20v1.0.pdf",
-      "website": "https://marsprotocol.io/"
+      "website": "https://neutron.org/"
     },
     {
+      "slug": "snowfork-snowbridge",
       "title": "Snowfork Snowbridge",
+      "date": "2024-05-24",
       "type": "Bridge Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1440,7 +3030,9 @@
       "website": "https://docs.snowbridge.network/"
     },
     {
+      "slug": "mars-red-bank-updates",
       "title": "Mars Red Bank Updates",
+      "date": "2023-08-01",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1462,7 +3054,9 @@
       "website": "https://marsprotocol.io/"
     },
     {
+      "slug": "ssz-rs-library",
       "title": "SSZ RS Library",
+      "date": "2023-09-28",
       "type": "Rust Library Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1482,7 +3076,9 @@
       "website": "https://github.com/ralexstokes/ssz-rs"
     },
     {
+      "slug": "composable-centauri",
       "title": "Composable Centauri",
+      "date": "2024-01-11",
       "type": "Cosmos SDK Audit",
       "partner": null,
       "tags": [
@@ -1498,7 +3094,9 @@
       "website": "https://www.composable.finance/"
     },
     {
+      "slug": "fairblock-fairyring",
       "title": "Fairblock FairyRing",
+      "date": "2023-10-02",
       "type": "Cosmos SDK Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1519,7 +3117,9 @@
       "website": "https://fairblock.network/"
     },
     {
+      "slug": "polkadot-grandpa-ibc-light-client",
       "title": "Polkadot GrandPa IBC Light Client",
+      "date": null,
       "type": "WASM Light Client Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1538,7 +3138,9 @@
       "website": "https://www.composable.finance/"
     },
     {
+      "slug": "zodiac-protocol",
       "title": "Zodiac Protocol",
+      "date": "2024-01-02",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1559,7 +3161,9 @@
       "website": "https://www.zodiacprotocol.xyz/"
     },
     {
+      "slug": "noble-tariff-module",
       "title": "Noble Tariff module",
+      "date": "2023-07-08",
       "type": "Cosmos SDK Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1581,7 +3185,9 @@
       "website": "https://nobleassets.xyz/"
     },
     {
+      "slug": "evmos-solidity-precompiles",
       "title": "Evmos Solidity Precompiles",
+      "date": "2023-07-08",
       "type": "EVM Solidity Precompiles Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1604,7 +3210,9 @@
       "website": "https://evmos.org"
     },
     {
+      "slug": "daodao-s-polytone",
       "title": "DAODAO's Polytone",
+      "date": "2023-06-05",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1613,7 +3221,7 @@
         "Audit",
         "CosmWasm",
         "IBC",
-        "DA0 DA0"
+        "DAO DAO"
       ],
       "issues": {
         "critical": 0,
@@ -1626,7 +3234,9 @@
       "website": "https://daodao.zone"
     },
     {
+      "slug": "cosmos-interchain-security",
       "title": "Cosmos Interchain Security",
+      "date": "2023-06-23",
       "type": "Cosmos SDK Chain Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1649,7 +3259,9 @@
       "website": "https://interchainsecurity.dev/"
     },
     {
+      "slug": "membrane-finance",
       "title": "Membrane Finance",
+      "date": "2023-06-15",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1670,7 +3282,9 @@
       "website": "https://membrane-finance.gitbook.io/membrane-docs-1/"
     },
     {
-      "title": "Astoport Maker and Vesting Contracts",
+      "slug": "astroport-maker-and-vesting-contracts",
+      "title": "Astroport Maker and Vesting Contracts",
+      "date": "2023-04-04",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1685,12 +3299,14 @@
         "minor": 4,
         "informational": 5
       },
-      "url": "https://www.codezen.tech/audits/astoport-maker-and-vesting-contracts/",
+      "url": "https://www.codezen.tech/audits/astroport-maker-and-vesting-contracts/",
       "report": "https://github.com/oak-security/audit-reports/blob/38174f733ed2ba6530f206056c7ca441d1fd7cf0/Astroport/2023-04-04%20Audit%20Report%20-%20Astroport%20Maker%20and%20Vesting%20Contract%20Updates%20v1.0.pdf",
       "website": "https://astroport.fi"
     },
     {
+      "slug": "ibcx-interchain-index-token",
       "title": "IBCX Interchain Index Token",
+      "date": "2023-04-29",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1711,7 +3327,9 @@
       "website": "https://index.ion.wtf/"
     },
     {
-      "title": "Astoport Concentrated Liquidity Pair",
+      "slug": "astroport-concentrated-liquidity-pair",
+      "title": "Astroport Concentrated Liquidity Pair",
+      "date": "2023-03-16",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1726,12 +3344,14 @@
         "minor": 2,
         "informational": 9
       },
-      "url": "https://www.codezen.tech/audits/astoport-concentrated-liquidity-pair/",
+      "url": "https://www.codezen.tech/audits/astroport-concentrated-liquidity-pair/",
       "report": "https://github.com/oak-security/audit-reports/blob/0d7516d512b97e0a708de3c85eb41832c90da584/Astroport/2023-03-16%20Audit%20Report%20-%20Astroport%20Concentrated%20Liquidity%20Pool%20v1.0.pdf",
       "website": "https://astroport.fi"
     },
     {
+      "slug": "neptune-protocol",
       "title": "Neptune Protocol",
+      "date": "2023-04-09",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1751,7 +3371,9 @@
       "website": "https://nept.finance/"
     },
     {
+      "slug": "fuzion-plasma-otc",
       "title": "Fuzion Plasma OTC",
+      "date": "2023-02-20",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1772,7 +3394,9 @@
       "website": "https://fuzion.app"
     },
     {
+      "slug": "noble",
       "title": "Noble",
+      "date": "2023-03-13",
       "type": "Cosmos SDK Chain Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1794,7 +3418,9 @@
       "website": "https://www.noble.xyz"
     },
     {
+      "slug": "mars-protocol-rover-updates",
       "title": "Mars Protocol Rover Updates",
+      "date": "2023-02-03",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1816,7 +3442,9 @@
       "website": "https://marsprotocol.io/"
     },
     {
+      "slug": "filecoin-fevm-solidity-library",
       "title": "Filecoin FEVM Solidity Library",
+      "date": "2023-03-09",
       "type": "Solidity Library Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1837,7 +3465,9 @@
       "website": "https://github.com/Zondax/filecoin-solidity"
     },
     {
+      "slug": "filecoin-fevm",
       "title": "Filecoin FEVM",
+      "date": "2023-03-09",
       "type": "EVM Implementation Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1860,7 +3490,9 @@
       "website": "https://filecoin.io/"
     },
     {
+      "slug": "nym-mixnet-and-vesting-contracts",
       "title": "Nym Mixnet and Vesting Contracts",
+      "date": "2023-03-27",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1883,7 +3515,9 @@
       "website": "https://nymtech.net/"
     },
     {
+      "slug": "autonomy-network-osmosis",
       "title": "Autonomy Network Osmosis",
+      "date": "2023-03-06",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1895,16 +3529,18 @@
       ],
       "issues": {
         "critical": 0,
-        "major": 0,
-        "minor": 0,
-        "informational": 0
+        "major": 3,
+        "minor": 7,
+        "informational": 5
       },
       "url": "https://www.codezen.tech/audits/autonomy-network-osmosis/",
-      "report": "https://github.com/oak-security/audit-reports/blob/master/Autonomy/2023-01-18%20Audit%20Report%20-%20Autonomy%20Osmosis%20v1.0.pdf",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Autonomy/2023-03-06%20Audit%20Report%20-%20Autonomy%20Osmosis%20v1.1.pdf",
       "website": "https://www.autonomynetwork.io/"
     },
     {
+      "slug": "mars-protocol-rover",
       "title": "Mars Protocol Rover",
+      "date": "2022-12-09",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1917,16 +3553,18 @@
       ],
       "issues": {
         "critical": 1,
-        "major": 3,
-        "minor": 10,
-        "informational": 7
+        "major": 1,
+        "minor": 6,
+        "informational": 8
       },
       "url": "https://www.codezen.tech/audits/mars-protocol-rover/",
-      "report": "https://github.com/oak-security/audit-reports/blob/99a0399ad6449e7e0968da38ba197d47d09632af/Mars/2023-01-13%20Audit%20Report%20-%20Mars%20Outposts%20v1.0.pdf",
+      "report": "https://github.com/oak-security/audit-reports/blob/main/Mars/2022-12-09%20Audit%20Report%20-%20Mars%20Rover%20v1.0.pdf",
       "website": "https://marsprotocol.io/"
     },
     {
+      "slug": "persistence-cosmos-liquid-staking",
       "title": "Persistence Cosmos Liquid Staking",
+      "date": "2023-02-17",
       "type": "Cosmos SDK Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1945,10 +3583,12 @@
       },
       "url": "https://www.codezen.tech/audits/persistence-cosmos-liquid-staking/",
       "report": "https://github.com/oak-security/audit-reports/blob/1828e98d6cebcfc02b2c7c172893b8cc1a3b1c2e/Persistence/2023-02-17%20Audit%20Report%20-%20pSTAKE%20Native%20v1.0.pdf",
-      "website": "https://persistence.one/"
+      "website": "https://github.com/persistenceOne"
     },
     {
+      "slug": "nolus-money-market",
       "title": "Nolus Money Market",
+      "date": "2023-01-20",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1969,7 +3609,9 @@
       "website": "https://nolus.io/"
     },
     {
+      "slug": "nolus-core",
       "title": "Nolus Core",
+      "date": "2022-12-12",
       "type": "Cosmos SDK Audit",
       "partner": "Oak Security",
       "tags": [
@@ -1990,7 +3632,9 @@
       "website": "https://nolus.io/"
     },
     {
+      "slug": "comdex-lend-and-liquidation-modules",
       "title": "Comdex Lend and Liquidation modules",
+      "date": "2022-11-23",
       "type": "Cosmos SDK Audit",
       "partner": "Oak Security",
       "tags": [
@@ -2011,7 +3655,9 @@
       "website": "https://comdex.one/"
     },
     {
+      "slug": "injective-wasmx-module-and-cosmwasm-bindings",
       "title": "Injective wasmx module and CosmWasm bindings",
+      "date": "2023-01-20",
       "type": "Cosmos SDK Audit",
       "partner": "Oak Security",
       "tags": [
@@ -2032,7 +3678,9 @@
       "website": "https://injective.com/"
     },
     {
+      "slug": "neutron",
       "title": "Neutron",
+      "date": "2022-12-07",
       "type": "Cosmos SDK Chain Audit",
       "partner": "Oak Security",
       "tags": [
@@ -2056,7 +3704,9 @@
       "website": "https://neutron.org/"
     },
     {
+      "slug": "mars-protocol-outposts",
       "title": "Mars Protocol Outposts",
+      "date": "2023-01-13",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -2078,7 +3728,9 @@
       "website": "https://marsprotocol.io/"
     },
     {
+      "slug": "mars-protocol-periphery",
       "title": "Mars Protocol Periphery",
+      "date": "2023-02-03",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -2100,7 +3752,9 @@
       "website": "https://marsprotocol.io/"
     },
     {
+      "slug": "comdex-vesting-locking-contracts",
       "title": "Comdex Vesting & Locking Contracts",
+      "date": "2022-10-28",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -2121,7 +3775,9 @@
       "website": "https://comdex.one/"
     },
     {
+      "slug": "prism-auto-compounding-staking",
       "title": "Prism Auto Compounding Staking",
+      "date": "2022-11-04",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -2142,7 +3798,9 @@
       "website": "https://home.prismprotocol.app/"
     },
     {
+      "slug": "elesto-mint-module",
       "title": "Elesto Mint Module",
+      "date": null,
       "type": "Cosmos SDK Module Audit",
       "partner": null,
       "tags": [
@@ -2157,7 +3815,9 @@
       "website": null
     },
     {
+      "slug": "margined-protocol-perpetuals",
       "title": "Margined Protocol Perpetuals",
+      "date": "2022-10-28",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -2179,7 +3839,9 @@
       "website": "https://www.margined.io/"
     },
     {
+      "slug": "comdex-chain-comdex-governance-contract",
       "title": "Comdex Chain & Comdex Governance Contract",
+      "date": "2022-12-07",
       "type": "Cosmos SDK and CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -2201,7 +3863,9 @@
       "website": "https://comdex.one/"
     },
     {
+      "slug": "cosmwasm-wasmd-module",
       "title": "CosmWasm Wasmd Module",
+      "date": "2023-10-17",
       "type": "Cosmos SDK Module Audit",
       "partner": "Oak Security",
       "tags": [
@@ -2223,7 +3887,9 @@
       "website": "https://cosmwasm.com/"
     },
     {
+      "slug": "stargaze-marketplace",
       "title": "Stargaze Marketplace",
+      "date": "2022-08-01",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -2245,7 +3911,9 @@
       "website": "https://app.stargaze.zone/marketplace"
     },
     {
+      "slug": "risk-harbor-ozone-v2",
       "title": "Risk Harbor Ozone v2",
+      "date": "2022-03-22",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -2266,7 +3934,9 @@
       "website": "https://ozone.riskharbor.com/"
     },
     {
+      "slug": "aperture-finance-2",
       "title": "Aperture Finance 2",
+      "date": "2022-06-27",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -2287,7 +3957,9 @@
       "website": "https://aperture.finance/"
     },
     {
+      "slug": "levana-perpetual-swap",
       "title": "Levana Perpetual Swap",
+      "date": "2022-05-03",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -2308,7 +3980,9 @@
       "website": "https://www.levana.finance/"
     },
     {
+      "slug": "c2x-com2us",
       "title": "C2X Com2Us",
+      "date": "2022-05-09",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -2329,7 +4003,9 @@
       "website": "https://c2x.world/"
     },
     {
+      "slug": "kinetic-money",
       "title": "Kinetic Money",
+      "date": "2022-04-07",
       "type": "CosmWasm Contract Audit",
       "partner": "Oak Security",
       "tags": [
@@ -2350,7 +4026,9 @@
       "website": "https://kinetic.money/"
     },
     {
+      "slug": "ibm-hcl-ai-data-advisor-for-workload-automation",
       "title": "IBM / HCL AI Data Advisor for Workload Automation",
+      "date": null,
       "type": "AI module for IBM / HCL Workload Automation",
       "partner": null,
       "tags": [
@@ -2367,7 +4045,9 @@
       "website": "https://www.ibm.com/products/workload-automation"
     },
     {
+      "slug": "hcl-clara-2",
       "title": "HCL Clara 2",
+      "date": null,
       "type": "Automation Chatbot for IBM / HCL Workload Automation",
       "partner": null,
       "tags": [
@@ -2385,7 +4065,9 @@
       "website": "https://www.hcltechsw.com/clara"
     },
     {
+      "slug": "hcl-clara",
       "title": "HCL Clara",
+      "date": null,
       "type": "Automation Chatbot for IBM / HCL Workload Automation",
       "partner": null,
       "tags": [
@@ -2403,7 +4085,9 @@
       "website": "https://www.hcltechsw.com/clara"
     },
     {
+      "slug": "hcl-t-vrex",
       "title": "HCL T-VREX",
+      "date": null,
       "type": "A VR experience for HCL Workload Automation",
       "partner": null,
       "tags": [
