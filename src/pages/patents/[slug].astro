@@ -1,0 +1,174 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PillButton from "../../components/PillButton.astro";
+import patents from "../../data/patents.json";
+import { site } from "../../data/site";
+import { patentJsonLd } from "../../lib/jsonld";
+
+export const getStaticPaths = () =>
+  patents.map(patent => ({ params: { slug: patent.slug }, props: { patent } }));
+
+const { patent: p } = Astro.props;
+
+const facts = [
+  { label: "Status", value: p.status },
+  { label: "Publication", value: p.number },
+  { label: "Filed", value: p.filed },
+  { label: "Granted", value: p.granted },
+  { label: "Office", value: p.office },
+  { label: "Field", value: p.field },
+];
+
+const sectionTitle =
+  "m-0 text-[clamp(28px,3vw,40px)] font-medium tracking-[-0.035em] leading-[1.05]";
+const prose =
+  "flex max-w-[720px] flex-col gap-[18px] text-lg leading-[1.6] text-pretty text-ink-2 [&>p]:m-0";
+---
+
+<BaseLayout
+  title={`${p.title} · Patent ${p.number} · ${site.name}`}
+  description={`${p.status} ${p.number} (filed ${p.filed}, granted ${p.granted}) by ${site.name}. ${p.description}`}
+  image={`/og/patent-${p.slug}.png`}
+  markdown={`/patents/${p.slug}.md`}
+  jsonLd={patentJsonLd(Astro.site!, p)}
+  compactNav
+>
+  <article class="container-page pt-[clamp(64px,10vw,120px)] pb-[120px]">
+    <header class="flex flex-col gap-6">
+      <nav aria-label="Breadcrumb" class="font-mono text-[13px] text-muted">
+        <a href="/#patents" class="text-muted">
+          ← Patents
+        </a>
+      </nav>
+      <p class="label-mono m-0">Patent — {p.number}</p>
+      <h1 class="m-0 max-w-[1100px] text-[clamp(44px,7vw,104px)] leading-[0.95] font-medium tracking-[-0.05em] text-balance">
+        {p.title}
+        <span class="text-accent">.</span>
+      </h1>
+      <p
+        lang={p.originalLang}
+        class="m-0 max-w-[900px] text-lg text-muted italic"
+      >
+        {p.originalTitle}
+      </p>
+      <div class="flex flex-wrap gap-3 pt-2">
+        <PillButton href={p.url}>View on Espacenet ↗</PillButton>
+        <PillButton href="/#contact" variant="secondary">
+          Get in touch
+        </PillButton>
+      </div>
+    </header>
+
+    <dl class="mt-16 grid gap-px border border-line bg-line [grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr))]">
+      {facts.map(f => (
+        <div class="flex flex-col gap-2 bg-bg p-6">
+          <dt class="font-mono text-xs text-muted">{f.label}</dt>
+          <dd class="m-0 text-lg font-medium tracking-[-0.01em]">{f.value}</dd>
+        </div>
+      ))}
+    </dl>
+
+    <section
+      class="mt-24 grid gap-x-16 gap-y-6 [grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))]"
+      aria-labelledby="summary"
+    >
+      <h2 id="summary" class={sectionTitle}>
+        Summary
+      </h2>
+      <div class={prose}>
+        {p.summary.map(t => (
+          <p>{t}</p>
+        ))}
+      </div>
+    </section>
+
+    <section
+      class="mt-24 grid gap-x-16 gap-y-6 [grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))]"
+      aria-labelledby="problem"
+    >
+      <h2 id="problem" class={sectionTitle}>
+        The problem
+      </h2>
+      <div class={prose}>
+        {p.problem.map(t => (
+          <p>{t}</p>
+        ))}
+      </div>
+    </section>
+
+    <section class="mt-24" aria-labelledby="pipeline">
+      <p class="label-mono m-0 mb-4">How it works</p>
+      <h2 id="pipeline" class:list={[sectionTitle, "mb-10"]}>
+        From scattered notes to a finished report
+      </h2>
+      <ol class="m-0 flex list-none flex-col border-b border-line p-0">
+        {p.pipeline.map((step, i) => (
+          <li class="flex flex-wrap gap-x-8 gap-y-2.5 border-t border-line py-[30px]">
+            <p class="m-0 flex-[0_0_180px] font-mono text-[13px] text-muted">
+              {String(i + 1).padStart(2, "0")} — {step.role}
+            </p>
+            <div class="flex flex-[1_1_360px] flex-col gap-1.5">
+              <h3 class="m-0 text-[26px] font-medium tracking-[-0.02em]">
+                {step.name}
+              </h3>
+              <p class="m-0 max-w-[720px] text-base leading-[1.6] text-ink-2">
+                {step.text}
+              </p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <section
+      class="mt-24 rounded-[14px] bg-ink p-[clamp(28px,5vw,56px)] text-bg"
+      aria-labelledby="architecture"
+    >
+      <p class="m-0 mb-4 font-mono text-[13px] text-muted-dark">Architecture</p>
+      <h2 id="architecture" class:list={[sectionTitle, "mb-10"]}>
+        Independent microservices
+      </h2>
+      <ul class="m-0 grid list-none gap-px bg-line-dark p-0 [grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))]">
+        {p.architecture.map(svc => (
+          <li class="flex flex-col gap-2 bg-ink p-6">
+            <h3 class="m-0 text-xl font-medium tracking-[-0.01em]">
+              {svc.name}
+            </h3>
+            <p class="m-0 text-[15px] leading-[1.55] text-muted-dark">
+              {svc.text}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section
+      class="mt-24 grid gap-x-16 gap-y-6 [grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))]"
+      aria-labelledby="benefits"
+    >
+      <h2 id="benefits" class={sectionTitle}>
+        Why it matters
+      </h2>
+      <ul class="m-0 flex list-none flex-col border-b border-line p-0">
+        {p.benefits.map(b => (
+          <li class="flex gap-4 border-t border-line py-4 text-lg text-ink-2">
+            <span class="text-accent" aria-hidden="true">
+              →
+            </span>
+            {b}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <footer class="mt-24 flex flex-wrap items-center justify-between gap-6 border-t border-ink pt-8">
+      <p class="m-0 max-w-[640px] text-[15px] text-muted">
+        The official record, in Italian, is published on Espacenet under{" "}
+        {p.number}.
+      </p>
+      <PillButton href={p.url} variant="secondary">
+        Official record ↗
+      </PillButton>
+    </footer>
+  </article>
+</BaseLayout>

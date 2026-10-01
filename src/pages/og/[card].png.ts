@@ -5,6 +5,7 @@ import satori from "satori";
 import { Resvg } from "@resvg/resvg-js";
 import { site } from "../../data/site";
 import { totalAudits, totalIssues } from "../../lib/audits";
+import patents from "../../data/patents.json";
 
 // Social share cards (1200×630), rendered at build time: /og/home.png, /og/audits.png.
 
@@ -142,15 +143,46 @@ const cards = {
     ),
 };
 
-type Card = keyof typeof cards;
+// One card per patent page: /og/patent-<slug>.png
+const patentCard = (p: (typeof patents)[number]) => () =>
+  h("div", { display: "flex", flexDirection: "column", gap: 22 }, [
+    h(
+      "div",
+      {
+        display: "flex",
+        fontSize: 24,
+        color: C.muted,
+        letterSpacing: "0.02em",
+      },
+      `${p.status} · ${p.number} · filed ${p.filed}, granted ${p.granted}`,
+    ),
+    h(
+      "div",
+      {
+        display: "flex",
+        fontSize: 76,
+        fontWeight: 500,
+        letterSpacing: "-0.045em",
+        lineHeight: 1,
+        color: C.ink,
+        maxWidth: 1000,
+      },
+      p.title,
+    ),
+  ]);
+
+const allCards: Record<string, () => Node> = {
+  ...cards,
+  ...Object.fromEntries(patents.map(p => [`patent-${p.slug}`, patentCard(p)])),
+};
 
 export const getStaticPaths = (() =>
-  Object.keys(cards).map(card => ({
+  Object.keys(allCards).map(card => ({
     params: { card },
   }))) satisfies GetStaticPaths;
 
 export const GET: APIRoute = async ({ params }) => {
-  const body = cards[params.card as Card]();
+  const body = allCards[params.card as string]();
   const svg = await satori(
     h(
       "div",

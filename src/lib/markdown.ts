@@ -88,9 +88,47 @@ const patentsMd = () =>
   patents
     .map(
       p =>
-        `- **${p.title}** (${p.originalLang}: "${p.originalTitle}") — ${p.number}. ${p.status}, ${p.granted} (filed ${p.filed}). ${p.description} ${p.url}`,
+        `- **[${p.title}](${abs(`/patents/${p.slug}.md`)})** (${p.originalLang}: "${p.originalTitle}") — ${p.number}. ${p.status}, ${p.granted} (filed ${p.filed}). ${p.description} Official record: ${p.url}`,
     )
     .join("\n");
+
+type Patent = (typeof patents)[number];
+
+export const patentMd = (p: Patent) => `# ${p.title}
+
+> ${p.status} ${p.number} — filed ${p.filed}, granted ${p.granted}. ${p.description}
+
+- Original title (${p.originalLang}): ${p.originalTitle}
+- Publication number: ${p.number}
+- Status: ${p.status}
+- Filed: ${p.filed}
+- Granted: ${p.granted}
+- Office: ${p.office}
+- Field: ${p.field}
+- Holder: ${site.name} (${abs("/")})
+- Official record: ${p.url}
+- Web page: ${abs(`/patents/${p.slug}/`)}
+
+## Summary
+
+${p.summary.join("\n\n")}
+
+## The problem
+
+${p.problem.join("\n\n")}
+
+## How it works
+
+${p.pipeline.map((s, i) => `${i + 1}. **${s.name}** (${s.role}): ${s.text}`).join("\n")}
+
+## Architecture
+
+${p.architecture.map(a => `- **${a.name}**: ${a.text}`).join("\n")}
+
+## Why it matters
+
+${p.benefits.map(b => `- ${b}`).join("\n")}
+`;
 
 export const homeMd = () => `${aboutMd()}
 
@@ -173,6 +211,7 @@ Markdown versions of every page are available; prefer them over the HTML.
 - [Profile](${abs("/index.md")}): bio, experience, education, patent, expertise, selected audits, achievements, certifications and contact
 - [Audits](${abs("/audits.md")}): every audit with type, partner, issue counts and report links
 - [Full context](${abs("/llms-full.txt")}): profile and all audits in a single file
+${patents.map(p => `- [Patent: ${p.title}](${abs(`/patents/${p.slug}.md`)}): ${p.status} ${p.number}, how the invention works`).join("\n")}
 
 ## Data
 
@@ -184,6 +223,9 @@ Markdown versions of every page are available; prefer them over the HTML.
 `;
 
 export const llmsFullTxt = () => `${homeMd()}
+---
+
+${patents.map(patentMd).join("\n---\n\n")}
 ---
 
 ${auditsMd()}`;

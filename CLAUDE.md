@@ -42,6 +42,7 @@ Analytics are strictly opt-in: `src/components/CookieBanner.astro` + `src/script
 - `src/pages/index.astro` — Hero → Marquee → About → Work (+Education) → Patents → Expertise → Selected work → Achievements → Certifications → Contact.
 - `src/pages/audits.astro` — all audits, server-rendered; filter pills + search hide rows client-side.
 - `src/pages/og/[card].png.ts` — build-time social cards (`/og/home.png`, `/og/audits.png`; satori + resvg, static Geist woff). Pages pick one via the `image` prop.
+- `src/pages/patents/[slug].astro` — one page per patent in `src/data/patents.json` (summary, problem, pipeline, architecture, benefits), with its own markdown (`/patents/<slug>.md`), social card (`/og/patent-<slug>.png`) and JSON-LD (WebPage + BreadcrumbList + the patent node). The home Patents row links here; Espacenet is linked from the page.
 - `src/pages/privacy.astro` — privacy & cookie policy.
 - Agent/scraper endpoints, generated from the same data by `src/lib/markdown.ts`: `/llms.txt` (llmstxt.org index), `/llms-full.txt`, `/index.md`, `/audits.md`, `/audits.json`. Pages advertise their markdown version via `<link rel="alternate" type="text/markdown">` (the `markdown` prop). When adding a section to the HTML, add it to the markdown too.
 - `src/pages/404.astro` — noindex.

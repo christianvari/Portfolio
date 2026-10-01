@@ -79,21 +79,28 @@ const foundedOrgs = (origin: URL) =>
     };
   });
 
+export const patentPath = (p: { slug: string }) => `/patents/${p.slug}/`;
+
+type PatentData = (typeof patents)[number];
+
 /** The patent as its own entity, with the person as inventor. */
-const patentNodes = (origin: URL) =>
-  patents.map(p => ({
-    "@type": "CreativeWork",
-    additionalType: "https://schema.org/Patent",
-    "@id": patentId(origin, p.number),
-    name: p.title,
-    alternateName: p.originalTitle,
-    inLanguage: p.originalLang,
-    identifier: p.number,
-    description: `${p.status} (${p.granted}, filed ${p.filed}). ${p.description}`,
-    url: p.url,
-    dateCreated: p.filed,
-    creator: { "@id": personId(origin) },
-  }));
+const patentNode = (origin: URL, p: PatentData) => ({
+  "@type": "CreativeWork",
+  additionalType: "https://schema.org/Patent",
+  "@id": patentId(origin, p.number),
+  name: p.title,
+  alternateName: p.originalTitle,
+  inLanguage: p.originalLang,
+  identifier: p.number,
+  description: `${p.status} (${p.granted}, filed ${p.filed}). ${p.description}`,
+  url: new URL(patentPath(p), origin).href,
+  sameAs: p.url,
+  dateCreated: p.filed,
+  about: p.field,
+  creator: { "@id": personId(origin) },
+});
+
+const patentNodes = (origin: URL) => patents.map(p => patentNode(origin, p));
 
 export const homeJsonLd = (origin: URL, image: string) => ({
   "@context": "https://schema.org",
@@ -136,3 +143,47 @@ export const auditsJsonLd = (origin: URL) => ({
     })),
   },
 });
+
+export const patentJsonLd = (origin: URL, p: PatentData) => {
+  const page = new URL(patentPath(p), origin).href;
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": page,
+        url: page,
+        name: `${p.title} · ${site.name}`,
+        isPartOf: { "@id": id(origin, "website") },
+        mainEntity: { "@id": patentId(origin, p.number) },
+        breadcrumb: { "@id": `${page}#breadcrumb` },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${page}#breadcrumb`,
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: site.name,
+            item: new URL("/", origin).href,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Patents",
+            item: new URL("/#patents", origin).href,
+          },
+          { "@type": "ListItem", position: 3, name: p.title, item: page },
+        ],
+      },
+      patentNode(origin, p),
+      {
+        "@type": "Person",
+        "@id": personId(origin),
+        name: site.name,
+        url: new URL("/", origin).href,
+      },
+    ],
+  };
+};

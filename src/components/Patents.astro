@@ -1,6 +1,7 @@
 ---
 import patents from "../data/patents.json";
 import SectionHeader from "./SectionHeader.astro";
+import { patentPath } from "../lib/jsonld";
 ---
 
 <section
@@ -20,9 +21,7 @@ import SectionHeader from "./SectionHeader.astro";
       {patents.map(p => (
         <li data-reveal>
           <a
-            href={p.url}
-            target="_blank"
-            rel="noopener"
+            href={patentPath(p)}
             class="-mx-4 flex flex-wrap items-baseline gap-x-8 gap-y-2.5 border-t border-line px-4 py-[30px] text-ink transition-colors duration-250 hover:bg-surface hover:text-ink"
           >
             <p class="m-0 flex-[0_0_180px] font-mono text-[13px] text-muted">
@@ -30,7 +29,7 @@ import SectionHeader from "./SectionHeader.astro";
             </p>
             <div class="flex flex-[1_1_360px] flex-col gap-1.5">
               <h3 class="m-0 text-[26px] font-medium tracking-[-0.02em]">
-                {p.title} ↗
+                {p.title} →
               </h3>
               {p.originalTitle && (
                 <p class="m-0 text-sm text-muted italic" lang={p.originalLang}>
