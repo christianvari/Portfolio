@@ -5,6 +5,7 @@ import { auditFilters, site } from "../data/site";
 import {
   auditUrl,
   audits,
+  devProjects,
   displayTags,
   filterKeys,
   totalAudits,
@@ -143,6 +144,68 @@ import { auditsJsonLd } from "../lib/jsonld";
       </a>
     </div>
   </section>
+
+  {devProjects.length > 0 && (
+    <section
+      id="development"
+      class="container-page scroll-mt-24 pb-[120px]"
+      aria-labelledby="development-title"
+    >
+      <div class="mb-8 flex flex-col gap-3 border-b border-ink pb-5">
+        <h2
+          id="development-title"
+          class="m-0 text-[clamp(32px,5vw,56px)] leading-none font-medium tracking-[-0.04em]"
+        >
+          Development work<span class="text-accent">.</span>
+        </h2>
+        <p class="m-0 text-sm text-muted">
+          Software I built as an engineer. These are not security audits.
+        </p>
+      </div>
+      <ul class="m-0 flex list-none flex-col p-0">
+        {devProjects.map(p => {
+          const Row = p.website ? "a" : "div";
+          return (
+            <li>
+              <Row
+                class:list={[
+                  "-mx-3 flex flex-wrap items-baseline gap-x-7 gap-y-2 border-b border-line px-3 py-6 text-ink transition-colors duration-200",
+                  p.website && "hover:bg-surface hover:text-ink",
+                ]}
+                {...(p.website
+                  ? { href: p.website, target: "_blank", rel: "noopener" }
+                  : {})}
+              >
+                <span class="flex flex-[1_1_320px] flex-col gap-1">
+                  <h3 class="m-0 text-[22px] font-medium tracking-[-0.02em]">
+                    {p.title}
+                  </h3>
+                  <span class="text-sm text-muted">
+                    {p.extendedDescription || p.description}
+                  </span>
+                </span>
+                <span class="flex flex-[0_1_auto] flex-wrap gap-1.5">
+                  {displayTags(p, 3).map(t => (
+                    <span class="rounded-full border border-line-2 px-2.5 py-1 font-mono text-[11px] text-ink-2">
+                      {t}
+                    </span>
+                  ))}
+                </span>
+                {p.website && (
+                  <span
+                    class="flex-[0_0_20px] text-right text-accent"
+                    aria-hidden="true"
+                  >
+                    ↗
+                  </span>
+                )}
+              </Row>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  )}
 </BaseLayout>
 
 <script>

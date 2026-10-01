@@ -21,9 +21,18 @@ export interface Audit {
     minor: number;
     informational: number;
   };
+  /** Software Christian developed (not an audit): listed as development work, never on codezen.tech. */
+  dev?: boolean;
+  extendedDescription?: string;
 }
 
-export const audits = data as Audit[];
+const entries = data as Audit[];
+
+/** Security audits only; development projects are kept apart and never counted as audits. */
+export const audits = entries.filter(a => !a.dev);
+
+/** Software Christian developed ("dev": true in audit-history.json). */
+export const devProjects = entries.filter(a => a.dev);
 
 const GENERIC_TAGS = new Set(["Audit", "Blockchain", "Smart Contract"]);
 
