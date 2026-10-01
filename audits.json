@@ -1058,9 +1058,9 @@
     },
     {
       "slug": "holo",
-      "title": "Holo",
+      "title": "Holochain",
       "date": "2025-07-07",
-      "type": "Smart contracts audit",
+      "type": "Security audit",
       "partner": "Zenith Security",
       "tags": [
         "Blockchain",
@@ -1069,7 +1069,7 @@
       "issues": null,
       "url": "https://www.codezen.tech/audits/holo/",
       "report": null,
-      "website": null
+      "website": "https://www.holochain.org"
     },
     {
       "slug": "structured-jupiter",
