@@ -1,6 +1,6 @@
 # Audits · Christian Vari
 
-> 193 completed security audits, 2361 issues found. Performed by Christian Vari; each entry names the partner firm where applicable, and links to its page on codezen.tech and, when public, to the audit report.
+> 189 completed security audits, 2361 issues found. Performed by Christian Vari; each entry names the partner firm where applicable, and links to its page on codezen.tech and, when public, to the audit report.
 
 - [CoinList Token Sale Fund Updates](https://www.codezen.tech/audits/coinlist-token-sale-fund-updates/) — Solidity smart contracts audit — with Oak Security — 2 issues (0 critical, 0 major, 1 minor, 1 informational) — tags: Blockchain, Solidity, Ethereum, EVM, Audit — [report](https://github.com/oak-security/audit-reports/blob/main/CoinList/2026-02-27%20Audit%20Report%20-%20CoinList%20Token%20Sale%20Fund%20Updates%20v1.0.pdf)
 - [ZIGChain](https://www.codezen.tech/audits/zigchain/) — Cosmos SDK chain audit — with Oak Security — 45 issues (1 critical, 8 major, 21 minor, 15 informational) — tags: Blockchain, Golang, Cosmos SDK, Audit, CosmWasm — [report](https://github.com/oak-security/audit-reports/blob/main/ZIGChain/2026-05-15%20Audit%20Report%20%E2%80%93%20ZIGChain.pdf)
@@ -191,7 +191,3 @@
 - [Levana Perpetual Swap](https://www.codezen.tech/audits/levana-perpetual-swap/) — CosmWasm Contract Audit — with Oak Security — 28 issues (3 critical, 7 major, 9 minor, 9 informational) — tags: Blockchain, Rust, Terra, Audit, CosmWasm — [report](https://github.com/oak-security/audit-reports/blob/master/Levana/2022-05-03%20Audit%20Report%20-%20Levana%20Perpetual%20Swaps%20v1.0.pdf)
 - [C2X Com2Us](https://www.codezen.tech/audits/c2x-com2us/) — CosmWasm Contract Audit — with Oak Security — 15 issues (0 critical, 4 major, 5 minor, 6 informational) — tags: Blockchain, Rust, Terra, Audit, CosmWasm — [report](https://github.com/oak-security/audit-reports/blob/master/C2X/2022-05-09%20Audit%20Report%20-%20C2X%20v1.0.pdf)
 - [Kinetic Money](https://www.codezen.tech/audits/kinetic-money/) — CosmWasm Contract Audit — with Oak Security — 26 issues (7 critical, 4 major, 5 minor, 10 informational) — tags: Blockchain, Rust, Terra, Audit, CosmWasm — [report](https://github.com/oak-security/audit-reports/blob/master/Kinetic/2022-04-07%20Audit%20Report%20-%20Kinetic%20v1.0.pdf)
-- [IBM / HCL AI Data Advisor for Workload Automation](https://www.codezen.tech/audits/ibm-hcl-ai-data-advisor-for-workload-automation/) — AI module for IBM / HCL Workload Automation — tags: AI, Observability, Python, React, Nodejs, Microservices
-- [HCL Clara 2](https://www.codezen.tech/audits/hcl-clara-2/) — Automation Chatbot for IBM / HCL Workload Automation — tags: AI, Chatbot, NLP, Rasa, React, Python, Microservices
-- [HCL Clara](https://www.codezen.tech/audits/hcl-clara/) — Automation Chatbot for IBM / HCL Workload Automation — tags: AI, Chatbot, NLP, Rasa, React, Python, Microservices
-- [HCL T-VREX](https://www.codezen.tech/audits/hcl-t-vrex/) — A VR experience for HCL Workload Automation — tags: VR, React, Oculus, Real-time

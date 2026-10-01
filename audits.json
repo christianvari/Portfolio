@@ -1,7 +1,7 @@
 {
   "author": "Christian Vari",
   "url": "https://www.christianvari.dev/audits/",
-  "totalAudits": 193,
+  "totalAudits": 189,
   "totalIssues": 2361,
   "audits": [
     {
@@ -4024,82 +4024,6 @@
       "url": "https://www.codezen.tech/audits/kinetic-money/",
       "report": "https://github.com/oak-security/audit-reports/blob/master/Kinetic/2022-04-07%20Audit%20Report%20-%20Kinetic%20v1.0.pdf",
       "website": "https://kinetic.money/"
-    },
-    {
-      "slug": "ibm-hcl-ai-data-advisor-for-workload-automation",
-      "title": "IBM / HCL AI Data Advisor for Workload Automation",
-      "date": null,
-      "type": "AI module for IBM / HCL Workload Automation",
-      "partner": null,
-      "tags": [
-        "AI",
-        "Observability",
-        "Python",
-        "React",
-        "Nodejs",
-        "Microservices"
-      ],
-      "issues": null,
-      "url": "https://www.codezen.tech/audits/ibm-hcl-ai-data-advisor-for-workload-automation/",
-      "report": null,
-      "website": "https://www.ibm.com/products/workload-automation"
-    },
-    {
-      "slug": "hcl-clara-2",
-      "title": "HCL Clara 2",
-      "date": null,
-      "type": "Automation Chatbot for IBM / HCL Workload Automation",
-      "partner": null,
-      "tags": [
-        "AI",
-        "Chatbot",
-        "NLP",
-        "Rasa",
-        "React",
-        "Python",
-        "Microservices"
-      ],
-      "issues": null,
-      "url": "https://www.codezen.tech/audits/hcl-clara-2/",
-      "report": null,
-      "website": "https://www.hcltechsw.com/clara"
-    },
-    {
-      "slug": "hcl-clara",
-      "title": "HCL Clara",
-      "date": null,
-      "type": "Automation Chatbot for IBM / HCL Workload Automation",
-      "partner": null,
-      "tags": [
-        "AI",
-        "Chatbot",
-        "NLP",
-        "Rasa",
-        "React",
-        "Python",
-        "Microservices"
-      ],
-      "issues": null,
-      "url": "https://www.codezen.tech/audits/hcl-clara/",
-      "report": null,
-      "website": "https://www.hcltechsw.com/clara"
-    },
-    {
-      "slug": "hcl-t-vrex",
-      "title": "HCL T-VREX",
-      "date": null,
-      "type": "A VR experience for HCL Workload Automation",
-      "partner": null,
-      "tags": [
-        "VR",
-        "React",
-        "Oculus",
-        "Real-time"
-      ],
-      "issues": null,
-      "url": "https://www.codezen.tech/audits/hcl-t-vrex/",
-      "report": null,
-      "website": "https://www.workloadautomation-community.com/blogs/are-you-ready-for-an-exciting-immersive-experience-in-workload-automation"
     }
   ]
 }

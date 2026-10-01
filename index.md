@@ -95,7 +95,7 @@ Security reviews by technology (number of audits):
 
 ## Security reviews
 
-193 completed audits, 2361 issues found. Full list: https://www.christianvari.dev/audits.md (JSON: https://www.christianvari.dev/audits.json).
+189 completed audits, 2361 issues found. Full list: https://www.christianvari.dev/audits.md (JSON: https://www.christianvari.dev/audits.json).
 
 Selected work:
 - [Stellar Core Protocol 23](https://www.codezen.tech/audits/stellar-core-protocol-23/) — Blockchain node audit — with Oak Security — 81 issues (2 critical, 1 major, 35 minor, 43 informational) — tags: Blockchain, C++, C, Soroban, Rust, Audit, Stellar — [report](https://github.com/oak-security/audit-reports/blob/8a29e1d31c20fdc68bc732b1db73c4660d3fa507/Stellar/2025-10-17%20Audit%20Report%20-%20Stellar%20Core%20Protocol%2023%20Changes%20v1.0.pdf)
