@@ -1,8 +1,11 @@
 # Keeps the audit-history submodule (src/sharedData) up to date.
 # Triggered by audit-history after every data update (repository_dispatch), daily as a fallback,
 # or by hand. When audit-history has new commits it moves the submodule, checks that the site
-# still builds (astro check + build), then commits the bump to master. That push (made with the
-# PAT, so it triggers workflows) runs the Deploy workflow.
+# still builds (astro check + build), commits the bump to master and starts the Deploy workflow.
+#
+# The PAT can read audit-history but not push here, so the push uses GITHUB_TOKEN. Pushes made with
+# GITHUB_TOKEN don't trigger workflows, so Deploy is started explicitly (workflow_dispatch is
+# allowed from GITHUB_TOKEN).
 
 name: Update audit-history
 
@@ -20,6 +23,9 @@ concurrency:
 jobs:
   bump:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # push the bump
+      actions: write # start the Deploy workflow
     steps:
       - uses: actions/checkout@v4
         with:
@@ -60,10 +66,20 @@ jobs:
         env:
           SHA: ${{ steps.bump.outputs.sha }}
           SUBJECT: ${{ steps.bump.outputs.subject }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
           git add src/sharedData
           git commit -m "Update audit-history to ${SHA}" -m "audit-history: ${SUBJECT}"
+          # Push with GITHUB_TOKEN instead of the PAT that checkout configured
+          git config --unset-all http.https://github.com/.extraheader || true
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git pull --rebase origin master
           git push origin HEAD:master
+
+      - name: Deploy
+        if: steps.bump.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run node.js.yml --ref master -R "$GITHUB_REPOSITORY"
